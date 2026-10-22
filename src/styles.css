@@ -3504,3 +3504,36 @@ img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9
   .sh-scriptart--forever { left: 1%; top: 34%; width: min(39%, 36rem); }
   .sh-scriptart--documented { right: 2%; left: auto; top: 46%; width: min(48%, 44rem); }
 }
+
+/* Header: house cocoa brown, everything in it white */
+.hz-nav, .hz-nav--overlay[data-solid="true"] {
+  background: rgb(44 38 37 / 0.97) !important;
+  background-image: none !important;
+  border-bottom-color: rgb(253 241 244 / 0.08) !important;
+  color: #fdf1f4;
+}
+.hz-nav .nav-link, .hz-nav .sh-logo, .hz-nav .sh-nav-inquire, .hz-nav .sh-menu summary { color: #fdf1f4 !important; }
+.hz-nav .nav-link::after { background: #fdf1f4 !important; }
+.hz-nav .sh-nav-inquire, .hz-nav .sh-menu summary { border-color: rgb(253 241 244 / 0.75) !important; }
+.hz-nav .sh-nav-inquire:hover { background: rgb(253 241 244 / 0.1) !important; }
+.hz-nav .sh-menu__bars, .hz-nav .sh-menu__bars::before, .hz-nav .sh-menu__bars::after { background: #fdf1f4; }
+.hz-nav .sh-menu[open] .sh-menu__bars { background: transparent; }
+.hz-nav .scroll-progress__bar { background: #e6c1cd !important; }
+.hz-nav .scroll-progress { background: transparent !important; }
+
+/* Content creation: set on the pink paper card */
+section[aria-labelledby="home-real"] .sh-boxed {
+  background: transparent !important;
+  border-style: solid !important;
+  border-width: clamp(22px, 3vw, 34px) !important;
+  border-image: url("/assets/brand/paper-card.webp") 90 fill / clamp(22px, 3vw, 34px) stretch !important;
+  box-shadow: 0 24px 50px -30px rgb(44 38 37 / 0.35) !important;
+  outline: none !important;
+}
+section[aria-labelledby="home-real"] .sh-boxed::before,
+section[aria-labelledby="home-real"] .sh-boxed::after { display: none !important; }
+@media (max-width: 1023px) {
+  section[aria-labelledby="home-real"] .sh-boxed { border-width: 16px !important; border-image-width: 16px !important; }
+  .sh-swipebox { padding: 1.4rem 1.1rem 1.4rem !important; }
+  .sh-swipe__card--text, img.sh-swipe__card { height: 17rem; }
+}
