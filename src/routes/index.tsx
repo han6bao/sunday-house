@@ -289,10 +289,10 @@ function Home() {
                 label="Portrait sessions"
                 ratio="4/5"
                 items={[
-                  { src: "/assets/stills/grad-hall.jpg", alt: "Graduate in a purple gown seated beneath gothic windows" },
-                  { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water", position: "60% center" },
                   { src: "/assets/motion/grad-flowers.jpg", video: "/assets/motion/grad-flowers.mp4", alt: "Graduation bouquet with a 2026 tassel", position: "0% center" },
                   { src: "/assets/motion/maternity-meadow.jpg", video: "/assets/motion/maternity-meadow.mp4", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
+                  { src: "/assets/stills/grad-hall.jpg", alt: "Graduate in a purple gown seated beneath gothic windows" },
+                  { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water", position: "60% center" },
                 ]}
               />
             </div>

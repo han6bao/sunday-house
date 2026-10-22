@@ -3465,3 +3465,28 @@ img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9
   .sh-scriptart--forever { left: 2%; top: 22%; width: 80%; }
   .sh-scriptart--documented { left: 0; right: 0; top: 64%; width: 100%; }
 }
+/* Phones: the intro picture is one clean photo with "hello" laid over it */
+@media (max-width: 1023px) {
+  .sh-intro { gap: 2rem; }
+  .sh-collage { height: auto; max-height: none; min-height: 0; margin-top: 0; }
+  .sh-collage__arch { position: relative; inset: auto; width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: 0; box-shadow: none; }
+  .sh-collage__polaroid { display: none; }
+  .sh-collage__word { left: 1rem; top: 1rem; color: #fdf1f4; font-size: clamp(4rem, 20vw, 5.5rem); text-shadow: 0 1px 12px rgb(44 38 37 / 0.25); }
+  .sh-collage .sh-drift { animation: none !important; translate: none !important; }
+}
+@media (max-width: 1023px) { .sh-collage__arch { aspect-ratio: 1 / 1; } .sh-collage__arch img { object-position: 58% 70%; } }
+/* Forever and documented at the same width = the same letter size (matching o's),
+   with breathing room so the swashes never run off the edge */
+.sh-scriptart--forever { width: min(45%, 41rem); }
+.sh-scriptart--documented { width: min(45%, 41rem); right: 5%; }
+@media (max-width: 899px) {
+  .sh-scriptart--forever { left: 4%; right: auto; width: 84%; top: 20%; }
+  .sh-scriptart--documented { left: auto; right: 4%; width: 84%; top: 62%; }
+}
+/* "documented" art has smaller letters per width: scale it up so the o's match */
+.sh-scriptart--forever { width: min(39%, 36rem); }
+.sh-scriptart--documented { width: min(48%, 44rem); right: 3%; }
+@media (max-width: 899px) {
+  .sh-scriptart--forever { width: 64%; left: 6%; }
+  .sh-scriptart--documented { width: 88%; right: 3%; }
+}
