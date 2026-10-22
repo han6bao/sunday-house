@@ -26,7 +26,7 @@ export function SiteNav({ path, overlay = false }: { path?: string; overlay?: bo
     const el = ref.current;
     if (!el) return;
     const onScroll = () => {
-      el.dataset.solid = window.scrollY > window.innerHeight * 0.75 ? "true" : "false";
+      el.dataset.solid = window.scrollY > window.innerHeight - 80 ? "true" : "false";
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
