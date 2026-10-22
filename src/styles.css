@@ -3286,7 +3286,7 @@ a:hover .sh-photo img,
 .sh-scriptart--documented { right: 1%; top: 44%; width: min(46%, 38rem); }
 @media (max-width: 899px) {
   .sh-scriptart--forever { left: 0; top: 14%; width: 66%; }
-  .sh-scriptart--documented { right: 0; top: 40%; width: 78%; }
+  .sh-scriptart--documented { left: 0; right: 0; top: 40%; width: 100%; }
 }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
