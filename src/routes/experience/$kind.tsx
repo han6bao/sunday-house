@@ -136,19 +136,19 @@ export default function ExperienceRoute() {
           </div>
           <div className="lg:col-span-7">
             <h2 className="font-display text-3xl text-ink">Continue through the House</h2>
-            <ul className="mt-5 space-y-3 font-serif text-lg text-brown">
+            <ul className="sh-linkrow mt-6">
               <li>
-                <Link to="/photography" className="group inline-flex items-baseline gap-2 border-b border-ink pb-0.5 hover:text-antique">
+                <Link to="/photography" className="sh-textlink group">
                   Browse the photography <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </Link>
               </li>
               <li>
-                <Link to="/house-objects" className="group inline-flex items-baseline gap-2 border-b border-ink pb-0.5 hover:text-antique">
+                <Link to="/house-objects" className="sh-textlink group">
                   See House Objects <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </Link>
               </li>
               <li>
-                <Link to="/locations" className="group inline-flex items-baseline gap-2 border-b border-ink pb-0.5 hover:text-antique">
+                <Link to="/locations" className="sh-textlink group">
                   Find a place to be photographed <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </Link>
               </li>
