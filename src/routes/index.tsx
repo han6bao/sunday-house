@@ -171,12 +171,10 @@ function Home() {
             </p>
           </div>
           <div className="min-w-0 lg:col-span-8">
-            <div className="relative">
-              <FilmRail />
-              <Link to="/video" className="sh-collage__more sh-rail__more sh-film__more">
-                Watch the films →
-              </Link>
-            </div>
+            <FilmRail />
+            <Link to="/video" className="sh-film__about">
+              More about our films →
+            </Link>
           </div>
         </div>
       </section>
@@ -296,6 +294,7 @@ function Home() {
                   </Link>
                 }
                 ratio="4/5"
+                to="/photography"
                 items={[
                   { src: "/assets/motion/grad-flowers.jpg", video: "/assets/motion/grad-flowers.mp4", alt: "Graduation bouquet with a 2026 tassel", position: "center" },
                   { src: "/assets/motion/maternity-meadow.jpg", video: "/assets/motion/maternity-meadow.mp4", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
@@ -311,28 +310,19 @@ function Home() {
       {/* 6b · Keep it + find your place — two quiet cards */}
       <section className="sh-wrap pb-[clamp(4rem,8vw,6.5rem)]" aria-label="Frames and locations">
         <div className="sh-duo">
-          <Link to="/house-objects" className="sh-duo__card group">
-            <div className="sh-duo__frame">
-              <img src="/assets/stills/lilies.jpg" alt="White lilies and their shadow, framed" loading="lazy" decoding="async" />
+          <Link to="/house-objects" className="sh-duo__tile">
+            <div className="sh-duo__img">
+              <img src="/assets/stills/lilies.jpg" alt="White lilies and their shadow" loading="lazy" decoding="async" />
+              <span className="sh-collage__more sh-duo__box">Frames + prints →</span>
             </div>
-            <div className="sh-duo__text">
-              <p className="eyebrow">Frames, albums + prints</p>
-              <h2 className="sh-duo__title">Off the phone, onto the wall.</h2>
-              <p className="sh-body mt-3">Framed photographs, heirloom albums and fine-art prints, made to order from your gallery.</p>
-              <span className="sh-duo__link">Shop the keepsakes →</span>
-            </div>
+            <p className="sh-duo__cap">Framed photographs, heirloom albums and fine-art prints from your gallery.</p>
           </Link>
-          <Link to="/locations" className="sh-duo__card group">
-            <div className="sh-duo__photo">
-              <img src="/assets/stills/hill-sunrise.jpg" alt="A grassy hill at sunrise in Washington" loading="lazy" decoding="async" />
-              <span className="sh-duo__places">Seattle · Tacoma · Bellevue · Lakewood</span>
+          <Link to="/locations" className="sh-duo__tile">
+            <div className="sh-duo__img">
+              <img src="/assets/stills/hill-sunrise.jpg" alt="A couple on a grassy hill at sunrise" loading="lazy" decoding="async" />
+              <span className="sh-collage__more sh-duo__box">Photo locations →</span>
             </div>
-            <div className="sh-duo__text">
-              <p className="eyebrow">Photo locations</p>
-              <h2 className="sh-duo__title">Not sure where yet?</h2>
-              <p className="sh-body mt-3">Our guide to parks, beaches, gardens and city corners around Puget Sound, with the best light for each.</p>
-              <span className="sh-duo__link">Find your location →</span>
-            </div>
+            <p className="sh-duo__cap">Parks, beaches and gardens around Seattle, Tacoma, Bellevue and Lakewood.</p>
           </Link>
         </div>
       </section>

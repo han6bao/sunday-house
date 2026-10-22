@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, type ReactNode } from "react";
 
 import { useDragScroll } from "./use-drag-scroll";
@@ -8,19 +9,22 @@ type Item = { src: string; alt: string; video?: string; position?: string };
 
 /**
  * Photos you swipe through, endlessly: after the last photo the first comes
- * back around. An optional link sits in the corner of the first photo and
- * travels with it.
+ * back around. An optional link stays pinned in the middle of the row while
+ * the photos slide underneath it.
  */
 export function PhotoRail({
   items,
   ratio = "4/5",
   label,
   corner,
+  to,
 }: {
   items: Item[];
   ratio?: string;
   label: string;
   corner?: ReactNode;
+  /** Every photo opens this page. */
+  to?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   useDragScroll(ref);
@@ -68,26 +72,34 @@ export function PhotoRail({
 
   return (
     <div className="sh-photorail">
+      <div className="sh-photorail__stage">
       <div ref={ref} className="sh-photorail__track" aria-label={`${label} — swipe for more`}>
         {loop.map((it, i) => {
           const copy = Math.floor(i / items.length);
-          const first = i % items.length === 0;
+          const media = it.video ? (
+            <video src={it.video} poster={it.src} autoPlay muted loop playsInline preload="metadata" aria-label={it.alt} style={{ objectPosition: it.position }} />
+          ) : (
+            <img src={it.src} alt={copy === 1 ? it.alt : ""} loading="lazy" decoding="async" style={{ objectPosition: it.position }} />
+          );
           return (
             <figure
               key={`${copy}-${it.src}`}
-              className={`sh-photorail__item${first && corner ? " has-corner" : ""}`}
+              className="sh-photorail__item"
               style={{ aspectRatio: ratio.replace("/", " / ") }}
               aria-hidden={copy !== 1 ? true : undefined}
             >
-              {it.video ? (
-                <video src={it.video} poster={it.src} autoPlay muted loop playsInline preload="metadata" aria-label={it.alt} style={{ objectPosition: it.position }} />
+              {to ? (
+                <Link to={to as never} className="sh-photorail__link" tabIndex={copy === 1 ? undefined : -1} draggable={false}>
+                  {media}
+                </Link>
               ) : (
-                <img src={it.src} alt={copy === 1 ? it.alt : ""} loading="lazy" decoding="async" style={{ objectPosition: it.position }} />
+                media
               )}
-              {first && corner ? <div className="sh-photorail__corner">{corner}</div> : null}
             </figure>
           );
         })}
+      </div>
+      {corner ? <div className="sh-photorail__pin">{corner}</div> : null}
       </div>
       <div className="sh-photorail__nav">
         <span className="sh-photorail__hint">Swipe to see more</span>
