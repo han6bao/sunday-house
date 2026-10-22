@@ -9,7 +9,7 @@ import type {
 export const scrollScrubTheme: ScrollScrubTheme = {
   accent: "#B38A4A",
   background: "#FAF7F2",
-  ink: "#191714",
+  ink: "#2c2726",
   muted: "#302720",
 };
 

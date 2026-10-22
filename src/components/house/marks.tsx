@@ -139,7 +139,7 @@ export function ShMark(props: SVGProps<SVGSVGElement>) {
         fontFamily="Instrument Serif, serif"
         fontSize="17"
         letterSpacing="0.5"
-        fill="#191714"
+        fill="#2c2726"
       >
         S
       </text>
@@ -163,7 +163,7 @@ export function ShMark(props: SVGProps<SVGSVGElement>) {
         fontFamily="Instrument Serif, serif"
         fontSize="13"
         letterSpacing="9"
-        fill="#191714"
+        fill="#2c2726"
         opacity="0.9"
       >
         H
