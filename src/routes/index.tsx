@@ -6,6 +6,7 @@ import { FilmSnippet } from "@/components/house/film-snippet";
 import { HeroFilm } from "@/components/house/hero-film";
 import { Wordmark } from "@/components/house/wordmark";
 import { Photo } from "@/components/house/photo";
+import { Stamp } from "@/components/house/stamp";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
@@ -67,16 +68,14 @@ function Home() {
 
       {/* 2 · The promise */}
       <section id="begin" className="sh-wrap sh-section">
-        <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-8">
+        <div className="sh-intro">
+          <div className="sh-intro__text">
             <p className="eyebrow">Hello, we&rsquo;re Sunday House</p>
             <p className="sh-statement mt-6">
               We photograph weddings the way they <em>felt</em> — the light, the
               nerves, and every person you love in one room.
             </p>
-          </div>
-          <div className="lg:col-span-4">
-            <p className="sh-body">
+            <p className="sh-body mt-8 max-w-md">
               We&rsquo;re a wedding photography and film studio based in Tacoma,
               photographing weddings across Seattle and the Pacific Northwest.
               Our edit is cinematic and film-like — and always shaped around you.
@@ -84,6 +83,19 @@ function Home() {
             <Link to="/about" hash="welcome" className="sh-link mt-6">
               More about us + our welcome film →
             </Link>
+          </div>
+          <div className="sh-collage">
+            <figure className="sh-collage__arch sh-drift" style={{ ["--drift" as string]: "-36px" }}>
+              <img src="/assets/stills/couple-field.jpg" alt="Bride and groom walking hand in hand across a green lawn, seen from above" loading="lazy" decoding="async" />
+            </figure>
+            <figure className="sh-collage__polaroid sh-drift" style={{ ["--drift" as string]: "40px" }}>
+              <img src="/assets/stills/couple-sunset.jpg" alt="Newlyweds walking toward the sunset after their ceremony" loading="lazy" decoding="async" />
+              <figcaption>golden hour</figcaption>
+            </figure>
+            <Stamp className="sh-collage__stamp" />
+            <span className="sh-scriptword sh-collage__word" aria-hidden="true">
+              hello
+            </span>
           </div>
         </div>
       </section>
@@ -98,6 +110,10 @@ function Home() {
             Wedding photography →
           </Link>
         </div>
+        <div className="relative">
+        <span className="sh-scriptword sh-scriptword--light sh-weddings__word" aria-hidden="true">
+          forever
+        </span>
         <div className="sh-mosaic">
           <Photo
             src="/assets/gallery/bride-portrait.png" motion="/assets/motion/bride" motionPosition="38% center" need="Wedding 1 of 5: a bride"
@@ -118,7 +134,7 @@ function Home() {
             sizes="(max-width: 900px) 50vw, 25vw"
           />
           <Photo
-            src="/assets/gallery/rings.jpg" className="sh-sepia" motion="/assets/motion/ring" need="Wedding 4 of 5: a detail (rings, dress, flowers)"
+            src="/assets/gallery/rings.jpg" className="sh-rosetone" motion="/assets/motion/ring" need="Wedding 4 of 5: a detail (rings, dress, flowers)"
             alt="Close-up of a couple's wedding rings as they hold hands"
             ratio="1/1"
             sizes="(max-width: 900px) 50vw, 25vw"
@@ -129,6 +145,7 @@ function Home() {
             ratio="4/5"
             sizes="(max-width: 900px) 50vw, 33vw"
           />
+        </div>
         </div>
       </section>
 
@@ -257,10 +274,19 @@ function Home() {
                 Portrait sessions →
               </Link>
             </div>
-            <div className="grid grid-cols-3 gap-3 md:gap-4 lg:col-span-7">
-              <Photo src="/assets/gallery/greenhouse.png" need="Portrait 1 of 3: a couples session" alt="Portrait of a woman resting her chin on her hand in a sunlit greenhouse" ratio="2/3" sizes="33vw" />
-              <Photo src="/assets/gallery/couple-bw.png" motion="/assets/motion/grad-flowers" motionPosition="0% center" need="Portrait 2 of 3: a senior session" alt="Graduation bouquet with a 2026 tassel" ratio="2/3" sizes="33vw" />
-              <Photo src="/assets/gallery/flower-nose.png" motion="/assets/motion/maternity-meadow" motionPosition="78% center" need="Portrait 3 of 3: family or creative session" alt="Expecting mother in a meadow with deer grazing behind her" ratio="2/3" sizes="33vw" />
+            <div className="sh-arches lg:col-span-7">
+              <figure className="sh-arch sh-drift" style={{ ["--drift" as string]: "24px" }}>
+                <img src="/assets/stills/grad-hall.jpg" alt="Graduate in a purple gown seated beneath gothic windows" loading="lazy" decoding="async" />
+              </figure>
+              <figure className="sh-arch sh-arch--tall sh-drift" style={{ ["--drift" as string]: "-30px" }}>
+                <img src="/assets/stills/maternity-water.jpg" alt="Expecting mother floating in clear blue water" loading="lazy" decoding="async" />
+              </figure>
+              <figure className="sh-arch sh-drift" style={{ ["--drift" as string]: "36px" }}>
+                <video src="/assets/motion/grad-flowers.mp4" poster="/assets/motion/grad-flowers.jpg" autoPlay muted loop playsInline preload="metadata" aria-label="Graduation bouquet with a 2026 tassel" style={{ objectPosition: "0% center" }} />
+              </figure>
+              <span className="sh-scriptword sh-arches__word" aria-hidden="true">
+                and you
+              </span>
             </div>
           </div>
         </div>

@@ -3164,7 +3164,7 @@ a:hover .sh-photo img,
 .sh-hero__sound svg { width: 1.15rem; height: 1.15rem; }
 @media (prefers-reduced-motion: reduce) { .sh-hero__sound { display: none; } }
 /* Warm sepia tone for a moving photo */
-.sh-sepia video, .sh-sepia img { filter: sepia(0.85) saturate(0.85) contrast(1.02); }
+
 
 /* Moving photographs (short muted loops) */
 .sh-motion video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -3175,3 +3175,87 @@ a:hover .sh-photo img,
 .sh-soundfilm { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: var(--color-ink); }
 .sh-soundfilm video, .sh-soundfilm img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; display: block; background: transparent; }
 .sh-soundfilm--wide { aspect-ratio: 16 / 9; }
+
+/* ============================================================
+ * SHOWIT-STYLE EDITORIAL LAYER — collages, script words, stamps,
+ * arch frames. Motion is gentle and always off for reduced motion.
+ * ============================================================ */
+.sh-scriptword {
+  position: absolute;
+  z-index: 4;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-rose-deep);
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: clamp(4.25rem, 11vw, 9.5rem);
+}
+.sh-scriptword--light { color: #fdf1f4; text-shadow: 0 2px 24px rgb(44 38 37 / 0.35); }
+
+/* Intro: text beside an overlapping collage */
+.sh-intro { display: grid; gap: clamp(3rem, 7vw, 5rem); align-items: center; }
+@media (min-width: 1024px) { .sh-intro { grid-template-columns: 1.05fr 1fr; } }
+.sh-collage { position: relative; min-height: clamp(26rem, 62vw, 40rem); }
+.sh-collage figure { margin: 0; overflow: hidden; background: var(--color-paper); }
+.sh-collage img { width: 100%; height: 100%; object-fit: cover; display: block; max-width: none; }
+.sh-collage__arch {
+  position: absolute; right: 0; top: 0; width: 66%; height: 86%;
+  border-radius: 999px 999px 0 0;
+  box-shadow: 0 30px 60px -30px rgb(44 38 37 / 0.35);
+}
+.sh-collage__polaroid {
+  position: absolute; left: 0; bottom: 0; width: 46%;
+  padding: 0.7rem 0.7rem 2.6rem; background: #fffaf9 !important;
+  transform: rotate(-4deg);
+  box-shadow: 0 24px 48px -20px rgb(44 38 37 / 0.4);
+  transition: transform 0.6s cubic-bezier(.2,.7,.2,1);
+}
+.sh-collage__polaroid img { aspect-ratio: 4 / 5; height: auto; }
+.sh-collage__polaroid figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0.55rem; text-align: center;
+  font-family: "Pinyon Script", cursive; font-size: 1.5rem; color: var(--color-rose-deep);
+}
+.sh-collage__polaroid:hover { transform: rotate(0deg) translateY(-6px) scale(1.02); }
+.sh-collage__stamp { position: absolute; right: -0.5rem; bottom: 2%; width: clamp(6.5rem, 13vw, 8.5rem); z-index: 3; }
+.sh-collage__word { left: 18%; top: -0.35em; transform: rotate(-6deg); }
+
+/* Stamp */
+.sh-stamp { position: relative; aspect-ratio: 1; color: var(--color-ink); background: var(--color-rose-paper, #f7e3e9); border-radius: 50%; display: grid; place-items: center; box-shadow: 0 10px 30px -12px rgb(44 38 37 / 0.35); }
+.sh-stamp__ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: sh-spin 32s linear infinite; }
+.sh-stamp__ring text { font-family: var(--font-mono, monospace); font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; fill: currentColor; }
+.sh-stamp__mark { width: 34%; height: 34%; }
+@keyframes sh-spin { to { transform: rotate(360deg); } }
+
+/* Weddings: a script word laid across the first photographs */
+.sh-weddings__word { left: 3%; top: 38%; transform: rotate(-5deg); }
+@media (max-width: 899px) { .sh-weddings__word { top: 22%; font-size: clamp(3.5rem, 16vw, 5rem); } }
+
+/* Portraits: staggered arch frames */
+.sh-arches { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(0.6rem, 1.6vw, 1.25rem); align-items: end; padding-top: 3.5rem; }
+.sh-arch { margin: 0; overflow: hidden; aspect-ratio: 2 / 3; border-radius: 999px 999px 0 0; background: var(--color-paper); box-shadow: 0 24px 50px -28px rgb(44 38 37 / 0.4); transition: transform 0.6s cubic-bezier(.2,.7,.2,1); }
+.sh-arch--tall { aspect-ratio: 5 / 9; }
+.sh-arch img, .sh-arch video { width: 100%; height: 100%; object-fit: cover; display: block; max-width: none; }
+.sh-arch:hover { transform: translateY(-8px); }
+.sh-arches__word { right: -2%; top: -0.1em; font-size: clamp(3.5rem, 8vw, 7rem); transform: rotate(-6deg); }
+
+/* Black-and-white in the house pink */
+.sh-rosetone { position: relative; isolation: isolate; }
+.sh-rosetone video, .sh-rosetone img { filter: grayscale(1) contrast(0.92) brightness(1.18); }
+.sh-rosetone::after { content: ""; position: absolute; inset: 0; background: #b97b90; mix-blend-mode: color; opacity: 0.7; pointer-events: none; }
+
+/* Scroll drift + script words writing in (modern browsers only) */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .sh-drift { animation: sh-drift linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+    .sh-collage__polaroid.sh-drift { animation-name: sh-drift-tilt; }
+    @keyframes sh-drift { from { translate: 0 calc(var(--drift, 30px) * -1); } to { translate: 0 var(--drift, 30px); } }
+    @keyframes sh-drift-tilt { from { translate: 0 calc(var(--drift, 30px) * -1); rotate: -2deg; } to { translate: 0 var(--drift, 30px); rotate: 2deg; } }
+    .sh-scriptword { animation: sh-write linear both; animation-timeline: view(); animation-range: entry 10% cover 40%; }
+    @keyframes sh-write { from { clip-path: inset(0 100% 0 0); opacity: 0.2; } to { clip-path: inset(0 -10% 0 0); opacity: 1; } }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sh-stamp__ring { animation: none; }
+  .sh-collage__polaroid, .sh-arch { transition: none; }
+}
