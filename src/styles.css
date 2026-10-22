@@ -3494,3 +3494,13 @@ img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9
 /* Swipe hints fade out once the row has been swiped */
 .sh-swipe__hint, .sh-filmrail__hint, .sh-photorail__hint { transition: opacity 0.5s ease; }
 .is-swiped .sh-swipe__hint, .is-swiped .sh-filmrail__hint, .is-swiped .sh-photorail__hint { opacity: 0; }
+/* Computers, home weddings: only the real photos — bride and couple on the left
+   half, the ring spanning the right half; "Forever" over the pair, "documented" over the ring */
+@media (min-width: 900px) {
+  .relative > .sh-mosaic > .sh-need { display: none !important; }
+  .relative > .sh-mosaic { grid-template-columns: 1fr 1fr 2fr; }
+  .relative > .sh-mosaic > * { aspect-ratio: 4 / 5 !important; grid-column: auto !important; }
+  .relative > .sh-mosaic > .sh-mosaic__wide { aspect-ratio: auto !important; }
+  .sh-scriptart--forever { left: 1%; top: 34%; width: min(39%, 36rem); }
+  .sh-scriptart--documented { right: 2%; left: auto; top: 46%; width: min(48%, 44rem); }
+}
