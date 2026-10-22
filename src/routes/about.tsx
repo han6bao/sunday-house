@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { ContentShell } from "@/components/house/content-shell";
 import { Photo } from "@/components/house/photo";
+import { SoundFilm } from "@/components/house/sound-film";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
@@ -47,6 +48,25 @@ export default function About() {
             sizes="(max-width: 1024px) 100vw, 40vw"
           />
         </div>
+      </section>
+
+      {/* Welcome film */}
+      <section id="welcome" className="sh-wrap scroll-mt-24 pt-[clamp(2rem,5vw,4rem)]" aria-labelledby="about-welcome">
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="eyebrow">A warm welcome</p>
+            <h2 id="about-welcome" className="sh-h2 mt-3">
+              Hello from <em>Sunday House</em>.
+            </h2>
+          </div>
+          <p className="sh-num">Tap the speaker to listen</p>
+        </div>
+        <SoundFilm
+          className="sh-soundfilm--wide"
+          src="/assets/motion/welcome.mp4"
+          poster="/assets/motion/welcome.jpg"
+          label="A warm welcome from Sunday House: moments from weddings, portraits and celebrations"
+        />
       </section>
 
       <section className="sh-wrap sh-section" aria-labelledby="about-story">

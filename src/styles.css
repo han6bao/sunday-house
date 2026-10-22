@@ -3173,4 +3173,5 @@ a:hover .sh-photo img,
 
 /* A film with its own sound toggle (maternity film) */
 .sh-soundfilm { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: var(--color-ink); }
-.sh-soundfilm video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.sh-soundfilm video, .sh-soundfilm img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; display: block; background: transparent; }
+.sh-soundfilm--wide { aspect-ratio: 16 / 9; }

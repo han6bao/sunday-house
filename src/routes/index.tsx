@@ -49,9 +49,8 @@ function Home() {
     <ContentShell inquiry overlayNav>
       {/* 1 · Landing — full-screen placement for the film (photo for now) */}
       <HeroFilm
-        video="/assets/motion/welcome.mp4"
-        sound
-        image="/assets/motion/welcome.jpg"
+        video="/assets/motion/welcome-loop.mp4"
+        image="/assets/gallery/sunset-couple.png"
         alt="Newlyweds holding each other on a hill as the evening sun pours over them"
         position="center 27%"
       >
@@ -82,8 +81,8 @@ function Home() {
               photographing weddings across Seattle and the Pacific Northwest.
               Our edit is cinematic and film-like — and always shaped around you.
             </p>
-            <Link to="/about" className="sh-link mt-6">
-              About us →
+            <Link to="/about" hash="welcome" className="sh-link mt-6">
+              More about us + our welcome film →
             </Link>
           </div>
         </div>

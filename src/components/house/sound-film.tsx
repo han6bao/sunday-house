@@ -19,6 +19,7 @@ export function SoundFilm({
 }) {
   const ref = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
+  const [failed, setFailed] = useState(false);
   const toggle = () => {
     const v = ref.current;
     if (!v) return;
@@ -31,7 +32,8 @@ export function SoundFilm({
   };
   return (
     <figure className={`sh-soundfilm ${className}`}>
-      <video ref={ref} src={src} poster={poster} autoPlay muted loop playsInline preload="metadata" aria-label={label} />
+      <img src={poster} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+      <video ref={ref} src={src} hidden={failed} onError={() => setFailed(true)} autoPlay muted loop playsInline preload="metadata" aria-label={label} />
       <button
         type="button"
         className="sh-hero__sound"
