@@ -82,9 +82,6 @@ function Home() {
               photographing weddings across Seattle and the Pacific Northwest.
               Our edit is cinematic and film-like — and always shaped around you.
             </p>
-            <Link to="/about" hash="welcome" className="sh-link mt-6">
-              More about us + our welcome film →
-            </Link>
           </div>
           <div className="sh-collage">
             <figure className="sh-collage__arch sh-drift" style={{ ["--drift" as string]: "-36px" }}>
@@ -93,6 +90,9 @@ function Home() {
             <figure className="sh-collage__polaroid sh-drift" style={{ ["--drift" as string]: "40px" }}>
               <img src="/assets/stills/couple-sunset.jpg" alt="Newlyweds walking toward the sunset after their ceremony" loading="lazy" decoding="async" />
             </figure>
+            <Link to="/about" hash="welcome" className="sh-collage__more">
+              More about us + our welcome film →
+            </Link>
             <span className="sh-scriptword sh-collage__word" aria-hidden="true">
               hello
             </span>

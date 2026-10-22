@@ -3617,3 +3617,18 @@ main h2.sh-h3:not(#home-film):not(#house-inquiry-title) {
 }
 main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !important; color: inherit !important; }
 .sh-night main h2:not(#home-film), .sh-night h2:not(#home-film), .sh-steps3 h2 { color: var(--color-ivory); }
+
+/* "More about us" as a small box on the lower right of the couple photo */
+.sh-collage__more {
+  position: absolute; z-index: 5; right: 0; bottom: 14%;
+  padding: 0.85rem 1.1rem; background: var(--color-ink); color: #fdf1f4;
+  font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+.sh-collage__more:hover { background: var(--color-rose-deep); }
+@media (max-width: 1023px) {
+  .sh-collage__more { right: 0.75rem; bottom: 0.75rem; font-size: 0.6rem; letter-spacing: 0.18em; padding: 0.75rem 0.9rem; }
+}
+@media (min-width: 1024px) {
+  .sh-collage__more { right: 1rem; bottom: calc(14% + 1rem); max-width: 14.5rem; line-height: 1.7; }
+}
