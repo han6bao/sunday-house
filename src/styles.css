@@ -3632,3 +3632,5 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 @media (min-width: 1024px) {
   .sh-collage__more { right: 1rem; bottom: calc(14% + 1rem); max-width: 14.5rem; line-height: 1.7; }
 }
+/* Section titles on dark backgrounds stay light */
+.sh-steps3 h2.sh-steps3__title, .sh-night h2, .sh-film-band h2 { color: var(--color-ivory) !important; }
