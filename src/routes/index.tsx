@@ -52,8 +52,8 @@ function Home() {
     <ContentShell inquiry overlayNav>
       {/* 1 · Landing — full-screen placement for the film (photo for now) */}
       <HeroFilm
-        video="/assets/motion/welcome-loop.mp4"
-        image="/assets/gallery/sunset-couple.png"
+        video="/assets/motion/hero.mp4"
+        image="/assets/motion/hero.jpg"
         alt="Newlyweds holding each other on a hill as the evening sun pours over them"
         position="center 27%"
       >
@@ -168,12 +168,14 @@ function Home() {
               The voices, the laughter, the last dance — filmed alongside your
               photographs.
             </p>
-            <Link to="/video" className="sh-link mt-6">
-              Watch the films →
-            </Link>
           </div>
           <div className="min-w-0 lg:col-span-8">
-            <FilmRail />
+            <div className="relative">
+              <FilmRail />
+              <Link to="/video" className="sh-collage__more sh-rail__more sh-film__more">
+                Watch the films →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -283,11 +285,9 @@ function Home() {
                 Engagements, couples, graduates and the people you love —
                 photographed with the same light and the same care.
               </p>
-              <Link to="/photography" className="sh-link mt-6">
-                Portrait sessions →
-              </Link>
             </div>
             <div className="min-w-0 lg:col-span-7">
+              <div className="relative">
               <PhotoRail
                 label="Portrait sessions"
                 ratio="4/5"
@@ -298,6 +298,10 @@ function Home() {
                   { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water", position: "60% center" },
                 ]}
               />
+                <Link to="/photography" className="sh-collage__more sh-rail__more">
+                  Portrait sessions →
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -3526,7 +3526,7 @@ section[aria-labelledby="home-real"] .sh-boxed {
   background: transparent !important;
   border-style: solid !important;
   border-width: clamp(22px, 3vw, 34px) !important;
-  border-image: url("/assets/brand/paper-card.webp") 90 fill / clamp(22px, 3vw, 34px) stretch !important;
+  border-image: url("/assets/brand/paper-card-yellow.webp") 90 fill / clamp(22px, 3vw, 34px) stretch !important;
   box-shadow: 0 24px 50px -30px rgb(44 38 37 / 0.35) !important;
   outline: none !important;
 }
@@ -3578,7 +3578,7 @@ section[aria-labelledby="home-real"] .sh-boxed { box-shadow: 0 18px 40px -32px r
   background: transparent !important;
   border-style: solid !important;
   border-width: clamp(18px, 2.6vw, 32px) !important;
-  border-image: url("/assets/brand/paper-card.webp") 90 fill / clamp(18px, 2.6vw, 32px) stretch !important;
+  border-image: url("/assets/brand/paper-card-yellow.webp") 90 fill / clamp(18px, 2.6vw, 32px) stretch !important;
   box-shadow: 0 22px 44px -30px rgb(44 38 37 / 0.3) !important;
 }
 
@@ -3655,3 +3655,40 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .sh-script { font-size: clamp(1.2rem, 1.9vw, 1.6rem) !important; letter-spacing: 0 !important; }
 .sh-scriptword { font-size: clamp(3.5rem, 8.5vw, 7rem) !important; letter-spacing: -0.01em; }
 .sh-steps3__n { font-size: clamp(2.5rem, 3.6vw, 3.4rem) !important; }
+
+/* Header, quieter and more high-end: no boxes, finer marks, more air */
+.hz-nav .sh-logo { width: 1.65rem !important; height: 1.65rem !important; stroke-width: 26; }
+.hz-nav .sh-nav-inquire, .hz-nav .sh-menu summary { border-color: transparent !important; background: transparent !important; }
+.hz-nav .sh-nav-inquire { padding-inline: 0 !important; gap: 0.5rem; font-size: 0.68rem !important; letter-spacing: 0.26em !important; }
+.hz-nav .sh-nav-inquire svg { width: 0.7rem; height: 0.7rem; }
+.hz-nav .sh-nav-inquire:hover { background: transparent !important; opacity: 0.7; }
+.hz-nav .sh-menu { margin-left: 1rem; }
+.hz-nav .sh-menu__bars { width: 22px; }
+.hz-nav .sh-menu__bars::before { width: 22px; top: -4px; }
+.hz-nav .sh-menu__bars::after { width: 22px; top: 4px; display: none; }
+.hz-nav .sh-menu__bars { transform: translateY(2px); }
+.hz-nav .sh-menu[open] .sh-menu__bars::after { display: block; top: 5px; }
+.hz-nav .sh-menu[open] .sh-menu__bars::before { top: -5px; }
+.hz-nav .nav-link { font-size: 0.66rem; letter-spacing: 0.26em; }
+@media (min-width: 1024px) { .hz-nav > div { height: 4.5rem; } }
+
+/* "Portrait sessions" box on the lower right of the first portrait */
+.sh-rail__more { right: auto !important; left: calc(78% - 0.75rem); transform: translateX(-100%); bottom: calc(1.9rem + 2.8rem) !important; max-width: none !important; white-space: nowrap; }
+@media (min-width: 640px) { .sh-rail__more { left: calc(46% - 0.75rem); } }
+@media (min-width: 1024px) { .sh-rail__more { left: calc((100% - 1.8rem) / 2.4 - 0.75rem); bottom: calc(1.9rem + 1rem) !important; } }
+
+/* Header progress line stays a thin line */
+.hz-nav .scroll-progress { position: absolute !important; top: 0; left: 0; right: 0; height: 2px !important; bottom: auto !important; }
+/* "Watch the films" box on the lower right of the first clip */
+.sh-film__more { left: calc(100% - 0.75rem); background: #fdf1f4 !important; color: var(--color-ink) !important; }
+.sh-film__more:hover { background: #e6c1cd !important; }
+@media (min-width: 1024px) { .sh-film__more { left: calc(86% - 0.75rem); } }
+@media (max-width: 1023px) { .sh-film__more { bottom: calc(1.9rem + 2.8rem) !important; } }
+/* Steps on phones: clearer photo, short clean fade only at its very bottom */
+@media (max-width: 1023px) {
+  .sh-steps3__stage { grid-template-rows: 44svh 1fr; }
+  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 38 37 / 0) 72%, rgb(44 38 37 / 0.6) 90%, rgb(44 38 37) 100%) !important; }
+  .sh-steps3__media img { filter: brightness(1.06) contrast(1.04) saturate(1.05); }
+  .sh-steps3__panel { padding-top: 1.25rem; }
+  .sh-steps3 .eyebrow { display: none; }
+}
