@@ -3490,3 +3490,7 @@ img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9
   .sh-scriptart--forever { width: 64%; left: 6%; }
   .sh-scriptart--documented { width: 88%; right: 3%; }
 }
+
+/* Swipe hints fade out once the row has been swiped */
+.sh-swipe__hint, .sh-filmrail__hint, .sh-photorail__hint { transition: opacity 0.5s ease; }
+.is-swiped .sh-swipe__hint, .is-swiped .sh-filmrail__hint, .is-swiped .sh-photorail__hint { opacity: 0; }

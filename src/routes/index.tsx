@@ -8,6 +8,7 @@ import { WeddingSteps } from "@/components/house/wedding-steps";
 import { Wordmark } from "@/components/house/wordmark";
 import { Photo } from "@/components/house/photo";
 import { PhotoRail } from "@/components/house/photo-rail";
+import { SwipeHints } from "@/components/house/swipe-hints";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
@@ -303,6 +304,7 @@ function Home() {
       {/* 7 · How it works — told as you scroll */}
       <WeddingSteps />
 
+      <SwipeHints />
       <Faq title="Before you book" items={FAQ} />
     </ContentShell>
   );
