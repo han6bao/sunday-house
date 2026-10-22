@@ -3255,7 +3255,7 @@ a:hover .sh-photo img,
     .sh-drift { animation: sh-drift linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
     @keyframes sh-drift { from { translate: 0 calc(var(--drift, 30px) * -1); } to { translate: 0 var(--drift, 30px); } }
     .sh-scriptword { animation: sh-write linear both; animation-timeline: view(); animation-range: entry 10% cover 40%; }
-    @keyframes sh-write { from { clip-path: inset(-60% 100% -60% -30%); opacity: 0.2; } to { clip-path: inset(-60% -30% -60% -30%); opacity: 1; } }
+    @keyframes sh-write { from { opacity: 0; translate: 0 14px; } to { opacity: 1; translate: 0 0; } }
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3283,10 +3283,10 @@ a:hover .sh-photo img,
 .sh-scriptart { position: absolute; z-index: 4; pointer-events: none; display: block; }
 .sh-scriptart img { display: block; width: 100%; height: auto; filter: drop-shadow(0 1px 3px rgb(44 38 37 / 0.12)); }
 .sh-scriptart--forever { left: 1%; top: 28%; width: min(44%, 40rem); }
-.sh-scriptart--documented { right: 0; top: 42%; width: min(46.5%, 42.2rem); }
+.sh-scriptart--documented { right: 4.5%; top: 40%; width: min(46.5%, 42.2rem); }
 @media (max-width: 899px) {
   .sh-scriptart--forever { left: 0; top: 14%; width: 66%; }
-  .sh-scriptart--documented { left: 0; right: 0; top: 40%; width: 100%; }
+  .sh-scriptart--documented { left: 0; right: 0; top: 27%; width: 100%; }
 }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
@@ -3384,3 +3384,12 @@ a:hover .sh-photo img,
   .sh-steps3__media img, .sh-steps3__step { transition: none; transform: none; }
 }
 .sh-steps3__media img[src*="ring"] { filter: grayscale(1) sepia(0.42) saturate(0.75) contrast(1.04) brightness(1.02); }
+
+/* Phones: intro collage as one calm picture — arch photo, smaller photo tucked
+   at its lower left, "hello" whole and sitting above the arch */
+@media (max-width: 1023px) {
+  .sh-collage { min-height: 0; height: 128vw; max-height: 34rem; margin-top: 1rem; }
+  .sh-collage__arch { width: 74%; height: 88%; right: 0; top: 12%; }
+  .sh-collage__polaroid { width: 42%; bottom: 0; left: 0; }
+  .sh-collage__word { left: 0; top: 0; font-size: clamp(3.75rem, 19vw, 5.5rem); }
+}
