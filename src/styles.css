@@ -3813,15 +3813,15 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 
 /* Invite box: two buttons with a thin line between */
 .sh-invite__actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem clamp(1.25rem, 3vw, 2rem); }
-.sh-invite__rule { display: block; width: 1px; height: 2.6rem; background: rgb(44 39 38 / 0.28); }
-@media (max-width: 639px) { .sh-invite__actions { flex-direction: column; align-items: stretch; } .sh-invite__actions .sh-btn-fill { text-align: center; } .sh-invite__rule { width: 40%; height: 1px; align-self: center; } }
+.sh-btn-rule { display: block; width: 1px; height: 2.6rem; background: rgb(44 39 38 / 0.28); }
+@media (max-width: 639px) { .sh-invite__actions { flex-direction: column; align-items: stretch; } .sh-invite__actions .sh-btn-fill { text-align: center; } .sh-btn-rule { width: 40%; height: 1px; align-self: center; } }
 /* Invite buttons: always one row (button · line · button), stacking only on phones */
 .sh-invite__actions { display: grid !important; grid-template-columns: auto 1px auto; justify-content: center; align-items: center; column-gap: clamp(1rem, 2.5vw, 1.75rem); row-gap: 1rem; flex-wrap: nowrap; }
 .sh-invite__actions .sh-btn-fill { white-space: nowrap; width: auto; min-width: 0; margin: 0 !important; padding-inline: clamp(1.1rem, 2.2vw, 2rem); text-align: center; }
-.sh-invite__rule { width: 1px !important; height: 2.6rem !important; align-self: center; }
+.sh-btn-rule { width: 1px !important; height: 2.6rem !important; align-self: center; }
 @media (max-width: 699px) {
   .sh-invite__actions { grid-template-columns: 1fr; justify-items: stretch; }
-  .sh-invite__rule { width: 40% !important; height: 1px !important; justify-self: center; }
+  .sh-btn-rule { width: 40% !important; height: 1px !important; justify-self: center; }
 }
 
 /* Footer: photo strip, centred logo, one button, drop-downs underneath */
@@ -3862,3 +3862,19 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .hz-banner { background-color: #2c2726 !important; }
 .sh-film { background-color: #2c2726 !important; }
 .wine-band, .bg-ink, .bg-oxblood { background-color: #2c2726 !important; }
+
+/* Wherever a dark button is followed by a second link: make it a matching button, with a thin line between */
+:has(> .sh-btn-fill + .sh-invite__alt) { column-gap: 2.75rem !important; }
+.sh-btn-fill + .sh-invite__alt {
+  position: relative; display: inline-flex; align-items: center; padding: 1rem 2.1rem; border: 0;
+  background: var(--color-ink); color: var(--color-ivory); font-family: var(--font-mono); font-style: normal;
+  font-size: 0.78rem; font-weight: 400; letter-spacing: 0.24em; text-transform: uppercase; line-height: 1.4;
+  transition: background 0.4s ease, letter-spacing 0.4s ease;
+}
+.sh-btn-fill + .sh-invite__alt:hover { background: var(--color-rose-deep); color: var(--color-ivory); letter-spacing: 0.28em; }
+.sh-btn-fill + .sh-invite__alt::before {
+  content: ""; position: absolute; left: -1.375rem; top: 50%; width: 1px; height: 2.6rem; transform: translateY(-50%);
+  background: rgb(44 39 38 / 0.28); pointer-events: none;
+}
+@media (max-width: 639px) { .sh-btn-fill + .sh-invite__alt::before { display: none; } }
+.sh-btn-fill + .sh-invite__alt { gap: 0.6rem; }

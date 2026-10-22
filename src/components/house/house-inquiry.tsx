@@ -33,7 +33,7 @@ export function HouseInquiry() {
             <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-btn-fill">
               Check your date
             </Link>
-            <span className="sh-invite__rule" aria-hidden="true" />
+            <span className="sh-btn-rule" aria-hidden="true" />
             <Link to="/photography" className="sh-btn-fill">
               Book a portrait session
             </Link>
