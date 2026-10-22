@@ -86,10 +86,14 @@ function Home() {
           </div>
           <div className="sh-collage">
             <figure className="sh-collage__arch sh-drift" style={{ ["--drift" as string]: "-36px" }}>
-              <img src="/assets/stills/couple-field.jpg" alt="Bride and groom walking hand in hand across a green lawn, seen from above" loading="lazy" decoding="async" />
+              {/* Computers: the kiss under the floral arch, in the house brown tone. Phones keep the lawn photo. */}
+              <picture>
+                <source media="(min-width: 1024px)" srcSet="/assets/stills/couple-kiss.jpg" />
+                <img src="/assets/stills/couple-field.jpg" alt="Bride and groom sharing a kiss beneath a floral arch" className="sh-collage__arch-img" loading="lazy" decoding="async" />
+              </picture>
             </figure>
             <figure className="sh-collage__polaroid sh-drift" style={{ ["--drift" as string]: "40px" }}>
-              <img src="/assets/stills/couple-sunset.jpg" alt="Newlyweds walking toward the sunset after their ceremony" loading="lazy" decoding="async" />
+              <img src="/assets/stills/couple-field.jpg" alt="Bride and groom walking hand in hand across a green lawn, seen from above" loading="lazy" decoding="async" />
             </figure>
             <Link to="/about" hash="welcome" className="sh-collage__more">
               More about us + our welcome film →

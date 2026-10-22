@@ -3851,3 +3851,10 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .sh-filmtag { position: static !important; display: inline-block; white-space: nowrap; max-width: none !important; background: #fdf1f4 !important; color: #2c2726 !important; }
 .sh-filmtag:hover { background: #e6c1cd !important; }
 @media (min-width: 1024px) { .sh-filmrail__tag { bottom: 2rem; transform: translateX(-50%); } }
+
+/* Intro on computers: kiss photo on the arch in the brown tone; the lawn photo in the square */
+.sh-collage__arch picture { display: contents; }
+@media (min-width: 1024px) {
+  .sh-collage__arch-img { object-position: 50% center !important; filter: grayscale(1) sepia(0.42) saturate(0.75) contrast(1.04) brightness(1.02); }
+  .sh-collage__polaroid img { object-position: 62% 85% !important; }
+}
