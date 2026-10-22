@@ -3230,7 +3230,11 @@ a:hover .sh-photo img,
 
 /* Weddings: a script word laid across the first photographs */
 .sh-weddings__word { left: 3%; top: 38%; }
-@media (max-width: 899px) { .sh-weddings__word { top: 22%; font-size: clamp(3.5rem, 16vw, 5rem); } }
+.sh-weddings__word--right { left: auto; right: 3%; top: 60%; font-size: clamp(3.5rem, 8.5vw, 7.75rem); }
+@media (max-width: 899px) {
+  .sh-weddings__word { top: 22%; font-size: clamp(3.25rem, 14vw, 5rem); }
+  .sh-weddings__word--right { top: 46%; font-size: clamp(2.9rem, 12vw, 4.25rem); }
+}
 
 /* Portraits: staggered arch frames */
 .sh-arches { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(0.6rem, 1.6vw, 1.25rem); align-items: end; padding-top: 3.5rem; }

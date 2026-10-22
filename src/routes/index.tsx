@@ -111,6 +111,9 @@ function Home() {
         <span className="sh-scriptword sh-scriptword--light sh-weddings__word" aria-hidden="true">
           forever
         </span>
+        <span className="sh-scriptword sh-scriptword--light sh-weddings__word sh-weddings__word--right" aria-hidden="true">
+          documented
+        </span>
         <div className="sh-mosaic">
           <Photo
             src="/assets/gallery/bride-portrait.png" motion="/assets/motion/bride" motionPosition="38% center" need="Wedding 1 of 5: a bride"
