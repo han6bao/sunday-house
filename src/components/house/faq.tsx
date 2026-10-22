@@ -51,14 +51,20 @@ export function Faq({
               </details>
             ))}
           </div>
-          <div className="sh-faq__cta">
-            <p className="sh-faq__cta-q">Still have a question?</p>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+          <div className="sh-faq__cta sh-faq__cta--split">
+            <div className="sh-faq__cta-half">
+              <p className="sh-faq__cta-q">Still have a question?</p>
+              <p className="sh-faq__cta-sub">Tell us your date and we’ll let you know if it’s open.</p>
               <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-btn-fill">
                 Check your date
               </Link>
-              <Link to="/locations" className="sh-invite__alt">
-                Help me find a location →
+            </div>
+            <span className="sh-faq__cta-rule" aria-hidden="true" />
+            <div className="sh-faq__cta-half">
+              <p className="sh-faq__cta-q">Not sure where yet?</p>
+              <p className="sh-faq__cta-sub">We’ll help you pick a place with the right light for your day.</p>
+              <Link to="/locations" className="sh-btn-fill">
+                Help me find a location
               </Link>
             </div>
           </div>
