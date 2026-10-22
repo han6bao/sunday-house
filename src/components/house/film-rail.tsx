@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, type ReactNode } from "react";
 
 import { useDragScroll } from "./use-drag-scroll";
 
@@ -16,11 +16,12 @@ const CLIPS = [
 ];
 
 /** Wedding film clips you swipe through (drag with a mouse). */
-export function FilmRail() {
+export function FilmRail({ tag }: { tag?: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
   useDragScroll(ref);
   return (
     <div className="sh-filmrail">
+      <div className="sh-filmrail__stage">
       <div ref={ref} className="sh-filmrail__track" aria-label="Wedding film clips — swipe for more">
         {CLIPS.map((c) => (
           <figure key={c.n} className="sh-filmrail__item">
@@ -33,6 +34,8 @@ export function FilmRail() {
             />
           </figure>
         ))}
+      </div>
+      {tag ? <div className="sh-filmrail__tag">{tag}</div> : null}
       </div>
       <div className="sh-filmrail__nav">
         <span className="sh-filmrail__hint">Swipe to see more</span>

@@ -171,10 +171,13 @@ function Home() {
             </p>
           </div>
           <div className="min-w-0 lg:col-span-8">
-            <FilmRail />
-            <Link to="/video" className="sh-film__about">
-              More about our films →
-            </Link>
+            <FilmRail
+              tag={
+                <Link to="/video" className="sh-collage__more sh-filmtag">
+                  More about our films →
+                </Link>
+              }
+            />
           </div>
         </div>
       </section>

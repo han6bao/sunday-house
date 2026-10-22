@@ -3836,3 +3836,18 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .hz-footer .hz-footer__cta:hover { background: #e6c1cd; color: #2c2726; }
 .hz-footer__drops { margin-top: clamp(2.5rem, 4vw, 3.25rem); justify-content: center !important; gap: clamp(2.5rem, 6vw, 5rem) !important; text-align: left; }
 .hz-footer__row { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.4rem; margin-top: 2rem; }
+/* Steps on computers: clean top edge (no pink haze); a short, soft photo-to-brown edge. Phones stay as they were. */
+@media (min-width: 1024px) {
+  .sh-steps3::before { display: none !important; }
+  .sh-steps3__media::after { background: linear-gradient(90deg, rgb(44 39 38 / 0) 78%, rgb(44 39 38 / 0.35) 90%, #2c2726 100%) !important; }
+}
+
+/* Films button: under the words on computers; under the clip on phones */
+@media (min-width: 1024px) { .sh-film__about { margin-top: 2rem; } }
+
+/* Films: a tag pinned on the side of the clip, staying put while the clips slide */
+.sh-filmrail__stage { position: relative; }
+.sh-filmrail__tag { position: absolute; z-index: 4; left: 0; bottom: 1.25rem; transform: translateX(-1rem); }
+.sh-filmtag { position: static !important; display: inline-block; white-space: nowrap; max-width: none !important; background: #fdf1f4 !important; color: #2c2726 !important; }
+.sh-filmtag:hover { background: #e6c1cd !important; }
+@media (min-width: 1024px) { .sh-filmrail__tag { bottom: 2rem; transform: translateX(-50%); } }
