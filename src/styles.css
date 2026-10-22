@@ -3281,7 +3281,7 @@ a:hover .sh-photo img,
 
 /* Hand-lettered script art laid over the wedding photos */
 .sh-scriptart { position: absolute; z-index: 4; pointer-events: none; display: block; }
-.sh-scriptart img { display: block; width: 100%; height: auto; filter: drop-shadow(0 2px 14px rgb(44 38 37 / 0.35)); }
+.sh-scriptart img { display: block; width: 100%; height: auto; filter: drop-shadow(0 1px 3px rgb(44 38 37 / 0.12)); }
 .sh-scriptart--forever { left: 2%; top: 30%; width: min(40%, 34rem); }
 .sh-scriptart--documented { right: 1%; top: 44%; width: min(46%, 38rem); }
 @media (max-width: 899px) {
