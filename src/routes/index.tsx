@@ -118,14 +118,14 @@ function Home() {
         </picture>
         <div className="sh-mosaic">
           <Photo
-            src="/assets/gallery/bride-portrait.png" motion="/assets/motion/bride" motionPosition="38% center" need="Wedding 1 of 5: a bride"
-            alt="Bridal portrait of a bride in a lace gown looking toward the light"
+            src="/assets/gallery/sunset-couple.png" className="sh-rosetone" motion="/assets/motion/couple-hill" motionPosition="40% center" need="Wedding 1 of 5: a couple portrait"
+            alt="Newlyweds embracing on a hill at sunset, in black and white"
             ratio="2/3"
             sizes="(max-width: 900px) 50vw, 42vw"
           />
           <Photo
-            src="/assets/gallery/sunset-couple.png" motion="/assets/motion/couple-hill" motionPosition="45% center" need="Wedding 2 of 5: a couple portrait"
-            alt="Newlyweds embracing on a hill at sunset in Washington"
+            src="/assets/gallery/bride-portrait.png" motion="/assets/motion/bride" motionPosition="38% center" need="Wedding 2 of 5: a bride"
+            alt="Bridal portrait of a bride in a lace gown looking toward the light"
             ratio="4/5"
             sizes="(max-width: 900px) 50vw, 33vw"
           />

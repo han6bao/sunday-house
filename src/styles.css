@@ -2696,6 +2696,7 @@ a:hover .sh-photo img,
   overflow: visible;
   filter: drop-shadow(0 2px 16px rgb(20 16 15 / 0.22));
 }
+.sh-wordmark img { display: block; width: 100%; height: auto; }
 
 /* Hero spacing: keep clear air between the button and the scroll arrow */
 .sh-hero__content { padding-block: 6.5rem 9.5rem; }
