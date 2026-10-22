@@ -2895,14 +2895,14 @@ a:hover .sh-photo img,
   padding: 1rem 2.1rem;
   background: var(--color-ink);
   color: var(--color-ivory);
-  font-family: var(--font-serif);
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   transition: background 0.4s ease, letter-spacing 0.4s ease;
 }
-.sh-btn-fill:hover { background: var(--color-rose-deep); letter-spacing: 0.26em; }
+.sh-btn-fill:hover { background: var(--color-rose-deep); letter-spacing: 0.28em; }
 .sh-invite__alt {
   font-family: var(--font-display);
   font-style: italic;
@@ -3017,7 +3017,7 @@ a:hover .sh-photo img,
 /* Concierge actions */
 .sh-concierge__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.6rem; margin-top: 2.5rem; }
 .sh-concierge__actions .sh-invite__alt { background: none; cursor: pointer; }
-.sh-btn-fill:disabled { opacity: 0.35; cursor: not-allowed; letter-spacing: 0.22em; background: var(--color-ink); }
+.sh-btn-fill:disabled { opacity: 0.35; cursor: not-allowed; letter-spacing: 0.24em; background: var(--color-ink); }
 .sh-concierge__note { margin-top: 1rem; font-family: var(--font-display); font-style: italic; font-size: 1.05rem; color: var(--color-rose-deep); }
 
 .sh-concierge .sh-field-label {
