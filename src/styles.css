@@ -29,7 +29,7 @@
   --color-gold: #a67a89;
   --color-antique: #5e4450;
   --color-brown: #3a322f;
-  --color-ink: #2c2625;
+  --color-ink: #2c2726;
   --color-rose: #e6c1cd;
   --color-rose-deep: #8a5f6e;
   --color-dusty-rose: #a67a89;
@@ -1552,7 +1552,7 @@ body {
   --hz-stone-deep: #e6c1cd;   /* hairlines on dark */
   --hz-line: #efd0da;
   --hz-taupe: #8a5f6e;
-  --hz-cocoa: #2c2625;        /* ink */
+  --hz-cocoa: #2c2726;        /* ink */
   --hz-cocoa-2: #3a322f;
   --hz-night: #2d2625;        /* footer bar */
   --font-hand: "Pinyon Script", cursive;
@@ -1592,7 +1592,7 @@ body,
 }
 
 ::selection {
-  background: rgb(44 38 37 / 0.16);
+  background: rgb(44 39 38 / 0.16);
   color: var(--hz-cocoa);
 }
 
@@ -1701,27 +1701,27 @@ h2 {
   border-color: var(--hz-stone-light);
 }
 .image-slot {
-  border-color: rgb(44 38 37 / 0.14);
+  border-color: rgb(44 39 38 / 0.14);
   background-color: var(--hz-line);
 }
 .image-slot::before {
   border-color: rgb(253 241 244 / 0.55);
 }
 .life-card {
-  border-color: rgb(44 38 37 / 0.12);
+  border-color: rgb(44 39 38 / 0.12);
 }
 .life-card__label {
   background: rgb(253 241 244 / 0.92);
 }
 .social-card {
-  border-color: rgb(44 38 37 / 0.12);
+  border-color: rgb(44 39 38 / 0.12);
   background: var(--hz-stone-light);
 }
 .social-card--ink {
   background: var(--hz-night);
 }
 .rule-gold {
-  background: rgb(44 38 37 / 0.35);
+  background: rgb(44 39 38 / 0.35);
 }
 
 /* Photographs sit quietly in the stone: a touch warmer, a touch softer. */
@@ -1813,7 +1813,7 @@ textarea,
 select {
   border-radius: 0;
   border-width: 0 0 1px 0 !important;
-  border-color: rgb(44 38 37 / 0.85) !important;
+  border-color: rgb(44 39 38 / 0.85) !important;
   background-color: transparent !important;
   color: var(--hz-cocoa);
   font-family: var(--font-serif);
@@ -1854,7 +1854,7 @@ label > .eyebrow:first-child::before {
 
 /* ---------- Details / accordions ---------- */
 .house-group {
-  border-color: rgb(44 38 37 / 0.14);
+  border-color: rgb(44 39 38 / 0.14);
   background-color: transparent;
 }
 .house-group[open] {
@@ -1863,7 +1863,7 @@ label > .eyebrow:first-child::before {
 
 /* ---------- Scroll progress ---------- */
 .scroll-progress {
-  background: rgb(44 38 37 / 0.08);
+  background: rgb(44 39 38 / 0.08);
 }
 .scroll-progress__bar {
   background: var(--hz-cocoa);
@@ -1873,7 +1873,7 @@ label > .eyebrow:first-child::before {
 .hz-nav {
   background: rgb(247 227 233 / 0.9);
   background-image: var(--hz-paper);
-  border-bottom: 1px solid rgb(44 38 37 / 0.12);
+  border-bottom: 1px solid rgb(44 39 38 / 0.12);
   backdrop-filter: blur(6px);
 }
 .nav-link {
@@ -1952,7 +1952,7 @@ label > .eyebrow:first-child::before {
 /* Segmented tab rails (journal rooms, stationery suite) — squared like the chips. */
 .rounded-full[class*="p-1.5"][class*="grid-cols-2"] {
   border-radius: 0 !important;
-  border-color: rgb(44 38 37 / 0.35);
+  border-color: rgb(44 39 38 / 0.35);
 }
 
 /* Nav lockup in cocoa ink to match the monochrome register. */
@@ -2185,7 +2185,7 @@ a:hover .sh-photo img,
 /* ---------- Marquee of places ---------- */
 .sh-marquee {
   overflow: hidden;
-  border-block: 1px solid rgb(44 38 37 / 0.14);
+  border-block: 1px solid rgb(44 39 38 / 0.14);
   padding-block: 1.1rem;
   white-space: nowrap;
 }
@@ -2278,7 +2278,7 @@ a:hover .sh-photo img,
 @media (min-width: 900px) {
   .sh-steps { grid-template-columns: repeat(3, 1fr); gap: 3rem; }
 }
-.sh-step { border-top: 1px solid rgb(44 38 37 / 0.25); padding-top: 1.4rem; }
+.sh-step { border-top: 1px solid rgb(44 39 38 / 0.25); padding-top: 1.4rem; }
 
 /* ---------- Quote / pull statement ---------- */
 .sh-statement {
@@ -2300,8 +2300,8 @@ a:hover .sh-photo img,
 }
 
 /* ---------- FAQ accordion ---------- */
-.sh-faq { border-top: 1px solid rgb(44 38 37 / 0.2); }
-.sh-faq__item { border-bottom: 1px solid rgb(44 38 37 / 0.2); }
+.sh-faq { border-top: 1px solid rgb(44 39 38 / 0.2); }
+.sh-faq__item { border-bottom: 1px solid rgb(44 39 38 / 0.2); }
 .sh-faq__q {
   list-style: none;
   cursor: pointer;
@@ -2354,7 +2354,7 @@ a:hover .sh-photo img,
   place-items: center;
   width: 2.6rem;
   height: 2.6rem;
-  border: 1px solid rgb(44 38 37 / 0.35);
+  border: 1px solid rgb(44 39 38 / 0.35);
 }
 .sh-menu > summary::-webkit-details-marker { display: none; }
 .sh-menu__bars,
@@ -2382,12 +2382,12 @@ a:hover .sh-photo img,
   display: grid;
   padding: 0.75rem 1.25rem 1rem;
   background: var(--hz-stone-light);
-  border: 1px solid rgb(44 38 37 / 0.14);
-  box-shadow: 0 24px 50px rgb(44 38 37 / 0.14);
+  border: 1px solid rgb(44 39 38 / 0.14);
+  box-shadow: 0 24px 50px rgb(44 39 38 / 0.14);
 }
 .sh-menu__link {
   padding-block: 0.8rem;
-  border-bottom: 1px solid rgb(44 38 37 / 0.1);
+  border-bottom: 1px solid rgb(44 39 38 / 0.1);
   font-family: var(--font-display);
   font-size: 1.6rem;
   color: var(--hz-cocoa);
@@ -2481,7 +2481,7 @@ a:hover .sh-photo img,
 .hz-nav--overlay[data-solid="false"] .scroll-progress { opacity: 0; }
 .hz-nav--overlay[data-solid="true"] {
   background: rgb(247 227 233 / 0.94);
-  border-bottom-color: rgb(44 38 37 / 0.12);
+  border-bottom-color: rgb(44 39 38 / 0.12);
   backdrop-filter: blur(6px);
 }
 
@@ -2648,7 +2648,7 @@ a:hover .sh-photo img,
 }
 .sh-hero__btn:hover,
 .hz-btn:hover,
-.hz-btn--solid:hover { opacity: 1; background: rgb(44 38 37 / 0.06) !important; }
+.hz-btn--solid:hover { opacity: 1; background: rgb(44 39 38 / 0.06) !important; }
 .sh-hero__btn:hover,
 .sh-hero .hz-btn:hover,
 .sh-night .hz-btn:hover,
@@ -3194,7 +3194,7 @@ a:hover .sh-photo img,
   padding: 0.2em 0.25em;
   margin: -0.2em -0.25em;
 }
-.sh-scriptword--light { color: #fdf1f4; text-shadow: 0 2px 24px rgb(44 38 37 / 0.35); }
+.sh-scriptword--light { color: #fdf1f4; text-shadow: 0 2px 24px rgb(44 39 38 / 0.35); }
 
 /* Intro: text beside an overlapping collage */
 .sh-intro { display: grid; gap: clamp(3rem, 7vw, 5rem); align-items: center; }
@@ -3205,12 +3205,12 @@ a:hover .sh-photo img,
 .sh-collage__arch {
   position: absolute; right: 0; top: 0; width: 66%; height: 86%;
   border-radius: 999px 999px 0 0;
-  box-shadow: 0 30px 60px -30px rgb(44 38 37 / 0.35);
+  box-shadow: 0 30px 60px -30px rgb(44 39 38 / 0.35);
 }
 .sh-collage__polaroid {
   position: absolute; left: 0; bottom: 0; width: 44%;
   outline: clamp(6px, 0.9vw, 10px) solid var(--color-rose-paper, #f7e3e9);
-  box-shadow: 0 24px 48px -24px rgb(44 38 37 / 0.35);
+  box-shadow: 0 24px 48px -24px rgb(44 39 38 / 0.35);
   transition: transform 0.6s cubic-bezier(.2,.7,.2,1);
 }
 .sh-collage__polaroid img { aspect-ratio: 4 / 5; height: auto; }
@@ -3223,7 +3223,7 @@ a:hover .sh-photo img,
 .sh-collage__word { left: 14%; top: -0.4em; }
 
 /* Stamp */
-.sh-stamp { position: relative; aspect-ratio: 1; color: var(--color-ink); background: var(--color-rose-paper, #f7e3e9); border-radius: 50%; display: grid; place-items: center; box-shadow: 0 10px 30px -12px rgb(44 38 37 / 0.35); }
+.sh-stamp { position: relative; aspect-ratio: 1; color: var(--color-ink); background: var(--color-rose-paper, #f7e3e9); border-radius: 50%; display: grid; place-items: center; box-shadow: 0 10px 30px -12px rgb(44 39 38 / 0.35); }
 .sh-stamp__ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: sh-spin 32s linear infinite; }
 .sh-stamp__ring text { font-family: var(--font-mono, monospace); font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; fill: currentColor; }
 .sh-stamp__mark { width: 34%; height: 34%; }
@@ -3239,7 +3239,7 @@ a:hover .sh-photo img,
 
 /* Portraits: staggered arch frames */
 .sh-arches { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(0.6rem, 1.6vw, 1.25rem); align-items: end; padding-top: 3.5rem; }
-.sh-arch { margin: 0; overflow: hidden; aspect-ratio: 2 / 3; border-radius: 999px 999px 0 0; background: var(--color-paper); box-shadow: 0 24px 50px -28px rgb(44 38 37 / 0.4); transition: transform 0.6s cubic-bezier(.2,.7,.2,1); }
+.sh-arch { margin: 0; overflow: hidden; aspect-ratio: 2 / 3; border-radius: 999px 999px 0 0; background: var(--color-paper); box-shadow: 0 24px 50px -28px rgb(44 39 38 / 0.4); transition: transform 0.6s cubic-bezier(.2,.7,.2,1); }
 .sh-arch--tall { aspect-ratio: 5 / 9; }
 .sh-arch img, .sh-arch video { width: 100%; height: 100%; object-fit: cover; display: block; max-width: none; }
 .sh-arch:hover { transform: translateY(-8px); }
@@ -3281,7 +3281,7 @@ a:hover .sh-photo img,
 
 /* Hand-lettered script art laid over the wedding photos */
 .sh-scriptart { position: absolute; z-index: 4; pointer-events: none; display: block; }
-.sh-scriptart img { display: block; width: 100%; height: auto; filter: drop-shadow(0 1px 3px rgb(44 38 37 / 0.12)); }
+.sh-scriptart img { display: block; width: 100%; height: auto; filter: drop-shadow(0 1px 3px rgb(44 39 38 / 0.12)); }
 .sh-scriptart--forever { left: 1%; top: 28%; width: min(44%, 40rem); }
 .sh-scriptart--documented { right: 4.5%; top: 40%; width: min(46.5%, 42.2rem); }
 @media (max-width: 899px) {
@@ -3349,7 +3349,7 @@ a:hover .sh-photo img,
   opacity: 0; transform: scale(1.06); transition: opacity 1.1s ease, transform 2.4s cubic-bezier(.2,.7,.2,1);
 }
 .sh-steps3__media img.is-on { opacity: 1; transform: scale(1); }
-.sh-steps3__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(44 38 37 / 0) 60%, rgb(44 38 37 / 0.55)); }
+.sh-steps3__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(44 39 38 / 0) 60%, rgb(44 39 38 / 0.55)); }
 .sh-steps3__panel { display: flex; flex-direction: column; justify-content: center; padding: clamp(2rem, 6vw, 5.5rem); position: relative; }
 .sh-steps3 .eyebrow { color: rgb(253 241 244 / 0.6); }
 .sh-steps3__title { font-family: var(--font-display); font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.1; margin-top: 0.8rem; }
@@ -3370,7 +3370,7 @@ a:hover .sh-photo img,
 @media (max-width: 1023px) {
   .sh-steps3 { height: 300vh; }
   .sh-steps3__stage { grid-template-rows: 38svh 1fr; }
-  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 38 37 / 0) 55%, rgb(44 38 37 / 0.9)); }
+  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 39 38 / 0) 55%, rgb(44 39 38 / 0.9)); }
   .sh-steps3__panel { justify-content: flex-start; padding: 1.5rem 1.25rem 3.5rem; }
   .sh-steps3__tabs { margin-top: 1.1rem; gap: 0.3rem 1rem; }
   .sh-steps3__tabs button { font-size: 0.6rem; letter-spacing: 0.16em; }
@@ -3432,13 +3432,13 @@ img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9
 .sh-photorail__nav { display: flex; align-items: center; justify-content: space-between; margin-top: 1rem; }
 .sh-photorail__hint { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-rose-deep); }
 .sh-photorail__btns { display: flex; gap: 0.5rem; }
-.sh-photorail__btns button { width: 2.4rem; height: 2.4rem; border: 1px solid rgb(44 38 37 / 0.3); color: var(--color-ink); transition: background 0.3s, border-color 0.3s; }
-.sh-photorail__btns button:hover { background: rgb(44 38 37 / 0.06); border-color: var(--color-ink); }
+.sh-photorail__btns button { width: 2.4rem; height: 2.4rem; border: 1px solid rgb(44 39 38 / 0.3); color: var(--color-ink); transition: background 0.3s, border-color 0.3s; }
+.sh-photorail__btns button:hover { background: rgb(44 39 38 / 0.06); border-color: var(--color-ink); }
 @media (max-width: 1023px) { .sh-photorail__btns { display: none; } }
 /* Steps: the photo melts into the brown — no visible edge */
-.sh-steps3__media::after { background: linear-gradient(90deg, rgb(44 38 37 / 0) 45%, rgb(44 38 37 / 0.6) 80%, rgb(44 38 37) 100%); }
+.sh-steps3__media::after { background: linear-gradient(90deg, rgb(44 39 38 / 0) 45%, rgb(44 39 38 / 0.6) 80%, rgb(44 39 38) 100%); }
 @media (max-width: 1023px) {
-  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 38 37 / 0) 25%, rgb(44 38 37 / 0.55) 65%, rgb(44 38 37) 100%); }
+  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 39 38 / 0) 25%, rgb(44 39 38 / 0.55) 65%, rgb(44 39 38) 100%); }
 }
 /* Steps tabs: three even columns, each with its own line — no awkward wrapping */
 .sh-steps3__tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
@@ -3471,7 +3471,7 @@ img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9
   .sh-collage { height: auto; max-height: none; min-height: 0; margin-top: 0; }
   .sh-collage__arch { position: relative; inset: auto; width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: 0; box-shadow: none; }
   .sh-collage__polaroid { display: none; }
-  .sh-collage__word { left: 1rem; top: 1rem; color: #fdf1f4; font-size: clamp(4rem, 20vw, 5.5rem); text-shadow: 0 1px 12px rgb(44 38 37 / 0.25); }
+  .sh-collage__word { left: 1rem; top: 1rem; color: #fdf1f4; font-size: clamp(4rem, 20vw, 5.5rem); text-shadow: 0 1px 12px rgb(44 39 38 / 0.25); }
   .sh-collage .sh-drift { animation: none !important; translate: none !important; }
 }
 @media (max-width: 1023px) { .sh-collage__arch { aspect-ratio: 1 / 1; } .sh-collage__arch img { object-position: 58% 70%; } }
@@ -3507,7 +3507,7 @@ img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9
 
 /* Header: house cocoa brown, everything in it white */
 .hz-nav, .hz-nav--overlay[data-solid="true"] {
-  background: rgb(44 38 37 / 0.97) !important;
+  background: rgb(44 39 38 / 0.97) !important;
   background-image: none !important;
   border-bottom-color: rgb(253 241 244 / 0.08) !important;
   color: #fdf1f4;
@@ -3527,7 +3527,7 @@ section[aria-labelledby="home-real"] .sh-boxed {
   border-style: solid !important;
   border-width: clamp(22px, 3vw, 34px) !important;
   border-image: url("/assets/brand/paper-card-yellow.webp") 90 fill / clamp(22px, 3vw, 34px) stretch !important;
-  box-shadow: 0 24px 50px -30px rgb(44 38 37 / 0.35) !important;
+  box-shadow: 0 24px 50px -30px rgb(44 39 38 / 0.35) !important;
   outline: none !important;
 }
 section[aria-labelledby="home-real"] .sh-boxed::before,
@@ -3551,7 +3551,7 @@ section[aria-labelledby="home-real"] .sh-boxed::after { display: none !important
 @media (max-width: 899px) { .sh-scriptrow { display: contents; } }
 /* Home: no hard seam between the content box and Portraits — one continuous pink */
 section[aria-labelledby="home-portraits"].rose-paper { background: transparent !important; background-image: none !important; }
-section[aria-labelledby="home-real"] .sh-boxed { box-shadow: 0 18px 40px -32px rgb(44 38 37 / 0.28) !important; }
+section[aria-labelledby="home-real"] .sh-boxed { box-shadow: 0 18px 40px -32px rgb(44 39 38 / 0.28) !important; }
 
 /* No arrow buttons on the swipe rows; the hint sits quietly under the photos */
 .sh-photorail__btns, .sh-filmrail__btns { display: none !important; }
@@ -3579,7 +3579,7 @@ section[aria-labelledby="home-real"] .sh-boxed { box-shadow: 0 18px 40px -32px r
   border-style: solid !important;
   border-width: clamp(18px, 2.6vw, 32px) !important;
   border-image: url("/assets/brand/paper-card-yellow.webp") 90 fill / clamp(18px, 2.6vw, 32px) stretch !important;
-  box-shadow: 0 22px 44px -30px rgb(44 38 37 / 0.3) !important;
+  box-shadow: 0 22px 44px -30px rgb(44 39 38 / 0.3) !important;
 }
 
 /* Footer drop-downs (computers) */
@@ -3687,7 +3687,7 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 /* Steps on phones: clearer photo, short clean fade only at its very bottom */
 @media (max-width: 1023px) {
   .sh-steps3__stage { grid-template-rows: 44svh 1fr; }
-  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 38 37 / 0) 72%, rgb(44 38 37 / 0.6) 90%, rgb(44 38 37) 100%) !important; }
+  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 39 38 / 0) 72%, rgb(44 39 38 / 0.6) 90%, rgb(44 39 38) 100%) !important; }
   .sh-steps3__media img { filter: brightness(1.06) contrast(1.04) saturate(1.05); }
   .sh-steps3__panel { padding-top: 1.25rem; }
   .sh-steps3 .eyebrow { display: none; }
@@ -3703,3 +3703,34 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .sh-photorail__corner { position: absolute; right: 0.6rem; bottom: 0.6rem; z-index: 2; }
 .sh-corner__link { position: static !important; display: inline-block; white-space: nowrap; }
 .sh-photorail__track { scrollbar-width: none; }
+
+/* Corner link sits dead-centre on the seam between the first two photos */
+.sh-photorail__item.has-corner { overflow: visible; z-index: 3; }
+.sh-photorail__item.has-corner .sh-photorail__corner {
+  right: 0; bottom: 50%; transform: translate(calc(50% + 0.45rem), 50%);
+}
+.sh-photorail__track { scroll-snap-type: x proximity; }
+
+/* The house brown, everywhere */
+:root { --color-ink: #2c2726; --hz-cocoa: #2c2726; }
+/* Rail measurements are taken from the track itself */
+.sh-photorail__track, .sh-filmrail__track { position: relative; }
+
+/* Steps: the photo eases in from the pink above — no hard line */
+.sh-steps3__media::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 22%; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, #f7e3e9 0%, rgb(247 227 233 / 0.55) 40%, rgb(247 227 233 / 0) 100%); }
+
+/* "Still have a question?" as a brown box */
+.sh-faq__cta { background: #2c2726; color: #fdf1f4; padding: clamp(1.75rem, 4vw, 2.75rem); margin-top: 2.5rem; border-top: 0 !important; }
+.sh-faq__cta .sh-faq__cta-q { color: #fdf1f4; }
+.sh-faq__cta .sh-btn-fill { background: #fdf1f4; color: #2c2726; }
+.sh-faq__cta .sh-btn-fill:hover { background: #e6c1cd; color: #2c2726; }
+.sh-faq__cta .sh-invite__alt { color: #fdf1f4; border-color: rgb(253 241 244 / 0.45); }
+/* Portraits row: free scrolling (no snapping) so the centred start holds; two photos fit side by side on phones */
+.sh-photorail__track { scroll-snap-type: none !important; }
+@media (max-width: 639px) { .sh-photorail__item { flex-basis: 47%; } }
+
+/* Steps: soft pink-to-brown fade across the whole top edge */
+.sh-steps3::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: clamp(90px, 14vh, 160px); z-index: 5; pointer-events: none;
+  background: linear-gradient(180deg, #f7e3e9 0%, rgb(247 227 233 / 0) 100%); }
+.sh-steps3__media::before { display: none; }

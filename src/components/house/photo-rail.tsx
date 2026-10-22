@@ -30,20 +30,29 @@ export function PhotoRail({
     const el = ref.current;
     if (!el) return;
     const setWidth = () => el.scrollWidth / 3;
+    // Start with the first two photos side by side in the centre of the row,
+    // the seam between them (and the corner link) in the exact middle.
     const toMiddle = () => {
       el.style.scrollSnapType = "none";
-      el.scrollLeft = setWidth();
+      const kids = el.children;
+      const a = kids[items.length] as HTMLElement | undefined;
+      const b = kids[items.length + 1] as HTMLElement | undefined;
+      if (a && b) {
+        const seam = (a.offsetLeft + a.offsetWidth + b.offsetLeft) / 2;
+        el.scrollLeft = seam - el.clientWidth / 2;
+      } else el.scrollLeft = setWidth();
       requestAnimationFrame(() => (el.style.scrollSnapType = ""));
     };
     toMiddle();
+    const t0 = window.setTimeout(toMiddle, 350);
     let t: number | undefined;
     const onScroll = () => {
       window.clearTimeout(t);
       t = window.setTimeout(() => {
         const w = setWidth();
-        if (el.scrollLeft < w * 0.5 || el.scrollLeft > w * 1.5) {
+        if (el.scrollLeft < w * 0.35 || el.scrollLeft > w * 1.85) {
           el.style.scrollSnapType = "none";
-          el.scrollLeft += el.scrollLeft < w * 0.5 ? w : -w;
+          el.scrollLeft += el.scrollLeft < w * 0.35 ? w : -w;
           requestAnimationFrame(() => (el.style.scrollSnapType = ""));
         }
       }, 140);
@@ -53,8 +62,9 @@ export function PhotoRail({
     return () => {
       el.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", toMiddle);
+      window.clearTimeout(t0);
     };
-  }, []);
+  }, [items.length]);
 
   return (
     <div className="sh-photorail">
@@ -65,7 +75,7 @@ export function PhotoRail({
           return (
             <figure
               key={`${copy}-${it.src}`}
-              className="sh-photorail__item"
+              className={`sh-photorail__item${first && corner ? " has-corner" : ""}`}
               style={{ aspectRatio: ratio.replace("/", " / ") }}
               aria-hidden={copy !== 1 ? true : undefined}
             >
