@@ -3692,3 +3692,8 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
   .sh-steps3__panel { padding-top: 1.25rem; }
   .sh-steps3 .eyebrow { display: none; }
 }
+/* Portrait sessions box sits further right, tucked into the photo's corner */
+.sh-rail__more:not(.sh-film__more) { left: calc(78% - 0.4rem); }
+@media (min-width: 640px) { .sh-rail__more:not(.sh-film__more) { left: calc(46% - 0.4rem); } }
+@media (min-width: 1024px) { .sh-rail__more:not(.sh-film__more) { left: calc((100% - 1.8rem) / 2.4 - 0.4rem); bottom: calc(1.9rem + 0.4rem) !important; } }
+@media (max-width: 1023px) { .sh-rail__more:not(.sh-film__more) { bottom: calc(1.9rem + 2.8rem - 0.35rem) !important; } }

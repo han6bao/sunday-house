@@ -53,6 +53,7 @@ function Home() {
       {/* 1 · Landing — full-screen placement for the film (photo for now) */}
       <HeroFilm
         video="/assets/motion/hero.mp4"
+        sound
         image="/assets/motion/hero.jpg"
         alt="Newlyweds holding each other on a hill as the evening sun pours over them"
         position="center 27%"
