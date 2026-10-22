@@ -3261,3 +3261,19 @@ a:hover .sh-photo img,
   .sh-stamp__ring { animation: none; }
   .sh-collage__polaroid, .sh-arch { transition: none; }
 }
+
+/* Over the opening film: a lighter top bar — no boxes, thin text, a soft fade */
+.hz-nav--overlay[data-solid="false"] { background: linear-gradient(180deg, rgb(20 16 15 / 0.38) 0%, rgb(20 16 15 / 0) 100%) no-repeat border-box !important; border-bottom-color: transparent !important; }
+.hz-nav--overlay[data-solid="false"] .sh-nav-inquire,
+.hz-nav--overlay[data-solid="false"] .sh-menu summary,
+.hz-nav--overlay[data-solid="false"] .sh-menu > summary { border-color: transparent !important; background: transparent !important; }
+.hz-nav--overlay[data-solid="false"] .sh-nav-inquire { padding-inline: 0.25rem; }
+.hz-nav--overlay[data-solid="false"] .sh-nav-inquire:hover { background: transparent !important; opacity: 0.7; }
+.hz-nav--overlay[data-solid="false"] .sh-menu__bars::after { display: none; }
+.hz-nav--overlay[data-solid="false"] .sh-menu__bars::before { top: -6px; width: 22px; }
+.hz-nav--overlay[data-solid="false"] .sh-menu__bars { width: 22px; transform: translateY(3px); }
+.hz-nav--overlay[data-solid="false"] .sh-menu[open] .sh-menu__bars::after { display: block; }
+.hz-nav--overlay[data-solid="false"] .sh-menu[open] .sh-menu__bars::before { top: -5px; }
+.hz-nav--overlay[data-solid="false"] .sh-logo,
+.hz-nav--overlay[data-solid="false"] .sh-nav-inquire,
+.hz-nav--overlay[data-solid="false"] .sh-menu summary { filter: drop-shadow(0 1px 6px rgb(0 0 0 / 0.25)); }
