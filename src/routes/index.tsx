@@ -108,12 +108,14 @@ function Home() {
           </Link>
         </div>
         <div className="relative">
-        <span className="sh-scriptword sh-scriptword--light sh-weddings__word" aria-hidden="true">
-          forever
-        </span>
-        <span className="sh-scriptword sh-scriptword--light sh-weddings__word sh-weddings__word--right" aria-hidden="true">
-          documented
-        </span>
+        <picture className="sh-scriptart sh-scriptart--forever" aria-hidden="true">
+          <source srcSet="/assets/brand/script-forever.webp" type="image/webp" />
+          <img src="/assets/brand/script-forever.png" alt="" width={2400} height={836} loading="lazy" decoding="async" />
+        </picture>
+        <picture className="sh-scriptart sh-scriptart--documented" aria-hidden="true">
+          <source srcSet="/assets/brand/script-documented.webp" type="image/webp" />
+          <img src="/assets/brand/script-documented.png" alt="" width={2400} height={592} loading="lazy" decoding="async" />
+        </picture>
         <div className="sh-mosaic">
           <Photo
             src="/assets/gallery/bride-portrait.png" motion="/assets/motion/bride" motionPosition="38% center" need="Wedding 1 of 5: a bride"

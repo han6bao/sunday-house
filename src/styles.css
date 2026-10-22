@@ -3277,3 +3277,18 @@ a:hover .sh-photo img,
 .hz-nav--overlay[data-solid="false"] .sh-logo,
 .hz-nav--overlay[data-solid="false"] .sh-nav-inquire,
 .hz-nav--overlay[data-solid="false"] .sh-menu summary { filter: drop-shadow(0 1px 6px rgb(0 0 0 / 0.25)); }
+
+/* Hand-lettered script art laid over the wedding photos */
+.sh-scriptart { position: absolute; z-index: 4; pointer-events: none; display: block; }
+.sh-scriptart img { display: block; width: 100%; height: auto; filter: drop-shadow(0 2px 14px rgb(44 38 37 / 0.35)); }
+.sh-scriptart--forever { left: 2%; top: 30%; width: min(40%, 34rem); }
+.sh-scriptart--documented { right: 1%; top: 44%; width: min(46%, 38rem); }
+@media (max-width: 899px) {
+  .sh-scriptart--forever { left: 0; top: 14%; width: 66%; }
+  .sh-scriptart--documented { right: 0; top: 40%; width: 78%; }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .sh-scriptart { animation: sh-write linear both; animation-timeline: view(); animation-range: entry 10% cover 40%; }
+  }
+}
