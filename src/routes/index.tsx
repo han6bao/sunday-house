@@ -2,11 +2,12 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
-import { FilmSnippet } from "@/components/house/film-snippet";
+import { FilmRail } from "@/components/house/film-rail";
 import { HeroFilm } from "@/components/house/hero-film";
 import { WeddingSteps } from "@/components/house/wedding-steps";
 import { Wordmark } from "@/components/house/wordmark";
 import { Photo } from "@/components/house/photo";
+import { PhotoRail } from "@/components/house/photo-rail";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
@@ -168,14 +169,8 @@ function Home() {
               Watch the films →
             </Link>
           </div>
-          <div className="lg:col-span-8">
-            <FilmSnippet
-              src="/assets/films-web/film-13b.mp4"
-              poster="/assets/film-posters/film-13b.jpg"
-              unframed
-              ariaLabel="Wedding film clip: a groom watching his bride with a smile"
-              className="sh-film aspect-[16/9] lg:aspect-[21/9]"
-            />
+          <div className="min-w-0 lg:col-span-8">
+            <FilmRail />
           </div>
         </div>
       </section>
@@ -207,7 +202,7 @@ function Home() {
             <img className="sh-swipe__card" src="/assets/content-work/Dc94ykltayq.jpg" alt="The bride and groom embracing during their mehndi celebration" loading="lazy" decoding="async" />
             <img className="sh-swipe__card" src="/assets/content-work/Dc96eH_xHeK.jpg" alt="A smiling bride in jewel tones surrounded by family" loading="lazy" decoding="async" />
           </div>
-          <p className="sh-swipe__hint" aria-hidden="true">Swipe →</p>
+          <p className="sh-swipe__hint" aria-hidden="true">Swipe to see more →</p>
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
             <Link to="/content-portfolio" className="sh-btn-fill">
               See the content
@@ -223,19 +218,19 @@ function Home() {
             <Photo
               src="/assets/content-work/Dc-CDETMQt6.jpg"
               alt="Abha and Udit dancing beneath chandeliers at their Indian-American wedding reception"
-              ratio="3/4"
+              ratio="9/16"
               sizes="(max-width: 1024px) 33vw, 22vw"
             />
             <Photo
               src="/assets/content-work/Dc94ykltayq.jpg"
               alt="The bride and groom embracing during their mehndi celebration"
-              ratio="3/4"
+              ratio="9/16"
               sizes="(max-width: 1024px) 33vw, 22vw"
             />
             <Photo
               src="/assets/content-work/Dc96eH_xHeK.jpg"
               alt="A smiling bride in jewel tones surrounded by family"
-              ratio="3/4"
+              ratio="9/16"
               sizes="(max-width: 1024px) 33vw, 22vw"
             />
           </div>
@@ -289,19 +284,17 @@ function Home() {
                 Portrait sessions →
               </Link>
             </div>
-            <div className="sh-arches lg:col-span-7">
-              <figure className="sh-arch sh-drift" style={{ ["--drift" as string]: "24px" }}>
-                <img src="/assets/stills/grad-hall.jpg" alt="Graduate in a purple gown seated beneath gothic windows" loading="lazy" decoding="async" />
-              </figure>
-              <figure className="sh-arch sh-arch--tall sh-drift" style={{ ["--drift" as string]: "-30px" }}>
-                <img src="/assets/stills/maternity-water.jpg" alt="Expecting mother floating in clear blue water" loading="lazy" decoding="async" />
-              </figure>
-              <figure className="sh-arch sh-drift" style={{ ["--drift" as string]: "36px" }}>
-                <video src="/assets/motion/grad-flowers.mp4" poster="/assets/motion/grad-flowers.jpg" autoPlay muted loop playsInline preload="metadata" aria-label="Graduation bouquet with a 2026 tassel" style={{ objectPosition: "0% center" }} />
-              </figure>
-              <span className="sh-scriptword sh-arches__word" aria-hidden="true">
-                and you
-              </span>
+            <div className="min-w-0 lg:col-span-7">
+              <PhotoRail
+                label="Portrait sessions"
+                ratio="4/5"
+                items={[
+                  { src: "/assets/stills/grad-hall.jpg", alt: "Graduate in a purple gown seated beneath gothic windows" },
+                  { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water", position: "60% center" },
+                  { src: "/assets/motion/grad-flowers.jpg", video: "/assets/motion/grad-flowers.mp4", alt: "Graduation bouquet with a 2026 tassel", position: "0% center" },
+                  { src: "/assets/motion/maternity-meadow.jpg", video: "/assets/motion/maternity-meadow.mp4", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
+                ]}
+              />
             </div>
           </div>
         </div>

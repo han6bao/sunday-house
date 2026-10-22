@@ -3393,3 +3393,60 @@ a:hover .sh-photo img,
   .sh-collage__polaroid { width: 42%; bottom: 0; left: 0; }
   .sh-collage__word { left: 0; top: 0; font-size: clamp(3.75rem, 19vw, 5.5rem); }
 }
+
+/* Phones: the content-creation story card fills the box first; photos follow on swipe */
+.sh-swipe__card, .sh-swipe__card--text { flex: 0 0 100%; }
+.sh-swipe { gap: 1.25rem; }
+.sh-swipe__card { height: 16.5rem; }
+
+/* Wedding film clips: swipe rail */
+.sh-filmrail__track {
+  display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.sh-filmrail__track::-webkit-scrollbar { display: none; }
+.sh-filmrail__item { flex: 0 0 100%; margin: 0; scroll-snap-align: start; }
+@media (min-width: 1024px) { .sh-filmrail__item { flex-basis: 86%; } }
+.sh-filmrail__nav { display: flex; align-items: center; justify-content: space-between; margin-top: 1rem; }
+.sh-filmrail__hint { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgb(253 241 244 / 0.6); }
+.sh-filmrail__btns { display: flex; gap: 0.5rem; }
+.sh-filmrail__btns button { width: 2.4rem; height: 2.4rem; border: 1px solid rgb(253 241 244 / 0.35); color: var(--color-ivory); transition: background 0.3s, border-color 0.3s; }
+.sh-filmrail__btns button:hover { background: rgb(253 241 244 / 0.1); border-color: var(--color-ivory); }
+@media (max-width: 1023px) { .sh-filmrail__btns { display: none; } }
+
+/* Content photos are vertical (9:16): show them whole, never crop faces */
+.sh-swipe { align-items: stretch; }
+.sh-swipe__card--text { height: 20rem; }
+img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9 / 16; object-fit: cover; }
+/* Keep the swipe track inside the box's frame — no bleeding past the edge */
+.sh-swipe { margin-inline: 0; padding-inline: 0; scroll-padding-inline: 0; }
+.sh-swipebox { overflow: hidden; }
+
+/* Portraits: photos you swipe through (same feel as the film clips) */
+.sh-photorail__track { display: flex; gap: 0.9rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.sh-photorail__track::-webkit-scrollbar { display: none; }
+.sh-photorail__item { flex: 0 0 78%; margin: 0; overflow: hidden; scroll-snap-align: start; background: var(--color-paper); }
+@media (min-width: 640px) { .sh-photorail__item { flex-basis: 46%; } }
+@media (min-width: 1024px) { .sh-photorail__item { flex-basis: calc((100% - 1.8rem) / 2.4); } }
+.sh-photorail__item img, .sh-photorail__item video { width: 100%; height: 100%; object-fit: cover; display: block; max-width: none; }
+.sh-photorail__nav { display: flex; align-items: center; justify-content: space-between; margin-top: 1rem; }
+.sh-photorail__hint { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-rose-deep); }
+.sh-photorail__btns { display: flex; gap: 0.5rem; }
+.sh-photorail__btns button { width: 2.4rem; height: 2.4rem; border: 1px solid rgb(44 38 37 / 0.3); color: var(--color-ink); transition: background 0.3s, border-color 0.3s; }
+.sh-photorail__btns button:hover { background: rgb(44 38 37 / 0.06); border-color: var(--color-ink); }
+@media (max-width: 1023px) { .sh-photorail__btns { display: none; } }
+/* Steps: the photo melts into the brown — no visible edge */
+.sh-steps3__media::after { background: linear-gradient(90deg, rgb(44 38 37 / 0) 45%, rgb(44 38 37 / 0.6) 80%, rgb(44 38 37) 100%); }
+@media (max-width: 1023px) {
+  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 38 37 / 0) 25%, rgb(44 38 37 / 0.55) 65%, rgb(44 38 37) 100%); }
+}
+/* Steps tabs: three even columns, each with its own line — no awkward wrapping */
+.sh-steps3__tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.sh-steps3__tabs li { min-width: 0; }
+.sh-steps3__tabs button {
+  display: block; width: 100%; text-align: left; padding: 0.75rem 0 0; border-bottom: 0;
+  border-top: 1px solid rgb(253 241 244 / 0.2); line-height: 1.5; white-space: normal;
+}
+.sh-steps3__tabs button .sh-num { display: block; margin: 0 0 0.25rem; }
+.sh-steps3__tabs button.is-on { border-top-color: var(--color-ivory); }
+.sh-steps3__bar { display: none; }
