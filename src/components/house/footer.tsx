@@ -1,6 +1,15 @@
 import { Link } from "@tanstack/react-router";
 
-import { Heart, HouseMark } from "./marks";
+import { Heart } from "./marks";
+
+const STRIP = [
+  "/assets/stills/couple-sunset.jpg",
+  "/assets/stills/bride-garden.jpg",
+  "/assets/stills/lilies.jpg",
+  "/assets/stills/couple-field.jpg",
+  "/assets/stills/maternity-water.jpg",
+  "/assets/stills/hill-sunrise.jpg",
+];
 
 const COLS: { head: string; links: { label: string; href: string; params?: Record<string, string>; hash?: string }[] }[] = [
   {
@@ -39,33 +48,41 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
 export function Footer() {
   return (
     <footer className="hz-footer">
-      <div className="mx-auto max-w-[1400px] px-5 py-10 md:px-8 md:py-16">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-7 md:grid-cols-5 md:gap-y-10">
-          <div className="col-span-2">
-            <HouseMark className="hz-footer__mark h-8 w-8 md:h-10 md:w-10" />
-            <p className="mt-4 max-w-sm font-serif text-base leading-relaxed md:mt-6">
-              Wedding photography and film, based in Tacoma, Washington and
-              photographing weddings across Seattle, the South Sound and the
-              Pacific Northwest.
-            </p>
-            <p className="hz-footer__muted mt-3 font-serif italic">
-              For the days worth keeping.
-            </p>
-          </div>
+      <div className="mx-auto max-w-[1400px] px-5 pb-12 pt-0 md:px-8 md:pb-16">
+        {/* A quiet strip of photographs */}
+        <div className="hz-footer__strip" aria-hidden="true">
+          {STRIP.map((src) => (
+            <img key={src} src={src} alt="" loading="lazy" decoding="async" />
+          ))}
+        </div>
 
-          {/* Phones: one short row of the essentials instead of three long lists */}
-          <nav aria-label="Footer" className="col-span-2 md:hidden">
-            <ul className="flex flex-wrap gap-x-5 gap-y-3">
+        <div className="hz-footer__center">
+          <picture>
+            <source srcSet="/assets/brand/logo-sunday-house-pink.webp" type="image/webp" />
+            <img src="/assets/brand/logo-sunday-house-pink.png" alt="Sunday House" className="hz-footer__logo-img" loading="lazy" />
+          </picture>
+          <p className="hz-footer__tag">For the days worth keeping.</p>
+          <p className="hz-footer__about">
+            Wedding photography and film from Tacoma, for weddings across Seattle,
+            the South Sound and the Pacific Northwest.
+          </p>
+          <Link to="/experience/$kind" params={{ kind: "weddings" }} className="hz-footer__cta">
+            Check your date
+          </Link>
+
+          {/* Phones: one short row of the essentials */}
+          <nav aria-label="Footer" className="md:hidden">
+            <ul className="hz-footer__row">
               {[
                 { label: "Weddings", href: "/weddings" },
                 { label: "Portraits", href: "/photography" },
                 { label: "Film", href: "/video" },
                 { label: "Services", href: "/services" },
                 { label: "About", href: "/about" },
-                { label: "Inquire", href: "/experience/$kind", params: { kind: "weddings" } },
+                { label: "Locations", href: "/locations" },
               ].map((link) => (
                 <li key={link.label}>
-                  <Link to={link.href} params={link.params} className="hz-footer__link">
+                  <Link to={link.href} className="hz-footer__link">
                     {link.label}
                   </Link>
                 </li>
@@ -73,8 +90,8 @@ export function Footer() {
             </ul>
           </nav>
 
-          {/* Computers: three quiet drop-downs instead of long lists */}
-          <div className="hz-footer__drops hidden md:col-span-3 md:flex">
+          {/* Computers: three quiet drop-downs */}
+          <div className="hz-footer__drops hidden md:flex">
             {COLS.map((col) => (
               <details key={col.head} className="hz-footer__drop">
                 <summary className="hz-footer__head">

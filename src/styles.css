@@ -3815,3 +3815,24 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .sh-invite__actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem clamp(1.25rem, 3vw, 2rem); }
 .sh-invite__rule { display: block; width: 1px; height: 2.6rem; background: rgb(44 39 38 / 0.28); }
 @media (max-width: 639px) { .sh-invite__actions { flex-direction: column; align-items: stretch; } .sh-invite__actions .sh-btn-fill { text-align: center; } .sh-invite__rule { width: 40%; height: 1px; align-self: center; } }
+/* Invite buttons: always one row (button · line · button), stacking only on phones */
+.sh-invite__actions { display: grid !important; grid-template-columns: auto 1px auto; justify-content: center; align-items: center; column-gap: clamp(1rem, 2.5vw, 1.75rem); row-gap: 1rem; flex-wrap: nowrap; }
+.sh-invite__actions .sh-btn-fill { white-space: nowrap; width: auto; min-width: 0; margin: 0 !important; padding-inline: clamp(1.1rem, 2.2vw, 2rem); text-align: center; }
+.sh-invite__rule { width: 1px !important; height: 2.6rem !important; align-self: center; }
+@media (max-width: 699px) {
+  .sh-invite__actions { grid-template-columns: 1fr; justify-items: stretch; }
+  .sh-invite__rule { width: 40% !important; height: 1px !important; justify-self: center; }
+}
+
+/* Footer: photo strip, centred logo, one button, drop-downs underneath */
+.hz-footer__strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.5rem; margin-inline: calc(-1 * clamp(1.25rem, 2vw, 2rem)); }
+.hz-footer__strip img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; max-width: none; filter: grayscale(1) sepia(0.35) saturate(0.7) brightness(0.92); opacity: 0.85; }
+@media (max-width: 767px) { .hz-footer__strip { grid-template-columns: repeat(3, 1fr); gap: 0.35rem; } .hz-footer__strip img:nth-child(n+4) { display: none; } }
+.hz-footer__center { display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: clamp(2.75rem, 6vw, 4.5rem); }
+.hz-footer__logo-img { width: clamp(11rem, 22vw, 15rem); height: auto; display: block; }
+.hz-footer__tag { margin-top: 1.1rem; font-family: var(--font-display); font-style: italic; font-size: clamp(1.2rem, 2vw, 1.5rem); color: #fdf1f4; }
+.hz-footer__about { margin-top: 0.75rem; max-width: 30rem; font-family: var(--font-body); font-size: 1rem; line-height: 1.7; color: rgb(253 241 244 / 0.7); }
+.hz-footer .hz-footer__cta { margin-top: 1.75rem; display: inline-block; padding: 0.95rem 1.9rem; background: #fdf1f4; color: #2c2726; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; transition: background 0.3s; }
+.hz-footer .hz-footer__cta:hover { background: #e6c1cd; color: #2c2726; }
+.hz-footer__drops { margin-top: clamp(2.5rem, 4vw, 3.25rem); justify-content: center !important; gap: clamp(2.5rem, 6vw, 5rem) !important; text-align: left; }
+.hz-footer__row { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.4rem; margin-top: 2rem; }
