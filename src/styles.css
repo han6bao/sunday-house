@@ -3595,3 +3595,25 @@ section[aria-labelledby="home-real"] .sh-boxed { box-shadow: 0 18px 40px -32px r
 @media (max-width: 899px) {
   .sh-scriptart--documented { width: 94% !important; right: 2% !important; top: 58% !important; }
 }
+
+/* ============================================================
+ * ONE QUIET HEADING STYLE: every section title across the site uses the
+ * same small spaced capitals as the "Wedding photography →" links.
+ * Exceptions: the home intro statement, "Hear the vows again.",
+ * the invitation card, and the big lettering/hero.
+ * ============================================================ */
+main h2:not(.sr-only):not(.eyebrow):not(#home-film):not(#house-inquiry-title):not(.sh-statement),
+main h2.sh-h1:not(#home-film):not(#house-inquiry-title),
+main h2.sh-h2:not(#home-film):not(#house-inquiry-title),
+main h2.sh-h3:not(#home-film):not(#house-inquiry-title) {
+  font-family: var(--font-mono) !important;
+  font-size: clamp(0.78rem, 0.9vw, 0.88rem) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  letter-spacing: 0.24em !important;
+  text-transform: uppercase !important;
+  line-height: 1.7 !important;
+  color: var(--color-ink);
+}
+main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !important; color: inherit !important; }
+.sh-night main h2:not(#home-film), .sh-night h2:not(#home-film), .sh-steps3 h2 { color: var(--color-ivory); }
