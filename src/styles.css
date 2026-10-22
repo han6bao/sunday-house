@@ -3310,6 +3310,6 @@ a:hover .sh-photo img,
 @media (prefers-reduced-motion: reduce) { .hz-nav--overlay, .hz-nav--overlay[data-solid="false"] { transition: none; } }
 
 /* Hero, quieter and more luxurious: a smaller logo, smaller line, finer button */
-.sh-hero .sh-wordmark { width: clamp(190px, 25vw, 360px); }
+.sh-hero .sh-wordmark { width: clamp(165px, 20vw, 290px); }
 .sh-hero__tagline { font-size: clamp(1rem, 1.45vw, 1.3rem) !important; max-width: 38ch; margin-top: 1.4rem !important; letter-spacing: 0.01em; }
 .sh-hero__btn { font-family: var(--font-mono) !important; font-weight: 400 !important; font-size: 0.7rem !important; letter-spacing: 0.26em !important; padding: 0.7rem 1.4rem !important; margin-top: 1.8rem !important; }
