@@ -107,9 +107,9 @@ export default function Photography() {
         </h2>
         <div className="sh-mosaic">
           <Photo src="/assets/gallery/flower-nose.png" need="Portrait grid 1 of 5: a couple" alt="Portrait of a woman holding a daisy, eyes closed, in evening light" ratio="2/3" sizes="(max-width: 900px) 50vw, 42vw" />
-          <Photo src="/assets/gallery/couple-bw.png" motion="/assets/motion/grad-flowers" motionPosition="0% center" need="Portrait grid 2 of 5: a senior" alt="Black and white engagement portrait of a couple about to kiss" ratio="4/5" sizes="(max-width: 900px) 50vw, 33vw" />
+          <Photo src="/assets/gallery/couple-bw.png" motion="/assets/motion/grad-flowers" motionPosition="0% center" need="Portrait grid 2 of 5: a senior" alt="Graduation bouquet with a 2026 tassel" ratio="4/5" sizes="(max-width: 900px) 50vw, 33vw" />
           <Photo src="/assets/gallery/movement.png" need="Portrait grid 3 of 5: a family" alt="Woman twirling in a floral dress in an open field" ratio="3/4" sizes="(max-width: 900px) 50vw, 25vw" />
-          <Photo src="/assets/gallery/daisy.png" motion="/assets/motion/maternity-meadow" motionPosition="78% center" need="Portrait grid 4 of 5: maternity" alt="Close portrait with a daisy against a dark green background" ratio="1/1" sizes="(max-width: 900px) 50vw, 25vw" />
+          <Photo src="/assets/gallery/daisy.png" motion="/assets/motion/maternity-meadow" motionPosition="78% center" need="Portrait grid 4 of 5: maternity" alt="Expecting mother in a meadow with deer grazing behind her" ratio="1/1" sizes="(max-width: 900px) 50vw, 25vw" />
           <Photo src="/assets/gallery/field-seated.png" need="Portrait grid 5 of 5: a creative session" alt="Woman seated in a field holding baby's breath at golden hour" ratio="4/5" sizes="(max-width: 900px) 50vw, 33vw" />
         </div>
       </section>

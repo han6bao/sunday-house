@@ -261,8 +261,8 @@ function Home() {
             </div>
             <div className="grid grid-cols-3 gap-3 md:gap-4 lg:col-span-7">
               <Photo src="/assets/gallery/greenhouse.png" need="Portrait 1 of 3: a couples session" alt="Portrait of a woman resting her chin on her hand in a sunlit greenhouse" ratio="2/3" sizes="33vw" />
-              <Photo src="/assets/gallery/couple-bw.png" motion="/assets/motion/grad-flowers" motionPosition="0% center" need="Portrait 2 of 3: a senior session" alt="Black and white couples portrait, about to kiss" ratio="2/3" sizes="33vw" />
-              <Photo src="/assets/gallery/flower-nose.png" motion="/assets/motion/maternity-meadow" motionPosition="78% center" need="Portrait 3 of 3: family or creative session" alt="Portrait of a woman with a daisy, eyes closed, in soft evening light" ratio="2/3" sizes="33vw" />
+              <Photo src="/assets/gallery/couple-bw.png" motion="/assets/motion/grad-flowers" motionPosition="0% center" need="Portrait 2 of 3: a senior session" alt="Graduation bouquet with a 2026 tassel" ratio="2/3" sizes="33vw" />
+              <Photo src="/assets/gallery/flower-nose.png" motion="/assets/motion/maternity-meadow" motionPosition="78% center" need="Portrait 3 of 3: family or creative session" alt="Expecting mother in a meadow with deer grazing behind her" ratio="2/3" sizes="33vw" />
             </div>
           </div>
         </div>
