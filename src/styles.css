@@ -3634,3 +3634,24 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 }
 /* Section titles on dark backgrounds stay light */
 .sh-steps3 h2.sh-steps3__title, .sh-night h2, .sh-film-band h2 { color: var(--color-ivory) !important; }
+
+/* ============================================================
+ * THREE FONTS, NO MORE
+ *   Instrument Serif — headlines and the soft italic accents
+ *   EB Garamond      — reading text
+ *   Lekton           — small spaced labels, links and buttons
+ * The typed script font is retired; the hand-lettered art stays.
+ * ============================================================ */
+:root, html {
+  --font-accent: "Instrument Serif", ui-serif, Georgia, serif !important;
+  --font-hand: "Instrument Serif", ui-serif, Georgia, serif !important;
+  --sh-hand: "Instrument Serif", ui-serif, Georgia, serif !important;
+}
+.sh-script, .sh-scriptword, .sh-steps3__n, .sh-collage__polaroid figcaption, .sh-joe__initial {
+  font-family: "Instrument Serif", ui-serif, Georgia, serif !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+}
+.sh-script { font-size: clamp(1.2rem, 1.9vw, 1.6rem) !important; letter-spacing: 0 !important; }
+.sh-scriptword { font-size: clamp(3.5rem, 8.5vw, 7rem) !important; letter-spacing: -0.01em; }
+.sh-steps3__n { font-size: clamp(2.5rem, 3.6vw, 3.4rem) !important; }

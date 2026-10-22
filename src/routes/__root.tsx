@@ -96,14 +96,6 @@ function buildHead(meta: AppMeta) {
       ...(ogVideo ? [{ property: "og:video", content: ogVideo }] : []),
     ],
     links: [
-      // Pinyon Script (handwritten accent) — free Google Font; the CSP in
-      // security-headers.server.ts already allows fonts.googleapis/gstatic.
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap",
-      },
       { rel: "stylesheet", href: appCss },
       ...(favicon ? [{ rel: "icon", href: favicon }] : []),
       { rel: "apple-touch-icon", href: "/assets/brand/apple-touch-icon.png" },
