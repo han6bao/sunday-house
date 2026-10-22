@@ -3190,6 +3190,8 @@ a:hover .sh-photo img,
   pointer-events: none;
   white-space: nowrap;
   font-size: clamp(4.25rem, 11vw, 9.5rem);
+  padding: 0.2em 0.25em;
+  margin: -0.2em -0.25em;
 }
 .sh-scriptword--light { color: #fdf1f4; text-shadow: 0 2px 24px rgb(44 38 37 / 0.35); }
 
@@ -3249,7 +3251,7 @@ a:hover .sh-photo img,
     .sh-drift { animation: sh-drift linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
     @keyframes sh-drift { from { translate: 0 calc(var(--drift, 30px) * -1); } to { translate: 0 var(--drift, 30px); } }
     .sh-scriptword { animation: sh-write linear both; animation-timeline: view(); animation-range: entry 10% cover 40%; }
-    @keyframes sh-write { from { clip-path: inset(0 100% 0 0); opacity: 0.2; } to { clip-path: inset(0 -10% 0 0); opacity: 1; } }
+    @keyframes sh-write { from { clip-path: inset(-60% 100% -60% -30%); opacity: 0.2; } to { clip-path: inset(-60% -30% -60% -30%); opacity: 1; } }
   }
 }
 @media (prefers-reduced-motion: reduce) {
