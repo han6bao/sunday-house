@@ -3549,3 +3549,6 @@ section[aria-labelledby="home-real"] .sh-boxed::after { display: none !important
   .sh-scriptrow .sh-scriptart--documented { width: 54% !important; margin-bottom: -2.3%; }
 }
 @media (max-width: 899px) { .sh-scriptrow { display: contents; } }
+/* Home: no hard seam between the content box and Portraits — one continuous pink */
+section[aria-labelledby="home-portraits"].rose-paper { background: transparent !important; background-image: none !important; }
+section[aria-labelledby="home-real"] .sh-boxed { box-shadow: 0 18px 40px -32px rgb(44 38 37 / 0.28) !important; }
