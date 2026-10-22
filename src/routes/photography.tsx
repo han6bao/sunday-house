@@ -4,6 +4,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
 import { Photo } from "@/components/house/photo";
+import { SoundFilm } from "@/components/house/sound-film";
 import { pageHead, serviceJsonLd } from "@/lib/seo";
 
 const TITLE = "Portrait & Couples Photographer in Seattle + Tacoma | Sunday House";
@@ -124,23 +125,19 @@ export default function Photography() {
             </h2>
             <p className="sh-body mt-5">
               A meadow, the deer at the tree line, and the two of you waiting on
-              someone new. Maternity sessions can include a short film like this one.
+              someone new. Maternity sessions can include a short film like this
+              one, voiceover included. Tap the speaker to listen.
             </p>
             <Link to="/experience/$kind" params={{ kind: "couples" }} className="sh-invite__alt mt-6 inline-block">
               Ask about maternity →
             </Link>
           </div>
-          <figure className="lg:col-span-8">
-            <video
-              className="sh-film block aspect-[4/3] w-full object-cover"
-              src="/assets/motion/maternity-film.mp4"
-              poster="/assets/motion/maternity-film.jpg"
-              controls
-              playsInline
-              preload="metadata"
-              aria-label="Maternity film: an expecting couple in a meadow with deer"
-            />
-          </figure>
+          <SoundFilm
+            className="lg:col-span-8"
+            src="/assets/motion/maternity-film.mp4"
+            poster="/assets/motion/maternity-film.jpg"
+            label="Maternity film with voiceover: an expecting couple in a meadow with deer"
+          />
         </div>
       </section>
 
