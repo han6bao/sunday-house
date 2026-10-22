@@ -3537,3 +3537,15 @@ section[aria-labelledby="home-real"] .sh-boxed::after { display: none !important
   .sh-swipebox { padding: 1.4rem 1.1rem 1.4rem !important; }
   .sh-swipe__card--text, img.sh-swipe__card { height: 17rem; }
 }
+
+/* Computers: Forever and documented on one shared baseline, letters the same size */
+@media (min-width: 900px) {
+  .sh-scriptrow {
+    position: absolute; z-index: 4; left: 1.5%; right: 1.5%; bottom: 26%;
+    display: flex; align-items: flex-end; justify-content: space-between; pointer-events: none;
+  }
+  .sh-scriptrow .sh-scriptart { position: static !important; left: auto !important; right: auto !important; top: auto !important; }
+  .sh-scriptrow .sh-scriptart--forever { width: 37% !important; margin-bottom: -1.64%; }
+  .sh-scriptrow .sh-scriptart--documented { width: 54% !important; margin-bottom: -2.3%; }
+}
+@media (max-width: 899px) { .sh-scriptrow { display: contents; } }
