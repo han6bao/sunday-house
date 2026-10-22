@@ -3450,3 +3450,18 @@ img.sh-swipe__card { flex: 0 0 auto; height: 20rem; width: auto; aspect-ratio: 9
 .sh-steps3__tabs button .sh-num { display: block; margin: 0 0 0.25rem; }
 .sh-steps3__tabs button.is-on { border-top-color: var(--color-ivory); }
 .sh-steps3__bar { display: none; }
+
+/* About: no top photo — a warm, centered opening that leads into the welcome film */
+.sh-abouthero { text-align: center; padding-top: clamp(4rem, 9vw, 7rem); }
+.sh-abouthero__mark { width: 2.75rem; height: 2.75rem; margin: 0 auto 1.5rem; color: var(--color-rose-deep); }
+.sh-abouthero__rule { margin: clamp(2.5rem, 5vw, 3.5rem) auto 0; }
+
+/* Phones, home weddings: only real photos — bride + couple side by side,
+   the ring full width beneath; "Forever" across the pair, "documented" across the ring */
+@media (max-width: 899px) {
+  .relative > .sh-mosaic > .sh-need { display: none; }
+  .relative > .sh-mosaic { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+  .sh-mosaic > .sh-mosaic.sh-mosaic__wide, .sh-mosaic > figure.sh-mosaic__wide { grid-column: 1 / -1 !important; aspect-ratio: 16 / 10 !important; }
+  .sh-scriptart--forever { left: 2%; top: 22%; width: 80%; }
+  .sh-scriptart--documented { left: 0; right: 0; top: 64%; width: 100%; }
+}

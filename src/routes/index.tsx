@@ -138,7 +138,7 @@ function Home() {
             sizes="(max-width: 900px) 50vw, 25vw"
           />
           <Photo
-            src="/assets/gallery/rings.jpg" className="sh-rosetone" motion="/assets/motion/ring" need="Wedding 4 of 5: a detail (rings, dress, flowers)"
+            src="/assets/gallery/rings.jpg" className="sh-rosetone sh-mosaic__wide" motion="/assets/motion/ring" need="Wedding 4 of 5: a detail (rings, dress, flowers)"
             alt="Close-up of a couple's wedding rings as they hold hands"
             ratio="1/1"
             sizes="(max-width: 900px) 50vw, 25vw"

@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { ContentShell } from "@/components/house/content-shell";
+import { Heart, HouseMark } from "@/components/house/marks";
 import { Photo } from "@/components/house/photo";
 import { SoundFilm } from "@/components/house/sound-film";
 import { pageHead } from "@/lib/seo";
@@ -27,26 +28,21 @@ const VALUES = [
 export default function About() {
   return (
     <ContentShell path="/about" breadcrumb={[{ name: "About", path: "/about" }]}>
-      <section className="sh-wrap">
-        <div className="sh-pagehero">
-          <div className="pb-4">
-            <p className="sh-script">A place for the things worth keeping.</p>
-            <h1 className="sh-h1 mt-3">
-              A house built <em>around</em> the photograph.
-            </h1>
-            <p className="sh-lede mt-6 max-w-xl">
-              We&rsquo;re a wedding photography and film studio in Tacoma,
-              Washington — a home for photographs, films and the details that
-              surround the days worth remembering.
-            </p>
-          </div>
-          <Photo
-            src="/assets/gallery/couple-walk.png" need="About: top photo, a favorite wedding or behind the scenes"
-            alt="Newlyweds walking across the lawn together after their ceremony"
-            ratio="4/5"
-            priority
-            sizes="(max-width: 1024px) 100vw, 40vw"
-          />
+      <section className="sh-wrap sh-abouthero">
+        <HouseMark className="sh-abouthero__mark" strokeWidth={22} aria-hidden="true" />
+        <p className="sh-script">A place for the things worth keeping.</p>
+        <h1 className="sh-h1 mx-auto mt-3 max-w-4xl">
+          A house built <em>around</em> the photograph.
+        </h1>
+        <p className="sh-lede mx-auto mt-6 max-w-xl">
+          We&rsquo;re a wedding photography and film studio in Tacoma,
+          Washington — a home for photographs, films and the details that
+          surround the days worth remembering.
+        </p>
+        <div className="sh-divider sh-abouthero__rule" aria-hidden="true">
+          <span />
+          <Heart className="h-3.5 w-3.5" />
+          <span />
         </div>
       </section>
 
