@@ -3763,3 +3763,4 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .hz-nav--overlay ~ main .sh-hero { display: grid; place-items: center; }
 .sh-hero__content { padding-block: 0 !important; align-self: center; justify-self: center; width: 100%; }
 .sh-hero__center { margin-inline: auto; text-align: center; }
+.sh-collage__polaroid img { object-position: 12% center; }
