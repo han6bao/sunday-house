@@ -3759,3 +3759,7 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
   .sh-duo__frame { padding: 0.55rem; box-shadow: 0 0 0 1px rgb(44 39 38 / 0.18), 0 0 0 5px #2c2726, 0 12px 24px -14px rgb(44 39 38 / 0.45); margin: 5px; }
   .sh-duo__places { font-size: 0.5rem; letter-spacing: 0.14em; left: 0.5rem; bottom: 0.5rem; }
 }
+/* Hero: logo, line and button sit in the true centre of the screen */
+.hz-nav--overlay ~ main .sh-hero { display: grid; place-items: center; }
+.sh-hero__content { padding-block: 0 !important; align-self: center; justify-self: center; width: 100%; }
+.sh-hero__center { margin-inline: auto; text-align: center; }
