@@ -3240,10 +3240,9 @@ a:hover .sh-photo img,
 .sh-arch:hover { transform: translateY(-8px); }
 .sh-arches__word { right: 0; top: -0.15em; font-size: clamp(3.5rem, 8vw, 7rem); }
 
-/* Black-and-white in the house pink */
+/* Black-and-white toned in the house cocoa brown */
 .sh-rosetone { position: relative; isolation: isolate; }
-.sh-rosetone video, .sh-rosetone img { filter: grayscale(1) contrast(0.92) brightness(1.18); }
-.sh-rosetone::after { content: ""; position: absolute; inset: 0; background: #b97b90; mix-blend-mode: color; opacity: 0.7; pointer-events: none; }
+.sh-rosetone video, .sh-rosetone img { filter: grayscale(1) sepia(0.42) saturate(0.75) contrast(1.04) brightness(1.02); }
 
 /* Scroll drift + script words writing in (modern browsers only) */
 @supports (animation-timeline: view()) {
