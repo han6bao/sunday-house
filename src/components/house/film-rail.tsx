@@ -2,6 +2,8 @@
 
 import { useRef } from "react";
 
+import { useDragScroll } from "./use-drag-scroll";
+
 import { FilmSnippet } from "./film-snippet";
 
 const CLIPS = [
@@ -13,14 +15,10 @@ const CLIPS = [
   { n: "film-6", label: "The dance floor" },
 ];
 
-/** Wedding film clips you swipe through (arrows on larger screens). */
+/** Wedding film clips you swipe through (drag with a mouse). */
 export function FilmRail() {
   const ref = useRef<HTMLDivElement>(null);
-  const go = (dir: number) => {
-    const el = ref.current;
-    if (!el) return;
-    el.scrollBy({ left: dir * el.clientWidth * 0.9, behavior: "smooth" });
-  };
+  useDragScroll(ref);
   return (
     <div className="sh-filmrail">
       <div ref={ref} className="sh-filmrail__track" aria-label="Wedding film clips — swipe for more">
@@ -38,10 +36,6 @@ export function FilmRail() {
       </div>
       <div className="sh-filmrail__nav">
         <span className="sh-filmrail__hint">Swipe to see more</span>
-        <span className="sh-filmrail__btns">
-          <button type="button" onClick={() => go(-1)} aria-label="Previous clip">←</button>
-          <button type="button" onClick={() => go(1)} aria-label="Next clip">→</button>
-        </span>
       </div>
     </div>
   );

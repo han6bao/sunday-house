@@ -73,20 +73,25 @@ export function Footer() {
             </ul>
           </nav>
 
-          {COLS.map((col) => (
-            <nav key={col.head} aria-label={col.head} className="hidden md:col-span-1 md:block">
-              <h2 className="hz-footer__head">{col.head}</h2>
-              <ul className="mt-5 space-y-3">
-                {col.links.map((link) => (
-                  <li key={link.label}>
-                    <Link to={link.href} params={link.params} hash={link.hash} className="hz-footer__link">
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          ))}
+          {/* Computers: three quiet drop-downs instead of long lists */}
+          <div className="hz-footer__drops hidden md:col-span-3 md:flex">
+            {COLS.map((col) => (
+              <details key={col.head} className="hz-footer__drop">
+                <summary className="hz-footer__head">
+                  {col.head} <span aria-hidden="true" className="hz-footer__chev" />
+                </summary>
+                <ul className="mt-5 space-y-3">
+                  {col.links.map((link) => (
+                    <li key={link.label}>
+                      <Link to={link.href} params={link.params} hash={link.hash} className="hz-footer__link">
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ))}
+          </div>
         </div>
       </div>
 

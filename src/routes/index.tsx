@@ -273,7 +273,7 @@ function Home() {
       {/* 6 · Portraits — one quiet row, not a menu */}
       <section className="rose-paper sh-section" aria-labelledby="home-portraits">
         <div className="sh-wrap">
-          <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-5">
               <p className="sh-script">There is life outside the aisle.</p>
               <h2 id="home-portraits" className="sh-h2 mt-3">

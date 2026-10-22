@@ -2,16 +2,14 @@
 
 import { useRef } from "react";
 
+import { useDragScroll } from "./use-drag-scroll";
+
 type Item = { src: string; alt: string; video?: string; position?: string };
 
-/** Square-cornered photos you swipe through (arrows on larger screens). */
+/** Square-cornered photos you swipe through (drag with a mouse). */
 export function PhotoRail({ items, ratio = "4/5", label }: { items: Item[]; ratio?: string; label: string }) {
   const ref = useRef<HTMLDivElement>(null);
-  const go = (dir: number) => {
-    const el = ref.current;
-    if (!el) return;
-    el.scrollBy({ left: dir * el.clientWidth * 0.8, behavior: "smooth" });
-  };
+  useDragScroll(ref);
   return (
     <div className="sh-photorail">
       <div ref={ref} className="sh-photorail__track" aria-label={`${label} — swipe for more`}>
@@ -27,10 +25,6 @@ export function PhotoRail({ items, ratio = "4/5", label }: { items: Item[]; rati
       </div>
       <div className="sh-photorail__nav">
         <span className="sh-photorail__hint">Swipe to see more</span>
-        <span className="sh-photorail__btns">
-          <button type="button" onClick={() => go(-1)} aria-label="Previous">←</button>
-          <button type="button" onClick={() => go(1)} aria-label="Next">→</button>
-        </span>
       </div>
     </div>
   );

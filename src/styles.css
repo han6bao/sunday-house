@@ -3552,3 +3552,46 @@ section[aria-labelledby="home-real"] .sh-boxed::after { display: none !important
 /* Home: no hard seam between the content box and Portraits — one continuous pink */
 section[aria-labelledby="home-portraits"].rose-paper { background: transparent !important; background-image: none !important; }
 section[aria-labelledby="home-real"] .sh-boxed { box-shadow: 0 18px 40px -32px rgb(44 38 37 / 0.28) !important; }
+
+/* No arrow buttons on the swipe rows; the hint sits quietly under the photos */
+.sh-photorail__btns, .sh-filmrail__btns { display: none !important; }
+.sh-photorail__nav, .sh-filmrail__nav { justify-content: flex-start; }
+@media (hover: hover) { .sh-photorail__track, .sh-filmrail__track { cursor: grab; } .sh-photorail__track img, .sh-filmrail__track video { user-select: none; -webkit-user-drag: none; } }
+
+/* Steps on computers: calmer and better balanced */
+@media (min-width: 1024px) {
+  .sh-steps3__stage { grid-template-columns: 1fr 1fr; }
+  .sh-steps3__media img { object-position: 22% center; }
+  .sh-steps3__media img[src*="couple-field"] { object-position: 40% center; }
+  .sh-steps3__panel { padding: clamp(3rem, 6vw, 6rem) clamp(3rem, 6vw, 6.5rem); max-width: 40rem; }
+  .sh-steps3__title { font-size: clamp(1.4rem, 1.9vw, 1.9rem); }
+  .sh-steps3__step .sh-h2 { font-size: clamp(2rem, 2.8vw, 2.75rem); }
+  .sh-steps3__n { font-size: clamp(2.75rem, 4vw, 3.75rem); }
+  .sh-steps3__step .sh-body { font-size: 1.05rem; line-height: 1.7; }
+}
+/* Tabs: numbers only — the title already shows below, so nothing wraps */
+.sh-steps3__tabs button { font-size: 0 !important; letter-spacing: 0 !important; }
+.sh-steps3__tabs button .sh-num { font-size: 0.72rem; letter-spacing: 0.24em; margin: 0; }
+
+/* "Tell us about your day" sits on the hand-made pink paper card */
+.sh-invite {
+  background: transparent !important;
+  border-style: solid !important;
+  border-width: clamp(18px, 2.6vw, 32px) !important;
+  border-image: url("/assets/brand/paper-card.webp") 90 fill / clamp(18px, 2.6vw, 32px) stretch !important;
+  box-shadow: 0 22px 44px -30px rgb(44 38 37 / 0.3) !important;
+}
+
+/* Footer drop-downs (computers) */
+.hz-footer__drops { gap: clamp(2rem, 5vw, 4.5rem); justify-content: flex-end; align-items: flex-start; }
+.hz-footer__drop summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.6rem; padding-bottom: 0.4rem; border-bottom: 1px solid rgb(253 241 244 / 0.25); }
+.hz-footer__drop summary::-webkit-details-marker { display: none; }
+.hz-footer__chev { width: 0.45rem; height: 0.45rem; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: translateY(-2px) rotate(45deg); transition: transform 0.3s ease; }
+.hz-footer__drop[open] .hz-footer__chev { transform: translateY(1px) rotate(-135deg); }
+.hz-footer__drop summary:hover { color: #fdf1f4; }
+@media (min-width: 900px) {
+  .sh-scriptrow .sh-scriptart--documented { width: 58% !important; transform: translateY(-9%); }
+}
+@media (max-width: 899px) {
+  .sh-scriptart--documented { width: 94% !important; right: 2% !important; top: 58% !important; }
+}
