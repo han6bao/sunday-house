@@ -49,10 +49,9 @@ function Home() {
     <ContentShell inquiry overlayNav>
       {/* 1 · Landing — full-screen placement for the film (photo for now) */}
       <HeroFilm
-        vimeoId="1238135670"
-        video="/assets/motion/welcome-loop.mp4"
-        vimeoTitle="A warm welcome from Sunday House"
-        image="/assets/gallery/sunset-couple.png"
+        video="/assets/motion/welcome.mp4"
+        sound
+        image="/assets/motion/welcome.jpg"
         alt="Newlyweds holding each other on a hill as the evening sun pours over them"
         position="center 27%"
       >
@@ -120,7 +119,7 @@ function Home() {
             sizes="(max-width: 900px) 50vw, 25vw"
           />
           <Photo
-            src="/assets/gallery/rings.jpg" motion="/assets/motion/ring" need="Wedding 4 of 5: a detail (rings, dress, flowers)"
+            src="/assets/gallery/rings.jpg" className="sh-sepia" motion="/assets/motion/ring" need="Wedding 4 of 5: a detail (rings, dress, flowers)"
             alt="Close-up of a couple's wedding rings as they hold hands"
             ratio="1/1"
             sizes="(max-width: 900px) 50vw, 25vw"
