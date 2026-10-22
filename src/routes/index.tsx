@@ -111,7 +111,7 @@ function Home() {
             Wedding photography →
           </Link>
         </div>
-        <div className="relative">
+        <Link to="/weddings" className="relative block sh-weddings-link" aria-label="See wedding photography">
         <div className="sh-scriptrow">
         <picture className="sh-scriptart sh-scriptart--forever" aria-hidden="true">
           <source srcSet="/assets/brand/script-forever.webp" type="image/webp" />
@@ -154,7 +154,7 @@ function Home() {
             sizes="(max-width: 900px) 50vw, 33vw"
           />
         </div>
-        </div>
+        </Link>
       </section>
 
       {/* 4 · Film — one cinematic strip, kept compact */}

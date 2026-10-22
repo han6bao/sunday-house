@@ -3764,3 +3764,14 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .sh-hero__content { padding-block: 0 !important; align-self: center; justify-self: center; width: 100%; }
 .sh-hero__center { margin-inline: auto; text-align: center; }
 .sh-collage__polaroid img { object-position: 12% center; }
+
+/* The whole wedding row is one link to the Weddings page */
+.sh-weddings-link { cursor: pointer; }
+.sh-weddings-link .sh-photo { transition: filter 0.5s ease; }
+.sh-weddings-link:hover .sh-photo { filter: brightness(1.05); }
+/* One brown for every dark surface — exactly the header's */
+:root { --hz-night: #2c2726; --hz-cocoa: #2c2726; --color-ink: #2c2726; }
+.hz-nav, .hz-nav--overlay[data-solid="true"] { background: #2c2726 !important; }
+.sh-night, .sh-film-band, .sh-steps3, .hz-footer, .sh-faq__cta, .sh-hero { background-color: #2c2726 !important; }
+.sh-steps3__media::after { background: linear-gradient(90deg, rgb(44 39 38 / 0) 45%, rgb(44 39 38 / 0.6) 80%, #2c2726 100%); }
+@media (max-width: 1023px) { .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 39 38 / 0) 72%, rgb(44 39 38 / 0.6) 90%, #2c2726 100%) !important; } }
