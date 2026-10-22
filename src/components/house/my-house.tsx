@@ -442,7 +442,7 @@ export function MyHouse() {
               <p className="eyebrow">Objects saved from the House</p>
               <h3 className="mt-2 font-display text-2xl text-ink">Hearts you've kept.</h3>
             </div>
-            <Link to="/house-objects" className="inline-flex items-center gap-2 border-b border-ink pb-1 font-serif text-base italic text-ink hover:text-antique">
+            <Link to="/house-objects" className="sh-textlink">
               Browse House Objects →
             </Link>
           </div>

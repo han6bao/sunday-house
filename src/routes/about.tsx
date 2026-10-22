@@ -108,7 +108,7 @@ export default function About() {
         </figure>
         <div className="grid grid-cols-3 gap-3 md:gap-5">
           <Photo src="/assets/gallery/bride-portrait.png" need="About row 1 of 3: a wedding" alt="Bridal portrait in soft natural light" ratio="2/3" sizes="33vw" />
-          <Photo src="/assets/gallery/greenhouse.png" need="About row 2 of 3: a portrait" alt="Portrait in a sunlit greenhouse" ratio="2/3" sizes="33vw" />
+          <Photo src="/assets/stills/couple-nose.jpg" alt="A couple nose to nose in soft sepia" ratio="2/3" sizes="33vw" />
           <Photo src="/assets/gallery/field-walk.png" need="About row 3 of 3: a quiet detail" alt="A woman walking through a summer field" ratio="2/3" sizes="33vw" />
         </div>
       </section>

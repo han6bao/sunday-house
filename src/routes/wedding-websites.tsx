@@ -67,7 +67,7 @@ export default function WeddingWebsites() {
               beautiful room.
             </p>
           </div>
-          <span className="inline-flex w-fit items-center gap-2 border-b border-ink pb-1 font-serif text-lg italic text-ink transition-colors group-hover:text-antique">
+          <span className="sh-textlink w-fit">
             See it live
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
           </span>

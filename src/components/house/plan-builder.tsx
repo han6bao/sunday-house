@@ -402,7 +402,7 @@ export function PlanBuilder() {
                       <li key={r.href}>
                         <Link
                           to={r.href}
-                          className="inline-flex items-baseline gap-2 border-b border-ink/30 pb-0.5 font-serif text-base text-ink transition-colors hover:border-antique hover:text-antique"
+                          className="sh-textlink"
                         >
                           {r.label}
                           <span className="text-antique">→</span>

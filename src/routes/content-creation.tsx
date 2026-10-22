@@ -45,7 +45,7 @@ export default function ContentCreation() {
               </Link>
               <Link
                 to="/video"
-                className="inline-flex items-center gap-2 border-b border-ink pb-1 font-serif text-lg italic text-ink hover:text-antique"
+                className="sh-textlink"
               >
                 For the cinematic story, see film →
               </Link>

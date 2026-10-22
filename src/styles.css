@@ -3878,3 +3878,46 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 }
 @media (max-width: 639px) { .sh-btn-fill + .sh-invite__alt::before { display: none; } }
 .sh-btn-fill + .sh-invite__alt { gap: 0.6rem; }
+
+/* Once any row is swiped, every "Swipe to see more" hint goes away */
+.sh-swiped .sh-swipe__hint, .sh-swiped .sh-filmrail__hint, .sh-swiped .sh-photorail__hint { opacity: 0 !important; visibility: hidden; transition: opacity 0.5s ease, visibility 0s 0.5s; }
+
+/* Paired buttons: stay on one line, or stack neatly (no stray line) when the space is narrow */
+.sh-btn-fill + .sh-invite__alt, :has(> .sh-btn-fill + .sh-invite__alt) > .sh-btn-fill { white-space: nowrap; }
+.sh-pair { container-type: inline-size; }
+@container (max-width: 520px) {
+  .sh-pair > .sh-invite__alt::before { display: none; }
+}
+
+/* Text links: small caps in Lekton with an arrow — no serif underlines anywhere */
+.sh-textlink, .sh-invite__alt {
+  display: inline-flex; align-items: center; gap: 0.6rem; border: 0 !important; padding: 0.35rem 0;
+  font-family: var(--font-mono) !important; font-style: normal !important; font-size: 0.74rem !important; font-weight: 400;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-ink); transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+.sh-textlink:hover, .sh-invite__alt:hover { color: var(--color-rose-deep); }
+.sh-textlink span { transition: transform 0.3s ease; }
+.sh-textlink:hover span { transform: translateX(3px); }
+/* A row of text links divided by thin lines */
+.sh-linkrow { display: flex; flex-wrap: wrap; align-items: center; row-gap: 0.6rem; }
+.sh-linkrow > li { display: flex; align-items: center; }
+.sh-linkrow > li + li::before { content: ""; width: 1px; height: 1.4rem; margin-inline: 1.25rem; background: rgb(44 39 38 / 0.28); }
+
+/* Phones: paired buttons become two lines of text, side by side, with a thin line between */
+@media (max-width: 639px) {
+  :has(> .sh-btn-fill + .sh-invite__alt), .sh-invite__actions {
+    display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; align-items: center !important;
+    justify-content: center; column-gap: 1.25rem !important; row-gap: 0 !important;
+  }
+  :has(> .sh-btn-fill + .sh-invite__alt) > .sh-btn-fill, .sh-btn-fill + .sh-invite__alt, .sh-invite__actions > .sh-btn-fill {
+    background: none !important; color: var(--color-ink) !important; padding: 0.4rem 0 !important; white-space: normal !important;
+    font-size: 0.68rem !important; letter-spacing: 0.18em !important; text-align: center; justify-content: center; flex: 0 1 auto;
+  }
+  .sh-btn-fill + .sh-invite__alt::before { display: block !important; left: -0.625rem; height: 1.6rem; }
+  .sh-invite__actions .sh-btn-rule { width: 1px !important; height: 1.6rem !important; align-self: center; }
+  .sh-pair > .sh-invite__alt::before { display: block !important; }
+}
+@media (max-width: 639px) {
+  :has(> .sh-btn-fill + .sh-invite__alt), .sh-invite__actions { column-gap: 1.75rem !important; }
+  .sh-btn-fill + .sh-invite__alt::before { left: -0.875rem !important; }
+}

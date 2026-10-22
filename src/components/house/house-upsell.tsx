@@ -32,7 +32,7 @@ export function HouseUpsell({
             <Link
               to={to as never}
               params={kind ? ({ kind } as never) : undefined}
-              className="inline-flex items-baseline gap-2 border-b border-ink pb-1 font-serif text-lg italic text-ink hover:text-antique"
+              className="sh-textlink"
             >
               {cta} →
             </Link>

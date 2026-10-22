@@ -54,7 +54,7 @@ export function WhatBringsYou() {
               <p className="label-tiny--xs uppercase tracking-[0.16em] text-antique">{d.head}</p>
               <p className="sh-script mt-2 ">{d.line}</p>
               <p className="mt-3 font-serif leading-relaxed text-brown">{d.note}</p>
-              <span className="mt-4 inline-flex items-baseline gap-2 border-b border-ink pb-0.5 font-serif italic text-ink transition-colors group-hover:text-antique">
+              <span className="sh-textlink mt-4">
                 Enter this room →
               </span>
             </div>

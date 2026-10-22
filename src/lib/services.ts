@@ -52,8 +52,8 @@ export const SERVICES: Service[] = [
       { title: "Practice for the wedding day", body: "You'll learn how we work and how you photograph best, so the wedding day feels easy and familiar." },
     ],
     photos: [
-      { src: "/assets/gallery/couple-bw.png", alt: "Black and white engagement photo of a couple about to kiss", need: "Engagement session: top photo (vertical)" },
-      { src: "/assets/gallery/kiss-bw.png", alt: "Engagement portrait of a man kissing his fiancée's forehead", need: "Engagement session photo 2 (engagement sessions, ideally different couples)" },
+      { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in soft sepia" },
+      { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in soft sepia" },
       { src: "/assets/gallery/rings.jpg", alt: "Close-up of an engagement ring as the couple holds hands", need: "Engagement session photo 3 (engagement sessions, ideally different couples)" },
       { src: "", alt: "", need: "Engagement session photo 4 (engagement sessions, ideally different couples)" },
     ],

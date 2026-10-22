@@ -266,12 +266,12 @@ function Home() {
                 <p className="sh-num mt-2">Views · 60K+ in 3 days</p>
               </div>
             </div>
-            <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <div className="sh-pair mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link to="/content-portfolio" className="sh-btn-fill">
                 See the content
               </Link>
               <Link to="/content-creation" className="sh-invite__alt">
-                About content creation →
+                How it works →
               </Link>
             </div>
           </div>
@@ -303,10 +303,10 @@ function Home() {
                 ratio="4/5"
                 to="/photography"
                 items={[
-                  { src: "/assets/motion/grad-flowers.jpg", video: "/assets/motion/grad-flowers.mp4", alt: "Graduation bouquet with a 2026 tassel", position: "center" },
-                  { src: "/assets/motion/maternity-meadow.jpg", video: "/assets/motion/maternity-meadow.mp4", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
                   { src: "/assets/stills/couple-forehead.jpg", alt: "A couple in soft sepia, a kiss on the forehead" },
                   { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in soft sepia" },
+                  { src: "/assets/motion/grad-flowers.jpg", video: "/assets/motion/grad-flowers.mp4", alt: "Graduation bouquet with a 2026 tassel", position: "center" },
+                  { src: "/assets/motion/maternity-meadow.jpg", video: "/assets/motion/maternity-meadow.mp4", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
                   { src: "/assets/stills/grad-hall.jpg", alt: "Graduate in a purple gown seated beneath gothic windows" },
                   { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water", position: "60% center" },
                 ]}
