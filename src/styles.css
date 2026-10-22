@@ -3282,8 +3282,8 @@ a:hover .sh-photo img,
 /* Hand-lettered script art laid over the wedding photos */
 .sh-scriptart { position: absolute; z-index: 4; pointer-events: none; display: block; }
 .sh-scriptart img { display: block; width: 100%; height: auto; filter: drop-shadow(0 1px 3px rgb(44 38 37 / 0.12)); }
-.sh-scriptart--forever { left: 2%; top: 30%; width: min(40%, 34rem); }
-.sh-scriptart--documented { right: 1%; top: 44%; width: min(46%, 38rem); }
+.sh-scriptart--forever { left: 1%; top: 28%; width: min(44%, 40rem); }
+.sh-scriptart--documented { right: 0; top: 42%; width: min(46.5%, 42.2rem); }
 @media (max-width: 899px) {
   .sh-scriptart--forever { left: 0; top: 14%; width: 66%; }
   .sh-scriptart--documented { left: 0; right: 0; top: 40%; width: 100%; }
@@ -3313,3 +3313,74 @@ a:hover .sh-photo img,
 .sh-hero .sh-wordmark { width: clamp(165px, 20vw, 290px); }
 .sh-hero__tagline { font-size: clamp(1rem, 1.45vw, 1.3rem) !important; max-width: 38ch; margin-top: 1.4rem !important; letter-spacing: 0.01em; }
 .sh-hero__btn { font-family: var(--font-mono) !important; font-weight: 400 !important; font-size: 0.7rem !important; letter-spacing: 0.26em !important; padding: 0.7rem 1.4rem !important; margin-top: 1.8rem !important; }
+
+/* Home film band: compact */
+.sh-film-band { padding-block: clamp(3.5rem, 7vw, 5.5rem); }
+.sh-film-band .sh-body { color: rgb(253 241 244 / 0.78); }
+
+/* Phones: the content-creation box swipes sideways instead of growing tall */
+.sh-swipebox { padding: 1.4rem 1.25rem 1.5rem; }
+.sh-swipe {
+  display: flex; gap: 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory;
+  margin-inline: -1.25rem; padding-inline: 1.25rem; scroll-padding-inline: 1.25rem;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.sh-swipe::-webkit-scrollbar { display: none; }
+.sh-swipe__card {
+  flex: 0 0 78%; height: 15.5rem; scroll-snap-align: start;
+  object-fit: cover; display: block; max-width: none;
+}
+.sh-swipe__card--text {
+  flex-basis: 84%; display: flex; flex-direction: column; justify-content: space-between;
+  padding: 1.1rem; border: 1px solid color-mix(in srgb, var(--color-rose-deep) 22%, transparent);
+}
+.sh-swipe__card--text .sh-body { font-size: 1rem; line-height: 1.55; }
+.sh-swipe__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.sh-swipe__stats .sh-num { letter-spacing: 0.12em; font-size: 0.62rem; }
+.sh-swipe__hint { margin-top: 0.6rem; text-align: right; font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-rose-deep); }
+
+/* Three steps: a sticky stage that turns over as you scroll */
+.sh-steps3 { position: relative; height: 320vh; background: var(--color-ink); color: var(--color-ivory); }
+.sh-steps3__stage { position: sticky; top: 0; height: 100svh; display: grid; overflow: hidden; }
+@media (min-width: 1024px) { .sh-steps3__stage { grid-template-columns: 1.1fr 1fr; } }
+.sh-steps3__media { position: relative; overflow: hidden; }
+.sh-steps3__media img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; max-width: none;
+  opacity: 0; transform: scale(1.06); transition: opacity 1.1s ease, transform 2.4s cubic-bezier(.2,.7,.2,1);
+}
+.sh-steps3__media img.is-on { opacity: 1; transform: scale(1); }
+.sh-steps3__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(44 38 37 / 0) 60%, rgb(44 38 37 / 0.55)); }
+.sh-steps3__panel { display: flex; flex-direction: column; justify-content: center; padding: clamp(2rem, 6vw, 5.5rem); position: relative; }
+.sh-steps3 .eyebrow { color: rgb(253 241 244 / 0.6); }
+.sh-steps3__title { font-family: var(--font-display); font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.1; margin-top: 0.8rem; }
+.sh-steps3__tabs { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin: 2rem 0 0; padding: 0; }
+.sh-steps3__tabs button { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgb(253 241 244 / 0.45); padding: 0.35rem 0; border-bottom: 1px solid transparent; transition: color 0.4s, border-color 0.4s; }
+.sh-steps3__tabs button .sh-num { color: inherit; margin-right: 0.3rem; }
+.sh-steps3__tabs button.is-on, .sh-steps3__tabs button:hover { color: var(--color-ivory); border-color: currentColor; }
+.sh-steps3__body { position: relative; margin-top: clamp(2rem, 5vh, 3.5rem); min-height: 15rem; }
+.sh-steps3__step { position: absolute; inset: 0 0 auto 0; opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.9s cubic-bezier(.2,.7,.2,1); pointer-events: none; }
+.sh-steps3__step.is-on { opacity: 1; transform: none; pointer-events: auto; }
+.sh-steps3__n { font-family: "Pinyon Script", cursive; font-size: clamp(3.5rem, 6vw, 5.5rem); line-height: 1; color: #e6c1cd; margin-bottom: 0.4rem; }
+.sh-steps3__step .sh-h2 { color: var(--color-ivory); }
+.sh-steps3__step .sh-body { color: rgb(253 241 244 / 0.78); max-width: 32rem; }
+.sh-steps3__bar { position: absolute; left: clamp(2rem, 6vw, 5.5rem); right: clamp(2rem, 6vw, 5.5rem); bottom: clamp(1.75rem, 5vh, 3rem); height: 1px; background: rgb(253 241 244 / 0.18); }
+.sh-steps3__bar span { position: absolute; inset: 0; background: var(--color-ivory); transform-origin: left; }
+
+/* Phones: photo on top, words below, same scroll story */
+@media (max-width: 1023px) {
+  .sh-steps3 { height: 300vh; }
+  .sh-steps3__stage { grid-template-rows: 38svh 1fr; }
+  .sh-steps3__media::after { background: linear-gradient(180deg, rgb(44 38 37 / 0) 55%, rgb(44 38 37 / 0.9)); }
+  .sh-steps3__panel { justify-content: flex-start; padding: 1.5rem 1.25rem 3.5rem; }
+  .sh-steps3__tabs { margin-top: 1.1rem; gap: 0.3rem 1rem; }
+  .sh-steps3__tabs button { font-size: 0.6rem; letter-spacing: 0.16em; }
+  .sh-steps3__body { margin-top: 1.25rem; min-height: 13rem; }
+  .sh-steps3__n { font-size: 3rem; }
+  .sh-steps3__step .sh-h2 { font-size: 1.7rem; }
+  .sh-steps3__step .sh-body { font-size: 1rem; line-height: 1.6; }
+  .sh-steps3__bar { left: 1.25rem; right: 1.25rem; bottom: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sh-steps3__media img, .sh-steps3__step { transition: none; transform: none; }
+}
+.sh-steps3__media img[src*="ring"] { filter: grayscale(1) sepia(0.42) saturate(0.75) contrast(1.04) brightness(1.02); }

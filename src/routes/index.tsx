@@ -4,6 +4,7 @@ import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
 import { FilmSnippet } from "@/components/house/film-snippet";
 import { HeroFilm } from "@/components/house/hero-film";
+import { WeddingSteps } from "@/components/house/wedding-steps";
 import { Wordmark } from "@/components/house/wordmark";
 import { Photo } from "@/components/house/photo";
 import { pageHead } from "@/lib/seo";
@@ -151,61 +152,73 @@ function Home() {
         </div>
       </section>
 
-      {/* 4 · Film */}
-      <section className="sh-night sh-section" aria-labelledby="home-film">
-        <div className="sh-wrap">
-          <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-7">
-              <p className="eyebrow">Wedding film</p>
-              <h2 id="home-film" className="sh-h1 mt-5">
-                Hear the vows <em>again</em>.
-              </h2>
-            </div>
-            <div className="lg:col-span-5">
-              <p className="sh-lede">
-                Photographs keep the stillness. Film keeps the voices, the
-                laughter and the last dance — made alongside your photographs,
-                so the whole day reads as one story.
-              </p>
-              <Link to="/video" className="sh-link mt-6">
-                Watch the films →
-              </Link>
-            </div>
+      {/* 4 · Film — one cinematic strip, kept compact */}
+      <section className="sh-night sh-film-band" aria-labelledby="home-film">
+        <div className="sh-wrap grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
+          <div className="lg:col-span-4">
+            <p className="eyebrow">Wedding film</p>
+            <h2 id="home-film" className="sh-h2 mt-4">
+              Hear the vows <em>again</em>.
+            </h2>
+            <p className="sh-body mt-4 max-w-sm">
+              The voices, the laughter, the last dance — filmed alongside your
+              photographs.
+            </p>
+            <Link to="/video" className="sh-link mt-6">
+              Watch the films →
+            </Link>
           </div>
-
-          <div className="mt-14 grid gap-4 md:grid-cols-12">
-            <div className="md:col-span-7">
-              <FilmSnippet
-                src="/assets/films-web/film-13b.mp4"
-                poster="/assets/film-posters/film-13b.jpg"
-                unframed
-                ariaLabel="Wedding film clip: a groom watching his bride with a smile"
-                className="sh-film aspect-[16/10]"
-              />
-            </div>
-            <div className="grid gap-4 md:col-span-5">
-              <FilmSnippet
-                src="/assets/films-web/film-5.mp4"
-                poster="/assets/film-posters/film-5.jpg"
-                unframed
-                ariaLabel="Wedding film clip: the couple cutting their cake"
-                className="sh-film aspect-[16/9]"
-              />
-              <FilmSnippet
-                src="/assets/films-web/film-3.mp4"
-                poster="/assets/film-posters/film-3.jpg"
-                unframed
-                ariaLabel="Wedding film clip: guests celebrating under string lights"
-                className="sh-film aspect-[16/9]"
-              />
-            </div>
+          <div className="lg:col-span-8">
+            <FilmSnippet
+              src="/assets/films-web/film-13b.mp4"
+              poster="/assets/film-posters/film-13b.jpg"
+              unframed
+              ariaLabel="Wedding film clip: a groom watching his bride with a smile"
+              className="sh-film aspect-[16/9] lg:aspect-[21/9]"
+            />
           </div>
         </div>
       </section>
 
       {/* 5 · Wedding content creation — a real wedding */}
       <section className="sh-wrap sh-section--tight" aria-labelledby="home-real">
-        <div className="sh-boxed grid gap-10 lg:grid-cols-12 lg:items-center">
+        {/* Phones: one short box you swipe through, left to right */}
+        <div className="sh-boxed sh-swipebox lg:hidden">
+          <p className="eyebrow">Wedding content creation · Abha &amp; Udit</p>
+          <h2 className="sh-h3 mt-3">From Carnegie to Carnation.</h2>
+          <div className="sh-swipe mt-5" aria-label="Swipe for more">
+            <div className="sh-swipe__card sh-swipe__card--text">
+              <p className="sh-body">
+                Same-day reels, Stories and candid video of a full-day
+                Indian-American wedding, shared while it was happening.
+              </p>
+              <div className="sh-swipe__stats">
+                <div>
+                  <p className="sh-stat__n sh-stat__n--sm">28</p>
+                  <p className="sh-num mt-1">Videos, one day</p>
+                </div>
+                <div>
+                  <p className="sh-stat__n sh-stat__n--sm">80K+</p>
+                  <p className="sh-num mt-1">Views · 60K+ in 3 days</p>
+                </div>
+              </div>
+            </div>
+            <img className="sh-swipe__card" src="/assets/content-work/Dc-CDETMQt6.jpg" alt="Abha and Udit dancing beneath chandeliers at their reception" loading="lazy" decoding="async" />
+            <img className="sh-swipe__card" src="/assets/content-work/Dc94ykltayq.jpg" alt="The bride and groom embracing during their mehndi celebration" loading="lazy" decoding="async" />
+            <img className="sh-swipe__card" src="/assets/content-work/Dc96eH_xHeK.jpg" alt="A smiling bride in jewel tones surrounded by family" loading="lazy" decoding="async" />
+          </div>
+          <p className="sh-swipe__hint" aria-hidden="true">Swipe →</p>
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
+            <Link to="/content-portfolio" className="sh-btn-fill">
+              See the content
+            </Link>
+            <Link to="/content-creation" className="sh-invite__alt">
+              About →
+            </Link>
+          </div>
+        </div>
+
+        <div className="sh-boxed hidden gap-10 lg:grid lg:grid-cols-12 lg:items-center">
           <div className="order-2 grid grid-cols-3 gap-3 md:gap-4 lg:order-1 lg:col-span-7">
             <Photo
               src="/assets/content-work/Dc-CDETMQt6.jpg"
@@ -294,42 +307,8 @@ function Home() {
         </div>
       </section>
 
-      {/* 7 · How it works — a real sequence */}
-      <section className="sh-wrap sh-section" aria-labelledby="home-steps">
-        <p className="eyebrow">How it works</p>
-        <h2 id="home-steps" className="sh-h2 mt-4 max-w-2xl">
-          Three steps to your wedding day.
-        </h2>
-        <ol className="sh-steps mt-12">
-          <li className="sh-step">
-            <p className="sh-num">01</p>
-            <h3 className="sh-h3 mt-3">Tell us your date</h3>
-            <p className="sh-body mt-3">
-              We keep our calendar small, so dates go quickly. Share the date,
-              the place and the feeling you want. We reply personally within 24
-              hours, often with a short voice note.
-            </p>
-          </li>
-          <li className="sh-step">
-            <p className="sh-num">02</p>
-            <h3 className="sh-h3 mt-3">Plan it together</h3>
-            <p className="sh-body mt-3">
-              Coffee or a call, a look at locations and light, and a timeline
-              built so nothing important is rushed. Once you book, a welcome
-              package arrives by mail with your styling guide.
-            </p>
-          </li>
-          <li className="sh-step">
-            <p className="sh-num">03</p>
-            <h3 className="sh-h3 mt-3">Live it. Keep it.</h3>
-            <p className="sh-body mt-3">
-              Be fully present on the day. Sneak peeks arrive within 48 hours,
-              your gallery on the date we promise in writing, and an heirloom
-              album if you&rsquo;d like something to hold.
-            </p>
-          </li>
-        </ol>
-      </section>
+      {/* 7 · How it works — told as you scroll */}
+      <WeddingSteps />
 
       <Faq title="Before you book" items={FAQ} />
     </ContentShell>
