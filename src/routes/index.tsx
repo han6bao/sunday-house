@@ -6,7 +6,6 @@ import { FilmSnippet } from "@/components/house/film-snippet";
 import { HeroFilm } from "@/components/house/hero-film";
 import { Wordmark } from "@/components/house/wordmark";
 import { Photo } from "@/components/house/photo";
-import { Stamp } from "@/components/house/stamp";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
@@ -90,9 +89,7 @@ function Home() {
             </figure>
             <figure className="sh-collage__polaroid sh-drift" style={{ ["--drift" as string]: "40px" }}>
               <img src="/assets/stills/couple-sunset.jpg" alt="Newlyweds walking toward the sunset after their ceremony" loading="lazy" decoding="async" />
-              <figcaption>golden hour</figcaption>
             </figure>
-            <Stamp className="sh-collage__stamp" />
             <span className="sh-scriptword sh-collage__word" aria-hidden="true">
               hello
             </span>
