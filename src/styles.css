@@ -3937,3 +3937,6 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 /* Steps: taller scroll so each step settles, and the last one stays a while */
 .sh-steps3 { height: 400vh !important; }
 @media (max-width: 1023px) { .sh-steps3 { height: 380vh !important; } }
+
+/* Header: capital-only labels sit optically in the middle of the bar */
+.hz-nav .nav-link, .hz-nav .sh-nav-inquire { line-height: 1 !important; padding-top: 0.18em !important; padding-bottom: 0 !important; }
