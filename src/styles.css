@@ -3951,3 +3951,11 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
     mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.55) 40%, transparent 100%);
   }
 }
+
+/* Hero: line and button scaled down to sit with the smaller logo */
+.sh-hero__tagline { font-size: clamp(0.95rem, 1.35vw, 1.15rem) !important; line-height: 1.55 !important; max-width: 26rem !important; margin-inline: auto; margin-top: 1.1rem !important; }
+.sh-hero__btn { font-size: 0.62rem !important; letter-spacing: 0.24em !important; padding: 0.8rem 1.5rem !important; margin-top: 1.4rem !important; }
+@media (max-width: 639px) {
+  .sh-hero__tagline { font-size: 0.95rem !important; max-width: 19rem !important; }
+  .sh-hero__btn { font-size: 0.6rem !important; padding: 0.75rem 1.3rem !important; }
+}
