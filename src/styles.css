@@ -3940,3 +3940,14 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 
 /* Header: capital-only labels sit optically in the middle of the bar */
 .hz-nav .nav-link, .hz-nav .sh-nav-inquire { line-height: 1 !important; padding-top: 0.18em !important; padding-bottom: 0 !important; }
+
+/* Computers, steps: a soft pink paper fade at the top edge (same grain as the page, so no seam) */
+@media (min-width: 1024px) {
+  .sh-steps3::before {
+    display: block !important; content: ""; position: absolute; left: 0; right: 0; top: 0; height: clamp(110px, 16vh, 170px); z-index: 5; pointer-events: none;
+    background-color: #f7e3e9 !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E") !important;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.55) 40%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.55) 40%, transparent 100%);
+  }
+}
