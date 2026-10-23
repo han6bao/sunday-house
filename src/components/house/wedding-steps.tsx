@@ -30,6 +30,9 @@ const STEPS = [
  * Three steps, told as you scroll: the panel stays put while the steps turn
  * over one by one — photo, number, words. Tapping a step jumps to it.
  */
+/** Where step 2 and step 3 begin, as a share of the section's scroll. */
+const BREAKS = [0.3, 0.55];
+
 export function WeddingSteps() {
   const ref = useRef<HTMLElement>(null);
   const [active, setActive] = useState(0);
@@ -42,8 +45,9 @@ export function WeddingSteps() {
       const r = el.getBoundingClientRect();
       const total = el.offsetHeight - window.innerHeight;
       const p = Math.min(1, Math.max(0, -r.top / Math.max(total, 1)));
-      setProgress(p);
-      setActive(Math.min(STEPS.length - 1, Math.floor(p * STEPS.length * 0.999)));
+      // Each step gets room; the last one lingers before the section moves on.
+      setProgress(Math.min(1, p / 0.6));
+      setActive(p < BREAKS[0] ? 0 : p < BREAKS[1] ? 1 : 2);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -58,7 +62,8 @@ export function WeddingSteps() {
     const el = ref.current;
     if (!el) return;
     const total = el.offsetHeight - window.innerHeight;
-    const top = el.getBoundingClientRect().top + window.scrollY + total * ((i + 0.5) / STEPS.length);
+    const mid = [BREAKS[0] / 2, (BREAKS[0] + BREAKS[1]) / 2, BREAKS[1] + 0.08][i] ?? 0;
+    const top = el.getBoundingClientRect().top + window.scrollY + total * mid;
     window.scrollTo({ top, behavior: "smooth" });
   };
 

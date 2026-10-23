@@ -3921,3 +3921,19 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
   :has(> .sh-btn-fill + .sh-invite__alt), .sh-invite__actions { column-gap: 1.75rem !important; }
   .sh-btn-fill + .sh-invite__alt::before { left: -0.875rem !important; }
 }
+
+/* Phones, steps: the pink fade carries the same paper grain (no visible seam), and no line under the photo */
+@media (max-width: 1023px) {
+  .sh-steps3::before {
+    background-color: #f7e3e9 !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E") !important;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.6) 45%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.6) 45%, transparent 100%);
+  }
+  .sh-steps3__media::after { inset: 0 0 -2px 0 !important; }
+  .sh-steps3__media { margin-bottom: -1px; }
+}
+
+/* Steps: taller scroll so each step settles, and the last one stays a while */
+.sh-steps3 { height: 400vh !important; }
+@media (max-width: 1023px) { .sh-steps3 { height: 380vh !important; } }
