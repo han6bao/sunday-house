@@ -3959,3 +3959,7 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
   .sh-hero__tagline { font-size: 0.95rem !important; max-width: 19rem !important; }
   .sh-hero__btn { font-size: 0.6rem !important; padding: 0.75rem 1.3rem !important; }
 }
+/* Hero: a touch smaller again */
+.sh-hero__tagline { font-size: clamp(0.85rem, 1.05vw, 1rem) !important; max-width: 22rem !important; }
+.sh-hero__btn { font-size: 0.58rem !important; padding: 0.7rem 1.3rem !important; }
+@media (max-width: 639px) { .sh-hero__tagline { font-size: 0.85rem !important; max-width: 17rem !important; } .sh-hero__btn { font-size: 0.56rem !important; padding: 0.65rem 1.15rem !important; } }
