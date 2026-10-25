@@ -8,7 +8,7 @@ export function Wordmark({ className = "", tone = "white" }: { className?: strin
   return (
     <picture className={`sh-wordmark ${className}`}>
       <source srcSet={`${base}.webp`} type="image/webp" />
-      <img src={`${base}.png`} alt="Sunday House" width={2400} height={843} decoding="async" fetchPriority="high" />
+      <img src={`${base}.png`} alt="Sunday House" width={2834} height={1494} decoding="async" fetchPriority="high" />
     </picture>
   );
 }
