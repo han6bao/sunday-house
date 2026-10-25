@@ -4051,3 +4051,5 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 /* Hero: the script logo a size up (it's finer than the old one) */
 .sh-hero .sh-wordmark { width: clamp(250px, 30vw, 440px) !important; }
 @media (max-width: 639px) { .sh-hero .sh-wordmark { width: 76vw !important; } }
+/* Deck cover: same warm black-and-white as the slides after it */
+@media (max-width: 767px) { .sh-deck__print .sh-deck__bg { filter: grayscale(1) sepia(0.32) saturate(0.7) contrast(1.06) brightness(0.86) !important; } }
