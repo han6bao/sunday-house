@@ -7,6 +7,7 @@ import { serviceJsonLd } from "@/lib/seo";
 import { ContentShell } from "./content-shell";
 import { Faq } from "./faq";
 import { Photo } from "./photo";
+import { PortraitDeck } from "./portrait-deck";
 
 /** Renders "Words *emphasis* words" with the starred part in italics. */
 export function Emph({ text }: { text: string }) {
@@ -41,6 +42,8 @@ export function ServicePage({ service }: { service: Service }) {
           image: hero.src,
         })}
       />
+
+      {service.group === "portraits" ? <ServiceDeck service={service} related={related} /> : null}
 
       {/* Hero */}
       <section className="sh-wrap">
@@ -136,3 +139,37 @@ export function ServicePage({ service }: { service: Service }) {
 
 /** All services, grouped — the hub page and a source for internal links. */
 export const SERVICE_COUNT = SERVICES.length;
+
+/** Phones: the portrait page as full-screen slides you swipe through. */
+function ServiceDeck({ service, related }: { service: Service; related: Service[] }) {
+  const pics = service.photos.filter((p) => p.src);
+  const pic = (i: number) => (pics[i] ? { src: pics[i].src, alt: pics[i].alt } : undefined);
+  const price = service.faqs.find((f) => /how much|cost/i.test(f.q));
+  return (
+    <PortraitDeck
+      cover={pics[0] ? { src: pics[0].src, alt: pics[0].alt } : { src: "/assets/stills/couple-nose.jpg", alt: "" }}
+      label={service.name}
+      slides={[
+        { kicker: service.script, title: <Emph text={service.h1} />, body: <p>{service.intro[0]}</p>, img: pic(1) ?? pic(0) },
+        {
+          kicker: "The session",
+          title: "What to expect",
+          body: (
+            <ul className="sh-deck__list">
+              {service.highlights.map((h) => (
+                <li key={h.title}>
+                  <b>{h.title}</b>
+                  <span>{h.body}</span>
+                </li>
+              ))}
+            </ul>
+          ),
+        },
+        ...(price ? [{ kicker: "Investment", title: "Simple, and in writing.", body: <p>{price.a}</p>, img: pic(2) ?? pic(0) }] : []),
+      ]}
+      primary={{ label: "Book a session", to: "/experience/$kind", params: { kind: service.inquire } }}
+      secondary={{ label: "Find a location", to: "/locations" }}
+      more={[...related.map((r) => ({ label: r.name, to: `/services/${r.slug}` })), { label: "All portraits", to: "/photography" }, { label: "Home", to: "/" }]}
+    />
+  );
+}

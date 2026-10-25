@@ -4,6 +4,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
 import { Photo } from "@/components/house/photo";
+import { PortraitDeck } from "@/components/house/portrait-deck";
 import { SoundFilm } from "@/components/house/sound-film";
 import { pageHead, serviceJsonLd } from "@/lib/seo";
 
@@ -69,6 +70,55 @@ export default function Photography() {
   return (
     <ContentShell path="/photography" breadcrumb={[{ name: "Portraits", path: "/photography" }]}>
       <StructuredData json={SERVICE} />
+
+      {/* Phones: full-screen slides you swipe through */}
+      <PortraitDeck
+        cover={{ src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in soft sepia" }}
+        label="Portrait sessions"
+        slides={[
+          {
+            kicker: "There is life outside the aisle.",
+            title: <>Portraits <em>for the people</em> you love.</>,
+            body: <p>Couples, graduates, families and the moments in between — photographed across Seattle and Tacoma with the same light and care as our weddings.</p>,
+            img: { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in soft sepia" },
+          },
+          {
+            kicker: "Sessions",
+            title: "Choose your session",
+            body: (
+              <ul className="sh-deck__list">
+                {PRICES.map((p) => (
+                  <li key={p.name}>
+                    <b>{p.name}</b>
+                    <span>{p.points.join(" · ")} — {p.price}</span>
+                  </li>
+                ))}
+              </ul>
+            ),
+          },
+          {
+            kicker: "Maternity",
+            title: <>For those <em>expecting</em>.</>,
+            body: <p>A meadow, the deer at the tree line, and the two of you waiting on someone new. Maternity sessions can include a short film, voiceover included.</p>,
+            img: { src: "/assets/motion/maternity-meadow.jpg", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
+          },
+          {
+            kicker: "Where",
+            title: "Anywhere that feels like you.",
+            body: <p>Parks, beaches, studios and city corners across Seattle, Tacoma and the Eastside — we'll help you choose.</p>,
+            img: { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water" },
+          },
+        ]}
+        primary={{ label: "Book a session", to: "/experience/$kind", params: { kind: "couples" } }}
+        secondary={{ label: "Find a location", to: "/locations" }}
+        more={[
+          { label: "Seniors + grads", to: "/services/senior-portraits" },
+          { label: "Families + maternity", to: "/services/family-photography" },
+          { label: "Creative", to: "/services/creative-portraits" },
+          { label: "Weddings", to: "/weddings" },
+          { label: "Home", to: "/" },
+        ]}
+      />
 
       <section className="sh-wrap">
         <div className="sh-pagehero">
