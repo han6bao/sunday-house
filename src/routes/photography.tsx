@@ -73,14 +73,14 @@ export default function Photography() {
 
       {/* Phones: full-screen slides you swipe through */}
       <PortraitDeck
-        cover={{ src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in soft sepia" }}
+        cover={{ src: "/assets/stills/senior-6.jpg", alt: "Senior in a white blouse in a sunlit meadow" }}
         label="Portrait sessions"
         slides={[
           {
             kicker: "There is life outside the aisle.",
             title: <>Portraits <em>for the people</em> you love.</>,
             body: <p>Couples, graduates, families and the moments in between — photographed across Seattle and Tacoma with the same light and care as our weddings.</p>,
-            img: { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in soft sepia" },
+            img: { src: "/assets/stills/creative-2.jpg", alt: "Styled portrait against a red wall" },
           },
           {
             kicker: "Sessions",
@@ -95,6 +95,18 @@ export default function Photography() {
                 ))}
               </ul>
             ),
+          },
+          {
+            kicker: "Seniors + grads",
+            title: <>Your year, <em>looking like you</em>.</>,
+            body: <p>Classic or artistic — the outfits you love, the places you actually go.</p>,
+            img: { src: "/assets/stills/senior-13.jpg", alt: "Senior smiling in a shearling-collar jacket in the woods" },
+          },
+          {
+            kicker: "Creative sessions",
+            title: <>A still from <em>your own film</em>.</>,
+            body: <p>Concept, styling, location and light, designed with you.</p>,
+            img: { src: "/assets/stills/creative-3.jpg", alt: "Styled portrait leaning against a teal wall" },
           },
           {
             kicker: "Maternity",
