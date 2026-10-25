@@ -116,16 +116,7 @@ function Home() {
           </Link>
         </div>
         <Link to="/weddings" className="relative block sh-weddings-link" aria-label="See wedding photography">
-        <div className="sh-scriptrow">
-        <picture className="sh-scriptart sh-scriptart--forever" aria-hidden="true">
-          <source srcSet="/assets/brand/script-forever.webp" type="image/webp" />
-          <img src="/assets/brand/script-forever.png" alt="" width={2400} height={836} loading="lazy" decoding="async" />
-        </picture>
-        <picture className="sh-scriptart sh-scriptart--documented" aria-hidden="true">
-          <source srcSet="/assets/brand/script-documented.webp" type="image/webp" />
-          <img src="/assets/brand/script-documented.png" alt="" width={2400} height={592} loading="lazy" decoding="async" />
-        </picture>
-        </div>
+        {/* Forever / documented lettering — removed for now (art kept in /assets/brand/script-*) */}
         <div className="sh-mosaic">
           <Photo
             src="/assets/gallery/bride-portrait.png" motion="/assets/motion/bride" motionPosition="38% center" need="Wedding 1 of 5: a bride"
@@ -303,8 +294,6 @@ function Home() {
                 ratio="4/5"
                 to="/photography"
                 items={[
-                  { src: "/assets/stills/couple-forehead.jpg", alt: "A couple in soft sepia, a kiss on the forehead" },
-                  { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in soft sepia" },
                   { src: "/assets/motion/grad-flowers.jpg", video: "/assets/motion/grad-flowers.mp4", alt: "Graduation bouquet with a 2026 tassel", position: "center" },
                   { src: "/assets/motion/maternity-meadow.jpg", video: "/assets/motion/maternity-meadow.mp4", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
                   { src: "/assets/stills/grad-hall.jpg", alt: "Graduate in a purple gown seated beneath gothic windows" },
