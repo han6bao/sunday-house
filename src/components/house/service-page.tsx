@@ -43,7 +43,7 @@ export function ServicePage({ service }: { service: Service }) {
         })}
       />
 
-      {service.group === "portraits" ? <ServiceDeck service={service} related={related} /> : null}
+      <ServiceDeck service={service} related={related} />
 
       {/* Hero */}
       <section className="sh-wrap">
@@ -169,7 +169,7 @@ function ServiceDeck({ service, related }: { service: Service; related: Service[
       ]}
       primary={{ label: "Book a session", to: "/experience/$kind", params: { kind: service.inquire } }}
       secondary={{ label: "Find a location", to: "/locations" }}
-      more={[...related.map((r) => ({ label: r.name, to: `/services/${r.slug}` })), { label: "All portraits", to: "/photography" }, { label: "Home", to: "/" }]}
+      more={[...related.map((r) => ({ label: r.name, to: `/services/${r.slug}` })), service.group === "portraits" ? { label: "All portraits", to: "/photography" } : { label: "Weddings", to: "/weddings" }, { label: "Home", to: "/" }]}
     />
   );
 }

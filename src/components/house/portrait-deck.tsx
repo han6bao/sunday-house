@@ -48,15 +48,18 @@ export function PortraitDeck({
   const n = (i: number) => `${String(i + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}`;
 
   return (
-    <section className="sh-deck" aria-label={`${label} — swipe for more`}>
+    <section className={`sh-deck${at === 0 ? " is-cover" : ""}`} aria-label={`${label} — swipe for more`}>
       <div ref={ref} className="sh-deck__track">
         {/* Cover */}
         <article className="sh-deck__slide sh-deck__slide--cover">
-          <img src={cover.src} alt={cover.alt} className="sh-deck__bg" style={{ objectPosition: cover.position }} />
-          <picture className="sh-deck__mark">
-            <source srcSet="/assets/brand/logo-sunday-house-white.webp" type="image/webp" />
-            <img src="/assets/brand/logo-sunday-house-white.png" alt="Sunday House" />
-          </picture>
+          {/* A print on cream paper, the mark stamped over it in gold */}
+          <div className="sh-deck__print">
+            <img src={cover.src} alt={cover.alt} className="sh-deck__bg" style={{ objectPosition: cover.position }} />
+            <picture className="sh-deck__mark">
+              <source srcSet="/assets/brand/logo-sunday-house-gold.webp" type="image/webp" />
+              <img src="/assets/brand/logo-sunday-house-gold.png" alt="Sunday House" />
+            </picture>
+          </div>
           <p className="sh-deck__label">{label}</p>
         </article>
 
