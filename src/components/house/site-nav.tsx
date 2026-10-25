@@ -10,7 +10,7 @@ import { Heart, HouseMark } from "./marks";
 /** Wedding-first navigation: the work, then the house. */
 const NAV = [
   { label: "Weddings", href: "/weddings" },
-  { label: "Film", href: "/video" },
+  { label: "Film", href: "/film" },
   { label: "Portraits", href: "/photography" },
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },

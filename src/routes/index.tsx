@@ -168,7 +168,7 @@ function Home() {
           <div className="min-w-0 lg:col-span-8">
             <FilmRail
               tag={
-                <Link to="/video" className="sh-collage__more sh-filmtag">
+                <Link to="/film" className="sh-collage__more sh-filmtag">
                   More about our films →
                 </Link>
               }

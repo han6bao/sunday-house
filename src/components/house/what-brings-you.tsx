@@ -26,7 +26,7 @@ const DOORS = [
     head: "Something Else",
     line: "Film, events, creative work & custom pieces.",
     note: "Wedding websites, content creation, films, events and made-for-you pieces.",
-    to: "/video",
+    to: "/film",
     photo: "/assets/gallery/greenhouse.png",
     alt: "A quiet greenhouse moment, photographed by Sunday House",
   },

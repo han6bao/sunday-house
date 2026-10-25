@@ -123,7 +123,7 @@ export default function ContentPortfolio() {
         secondary={{ label: "How it works", to: "/content-creation" }}
         more={[
           { label: "Weddings", to: "/weddings" },
-          { label: "Film", to: "/video" },
+          { label: "Film", to: "/film" },
           { label: "Home", to: "/" },
         ]}
       />

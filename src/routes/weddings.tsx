@@ -138,7 +138,7 @@ export default function Weddings() {
           },
         ]}
         primary={{ label: "Check your date", to: "/experience/$kind", params: { kind: "weddings" } }}
-        secondary={{ label: "Watch the films", to: "/video" }}
+        secondary={{ label: "Watch the films", to: "/film" }}
         more={[
           { label: "Engagements", to: "/services/engagement-photography" },
           { label: "Elopements", to: "/services/elopement-photography" },
@@ -164,7 +164,7 @@ export default function Weddings() {
               <Link to="/experience/$kind" params={{ kind: "weddings" }} className="hz-btn hz-btn--solid">
                 Check your date
               </Link>
-              <Link to="/video" className="hz-btn">
+              <Link to="/film" className="hz-btn">
                 Watch wedding films
               </Link>
             </div>

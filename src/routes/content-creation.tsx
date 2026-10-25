@@ -50,7 +50,7 @@ export default function ContentCreation() {
           },
         ]}
         primary={{ label: "Tell us about your day", to: "/experience/$kind", params: { kind: "weddings" } }}
-        secondary={{ label: "See the film", to: "/video" }}
+        secondary={{ label: "See the film", to: "/film" }}
         more={[
           { label: "Weddings", to: "/weddings" },
           { label: "Portraits", to: "/photography" },
@@ -80,7 +80,7 @@ export default function ContentCreation() {
                 <Heart className="h-4 w-4 text-rose-deep" /> Tell us about your day →
               </Link>
               <Link
-                to="/video"
+                to="/film"
                 className="sh-textlink"
               >
                 For the cinematic story, see film →

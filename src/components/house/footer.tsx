@@ -16,7 +16,7 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
     head: "Weddings",
     links: [
       { label: "Wedding Photography", href: "/weddings" },
-      { label: "Wedding Film", href: "/video" },
+      { label: "Wedding Film", href: "/film" },
       { label: "Seattle Weddings", href: "/services/$slug", params: { slug: "seattle-wedding-photographer" } },
       { label: "Tacoma Weddings", href: "/services/$slug", params: { slug: "tacoma-wedding-photographer" } },
       { label: "Engagements + Couples", href: "/services/$slug", params: { slug: "engagement-photography" } },
@@ -76,7 +76,7 @@ export function Footer() {
               {[
                 { label: "Weddings", href: "/weddings" },
                 { label: "Portraits", href: "/photography" },
-                { label: "Film", href: "/video" },
+                { label: "Film", href: "/film" },
                 { label: "Services", href: "/services" },
                 { label: "About", href: "/about" },
                 { label: "Locations", href: "/locations" },

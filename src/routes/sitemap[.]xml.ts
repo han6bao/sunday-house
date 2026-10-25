@@ -9,7 +9,7 @@ const ROUTES = [
   { path: "/weddings", priority: "0.95", changefreq: "weekly" },
   { path: "/custom-pieces", priority: "0.7", changefreq: "monthly" },
   { path: "/photography", priority: "0.9", changefreq: "monthly" },
-  { path: "/video", priority: "0.7", changefreq: "monthly" },
+  { path: "/film", priority: "0.7", changefreq: "monthly" },
   { path: "/wedding-websites", priority: "0.7", changefreq: "monthly" },
   { path: "/content-creation", priority: "0.7", changefreq: "monthly" },
   { path: "/content-portfolio", priority: "0.7", changefreq: "weekly" },

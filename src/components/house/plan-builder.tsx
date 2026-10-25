@@ -67,7 +67,7 @@ const RESOURCES: Record<string, { label: string; href: string }[]> = {
   ],
   "photo-film": [
     { label: "Sunday House photography", href: "/photography" },
-    { label: "Wedding films", href: "/video" },
+    { label: "Wedding films", href: "/film" },
     { label: "Wedding content creation", href: "/content-creation" },
   ],
   "food-drink": [
@@ -77,7 +77,7 @@ const RESOURCES: Record<string, { label: string; href: string }[]> = {
     { label: "Made for your day", href: "/custom-pieces" },
   ],
   "style-beauty": [{ label: "Sunday House photography", href: "/photography" }],
-  music: [{ label: "Wedding films", href: "/video" }],
+  music: [{ label: "Wedding films", href: "/film" }],
   "paper-digital": [
     { label: "Wedding websites", href: "/wedding-websites" },
     { label: "Made for your day — paper + digital", href: "/custom-pieces" },
