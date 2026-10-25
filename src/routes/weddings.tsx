@@ -4,6 +4,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
 import { Photo } from "@/components/house/photo";
+import { PortraitDeck } from "@/components/house/portrait-deck";
 import { pageHead, serviceJsonLd } from "@/lib/seo";
 
 const TITLE = "Seattle & Tacoma Wedding Photographer | Sunday House";
@@ -83,6 +84,69 @@ export default function Weddings() {
   return (
     <ContentShell path="/weddings" breadcrumb={[{ name: "Weddings", path: "/weddings" }]}>
       <StructuredData json={SERVICE} />
+
+      {/* Phones: full-screen slides you swipe through */}
+      <PortraitDeck
+        cover={{ src: "/assets/gallery/sunset-couple.png", alt: "Newlyweds embracing on a hill at sunset" }}
+        label="Wedding photography + film"
+        slides={[
+          {
+            kicker: "You said yes.",
+            title: <>Wedding photography <em>&amp; film</em> in Seattle + Tacoma.</>,
+            body: <p>Cinematic, honest and calm. We photograph the whole day — and the people who make it yours — so you can be fully in it.</p>,
+            img: { src: "/assets/gallery/bride-portrait.png", alt: "Bridal portrait in soft natural light" },
+          },
+          {
+            kicker: "Coverage",
+            title: "The whole story",
+            body: (
+              <ul className="sh-deck__list">
+                {COVERAGE.map((c) => (
+                  <li key={c.title}>
+                    <b>{c.title}</b>
+                    <span>{c.body}</span>
+                  </li>
+                ))}
+              </ul>
+            ),
+          },
+          {
+            kicker: "Cultural + two-day weddings",
+            title: <>More than one day. <em>Every</em> tradition.</>,
+            body: <p>A tea ceremony and a reception, a nikah and a walima — we photograph all of it as one story. A second day can be added to any collection.</p>,
+            img: { src: "/assets/content-work/Dc94ykltayq.jpg", alt: "Bride and groom embracing at a colorful mehndi celebration" },
+          },
+          {
+            kicker: "Investment",
+            title: "Collections",
+            body: (
+              <ul className="sh-deck__list">
+                {INVESTMENT.map((c) => (
+                  <li key={c.name}>
+                    <b>{c.name} · from {c.price}</b>
+                    <span>{c.points.join(" · ")}</span>
+                  </li>
+                ))}
+              </ul>
+            ),
+          },
+          {
+            kicker: "Recent weddings",
+            title: "The last dance, kept.",
+            body: <p>Getting ready to the send-off, in photographs and film.</p>,
+            img: { src: "/assets/content-work/Dc-CZYLJuxk.jpg", alt: "Bride and groom dancing under chandeliers at a barn wedding reception" },
+          },
+        ]}
+        primary={{ label: "Check your date", to: "/experience/$kind", params: { kind: "weddings" } }}
+        secondary={{ label: "Watch the films", to: "/video" }}
+        more={[
+          { label: "Engagements", to: "/services/engagement-photography" },
+          { label: "Elopements", to: "/services/elopement-photography" },
+          { label: "Content creation", to: "/content-creation" },
+          { label: "Portraits", to: "/photography" },
+          { label: "Home", to: "/" },
+        ]}
+      />
 
       {/* Hero */}
       <section className="sh-wrap">

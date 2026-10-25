@@ -8,7 +8,7 @@ export type DeckSlide = {
   title?: ReactNode;
   body?: ReactNode;
   /** Optional full-bleed photo behind the words. */
-  img?: { src: string; alt: string; position?: string };
+  img?: { src: string; alt: string; position?: string; video?: string };
 };
 
 type DeckLink = { label: string; to: string; params?: Record<string, string> };
@@ -26,7 +26,7 @@ export function PortraitDeck({
   secondary,
   more,
 }: {
-  cover: { src: string; alt: string; position?: string };
+  cover: { src: string; alt: string; position?: string; video?: string };
   label: string;
   slides: DeckSlide[];
   primary: DeckLink;
@@ -54,7 +54,11 @@ export function PortraitDeck({
         <article className="sh-deck__slide sh-deck__slide--cover">
           {/* A print on cream paper, the mark stamped over it in gold */}
           <div className="sh-deck__print">
-            <img src={cover.src} alt={cover.alt} className="sh-deck__bg" style={{ objectPosition: cover.position }} />
+            {cover.video ? (
+              <video src={cover.video} poster={cover.src} autoPlay muted loop playsInline aria-label={cover.alt} className="sh-deck__bg" style={{ objectPosition: cover.position }} />
+            ) : (
+              <img src={cover.src} alt={cover.alt} className="sh-deck__bg" style={{ objectPosition: cover.position }} />
+            )}
             <picture className="sh-deck__mark">
               <source srcSet="/assets/brand/logo-sunday-house-gold.webp" type="image/webp" />
               <img src="/assets/brand/logo-sunday-house-gold.png" alt="Sunday House" />
@@ -65,7 +69,11 @@ export function PortraitDeck({
 
         {slides.map((s, i) => (
           <article key={i} className={`sh-deck__slide${s.img ? " has-img" : ""}`}>
-            {s.img ? <img src={s.img.src} alt={s.img.alt} className="sh-deck__bg" loading="lazy" style={{ objectPosition: s.img.position }} /> : null}
+            {s.img?.video ? (
+              <video src={s.img.video} poster={s.img.src} autoPlay muted loop playsInline preload="metadata" aria-label={s.img.alt} className="sh-deck__bg" style={{ objectPosition: s.img.position }} />
+            ) : s.img ? (
+              <img src={s.img.src} alt={s.img.alt} className="sh-deck__bg" loading="lazy" style={{ objectPosition: s.img.position }} />
+            ) : null}
             <div className="sh-deck__text">
               {s.kicker ? <p className="sh-deck__kicker">{s.kicker}</p> : null}
               {s.title ? <h2 className="sh-deck__title">{s.title}</h2> : null}

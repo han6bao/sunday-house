@@ -4,6 +4,7 @@ import { pageHead } from "@/lib/seo";
 import { ContentShell } from "@/components/house/content-shell";
 import { Heart, HouseMark } from "@/components/house/marks";
 import { ImageSlot } from "@/components/house/image-slot";
+import { PortraitDeck } from "@/components/house/portrait-deck";
 
 type Reel = {
   shortcode: string;
@@ -72,6 +73,60 @@ export const Route = createFileRoute("/content-portfolio")({
 export default function ContentPortfolio() {
   return (
     <ContentShell breadcrumb={[{ name: "Wedding Content: Abha & Udit", path: "/content-portfolio" }]}>
+      {/* Phones: full-screen slides you swipe through */}
+      <PortraitDeck
+        cover={{ src: "/assets/content-work/Dc-CDETMQt6.jpg", alt: "The dance floor at Abha and Udit's wedding" }}
+        label="Abha × Udit · wedding content"
+        slides={[
+          {
+            kicker: "One day. Twenty-eight videos. One story.",
+            title: "The wedding, shared while it happened.",
+            body: <p>A full-day Indian-American wedding across Seattle and the South Sound — live-edited Stories, reels and a complete content library afterward.</p>,
+            img: { src: "/assets/content-work/Dc-PNpPptSy.jpg", alt: "The couple together during the wedding" },
+          },
+          {
+            kicker: "The day",
+            title: "From morning to after dark",
+            body: (
+              <ul className="sh-deck__list">
+                {TIMELINE.slice(0, 6).map((t) => (
+                  <li key={t.time}>
+                    <b>{t.time}</b>
+                    <span>{t.caption}</span>
+                  </li>
+                ))}
+              </ul>
+            ),
+          },
+          {
+            kicker: "In real time",
+            title: "Family who couldn't travel followed every moment.",
+            body: <p>Live Stories through the day, then reels that reached 80K+ views — more than 60K in the first few days.</p>,
+            img: { src: "/assets/content-work/Dc-B3czOfle.jpg", alt: "The reveal, shared the moment it happened" },
+          },
+          {
+            kicker: "What came home",
+            title: "Delivered",
+            body: (
+              <ul className="sh-deck__list">
+                {DELIVERY.slice(0, 4).map((d) => (
+                  <li key={d.label}>
+                    <b>{d.label}</b>
+                    <span>{d.note}</span>
+                  </li>
+                ))}
+              </ul>
+            ),
+          },
+        ]}
+        primary={{ label: "Tell us about your day", to: "/experience/$kind", params: { kind: "weddings" } }}
+        secondary={{ label: "How it works", to: "/content-creation" }}
+        more={[
+          { label: "Weddings", to: "/weddings" },
+          { label: "Film", to: "/video" },
+          { label: "Home", to: "/" },
+        ]}
+      />
       {/* Hero */}
       <section className="mx-auto max-w-[1400px] px-5 pt-14 md:px-8">
         <div className="mx-auto max-w-3xl text-center">

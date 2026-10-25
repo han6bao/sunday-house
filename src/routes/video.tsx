@@ -4,6 +4,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
 import { FilmSnippet } from "@/components/house/film-snippet";
+import { PortraitDeck } from "@/components/house/portrait-deck";
 import { pageHead, serviceJsonLd } from "@/lib/seo";
 
 const TITLE = "Seattle & Tacoma Wedding Videographer + Films | Sunday House";
@@ -71,6 +72,53 @@ export default function Video() {
   return (
     <ContentShell path="/video" breadcrumb={[{ name: "Wedding Film", path: "/video" }]}>
       <StructuredData json={SERVICE} />
+
+      {/* Phones: full-screen slides you swipe through */}
+      <PortraitDeck
+        cover={{ src: "/assets/film-posters/film-7.jpg", video: "/assets/films-web/film-7.mp4", alt: "Wedding film: the couple face each other beneath the trees" }}
+        label="Wedding film"
+        slides={[
+          {
+            kicker: "Moving pictures, kept.",
+            title: <>Wedding films for the way it <em>felt</em>.</>,
+            body: <p>The vows in your own voices. The toast that made everyone cry. The last song of the night.</p>,
+            img: { src: "/assets/film-posters/film-1.jpg", video: "/assets/films-web/film-1.mp4", alt: "The first dance" },
+          },
+          {
+            kicker: "What's included",
+            title: "Your film",
+            body: (
+              <ul className="sh-deck__list">
+                {INCLUDES.map((it) => (
+                  <li key={it.t}>
+                    <b>{it.t}</b>
+                    <span>{it.b}</span>
+                  </li>
+                ))}
+              </ul>
+            ),
+          },
+          {
+            kicker: "Getting ready",
+            title: "Every part of the day.",
+            body: <p>Filmed alongside your photographs, so both tell the same story.</p>,
+            img: { src: "/assets/film-posters/film-8.jpg", video: "/assets/films-web/film-8.mp4", alt: "Getting ready" },
+          },
+          {
+            kicker: "Investment",
+            title: "Photo + film",
+            body: <p>Photography and film collections begin at $7,800, with eight hours of photographs, a highlight film and an engagement session.</p>,
+            img: { src: "/assets/film-posters/film-6.jpg", video: "/assets/films-web/film-6.mp4", alt: "The dance floor" },
+          },
+        ]}
+        primary={{ label: "Ask about film", to: "/experience/$kind", params: { kind: "weddings" } }}
+        secondary={{ label: "See the weddings", to: "/weddings" }}
+        more={[
+          { label: "Content creation", to: "/content-creation" },
+          { label: "Portraits", to: "/photography" },
+          { label: "Home", to: "/" },
+        ]}
+      />
 
       <section className="sh-night">
         <div className="sh-wrap pt-[clamp(3rem,7vw,6rem)] pb-[clamp(3rem,6vw,5rem)]">
