@@ -4,7 +4,7 @@ import { pageHead } from "@/lib/seo";
 import { ContentShell } from "@/components/house/content-shell";
 import { HouseGuidance } from "@/components/house/house-guidance";
 import { ImageSlot } from "@/components/house/image-slot";
-import { PortraitDeck } from "@/components/house/portrait-deck";
+import { ReelCard, TOP_REELS } from "@/components/house/reel-card";
 import { Heart, HouseMark } from "@/components/house/marks";
 
 export const Route = createFileRoute("/content-creation")({
@@ -22,41 +22,6 @@ export const Route = createFileRoute("/content-creation")({
 export default function ContentCreation() {
   return (
     <ContentShell breadcrumb={[{ name: "Wedding Content Creation", path: "/content-creation" }]}>
-      {/* Phones: full-screen slides you swipe through */}
-      <PortraitDeck
-        cover={{ src: "/assets/content-work/Dc-Q1TcSzgx.jpg", alt: "A still from a wedding reel, filmed and shared the same day" }}
-        label="Wedding content creation"
-        slides={[
-          {
-            kicker: "For the days worth reliving.",
-            title: "Your day, told while it's still happening.",
-            body: <p>Candid vertical content, live-edited Stories and social-ready moments, captured from beginning to end. Then everything comes home with you.</p>,
-            img: { src: "/assets/content-work/Dc-FW05tqrF.jpg", alt: "Wedding guests dancing in bright traditional clothes" },
-          },
-          {
-            kicker: "What we capture",
-            title: "The things you planned, and the things you didn't.",
-            body: <p>Getting ready · first looks · ceremony · traditions · family · friends · speeches · food · vendors · performances · games · reception · dancing</p>,
-          },
-          {
-            kicker: "One day. Twenty-eight videos.",
-            title: "See a whole wedding.",
-            body: (
-              <p>
-                <Link to="/content-portfolio" className="sh-deck__cta">Abha × Udit, from Carnegie to Carnation →</Link>
-              </p>
-            ),
-            img: { src: "/assets/content-work/Dc-CDETMQt6.jpg", alt: "The dance floor after dark" },
-          },
-        ]}
-        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
-        secondary={{ label: "See the film", to: "/film" }}
-        more={[
-          { label: "Weddings", to: "/weddings" },
-          { label: "Portraits", to: "/photography" },
-          { label: "Home", to: "/" },
-        ]}
-      />
       {/* Hero */}
       <section className="mx-auto max-w-[1400px] px-5 pt-14 md:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-12">
@@ -87,6 +52,17 @@ export default function ContentCreation() {
             <ImageSlot ratio="9/16" src="/assets/content-work/Dc-Q1TcSzgx.jpg" alt="A still from a wedding reel, filmed and shared the same day" />
             <p className="mt-3 text-center font-serif text-sm italic text-brown/60">The day, already in motion.</p>
           </div>
+        </div>
+      </section>
+
+      {/* The reels — tap to play right here */}
+      <section className="mx-auto max-w-[1400px] px-5 pt-14 md:px-8" aria-labelledby="cc-reels">
+        <p className="eyebrow">The reels</p>
+        <h2 id="cc-reels" className="mt-2 font-display text-3xl leading-tight text-ink">Tap to play.</h2>
+        <div className="mt-6 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
+          {TOP_REELS.map((r) => (
+            <ReelCard key={r.code} reel={r} />
+          ))}
         </div>
       </section>
 

@@ -4053,3 +4053,15 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 @media (max-width: 639px) { .sh-hero .sh-wordmark { width: 76vw !important; } }
 /* Deck cover: same warm black-and-white as the slides after it */
 @media (max-width: 767px) { .sh-deck__print .sh-deck__bg { filter: grayscale(1) sepia(0.32) saturate(0.7) contrast(1.06) brightness(0.86) !important; } }
+
+/* Reels that play on the page */
+.sh-reel { margin: 0; display: flex; flex-direction: column; min-width: 0; }
+.sh-reel__poster, .sh-reel__frame { position: relative; display: block; width: 100%; aspect-ratio: 9 / 16; border: 0; padding: 0; overflow: hidden; background: #2c2726; cursor: pointer; }
+.sh-reel__frame { aspect-ratio: 9 / 15.5; background: #fff; }
+.sh-reel__poster img { width: 100%; height: 100%; object-fit: cover; display: block; max-width: none; transition: transform 0.8s cubic-bezier(.2,.7,.2,1), filter 0.4s ease; }
+.sh-reel__poster:hover img { transform: scale(1.03); filter: brightness(0.92); }
+.sh-reel__play { position: absolute; left: 50%; top: 50%; width: 3.2rem; height: 3.2rem; transform: translate(-50%, -50%); border-radius: 999px; background: rgb(253 241 244 / 0.88); box-shadow: 0 4px 18px rgb(44 39 38 / 0.25); }
+.sh-reel__play::after { content: ""; position: absolute; left: 54%; top: 50%; transform: translate(-50%, -50%); border-style: solid; border-width: 0.5rem 0 0.5rem 0.8rem; border-color: transparent transparent transparent #2c2726; }
+.sh-reel__cap { margin-top: 0.55rem; font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgb(44 39 38 / 0.7); }
+.sh-swipe__card--reel { flex: 0 0 62%; scroll-snap-align: start; }
+.sh-swipe__card--reel .sh-reel__cap { display: none; }

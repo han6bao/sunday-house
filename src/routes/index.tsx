@@ -8,6 +8,7 @@ import { WeddingSteps } from "@/components/house/wedding-steps";
 import { Wordmark } from "@/components/house/wordmark";
 import { Photo } from "@/components/house/photo";
 import { PhotoRail } from "@/components/house/photo-rail";
+import { ReelCard, TOP_REELS } from "@/components/house/reel-card";
 import { SwipeHints } from "@/components/house/swipe-hints";
 import { pageHead } from "@/lib/seo";
 
@@ -200,9 +201,9 @@ function Home() {
                 </div>
               </div>
             </div>
-            <img className="sh-swipe__card" src="/assets/content-work/Dc-CDETMQt6.jpg" alt="Abha and Udit dancing beneath chandeliers at their reception" loading="lazy" decoding="async" />
-            <img className="sh-swipe__card" src="/assets/content-work/Dc94ykltayq.jpg" alt="The bride and groom embracing during their mehndi celebration" loading="lazy" decoding="async" />
-            <img className="sh-swipe__card" src="/assets/content-work/Dc96eH_xHeK.jpg" alt="A smiling bride in jewel tones surrounded by family" loading="lazy" decoding="async" />
+            {TOP_REELS.map((r) => (
+              <ReelCard key={r.code} reel={r} className="sh-swipe__card sh-swipe__card--reel" />
+            ))}
           </div>
           <p className="sh-swipe__hint" aria-hidden="true">Swipe to see more →</p>
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
@@ -216,25 +217,10 @@ function Home() {
         </div>
 
         <div className="sh-boxed hidden gap-10 lg:grid lg:grid-cols-12 lg:items-center">
-          <div className="order-2 grid grid-cols-3 gap-3 md:gap-4 lg:order-1 lg:col-span-7">
-            <Photo
-              src="/assets/content-work/Dc-CDETMQt6.jpg"
-              alt="Abha and Udit dancing beneath chandeliers at their Indian-American wedding reception"
-              ratio="9/16"
-              sizes="(max-width: 1024px) 33vw, 22vw"
-            />
-            <Photo
-              src="/assets/content-work/Dc94ykltayq.jpg"
-              alt="The bride and groom embracing during their mehndi celebration"
-              ratio="9/16"
-              sizes="(max-width: 1024px) 33vw, 22vw"
-            />
-            <Photo
-              src="/assets/content-work/Dc96eH_xHeK.jpg"
-              alt="A smiling bride in jewel tones surrounded by family"
-              ratio="9/16"
-              sizes="(max-width: 1024px) 33vw, 22vw"
-            />
+          <div className="order-2 grid grid-cols-4 gap-3 lg:order-1 lg:col-span-7">
+            {TOP_REELS.map((r) => (
+              <ReelCard key={r.code} reel={r} />
+            ))}
           </div>
           <div className="order-1 lg:order-2 lg:col-span-5 lg:col-start-8 lg:pl-2">
             <p className="eyebrow">Wedding content creation · Abha &amp; Udit</p>

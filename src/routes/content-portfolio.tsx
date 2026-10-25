@@ -4,7 +4,7 @@ import { pageHead } from "@/lib/seo";
 import { ContentShell } from "@/components/house/content-shell";
 import { Heart, HouseMark } from "@/components/house/marks";
 import { ImageSlot } from "@/components/house/image-slot";
-import { PortraitDeck } from "@/components/house/portrait-deck";
+import { ReelCard, TOP_REELS } from "@/components/house/reel-card";
 
 type Reel = {
   shortcode: string;
@@ -73,60 +73,6 @@ export const Route = createFileRoute("/content-portfolio")({
 export default function ContentPortfolio() {
   return (
     <ContentShell breadcrumb={[{ name: "Wedding Content: Abha & Udit", path: "/content-portfolio" }]}>
-      {/* Phones: full-screen slides you swipe through */}
-      <PortraitDeck
-        cover={{ src: "/assets/content-work/Dc-CDETMQt6.jpg", alt: "The dance floor at Abha and Udit's wedding" }}
-        label="Abha × Udit · wedding content"
-        slides={[
-          {
-            kicker: "One day. Twenty-eight videos. One story.",
-            title: "The wedding, shared while it happened.",
-            body: <p>A full-day Indian-American wedding across Seattle and the South Sound — live-edited Stories, reels and a complete content library afterward.</p>,
-            img: { src: "/assets/content-work/Dc-PNpPptSy.jpg", alt: "The couple together during the wedding" },
-          },
-          {
-            kicker: "The day",
-            title: "From morning to after dark",
-            body: (
-              <ul className="sh-deck__list">
-                {TIMELINE.slice(0, 6).map((t) => (
-                  <li key={t.time}>
-                    <b>{t.time}</b>
-                    <span>{t.caption}</span>
-                  </li>
-                ))}
-              </ul>
-            ),
-          },
-          {
-            kicker: "In real time",
-            title: "Family who couldn't travel followed every moment.",
-            body: <p>Live Stories through the day, then reels that reached 80K+ views — more than 60K in the first few days.</p>,
-            img: { src: "/assets/content-work/Dc-B3czOfle.jpg", alt: "The reveal, shared the moment it happened" },
-          },
-          {
-            kicker: "What came home",
-            title: "Delivered",
-            body: (
-              <ul className="sh-deck__list">
-                {DELIVERY.slice(0, 4).map((d) => (
-                  <li key={d.label}>
-                    <b>{d.label}</b>
-                    <span>{d.note}</span>
-                  </li>
-                ))}
-              </ul>
-            ),
-          },
-        ]}
-        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
-        secondary={{ label: "How it works", to: "/content-creation" }}
-        more={[
-          { label: "Weddings", to: "/weddings" },
-          { label: "Film", to: "/film" },
-          { label: "Home", to: "/" },
-        ]}
-      />
       {/* Hero */}
       <section className="mx-auto max-w-[1400px] px-5 pt-14 md:px-8">
         <div className="mx-auto max-w-3xl text-center">
@@ -345,10 +291,16 @@ export default function ContentPortfolio() {
             <p className="eyebrow">The reels</p>
             <h2 className="mt-2 font-display text-3xl leading-tight text-ink">Every clip, ready to post.</h2>
           </div>
-          <p className="label-xs text-brown/60">Tap any frame to watch it on Instagram</p>
+          <p className="label-xs text-brown/60">Tap to play</p>
         </div>
         <div className="mt-8 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
-          {REELS.slice(0, 8).map((r) => (
+          {TOP_REELS.map((r) => (
+            <ReelCard key={r.code} reel={r} />
+          ))}
+        </div>
+        <p className="mt-10 eyebrow">More from the day</p>
+        <div className="mt-4 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
+          {REELS.filter((r) => !TOP_REELS.some((t) => t.code === r.shortcode)).slice(0, 8).map((r) => (
             <a
               key={r.shortcode}
               href={r.url}
