@@ -32,12 +32,12 @@ const SERVICE = serviceJsonLd({
 });
 
 const GALLERY = [
-  { src: "/assets/gallery/sunset-couple.png", alt: "Newlyweds embracing on a hill at sunset", ratio: "2/3", need: "Recent wedding 1 of 4" },
+  { src: "/assets/stills/couple-sunset.jpg", alt: "Newlyweds walking toward the sunset", ratio: "2/3" },
   { src: "/assets/content-work/Dc-CZYLJuxk.jpg", alt: "Bride and groom dancing under chandeliers at a barn wedding reception", ratio: "9/16" },
-  { src: "/assets/gallery/kiss-bw.png", alt: "Black and white photograph of a groom kissing his bride's forehead", ratio: "2/3", need: "Recent wedding 2 of 4" },
+  { src: "/assets/stills/couple-kiss.jpg", alt: "A couple sharing a kiss beneath a floral arch", ratio: "2/3" },
   { src: "/assets/content-work/Dc-X9nngA-w.jpg", alt: "Wedding mandap draped in white with yellow florals", ratio: "9/16" },
-  { src: "/assets/gallery/couple-walk.png", alt: "Bride and groom walking across the lawn after the ceremony", ratio: "2/3", need: "Recent wedding 3 of 4" },
-  { src: "/assets/gallery/rings.jpg", alt: "A couple's wedding rings as they hold hands", ratio: "2/3", need: "Recent wedding 4 of 4" },
+  { src: "/assets/stills/couple-field.jpg", alt: "Bride and groom walking across the lawn after the ceremony", ratio: "2/3" },
+  { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light", ratio: "2/3" },
   { src: "/assets/content-work/Dc96OtPz2vo.jpg", alt: "Bridesmaid adjusting the bride's veil while getting ready", ratio: "9/16" },
 ];
 
@@ -215,7 +215,7 @@ export default function Weddings() {
               From the first look to the last dance.
             </h2>
             <div className="mt-10 hidden lg:block">
-              <Photo src="/assets/gallery/back-bouquet.png" need="Getting ready or first look (vertical)" alt="Bride holding a bouquet of baby's breath behind her back" ratio="4/5" sizes="35vw" />
+              <Photo src="/assets/content-work/Dc96OtPz2vo.jpg" alt="A bridesmaid adjusting the bride's veil while getting ready" ratio="4/5" sizes="35vw" />
             </div>
           </div>
           <div className="lg:col-span-7 lg:pt-24">

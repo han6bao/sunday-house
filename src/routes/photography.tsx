@@ -171,7 +171,7 @@ export default function Photography() {
         <div className="sh-mosaic">
           <Photo src="/assets/stills/couple-forehead.jpg" alt="A man kissing his partner's forehead, in soft sepia" ratio="2/3" sizes="(max-width: 900px) 50vw, 42vw" />
           <Photo src="/assets/gallery/couple-bw.png" motion="/assets/motion/grad-flowers" motionPosition="center" need="Portrait grid 2 of 5: a senior" alt="Graduation bouquet with a 2026 tassel" ratio="4/5" sizes="(max-width: 900px) 50vw, 33vw" />
-          <Photo src="/assets/gallery/movement.png" need="Portrait grid 3 of 5: a family" alt="Woman twirling in a floral dress in an open field" ratio="3/4" sizes="(max-width: 900px) 50vw, 25vw" />
+          <Photo src="/assets/stills/senior-16.jpg" alt="Senior laughing in a yellow shirt in the woods" ratio="3/4" sizes="(max-width: 900px) 50vw, 25vw" />
           <Photo src="/assets/gallery/daisy.png" motion="/assets/motion/maternity-meadow" motionPosition="78% center" need="Portrait grid 4 of 5: maternity" alt="Expecting mother in a meadow with deer grazing behind her" ratio="1/1" sizes="(max-width: 900px) 50vw, 25vw" />
           <Photo src="/assets/stills/senior-14.jpg" alt="Senior in a yellow shirt seated on a mossy log in the forest" ratio="4/5" sizes="(max-width: 900px) 50vw, 33vw" />
         </div>

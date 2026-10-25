@@ -54,8 +54,8 @@ export const SERVICES: Service[] = [
     photos: [
       { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in soft sepia" },
       { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in soft sepia" },
-      { src: "/assets/gallery/rings.jpg", alt: "Close-up of an engagement ring as the couple holds hands", need: "Engagement session photo 3 (engagement sessions, ideally different couples)" },
-      { src: "", alt: "", need: "Engagement session photo 4 (engagement sessions, ideally different couples)" },
+      { src: "/assets/stills/couple-sunset.jpg", alt: "A couple walking toward the sunset" },
+      { src: "/assets/stills/couple-field.jpg", alt: "A couple walking hand in hand across a green lawn" },
     ],
     faqs: [
       { q: "How much is an engagement or couples session?", a: "Couples sessions begin at $375 for an hour at one location. Engagement sessions are $450 for ninety minutes and two looks, and one is included with The Story and The Full Day wedding collections." },
@@ -88,10 +88,10 @@ export const SERVICES: Service[] = [
       { title: "Photography and film", body: "Add a short film and you'll keep your vows in your own voices — the part of an elopement couples treasure most." },
     ],
     photos: [
-      { src: "/assets/gallery/sunset-couple.png", alt: "Couple embracing on a hilltop at sunset after their elopement", need: "Elopement: top photo (vertical)" },
-      { src: "/assets/gallery/couple-walk.png", alt: "Newlyweds walking across a lawn after a small ceremony", need: "Elopement photo 2 (an elopement or very small wedding)" },
-      { src: "/assets/film-posters/film-7.jpg", alt: "Bride and groom face to face beneath the trees", need: "Elopement photo 3 (an elopement or very small wedding)" },
-      { src: "", alt: "", need: "Elopement photo 4 (an elopement or very small wedding)" },
+      { src: "/assets/stills/couple-kiss.jpg", alt: "A couple sharing a kiss beneath a floral arch" },
+      { src: "/assets/motion/couple-hill.jpg", alt: "Newlyweds on a hilltop at sunset" },
+      { src: "/assets/film-posters/film-7.jpg", alt: "Bride and groom face to face beneath the trees" },
+      { src: "/assets/stills/couple-sunset.jpg", alt: "Newlyweds walking toward the sunset" },
     ],
     faqs: [
       { q: "How much does elopement photography cost?", a: "Intimate weddings and elopements begin at $1,800 for up to three hours at one location. Extra hours, a second location and film can all be added." },
@@ -125,10 +125,10 @@ export const SERVICES: Service[] = [
       { title: "One team, whole day", body: "Wedding photography and film together, from getting ready to the last dance." },
     ],
     photos: [
-      { src: "/assets/locations/kerry-park-night.jpg", alt: "Seattle skyline from Kerry Park at night", need: "Seattle wedding: top photo (vertical)" },
-      { src: "/assets/gallery/kiss-bw.png", alt: "Black and white portrait of a groom kissing his bride's forehead", need: "Seattle wedding photo 2 (a wedding or session you shot in Seattle)" },
-      { src: "/assets/film-posters/film-1.jpg", alt: "Couple's first dance beneath string lights", need: "Seattle wedding photo 3 (a wedding or session you shot in Seattle)" },
-      { src: "/assets/locations/alki-april.jpg", alt: "Alki Beach in West Seattle in spring", need: "Seattle wedding photo 4 (a wedding or session you shot in Seattle)" },
+      { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light" },
+      { src: "/assets/content-work/Dc-CZYLJuxk.jpg", alt: "Bride and groom dancing under chandeliers" },
+      { src: "/assets/film-posters/film-1.jpg", alt: "A first dance beneath string lights" },
+      { src: "/assets/locations/kerry-park-night.jpg", alt: "Seattle skyline from Kerry Park at night" },
     ],
     faqs: [
       { q: "How much does a wedding photographer cost?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $7,800." },
@@ -161,10 +161,10 @@ export const SERVICES: Service[] = [
       { title: "Photo + film together", body: "One team for photographs and film, so the style, the timing and the story all match." },
     ],
     photos: [
-      { src: "/assets/locations/ptdef-rose-arbor.jpg", alt: "Rose arbor at Point Defiance Park in Tacoma", need: "Tacoma wedding: top photo (vertical)" },
-      { src: "/assets/gallery/couple-walk.png", alt: "Newlyweds walking together after their ceremony", need: "Tacoma wedding photo 2 (a wedding or session you shot in Tacoma or the South Sound)" },
-      { src: "/assets/locations/ruston-way.jpg", alt: "Ruston Way waterfront in Tacoma", need: "Tacoma wedding photo 3 (a wedding or session you shot in Tacoma or the South Sound)" },
-      { src: "/assets/gallery/sunset-couple.png", alt: "Couple embracing on a hill at sunset", need: "Tacoma wedding photo 4 (a wedding or session you shot in Tacoma or the South Sound)" },
+      { src: "/assets/motion/bride.jpg", alt: "A bride looking toward the light" },
+      { src: "/assets/stills/couple-field.jpg", alt: "Newlyweds walking together after their ceremony" },
+      { src: "/assets/locations/ptdef-rose-arbor.jpg", alt: "Rose arbor at Point Defiance Park in Tacoma" },
+      { src: "/assets/motion/ring.jpg", alt: "A wedding ring on joined hands" },
     ],
     faqs: [
       { q: "How much is a Tacoma wedding photographer?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $7,800." },
@@ -238,15 +238,15 @@ export const SERVICES: Service[] = [
     description:
       "Family and maternity photography in Seattle and Tacoma — relaxed outdoor and at-home sessions for the people you love, from the bump to the grandparents.",
     script: "Every season, kept.",
-    h1: "Family photos for *every season*.",
+    h1: "Maternity and family photos for *every season*.",
     intro: [
       "Family photographs get more precious every year. We keep sessions easy and unhurried — a walk, a game, some snuggling — so the photographs show how your family actually is, not how it lines up.",
       "We photograph families at home, in parks and on beaches across Seattle, Tacoma and Puget Sound, planned around naps, light and the season you want to remember.",
       "Expecting? Maternity sessions keep the waiting — outdoors in golden light or somewhere meaningful to you, unhurried and paced around how you feel.",
     ],
     highlights: [
-      { title: "Kid-paced", body: "We follow the little ones' energy and keep things playful, so nobody's photographed at their limit." },
-      { title: "Everyone included", body: "Grandparents, cousins and pets — big groups and small, with a plan to get every combination." },
+      { title: "Paced around you", body: "Unhurried sessions that follow how you feel — rest when you need it, no rushing." },
+      { title: "Everyone included", body: "Partners, little ones, grandparents and pets — big groups and small, with a plan for every combination." },
       { title: "Holiday-ready", body: "Book late summer or early fall and your photographs are ready for cards and gifts." },
     ],
     photos: [
@@ -278,7 +278,7 @@ export const SERVICES: Service[] = [
     h1: "Creative portraits, *built like a film*.",
     intro: [
       "Creative sessions start with an idea — a mood, a memory, a character, a season — and build the whole picture around it: styling, props, location and light. The result feels like a still from a film you starred in.",
-      "We design creative and editorial portrait sessions across Seattle, Tacoma and the Pacific Northwest, from golden-hour fields to greenhouses and moody interiors.",
+      "We design creative and editorial portrait sessions across Seattle, Tacoma and the Pacific Northwest — bold color, styled looks, city walls and moody interiors.",
     ],
     highlights: [
       { title: "Concept + direction", body: "We develop the idea with you and plan every frame before the day." },
@@ -296,7 +296,7 @@ export const SERVICES: Service[] = [
       { q: "What is a creative portrait session?", a: "A portrait session designed around a concept — a mood, a story or a look — with styling, location and lighting planned ahead, rather than a classic posed portrait." },
       { q: "Do I need to have the idea already?", a: "No. Bring a feeling, a song, a few pictures you love, and we'll develop the concept together." },
       { q: "Are creative sessions good for creators and brands?", a: "Yes. They work beautifully for personal branding, musicians, artists and anyone who wants imagery with a point of view." },
-      { q: "Where do creative sessions take place?", a: "Anywhere the concept needs: fields, gardens, greenhouses, studios or city streets around Puget Sound." },
+      { q: "Where do creative sessions take place?", a: "Anywhere the concept needs: color-washed city walls, studios, moody interiors, gardens or fields around Puget Sound." },
     ],
     related: ["senior-portraits", "engagement-photography", "family-photography"],
     inquire: "creative",
