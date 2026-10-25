@@ -143,8 +143,8 @@ export default function Photography() {
             </div>
           </div>
           <Photo
-            src="/assets/gallery/greenhouse.png" need="Portraits page: top photo, your favorite portrait session (vertical)"
-            alt="Portrait of a woman resting her chin on her hand in a sunlit greenhouse with pink roses"
+            src="/assets/stills/senior-8.jpg"
+            alt="Senior standing on a sunlit trail among tall evergreens"
             ratio="4/5"
             priority
             sizes="(max-width: 1024px) 100vw, 40vw"

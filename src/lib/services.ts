@@ -199,10 +199,13 @@ export const SERVICES: Service[] = [
       { title: "Graduates too", body: "College and graduate portraits with caps, gowns and campus favorites." },
     ],
     photos: [
-      { src: "/assets/gallery/daisy.png", alt: "Senior portrait holding a daisy against a dark green background", need: "Senior or grad session: top photo (vertical)" },
-      { src: "/assets/gallery/flower-nose.png", alt: "Portrait with a daisy and eyes closed in evening light", need: "Senior or grad session photo 2 (senior or graduate sessions)" },
-      { src: "/assets/gallery/greenhouse.png", alt: "Portrait in a sunlit greenhouse", need: "Senior or grad session photo 3 (senior or graduate sessions)" },
-      { src: "", alt: "", need: "Senior or grad session photo 4 (senior or graduate sessions)" },
+      { src: "/assets/stills/senior-3.jpg", alt: "Senior smiling, seated in tall golden grass" },
+      { src: "/assets/stills/senior-1.jpg", alt: "Senior in a sheer blue cardigan, hands on hips in a golden field" },
+      { src: "/assets/stills/senior-2.jpg", alt: "Senior with hands to her heart, looking into the summer light" },
+      { src: "/assets/stills/senior-4.jpg", alt: "Senior in a black jumpsuit seated on a stone in the park" },
+      { src: "/assets/stills/senior-5.jpg", alt: "Senior laughing with her arms raised in the sun" },
+      { src: "/assets/stills/senior-6.jpg", alt: "Senior in a white blouse, glancing over her shoulder in a sunlit meadow" },
+      { src: "/assets/stills/senior-7.jpg", alt: "Senior crouching on a forest path in boots, smiling" },
     ],
     faqs: [
       { q: "How much are senior portraits?", a: "$375 for one hour and two outfits, or $575 for two hours with three to four outfits and two locations." },
