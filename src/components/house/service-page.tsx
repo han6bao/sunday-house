@@ -75,7 +75,7 @@ export function ServicePage({ service }: { service: Service }) {
       {/* Story + photos */}
       <section className="sh-wrap sh-section">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-start">
-          <div className="lg:col-span-5">
+          <div className={rest.length > 6 ? "lg:col-span-8" : "lg:col-span-5"}>
             <h2 className="sh-h2">What to expect</h2>
             {service.intro.slice(1).map((p) => (
               <p key={p} className="sh-body mt-6">
@@ -83,7 +83,7 @@ export function ServicePage({ service }: { service: Service }) {
               </p>
             ))}
           </div>
-          <div className={`grid gap-4 lg:col-span-7 ${rest.length > 2 ? "grid-cols-3" : "grid-cols-2"}`}>
+          <div className={rest.length > 6 ? "grid grid-cols-2 gap-3 sm:grid-cols-3 lg:col-span-12 lg:grid-cols-6" : `grid gap-4 lg:col-span-7 ${rest.length > 2 ? "grid-cols-3" : "grid-cols-2"}`}>
             {rest.map((ph, i) => (
               <Photo
                 key={ph.src}
@@ -91,7 +91,7 @@ export function ServicePage({ service }: { service: Service }) {
                 alt={ph.alt}
                 need={ph.need}
                 ratio="2/3"
-                className={i % 2 ? "mt-10" : ""}
+                className={rest.length <= 6 && i % 2 ? "mt-10" : ""}
                 sizes="(max-width: 1024px) 50vw, 25vw"
               />
             ))}
