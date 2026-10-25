@@ -5,7 +5,6 @@ import { SERVICES } from "@/lib/services";
 
 const ROUTES = [
   { path: "/", priority: "1.0", changefreq: "weekly" },
-  { path: "/plan", priority: "0.9", changefreq: "weekly" },
   { path: "/weddings", priority: "0.95", changefreq: "weekly" },
   { path: "/custom-pieces", priority: "0.7", changefreq: "monthly" },
   { path: "/photography", priority: "0.9", changefreq: "monthly" },
@@ -13,8 +12,6 @@ const ROUTES = [
   { path: "/wedding-websites", priority: "0.7", changefreq: "monthly" },
   { path: "/content-creation", priority: "0.7", changefreq: "monthly" },
   { path: "/content-portfolio", priority: "0.7", changefreq: "weekly" },
-  { path: "/locations", priority: "0.7", changefreq: "weekly" },
-  { path: "/house-objects", priority: "0.6", changefreq: "monthly" },
   { path: "/extras", priority: "0.6", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
   { path: "/services", priority: "0.9", changefreq: "monthly" },
@@ -24,7 +21,6 @@ const ROUTES = [
     changefreq: "monthly",
   })),
   // Location guides: not in the menu, discoverable through search.
-  { path: "/guides", priority: "0.6", changefreq: "monthly" },
   ...GUIDES.map((g) => ({ path: `/guides/${g.slug}`, priority: "0.7", changefreq: "monthly" })),
 ];
 

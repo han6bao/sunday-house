@@ -68,7 +68,7 @@ const FAQ = [
   },
   {
     q: "Are you wedding planners?",
-    a: "No — we're a photography-led house. We don't hold your timeline or manage vendor calls, but we know people who do, and the free Wedding Workbook helps you organize the rest.",
+    a: "No — we're a photography-led house. We don't hold your timeline or manage vendor calls, but we know people who do.",
   },
   {
     q: "How much does wedding photography cost?",
@@ -137,7 +137,7 @@ export default function Weddings() {
             img: { src: "/assets/content-work/Dc-CZYLJuxk.jpg", alt: "Bride and groom dancing under chandeliers at a barn wedding reception" },
           },
         ]}
-        primary={{ label: "Check your date", to: "/experience/$kind", params: { kind: "weddings" } }}
+        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
         secondary={{ label: "Watch the films", to: "/film" }}
         more={[
           { label: "Engagements", to: "/services/engagement-photography" },
@@ -161,9 +161,9 @@ export default function Weddings() {
               people who make it yours — so you can be fully in it.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/experience/$kind" params={{ kind: "weddings" }} className="hz-btn hz-btn--solid">
-                Check your date
-              </Link>
+              <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid">
+                Email us
+              </a>
               <Link to="/film" className="hz-btn">
                 Watch wedding films
               </Link>
@@ -226,9 +226,9 @@ export default function Weddings() {
                 <p className="sh-body mt-3 max-w-xl">{c.body}</p>
               </div>
             ))}
-            <Link to="/experience/$kind" params={{ kind: "weddings" }} className="hz-btn hz-btn--solid mt-2">
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid mt-2">
               Ask about your date
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -305,9 +305,9 @@ export default function Weddings() {
               <span className="sh-body">Up to 4 hours, added to any collection</span>
               <span className="sh-price__addon-amt">+ $1,500</span>
             </p>
-            <Link to="/experience/$kind" params={{ kind: "weddings" }} search={{ guide: 1 }} className="sh-btn-fill mt-8">
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
               Request the collections guide
-            </Link>
+            </a>
             <p className="sh-body mt-4 text-sm">
               Every collection can end with something you can hold: heirloom albums and framed prints, made to last.
             </p>
@@ -357,8 +357,6 @@ export default function Weddings() {
             { label: "Seattle weddings", to: "/services/$slug", params: { slug: "seattle-wedding-photographer" } },
             { label: "Tacoma weddings", to: "/services/$slug", params: { slug: "tacoma-wedding-photographer" } },
             { label: "Elopements", to: "/services/$slug", params: { slug: "elopement-photography" } },
-            { label: "Photo locations", to: "/locations" },
-            { label: "The Wedding Workbook", to: "/plan" },
             { label: "Websites, paper + prints", to: "/extras" },
           ].map((l) => (
             <li key={l.label}>

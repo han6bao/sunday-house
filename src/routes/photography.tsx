@@ -121,8 +121,8 @@ export default function Photography() {
             img: { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water" },
           },
         ]}
-        primary={{ label: "Book a session", to: "/experience/$kind", params: { kind: "couples" } }}
-        secondary={{ label: "Find a location", to: "/locations" }}
+        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
+        secondary={{ label: "Planning a wedding?", to: "/weddings" }}
         more={[
           { label: "Seniors + grads", to: "/services/senior-portraits" },
           { label: "Families + maternity", to: "/services/family-photography" },
@@ -146,9 +146,9 @@ export default function Photography() {
             </p>
             <p className="sh-num mt-5">Portrait sessions begin at $375 · Limited sessions each month</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/experience/$kind" params={{ kind: "couples" }} className="sh-btn-fill">
-                Book a session
-              </Link>
+              <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+                Email us
+              </a>
               <Link to="/weddings" className="sh-invite__alt self-center">
                 Planning a wedding? →
               </Link>
@@ -190,9 +190,9 @@ export default function Photography() {
               someone new. Maternity sessions can include a short film like this
               one, voiceover included. Tap the speaker to listen.
             </p>
-            <Link to="/experience/$kind" params={{ kind: "couples" }} className="sh-invite__alt mt-6 inline-block">
-              Ask about maternity →
-            </Link>
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-invite__alt mt-6 inline-block">
+              Email us about maternity →
+            </a>
           </div>
           <SoundFilm
             className="lg:col-span-8"
@@ -251,9 +251,9 @@ export default function Photography() {
             </li>
           ))}
         </ul>
-        <Link to="/experience/$kind" params={{ kind: "couples" }} className="sh-btn-fill mt-8">
-          Book a session
-        </Link>
+        <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
+          Email us
+        </a>
       </section>
 
       {/* Creative sessions */}

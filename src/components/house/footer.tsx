@@ -38,9 +38,7 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
     links: [
       { label: "About", href: "/about" },
       { label: "Content Creation", href: "/content-creation" },
-      { label: "Photo Locations", href: "/locations" },
       { label: "Extras", href: "/extras" },
-      { label: "Inquire", href: "/experience/$kind", params: { kind: "weddings" } },
     ],
   },
 ];
@@ -66,9 +64,9 @@ export function Footer() {
             Wedding photography and film from Tacoma, for weddings across Seattle,
             the South Sound and the Pacific Northwest.
           </p>
-          <Link to="/experience/$kind" params={{ kind: "weddings" }} className="hz-footer__cta">
-            Check your date
-          </Link>
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-footer__cta">
+            Email us
+          </a>
 
           {/* Phones: one short row of the essentials */}
           <nav aria-label="Footer" className="md:hidden">
@@ -79,8 +77,7 @@ export function Footer() {
                 { label: "Film", href: "/film" },
                 { label: "Services", href: "/services" },
                 { label: "About", href: "/about" },
-                { label: "Locations", href: "/locations" },
-              ].map((link) => (
+                        ].map((link) => (
                 <li key={link.label}>
                   <Link to={link.href} className="hz-footer__link">
                     {link.label}

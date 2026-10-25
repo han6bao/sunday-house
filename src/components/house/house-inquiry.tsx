@@ -26,13 +26,14 @@ export function HouseInquiry() {
           </div>
           <p className="sh-invite__body">
             We take on a limited number of weddings each year, so every couple
-            has our full attention. Share your date, your place and the feeling
-            you want to keep.
+            has our full attention. Email us your date, your place and the
+            feeling you want to keep at{" "}
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="underline underline-offset-4">hanabhong@gmail.com</a>.
           </p>
           <div className="sh-invite__actions">
-            <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-btn-fill">
-              Check your date
-            </Link>
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+              Email us
+            </a>
             <span className="sh-btn-rule" aria-hidden="true" />
             <Link to="/photography" className="sh-btn-fill">
               Book a portrait session

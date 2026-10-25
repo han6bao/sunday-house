@@ -60,19 +60,16 @@ const SHORT: Record<string, string> = {
 /** Where we'd point someone, per group. */
 const RESOURCES: Record<string, { label: string; href: string }[]> = {
   planning: [
-    { label: "Photo Locations", href: "/locations" },
-  ],
+    ],
   venue: [
-    { label: "Photography location guides", href: "/locations" },
-  ],
+    ],
   "photo-film": [
     { label: "Sunday House photography", href: "/photography" },
     { label: "Wedding films", href: "/film" },
     { label: "Wedding content creation", href: "/content-creation" },
   ],
   "food-drink": [
-    { label: "Photo Locations", href: "/locations" },
-  ],
+    ],
   "design-decor": [
     { label: "Made for your day", href: "/custom-pieces" },
   ],
@@ -82,11 +79,11 @@ const RESOURCES: Record<string, { label: string; href: string }[]> = {
     { label: "Wedding websites", href: "/wedding-websites" },
     { label: "Made for your day — paper + digital", href: "/custom-pieces" },
   ],
-  ceremony: [{ label: "Photo Locations", href: "/locations" }],
-  guests: [{ label: "Photography location guides", href: "/locations" }],
-  events: [{ label: "Photo Locations", href: "/locations" }],
-  cultural: [{ label: "Photo Locations", href: "/locations" }],
-  other: [{ label: "Photo Locations", href: "/locations" }],
+  ceremony: [],
+  guests: [],
+  events: [],
+  cultural: [],
+  other: [],
 };
 
 export function PlanBuilder() {

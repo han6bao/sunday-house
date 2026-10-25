@@ -91,9 +91,15 @@ export function PortraitDeck({
             </picture>
             <h2 className="sh-deck__title">Shall we begin?</h2>
             <div className="sh-deck__ctas">
-              <Link to={primary.to as never} params={primary.params as never} className="sh-deck__cta">
-                {primary.label}
-              </Link>
+              {primary.to.startsWith("mailto:") ? (
+                <a href={primary.to} className="sh-deck__cta">
+                  {primary.label}
+                </a>
+              ) : (
+                <Link to={primary.to as never} params={primary.params as never} className="sh-deck__cta">
+                  {primary.label}
+                </Link>
+              )}
               {secondary ? (
                 <>
                   <span className="sh-deck__rule" aria-hidden="true" />

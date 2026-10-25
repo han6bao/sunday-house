@@ -98,13 +98,9 @@ export default function CustomPieces() {
           If we don't do it, we may know someone who does.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Link
-            to="/experience/$kind"
-            params={{ kind: "weddings" }}
-            className="sh-btn-fill"
-          >
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
             Start your wedding →
-          </Link>
+          </a>
           <Link
             to="/photography"
             className="inline-flex items-center border border-ink/25 px-7 py-3 label-sm font-medium text-ink hover:bg-ink hover:text-ivory"

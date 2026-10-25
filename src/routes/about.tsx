@@ -143,9 +143,9 @@ export default function About() {
           Tell us about <em>your</em> day.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-btn-fill">
-            Check your date
-          </Link>
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+            Email us
+          </a>
           <Link to="/weddings" className="sh-invite__alt self-center">
             See the weddings →
           </Link>

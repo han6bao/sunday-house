@@ -37,14 +37,8 @@ export function FloatingCta() {
     };
   }, []);
   return (
-    <Link
-      to="/experience/$kind"
-      params={{ kind: "weddings" }}
-      className={`sh-float sh-noprint${show ? " is-on" : ""}`}
-      aria-hidden={!show}
-      tabIndex={show ? 0 : -1}
-    >
-      Check your date
-    </Link>
+    <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className={`sh-float sh-noprint${show ? " is-on" : ""}>
+      Email us
+    </a>
   );
 }

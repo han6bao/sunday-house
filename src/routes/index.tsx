@@ -63,9 +63,9 @@ function Home() {
           <h1 className="sh-hero__tagline">
             Seattle &amp; Tacoma wedding photography and film for the days worth keeping
           </h1>
-          <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-hero__btn">
-            Check your date
-          </Link>
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-hero__btn">
+            Email us
+          </a>
         </div>
       </HeroFilm>
 
@@ -310,25 +310,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 6b · Keep it + find your place — two quiet cards */}
-      <section className="sh-wrap pb-[clamp(4rem,8vw,6.5rem)]" aria-label="Frames and locations">
-        <div className="sh-duo">
-          <Link to="/house-objects" className="sh-duo__tile">
-            <div className="sh-duo__img">
-              <img src="/assets/stills/lilies.jpg" alt="White lilies and their shadow" loading="lazy" decoding="async" />
-              <span className="sh-collage__more sh-duo__box">Frames + prints →</span>
-            </div>
-            <p className="sh-duo__cap">Framed photographs, heirloom albums and fine-art prints from your gallery.</p>
-          </Link>
-          <Link to="/locations" className="sh-duo__tile">
-            <div className="sh-duo__img">
-              <img src="/assets/stills/hill-sunrise.jpg" alt="A couple on a grassy hill at sunrise" loading="lazy" decoding="async" />
-              <span className="sh-collage__more sh-duo__box">Photo locations →</span>
-            </div>
-            <p className="sh-duo__cap">Parks, beaches and gardens around Seattle, Tacoma, Bellevue and Lakewood.</p>
-          </Link>
-        </div>
-      </section>
+      {/* 6b · Frames + locations — hidden for now */}
 
       {/* 7 · How it works — told as you scroll */}
       <WeddingSteps />

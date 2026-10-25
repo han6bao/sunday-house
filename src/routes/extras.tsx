@@ -62,7 +62,7 @@ export default function Extras() {
 
       <section className="sh-wrap sh-section" aria-label="Extras">
         <ul className="space-y-[clamp(3rem,6vw,5rem)]">
-          {EXTRAS.map((x, i) => (
+          {EXTRAS.filter((x) => x.to !== "/house-objects").map((x, i) => (
             <li key={x.title} className="grid gap-8 border-t border-ink/15 pt-10 lg:grid-cols-12 lg:items-center">
               <div className={`lg:col-span-5 ${i % 2 ? "lg:order-2 lg:col-start-8" : ""}`}>
                 <Photo src={x.photo.src} alt={x.photo.alt} ratio="4/3" sizes="(max-width: 1024px) 100vw, 40vw" />
@@ -92,9 +92,9 @@ export default function Extras() {
             Tell us what you'd <em>like</em>.
           </p>
           <p className="sh-body mx-auto mt-4 max-w-xl">Mention any of these when you inquire, and we'll include them in your proposal.</p>
-          <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-btn-fill mt-8">
-            Check your date
-          </Link>
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
+            Email us
+          </a>
         </div>
       </section>
     </ContentShell>

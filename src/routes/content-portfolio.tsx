@@ -31,7 +31,7 @@ const REELS: Reel[] = [
 const TIMELINE = [
   { time: "Morning", caption: "Getting ready, detail by detail.", thumb: "/assets/content-work/Dc-B3czOfle.jpg" },
   { time: "The beginning", caption: "The people start arriving.", thumb: "/assets/content-work/Dc95F33Btpj.jpg" },
-  { time: "Tradition", caption: "Cultural moments as they unfold.", thumb: "/assets/content-work/Dc933toSMIt.jpg" },
+  { time: "Tradition", caption: "Cultural moments as they unfold.", thumb: "/assets/content-work/Dc94ykltayq.jpg" },
   { time: "Together", caption: "The couple, without pulling them away from their day.", thumb: "/assets/content-work/Dc-PNpPptSy.jpg" },
   { time: "Family", caption: "Reactions, relationships and everything happening around them.", thumb: "/assets/content-work/Dc-Q1TcSzgx.jpg" },
   { time: "In between", caption: "Games, conversations and the moments nobody scheduled.", thumb: "/assets/content-work/Dc95tOdJIq_.jpg" },
@@ -119,7 +119,7 @@ export default function ContentPortfolio() {
             ),
           },
         ]}
-        primary={{ label: "Tell us about your day", to: "/experience/$kind", params: { kind: "weddings" } }}
+        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
         secondary={{ label: "How it works", to: "/content-creation" }}
         more={[
           { label: "Weddings", to: "/weddings" },
@@ -385,13 +385,9 @@ export default function ContentPortfolio() {
             love · the things you planned · the things you didn't.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Link
-              to="/experience/$kind"
-              params={{ kind: "weddings" }}
-              className="sh-btn-fill"
-            >
-              Check your date
-            </Link>
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+              Email us
+            </a>
             <Link
               to="/content-creation"
               className="sh-invite__alt"

@@ -111,7 +111,7 @@ export default function Video() {
             img: { src: "/assets/film-posters/film-6.jpg", video: "/assets/films-web/film-6.mp4", alt: "The dance floor" },
           },
         ]}
-        primary={{ label: "Ask about film", to: "/experience/$kind", params: { kind: "weddings" } }}
+        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
         secondary={{ label: "See the weddings", to: "/weddings" }}
         more={[
           { label: "Content creation", to: "/content-creation" },
@@ -133,9 +133,9 @@ export default function Video() {
               with the same care as the photographs.
             </p>
             <div className="flex flex-wrap gap-3 lg:col-span-6 lg:justify-end">
-              <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-btn-fill sh-btn-fill--light">
-                Ask about film
-              </Link>
+              <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill sh-btn-fill--light">
+                Email us about film
+              </a>
             </div>
           </div>
         </div>
@@ -190,9 +190,9 @@ export default function Video() {
               </p>
               <p className="sh-body mt-3">Eight hours of photographs, a highlight film and an engagement session.</p>
               <div className="mt-8 flex flex-wrap items-center gap-5">
-                <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-btn-fill">
-                  Check your date
-                </Link>
+                <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+                  Email us
+                </a>
                 <Link to="/weddings" hash="investment" className="sh-invite__alt">
                   All collections →
                 </Link>

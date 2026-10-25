@@ -74,9 +74,9 @@ export default function Locations() {
           Seattle, Tacoma and beyond.
         </p>
         <div className="reveal reveal--delay-2 mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
-          <Link to="/experience/$kind" params={{ kind: "couples" }} className="sh-btn-fill">
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
             Help me choose a spot
-          </Link>
+          </a>
           <Link to="/guides" className="sh-invite__alt">
             Read our location guides →
           </Link>
@@ -273,9 +273,9 @@ export default function Locations() {
             Tell us the feeling you want and we'll suggest two or three places that fit your season, your light and your people.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-            <Link to="/experience/$kind" params={{ kind: "couples" }} className="sh-btn-fill">
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
               Plan my session
-            </Link>
+            </a>
             <Link to="/guides" className="sh-invite__alt">
               Browse the guides →
             </Link>

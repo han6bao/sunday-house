@@ -49,7 +49,7 @@ export default function ContentCreation() {
             img: { src: "/assets/content-work/Dc-CDETMQt6.jpg", alt: "The dance floor after dark" },
           },
         ]}
-        primary={{ label: "Tell us about your day", to: "/experience/$kind", params: { kind: "weddings" } }}
+        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
         secondary={{ label: "See the film", to: "/film" }}
         more={[
           { label: "Weddings", to: "/weddings" },
@@ -72,13 +72,9 @@ export default function ContentCreation() {
               captured from beginning to end. Then everything comes home with you.
             </p>
             <div className="reveal reveal--delay-2 mt-7 flex flex-wrap items-center gap-4">
-              <Link
-                to="/experience/$kind"
-                params={{ kind: "weddings" }}
-                className="sh-btn-fill"
-              >
-                <Heart className="h-4 w-4 text-rose-deep" /> Tell us about your day →
-              </Link>
+              <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+                <Heart className="h-4 w-4 text-rose-deep" /> Email us →
+              </a>
               <Link
                 to="/film"
                 className="sh-textlink"
@@ -190,13 +186,9 @@ export default function ContentCreation() {
           </div>
 
           <div className="mt-12">
-            <Link
-              to="/experience/$kind"
-              params={{ kind: "weddings" }}
-              className="sh-btn-fill"
-            >
-              <Heart className="h-4 w-4 text-rose-deep" /> Tell us about your day →
-            </Link>
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+              <Heart className="h-4 w-4 text-rose-deep" /> Email us →
+            </a>
             <p className="mt-4 font-serif text-sm italic text-brown/60">
               No account needed. Tell us the date, the place and the feeling.
             </p>

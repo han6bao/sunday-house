@@ -52,7 +52,6 @@ const HOUSE_KINDS: HouseKind[] = [
     madeFor: [
       { label: "Senior / Graduation Cards", to: "/custom-pieces" },
       { label: "Announcements", to: "/custom-pieces" },
-      { label: "Prints + Albums", to: "/house-objects" },
     ],
   },
   {
@@ -70,9 +69,7 @@ const HOUSE_KINDS: HouseKind[] = [
       "Explore prints, wall collections or albums",
     ],
     madeFor: [
-      { label: "Family Albums", to: "/house-objects" },
       { label: "Holiday Cards", to: "/custom-pieces" },
-      { label: "Prints + Frames", to: "/house-objects" },
     ],
   },
   {
@@ -91,8 +88,6 @@ const HOUSE_KINDS: HouseKind[] = [
     ],
     madeFor: [
       { label: "Birth Announcements", to: "/custom-pieces" },
-      { label: "Baby Albums", to: "/house-objects" },
-      { label: "Prints + Frames", to: "/house-objects" },
     ],
   },
   {
@@ -110,8 +105,6 @@ const HOUSE_KINDS: HouseKind[] = [
     ],
     madeFor: [
       { label: "Thank-you Cards", to: "/custom-pieces" },
-      { label: "Prints + Frames", to: "/house-objects" },
-      { label: "Albums", to: "/house-objects" },
     ],
   },
   {
@@ -130,7 +123,6 @@ const HOUSE_KINDS: HouseKind[] = [
     ],
     madeFor: [
       { label: "Keepsake Pieces", to: "/custom-pieces" },
-      { label: "Prints + Albums", to: "/house-objects" },
     ],
   },
   {
@@ -148,7 +140,6 @@ const HOUSE_KINDS: HouseKind[] = [
     ],
     madeFor: [
       { label: "Event Keepsakes", to: "/custom-pieces" },
-      { label: "Prints + Frames", to: "/house-objects" },
     ],
   },
 ];
@@ -442,9 +433,6 @@ export function MyHouse() {
               <p className="eyebrow">Objects saved from the House</p>
               <h3 className="mt-2 font-display text-2xl text-ink">Hearts you've kept.</h3>
             </div>
-            <Link to="/house-objects" className="sh-textlink">
-              Browse House Objects →
-            </Link>
           </div>
 
           {savedObjects.length ? (

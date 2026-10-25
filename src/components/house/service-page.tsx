@@ -60,12 +60,9 @@ export function ServicePage({ service }: { service: Service }) {
             </h1>
             <p className="sh-lede mt-6 max-w-xl">{service.intro[0]}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/experience/$kind" params={{ kind: service.inquire }} className="hz-btn hz-btn--solid">
-                Check availability
-              </Link>
-              <Link to="/locations" className="hz-btn">
-                Find a location
-              </Link>
+              <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid">
+                Email us
+              </a>
             </div>
           </div>
           <Photo src={hero.src} alt={hero.alt} need={hero.need} ratio="4/5" priority sizes="(max-width: 1024px) 100vw, 40vw" />
@@ -167,8 +164,8 @@ function ServiceDeck({ service, related }: { service: Service; related: Service[
         },
         ...(price ? [{ kicker: "Investment", title: "Simple, and in writing.", body: <p>{price.a}</p>, img: pic(2) ?? pic(0) }] : []),
       ]}
-      primary={{ label: "Book a session", to: "/experience/$kind", params: { kind: service.inquire } }}
-      secondary={{ label: "Find a location", to: "/locations" }}
+      primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
+      secondary={{ label: "All sessions", to: "/services" }}
       more={[...related.map((r) => ({ label: r.name, to: `/services/${r.slug}` })), service.group === "portraits" ? { label: "All portraits", to: "/photography" } : { label: "Weddings", to: "/weddings" }, { label: "Home", to: "/" }]}
     />
   );

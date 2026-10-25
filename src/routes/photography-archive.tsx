@@ -107,12 +107,6 @@ export default function PhotographyArchive() {
           >
             See the full photography page →
           </Link>
-          <Link
-            to="/house-objects"
-            className="sh-invite__alt self-center"
-          >
-            Prints, frames + albums
-          </Link>
         </div>
       </section>
     </ContentShell>

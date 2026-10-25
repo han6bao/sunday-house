@@ -143,13 +143,8 @@ export default function ExperienceRoute() {
                 </Link>
               </li>
               <li>
-                <Link to="/house-objects" className="sh-textlink group">
-                  See House Objects <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations" className="sh-textlink group">
-                  Find a place to be photographed <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                <Link to="/film" className="sh-textlink group">
+                  Watch the films <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </Link>
               </li>
             </ul>

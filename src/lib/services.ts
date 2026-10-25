@@ -311,7 +311,6 @@ export const OTHER_SERVICE_PAGES = [
   { name: "Wedding Content Creation", to: "/content-creation", note: "Same-day reels and Stories from your wedding.", photo: { src: "/assets/content-work/Dc-FW05tqrF.jpg", alt: "Wedding guests dancing in bright traditional clothes" } },
   { name: "Wedding Websites", to: "/wedding-websites", note: "Your story, schedule and RSVP in one place.", photo: { src: "/assets/portfolio/sofia-mateo-hero.jpg", alt: "A custom wedding website design" } },
   { name: "Invitations + Signage", to: "/custom-pieces", note: "Custom pieces designed to match your photographs.", photo: { src: "/assets/card/card-web.webp", alt: "Sunday House letterpress card in blush pink" } },
-  { name: "Albums, Frames + Prints", to: "/house-objects", note: "Heirlooms for the photographs you love most.", photo: { src: "/assets/gallery/rings.jpg", alt: "Wedding rings close-up" } },
 ];
 
 /** Pages folded into others — old links redirect here (301). */

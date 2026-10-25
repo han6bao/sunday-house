@@ -119,13 +119,9 @@ export default function HouseObjects() {
             finished in the House — we'll open them here as they're ready.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-4">
-            <Link
-              to="/experience/$kind"
-              params={{ kind: "weddings" }}
-              className="sh-btn-fill"
-            >
-              Inquire about an object →
-            </Link>
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+              Email us →
+            </a>
             <Link
               to="/my-house"
               className="sh-invite__alt self-center"

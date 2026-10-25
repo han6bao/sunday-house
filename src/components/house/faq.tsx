@@ -55,16 +55,16 @@ export function Faq({
             <div className="sh-faq__cta-half">
               <p className="sh-faq__cta-q">Still have a question?</p>
               <p className="sh-faq__cta-sub">Tell us your date and we’ll let you know if it’s open.</p>
-              <Link to="/experience/$kind" params={{ kind: "weddings" }} className="sh-btn-fill">
-                Check your date
-              </Link>
+              <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
+                Email us
+              </a>
             </div>
             <span className="sh-faq__cta-rule" aria-hidden="true" />
             <div className="sh-faq__cta-half">
-              <p className="sh-faq__cta-q">Not sure where yet?</p>
-              <p className="sh-faq__cta-sub">We’ll help you pick a place with the right light for your day.</p>
-              <Link to="/locations" className="sh-btn-fill">
-                Help me find a location
+              <p className="sh-faq__cta-q">Planning a portrait session?</p>
+              <p className="sh-faq__cta-sub">Seniors, couples, maternity and creative sessions, booked year-round.</p>
+              <Link to="/photography" className="sh-btn-fill">
+                Book a portrait session
               </Link>
             </div>
           </div>

@@ -58,13 +58,9 @@ export function SiteNav({ path, overlay = false }: { path?: string; overlay?: bo
         </nav>
 
         <div className="flex items-center gap-2.5">
-          <Link
-            to="/experience/$kind"
-            params={{ kind: "weddings" }}
-            className="sh-nav-inquire"
-          >
-            <Heart className="h-3 w-3" /> Inquire
-          </Link>
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-nav-inquire">
+            <Heart className="h-3 w-3" /> Contact
+          </a>
 
           {/* Mobile menu — native <details>, works without JavaScript */}
           <details className="sh-menu lg:hidden">
@@ -77,12 +73,6 @@ export function SiteNav({ path, overlay = false }: { path?: string; overlay?: bo
                   {item.label}
                 </Link>
               ))}
-              <Link to="/plan" className="sh-menu__link sh-menu__link--quiet">
-                Plan your wedding
-              </Link>
-              <Link to="/my-house" className="sh-menu__link sh-menu__link--quiet">
-                My House
-              </Link>
             </nav>
           </details>
         </div>

@@ -166,9 +166,9 @@ function GuidePage({ guide: g }: { guide: Guide }) {
           We photograph across Seattle, Tacoma and the South Sound, and we take a limited number of sessions each month.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Link to="/experience/$kind" params={{ kind: g.session === "styled" ? "weddings" : g.session === "seniors" ? "seniors" : "couples" }} className="hz-btn hz-btn--solid">
-            Check your date
-          </Link>
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid">
+            Email us
+          </a>
           <a href={s.service.to} className="hz-btn">
             {s.service.label}
           </a>
