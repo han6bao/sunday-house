@@ -84,19 +84,15 @@ export default function HouseObjects() {
 
   return (
     <ContentShell path="/house-objects" breadcrumb={[{ name: "House Objects", path: "/house-objects" }]}>
-      {/* Intro — the wine band, cream lettering, tiny gold rule (point 11) */}
-      <section className="wine-band">
-        <div className="mx-auto max-w-[1400px] px-5 py-16 text-center md:px-8 md:py-20">
-          <p className="script text-4xl md:text-5xl reveal">Made to be held.</p>
-          <div className="wine-band__rule mx-auto mt-6 w-40" aria-hidden="true" />
-          <h1 className="reveal reveal--delay-1 mx-auto mt-6 max-w-3xl font-display text-4xl leading-[1.05] md:text-5xl">
-            Your photographs shouldn't live in your camera roll.
-          </h1>
-          <p className="reveal reveal--delay-2 mx-auto mt-5 max-w-xl font-serif text-lg leading-relaxed opacity-90">
-            Every photograph worth keeping deserves a home. Three objects carry
-            yours — from the first frame to the wall.
-          </p>
-        </div>
+      {/* Intro — quiet, like the other pages */}
+      <section className="sh-wrap pt-[clamp(3rem,7vw,6rem)] text-center">
+        <p className="sh-script">Made to be held.</p>
+        <h1 className="sh-h1 mx-auto mt-3 max-w-3xl">
+          Frames, albums <em>&amp; prints</em>.
+        </h1>
+        <p className="sh-lede mx-auto mt-5 max-w-xl">
+          The photographs worth keeping, off the phone and into your hands.
+        </p>
       </section>
 
       {/* The three finished objects */}
