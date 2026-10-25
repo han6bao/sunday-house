@@ -286,10 +286,10 @@ export const SERVICES: Service[] = [
       { title: "Cinematic light", body: "Natural light shaped with care, edited in our film-like style." },
     ],
     photos: [
-      { src: "/assets/gallery/flower-nose.png", alt: "Cinematic portrait with a daisy, eyes closed", need: "Creative session: top photo (vertical)" },
-      { src: "/assets/gallery/greenhouse.png", alt: "Editorial portrait in a sunlit greenhouse with pink roses", need: "Creative session photo 2 (conceptual or styled portraits)" },
-      { src: "/assets/gallery/movement.png", alt: "Woman twirling in a floral dress in a field", need: "Creative session photo 3 (conceptual or styled portraits)" },
-      { src: "/assets/gallery/daisy.png", alt: "Close portrait with a daisy against dark greenery", need: "Creative session photo 4 (conceptual or styled portraits)" },
+      { src: "/assets/stills/creative-1.jpg", alt: "Silhouette in a mirror against a teal patterned screen" },
+      { src: "/assets/stills/creative-2.jpg", alt: "Styled portrait in a patchwork suede dress and newsboy cap against a red wall" },
+      { src: "/assets/stills/creative-3.jpg", alt: "Styled portrait leaning against a teal wall in a color-block dress" },
+      { src: "/assets/gallery/flower-nose.png", alt: "Cinematic portrait with a daisy, eyes closed" },
     ],
     faqs: [
       { q: "How much is a creative session?", a: "Creative sessions begin at $550, including concept planning, styling direction and two hours of shooting. Bigger concepts are quoted to fit." },

@@ -248,7 +248,7 @@ export default function Photography() {
       <section className="sh-night sh-section" aria-labelledby="pt-creative">
         <div className="sh-wrap grid gap-12 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-6">
-            <Photo src="/assets/gallery/eyes-closed.png" need="Creative feature: your most cinematic portrait" alt="Woman with eyes closed holding baby's breath in a golden field" ratio="4/5" sizes="(max-width: 1024px) 100vw, 45vw" />
+            <Photo src="/assets/stills/creative-1.jpg" alt="Silhouette in a mirror against a teal patterned screen" ratio="4/5" sizes="(max-width: 1024px) 100vw, 45vw" />
           </div>
           <div className="lg:col-span-5 lg:col-start-8">
             <p className="eyebrow">Creative sessions</p>
