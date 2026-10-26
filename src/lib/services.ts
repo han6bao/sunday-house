@@ -251,9 +251,9 @@ export const SERVICES: Service[] = [
     ],
     photos: [
       { src: "/assets/motion/maternity-meadow.jpg", alt: "Expecting mother in a meadow with deer grazing behind her" },
-      { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water" },
-      { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in soft sepia" },
-      { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in soft sepia" },
+      { src: "/assets/gallery/field-seated.png", alt: "A woman in a floral dress seated in the grass with baby's breath" },
+      { src: "/assets/gallery/movement.png", alt: "A woman turning in a floral dress in a summer field" },
+      { src: "/assets/gallery/eyes-closed.png", alt: "A woman in a floral dress with eyes closed, holding baby's breath" },
     ],
     faqs: [
       { q: "How much is a family or maternity session?", a: "Family sessions are $375 for an hour with up to six people, and maternity sessions are the same. Larger groups are quoted to fit." },
