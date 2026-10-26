@@ -49,7 +49,7 @@ const COVERAGE = [
 
 const INVESTMENT = [
   { kicker: "Small + intimate", name: "Elopements", price: "$1,800", points: ["Up to 3 hours", "One location", "Online gallery"] },
-  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 to 10 hours", "Engagement session in most", "Sneak peeks in 48 hours"] },
+  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "Engagement session in most", "Sneak peeks in 48 hours"] },
   { kicker: "The whole story", name: "Photography + film", price: "$5,800", points: ["8 hours of photographs", "A highlight film", "Engagement session"] },
 ];
 
