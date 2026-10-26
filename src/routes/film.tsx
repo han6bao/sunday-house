@@ -5,6 +5,7 @@ import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
 import { FilmSnippet } from "@/components/house/film-snippet";
 import { PortraitDeck } from "@/components/house/portrait-deck";
+import { YouTubeFilm } from "@/components/house/youtube-film";
 import { pageHead, serviceJsonLd } from "@/lib/seo";
 
 const TITLE = "Seattle & Tacoma Wedding Videographer + Films | Sunday House";
@@ -140,13 +141,7 @@ export default function Video() {
           </div>
         </div>
         <div className="sh-wrap pb-[clamp(4rem,8vw,7rem)]">
-          <FilmSnippet
-            src="/assets/films-web/film-7.mp4"
-            poster="/assets/film-posters/film-7.jpg"
-            unframed
-            ariaLabel="Wedding film: the couple face each other beneath the trees"
-            className="sh-film aspect-[16/9] w-full"
-          />
+          <YouTubeFilm id="vMiukpOm5YI" loop="/assets/films-web/film-7.mp4" poster="/assets/film-posters/film-7.jpg" title="Matt + Maddie" />
           <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
             {FRAMES.map((f) => (
               <figure key={f.src}>
