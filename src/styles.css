@@ -4076,3 +4076,5 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .sh-ytfilm__play { position: relative; width: 2.2rem; height: 2.2rem; border-radius: 999px; background: #2c2726; flex: none; }
 .sh-ytfilm__play::after { content: ""; position: absolute; left: 55%; top: 50%; transform: translate(-50%, -50%); border-style: solid; border-width: 0.38rem 0 0.38rem 0.6rem; border-color: transparent transparent transparent #fdf1f4; }
 @media (max-width: 639px) { .sh-ytfilm__label { font-size: 0.6rem; letter-spacing: 0.16em; padding: 0.6rem 1rem 0.6rem 0.6rem; } .sh-ytfilm__play { width: 1.8rem; height: 1.8rem; } }
+/* Keep the couple in frame when this photo is cropped tall */
+img[src*="couple-sunset"] { object-position: 12% center !important; }
