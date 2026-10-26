@@ -75,15 +75,9 @@ export default function About() {
           </div>
           <div className="space-y-5 lg:col-span-7 lg:col-start-6">
             <p className="sh-lede">
-              Sunday House was founded by Hana, a photographer with nearly a
-              decade behind the camera and a photography specialization from
-              Michigan State University.
-            </p>
-            <p className="sh-body">
-              It&rsquo;s Hana and a small, hand-picked team of photographers and
-              filmmakers she&rsquo;s worked alongside and trusts. Every person on
-              your day is someone she&rsquo;s vetted, so the work always feels
-              like one house.
+              Sunday House was founded by Hana, with nearly a decade of
+              professional photography and a photography specialization from
+              Michigan State University. She works with a small team she trusts.
             </p>
             <p className="sh-body">
               It started with senior portraits: helping people feel like
