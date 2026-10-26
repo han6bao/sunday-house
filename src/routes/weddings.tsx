@@ -215,7 +215,7 @@ export default function Weddings() {
               From the first look to the last dance.
             </h2>
             <div className="mt-10 hidden lg:block">
-              <Photo src="/assets/gallery/bride-portrait.png" alt="A bride in lace looking over her shoulder in soft spring light" ratio="4/5" sizes="35vw" />
+              <Photo src="/assets/stills/hill-sunrise.jpg" alt="Newlyweds on a hilltop at sunrise" ratio="4/5" sizes="35vw" />
             </div>
           </div>
           <div className="lg:col-span-7 lg:pt-24">
