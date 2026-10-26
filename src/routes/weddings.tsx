@@ -357,7 +357,6 @@ export default function Weddings() {
             { label: "Seattle weddings", to: "/services/$slug", params: { slug: "seattle-wedding-photographer" } },
             { label: "Tacoma weddings", to: "/services/$slug", params: { slug: "tacoma-wedding-photographer" } },
             { label: "Elopements", to: "/services/$slug", params: { slug: "elopement-photography" } },
-            { label: "Websites, paper + prints", to: "/extras" },
           ].map((l) => (
             <li key={l.label}>
               <Link to={l.to} params={l.params} className="group flex items-baseline justify-between py-3.5">

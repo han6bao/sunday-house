@@ -38,7 +38,6 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
     links: [
       { label: "About", href: "/about" },
       { label: "Content Creation", href: "/content-creation" },
-      { label: "Extras", href: "/extras" },
     ],
   },
 ];

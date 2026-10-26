@@ -309,8 +309,6 @@ export const OTHER_SERVICE_PAGES = [
   { name: "Wedding Photography", to: "/weddings", note: "The whole day, from first look to last dance.", photo: { src: "/assets/gallery/bride-portrait.png", alt: "Bridal portrait in soft light" } },
   { name: "Wedding Film", to: "/film", note: "Your vows and toasts, in your own voices.", photo: { src: "/assets/film-posters/film-1.jpg", alt: "Wedding film still of a first dance" } },
   { name: "Wedding Content Creation", to: "/content-creation", note: "Same-day reels and Stories from your wedding.", photo: { src: "/assets/content-work/Dc-FW05tqrF.jpg", alt: "Wedding guests dancing in bright traditional clothes" } },
-  { name: "Wedding Websites", to: "/wedding-websites", note: "Your story, schedule and RSVP in one place.", photo: { src: "/assets/portfolio/sofia-mateo-hero.jpg", alt: "A custom wedding website design" } },
-  { name: "Invitations + Signage", to: "/custom-pieces", note: "Custom pieces designed to match your photographs.", photo: { src: "/assets/card/card-web.webp", alt: "Sunday House letterpress card in blush pink" } },
 ];
 
 /** Pages folded into others — old links redirect here (301). */
