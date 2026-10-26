@@ -4078,3 +4078,15 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 @media (max-width: 639px) { .sh-ytfilm__label { font-size: 0.6rem; letter-spacing: 0.16em; padding: 0.6rem 1rem 0.6rem 0.6rem; } .sh-ytfilm__play { width: 1.8rem; height: 1.8rem; } }
 /* Keep the couple in frame when this photo is cropped tall */
 img[src*="couple-sunset"] { object-position: 12% center !important; }
+img[src*="couple-sunset"] { object-position: 12% center !important; }
+
+/* Film: "What's included" headline in the display serif */
+#film-incl:not(#a):not(#b):not(#c) {
+  font-family: "Instrument Serif", serif;
+  font-size: clamp(2.6rem, 4.4vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  font-weight: 400;
+}
+#film-incl em { font-style: italic; }

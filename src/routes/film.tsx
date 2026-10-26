@@ -39,10 +39,11 @@ const FRAMES = [
 ];
 
 const INCLUDES = [
-  { t: "A highlight film", b: "A 3–5 minute film, cut to music, shaped around the feeling of your day." },
-  { t: "Your vows, mic'd", b: "Vows and toasts recorded on a separate mic, plus a 2–3 minute vow film of their own." },
-  { t: "A free styled shoot", b: "An additional styled shoot, included free — during your wedding day or on a separate day." },
-  { t: "Delivered online", b: "Easy to watch, download and share with the people who couldn't be there." },
+  { t: "A highlight film", b: "3–5 minutes, cut to music and shaped around how your day actually felt. The one you'll play every anniversary." },
+  { t: "Your vows, mic'd", b: "Every word of your vows and toasts recorded clean on its own mic, then given a 2–3 minute vow film of their own." },
+  { t: "A free styled shoot", b: "An extra styled session, on us. Fit it into your wedding day or plan it for a day of its own." },
+  { t: "One team, one story", b: "Photography and film working side by side all day, so nothing is missed and both feel like the same day." },
+  { t: "Delivered online", b: "A private gallery and film link, easy to download and share with everyone who couldn't be there." },
 ];
 
 const FAQ = [
@@ -52,7 +53,7 @@ const FAQ = [
   },
   {
     q: "How much does a wedding film cost?",
-    a: "Photography + film collections begin at $5,800, with eight hours of photographs, a highlight film and an engagement session. Tell us your date and plans, and we'll send a clear proposal for what you need.",
+    a: "Photography + film collections begin at $5,800, with eight hours of photographs, a highlight film, a 2–3 minute vow film and a free styled shoot. Tell us your date and plans, and we'll send a clear proposal for what you need.",
   },
   {
     q: "What does a wedding film include?",
@@ -107,7 +108,7 @@ export default function Video() {
           {
             kicker: "Investment",
             title: "Photo + film",
-            body: <p>Photography and film collections begin at $5,800, with eight hours of photographs, a highlight film and an engagement session.</p>,
+            body: <p>Photography and film collections begin at $5,800, with eight hours of photographs, a highlight film, a 2–3 minute vow film and a free styled shoot.</p>,
             img: { src: "/assets/film-posters/film-6.jpg", video: "/assets/films-web/film-6.mp4", alt: "The dance floor" },
           },
         ]}
@@ -183,12 +184,12 @@ export default function Video() {
             <div className="lg:col-span-5">
               <p className="eyebrow">What's included</p>
               <h2 id="film-incl" className="sh-h2 mt-4">
-                Photography + film, <em>together</em>.
+                The whole day, <em>seen and heard</em>.
               </h2>
               <p className="sh-price__amt mt-6">
                 <span>from</span> $5,800
               </p>
-              <p className="sh-body mt-3">Eight hours of photographs, a highlight film, a 2–3 minute vow film and a free styled shoot.</p>
+              <p className="sh-body mt-3">Eight hours of photographs and film from one team: the quiet before, your vows in your own voices, the last dance. Plus a 2–3 minute vow film and a styled shoot, on us.</p>
               <div className="mt-8 flex flex-wrap items-center gap-5">
                 <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
                   Email us
