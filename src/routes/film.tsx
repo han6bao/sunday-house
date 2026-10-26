@@ -40,8 +40,8 @@ const FRAMES = [
 
 const INCLUDES = [
   { t: "A highlight film", b: "A few minutes, cut to music, shaped around the feeling of your day." },
-  { t: "Your vows and toasts", b: "Recorded with clear audio, so the words are kept in your own voices." },
-  { t: "The whole day, as one story", b: "Filmed alongside your photographs, so both tell the same day." },
+  { t: "Your vows, mic'd", b: "Vows and toasts recorded on a separate mic, plus a 2–3 minute vow film of their own." },
+  { t: "A free styled shoot", b: "An additional styled shoot, included free — during your wedding day or on a separate day." },
   { t: "Delivered online", b: "Easy to watch, download and share with the people who couldn't be there." },
 ];
 
@@ -188,7 +188,7 @@ export default function Video() {
               <p className="sh-price__amt mt-6">
                 <span>from</span> $7,800
               </p>
-              <p className="sh-body mt-3">Eight hours of photographs, a highlight film and an engagement session.</p>
+              <p className="sh-body mt-3">Eight hours of photographs, a highlight film, a 2–3 minute vow film and a free styled shoot.</p>
               <div className="mt-8 flex flex-wrap items-center gap-5">
                 <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
                   Email us
