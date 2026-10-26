@@ -39,7 +39,7 @@ const FRAMES = [
 ];
 
 const INCLUDES = [
-  { t: "A highlight film", b: "A few minutes, cut to music, shaped around the feeling of your day." },
+  { t: "A highlight film", b: "A 3–5 minute film, cut to music, shaped around the feeling of your day." },
   { t: "Your vows, mic'd", b: "Vows and toasts recorded on a separate mic, plus a 2–3 minute vow film of their own." },
   { t: "A free styled shoot", b: "An additional styled shoot, included free — during your wedding day or on a separate day." },
   { t: "Delivered online", b: "Easy to watch, download and share with the people who couldn't be there." },
@@ -52,7 +52,7 @@ const FAQ = [
   },
   {
     q: "How much does a wedding film cost?",
-    a: "Photography + film collections begin at $7,800, with eight hours of photographs, a highlight film and an engagement session. Tell us your date and plans, and we'll send a clear proposal for what you need.",
+    a: "Photography + film collections begin at $5,800, with eight hours of photographs, a highlight film and an engagement session. Tell us your date and plans, and we'll send a clear proposal for what you need.",
   },
   {
     q: "What does a wedding film include?",
@@ -107,7 +107,7 @@ export default function Video() {
           {
             kicker: "Investment",
             title: "Photo + film",
-            body: <p>Photography and film collections begin at $7,800, with eight hours of photographs, a highlight film and an engagement session.</p>,
+            body: <p>Photography and film collections begin at $5,800, with eight hours of photographs, a highlight film and an engagement session.</p>,
             img: { src: "/assets/film-posters/film-6.jpg", video: "/assets/films-web/film-6.mp4", alt: "The dance floor" },
           },
         ]}
@@ -186,7 +186,7 @@ export default function Video() {
                 Photography + film, <em>together</em>.
               </h2>
               <p className="sh-price__amt mt-6">
-                <span>from</span> $7,800
+                <span>from</span> $5,800
               </p>
               <p className="sh-body mt-3">Eight hours of photographs, a highlight film, a 2–3 minute vow film and a free styled shoot.</p>
               <div className="mt-8 flex flex-wrap items-center gap-5">

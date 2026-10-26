@@ -50,7 +50,7 @@ const COVERAGE = [
 const INVESTMENT = [
   { kicker: "Small + intimate", name: "Elopements", price: "$1,800", points: ["Up to 3 hours", "One location", "Online gallery"] },
   { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 to 10 hours", "Engagement session in most", "Sneak peeks in 48 hours"] },
-  { kicker: "The whole story", name: "Photography + film", price: "$7,800", points: ["8 hours of photographs", "A highlight film", "Engagement session"] },
+  { kicker: "The whole story", name: "Photography + film", price: "$5,800", points: ["8 hours of photographs", "A highlight film", "Engagement session"] },
 ];
 
 const FAQ = [
@@ -72,7 +72,7 @@ const FAQ = [
   },
   {
     q: "How much does wedding photography cost?",
-    a: "Wedding collections begin at $3,800 for six hours, and most of our couples invest between $4,500 and $6,500. Intimate weddings and elopements begin at $1,800, and photo + film collections at $7,800. After you inquire, we send a clear proposal with every option.",
+    a: "Wedding collections begin at $3,800 for six hours, and most of our couples invest between $4,500 and $6,500. Intimate weddings and elopements begin at $1,800, and photo + film collections at $5,800. After you inquire, we send a clear proposal with every option.",
   },
   {
     q: "Do you photograph cultural and two-day weddings?",

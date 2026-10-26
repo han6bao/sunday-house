@@ -131,7 +131,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/locations/kerry-park-night.jpg", alt: "Seattle skyline from Kerry Park at night" },
     ],
     faqs: [
-      { q: "How much does a wedding photographer cost?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $7,800." },
+      { q: "How much does a wedding photographer cost?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $5,800." },
       { q: "Do you photograph two-day and cultural weddings?", a: "Yes. Tea ceremonies, nikah and walima, mehndi and sangeet, a ceremony one day and the reception the next — a second day of up to four hours can be added to any collection for $1,500." },
       { q: "How far ahead should we book a Seattle wedding photographer?", a: "Nine to twelve months is ideal for summer weekends, which book first. Weekday, winter and spring dates often have more availability — ask about yours." },
       { q: "What are good photo spots for Seattle weddings?", a: "Kerry Park for the skyline, Alki Beach and Golden Gardens for the water, and the city's historic buildings and gardens for something quieter. We'll suggest spots near your venue." },
@@ -167,7 +167,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/motion/ring.jpg", alt: "A wedding ring on joined hands" },
     ],
     faqs: [
-      { q: "How much is a Tacoma wedding photographer?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $7,800." },
+      { q: "How much is a Tacoma wedding photographer?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $5,800." },
       { q: "Do you photograph two-day and cultural weddings?", a: "Yes. Tea ceremonies, nikah and walima, mehndi and sangeet, a ceremony one day and the reception the next — a second day of up to four hours can be added to any collection for $1,500." },
       { q: "Where are the best wedding photo spots in Tacoma?", a: "Point Defiance Park and its rose garden, the Ruston Way waterfront, Wright Park and the Stadium District are all favorites." },
       { q: "Do you photograph weddings in Gig Harbor and Puyallup?", a: "Yes. We photograph weddings throughout the South Sound, including Gig Harbor, Puyallup, Lakewood, University Place and Federal Way." },
