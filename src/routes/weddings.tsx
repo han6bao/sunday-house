@@ -38,7 +38,7 @@ const GALLERY = [
   { src: "/assets/content-work/Dc-X9nngA-w.jpg", alt: "Wedding mandap draped in white with yellow florals", ratio: "9/16" },
   { src: "/assets/stills/couple-field.jpg", alt: "Bride and groom walking across the lawn after the ceremony", ratio: "2/3" },
   { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light", ratio: "2/3" },
-  { src: "/assets/content-work/Dc96OtPz2vo.jpg", alt: "Bridesmaid adjusting the bride's veil while getting ready", ratio: "9/16" },
+  { src: "/assets/content-work/Dc96eH_xHeK.jpg", alt: "A smiling bride in pink and jewels with her family", ratio: "9/16" },
 ];
 
 const COVERAGE = [
@@ -215,7 +215,7 @@ export default function Weddings() {
               From the first look to the last dance.
             </h2>
             <div className="mt-10 hidden lg:block">
-              <Photo src="/assets/content-work/Dc96OtPz2vo.jpg" alt="A bridesmaid adjusting the bride's veil while getting ready" ratio="4/5" sizes="35vw" />
+              <Photo src="/assets/gallery/bride-portrait.png" alt="A bride in lace looking over her shoulder in soft spring light" ratio="4/5" sizes="35vw" />
             </div>
           </div>
           <div className="lg:col-span-7 lg:pt-24">
