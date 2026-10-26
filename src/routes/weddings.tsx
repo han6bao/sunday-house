@@ -76,7 +76,7 @@ const FAQ = [
   },
   {
     q: "Do you photograph cultural and two-day weddings?",
-    a: "Yes. Tea ceremonies, nikah and walima, mehndi and sangeet, a ceremony one day and the reception the next — we plan coverage around the traditions that matter to your families. A second day of up to four hours can be added to any collection for $1,500.",
+    a: "Yes. Tea ceremonies, nikah and walima, mehndi and sangeet, a ceremony one day and the reception the next — we plan coverage around the traditions that matter to your families. A second day of up to four hours can be added to any collection for $1,200.",
   },
 ];
 
@@ -303,7 +303,7 @@ export default function Weddings() {
               <span className="eyebrow">Add-on</span>
               <span className="sh-h3">A second day</span>
               <span className="sh-body">Up to 4 hours, added to any collection</span>
-              <span className="sh-price__addon-amt">+ $1,500</span>
+              <span className="sh-price__addon-amt">+ $1,200</span>
             </p>
             <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
               Request the collections guide
