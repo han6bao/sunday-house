@@ -4081,12 +4081,4 @@ img[src*="couple-sunset"] { object-position: 12% center !important; }
 img[src*="couple-sunset"] { object-position: 12% center !important; }
 
 /* Film: "What's included" headline in the display serif */
-#film-incl:not(#a):not(#b):not(#c) {
-  font-family: "Instrument Serif", serif;
-  font-size: clamp(2.6rem, 4.4vw, 4rem);
-  line-height: 1.02;
-  letter-spacing: -0.01em;
-  text-transform: none;
-  font-weight: 400;
-}
-#film-incl em { font-style: italic; }
+main h2#film-incl:not(#a):not(#b):not(#c) { font-family: var(--font-display) !important; font-size: clamp(2.6rem, 4.4vw, 4rem) !important; line-height: 1.02 !important; letter-spacing: -0.01em !important; text-transform: none !important; font-weight: 400 !important; }
