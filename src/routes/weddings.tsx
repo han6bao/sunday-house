@@ -320,8 +320,8 @@ export default function Weddings() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-6">
             <Photo
-              src="/assets/content-work/Dc-B3czOfle.jpg"
-              alt="A sunlit barn reception hall draped in white on the wedding day"
+              src="/assets/content-work/Dc-CDETMQt6.jpg"
+              alt="The couple dancing in the barn on their wedding day"
               ratio="4/5"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
