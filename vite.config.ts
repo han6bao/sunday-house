@@ -13,6 +13,8 @@ const QUANTA_ICONS_SHIM = fileURLToPath(new URL("./src/lib/quanta-icons.ts", imp
 // Deployed on Vercel: Nitro packages the TanStack Start server for Vercel
 // Functions and serves public/ as static files from the edge.
 export default defineConfig({
+  // The Higgsfield design inspector is off on the live site.
+  define: { __HF_DESIGN_INSPECTOR__: "false" },
   resolve: {
     tsconfigPaths: true,
     alias: [{ find: /^@higgsfield-ai\/icons(\/.*)?$/, replacement: QUANTA_ICONS_SHIM }],
