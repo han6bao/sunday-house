@@ -40,11 +40,11 @@ const SESSIONS = [
 ];
 
 const PRICES = [
-  { name: "Couples", price: "$375", points: ["One hour", "Online gallery"] },
-  { name: "Engagements", price: "$450", points: ["Ninety minutes", "Two looks"] },
-  { name: "Seniors", price: "$375", points: ["One hour, two outfits", "Extended: $575"] },
-  { name: "Families", price: "$375", points: ["One hour", "Up to six people"] },
-  { name: "Creative", price: "$550", points: ["Two hours", "Concept + styling"] },
+  { name: "Couples", line: "An unhurried hour, just the two of you.", price: "$375", points: ["One hour, one location", "Gentle direction", "A private online gallery"] },
+  { name: "Engagements", line: "Ninety minutes to celebrate the yes.", price: "$450", points: ["Two looks", "A location chosen together", "Included in most collections"] },
+  { name: "Seniors", line: "Your year, in your own style.", price: "$375", points: ["One hour, two outfits", "Posing guidance throughout", "Extended session: $575"] },
+  { name: "Families", line: "Easygoing, and paced around little ones.", price: "$375", points: ["One hour, up to six people", "Planned around naps", "Larger groups welcome"] },
+  { name: "Creative", line: "A still from your own film.", price: "$550", points: ["Concept + styling direction", "Two hours of shooting", "A cinematic, editorial finish"] },
 ];
 
 const FAQ = [
@@ -239,6 +239,7 @@ export default function Photography() {
           {PRICES.map((it) => (
             <li key={it.name} className="sh-price">
               <h3 className="sh-h3">{it.name}</h3>
+              <p className="sh-price__line">{it.line}</p>
               <p className="sh-price__amt">
                 <span>from</span> {it.price}
               </p>
