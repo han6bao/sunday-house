@@ -236,18 +236,18 @@ export const SERVICES: Service[] = [
     group: "portraits",
     title: "Family + Maternity Photographer, Seattle + Tacoma | Sunday House",
     description:
-      "Family and maternity photography in Seattle and Tacoma — relaxed outdoor and at-home sessions for the people you love, from the bump to the grandparents.",
+      "Family, maternity and newborn photography in Seattle and Tacoma — outdoor, at-home and studio sessions for the people you love, from the bump to the grandparents.",
     script: "Every season, kept.",
     h1: "Maternity and family photos for *every season*.",
     intro: [
       "Family photographs get more precious every year. We keep sessions easy and unhurried — a walk, a game, some snuggling — so the photographs show how your family actually is, not how it lines up.",
-      "We photograph families at home, in parks and on beaches across Seattle, Tacoma and Puget Sound, planned around naps, light and the season you want to remember.",
+      "We photograph families outdoors, at home or in the studio across Seattle, Tacoma and Puget Sound — planned around naps, light and the season you want to remember. Newborn and new-family sessions are included too.",
       "Expecting? Maternity sessions keep the waiting — outdoors in golden light or somewhere meaningful to you, unhurried and paced around how you feel.",
     ],
     highlights: [
       { title: "Paced around you", body: "Unhurried sessions that follow how you feel — rest when you need it, no rushing." },
       { title: "Everyone included", body: "Partners, little ones, grandparents and pets — big groups and small, with a plan for every combination." },
-      { title: "Holiday-ready", body: "Book late summer or early fall and your photographs are ready for cards and gifts." },
+      { title: "Studio options", body: "Prefer indoors? Studio sessions are available for families, maternity and newborns — soft light, any season, any weather." },
     ],
     photos: [
       { src: "/assets/stills/family-stand.jpg", alt: "A family of five smiling together on a waterfront path lined with wild roses" },
@@ -305,7 +305,7 @@ export const SERVICES: Service[] = [
       ],
     },
     faqs: [
-      { q: "How much is a family or maternity session?", a: "Family sessions are $375 for an hour with up to six people, and maternity sessions are the same. Larger groups are quoted to fit." },
+      { q: "How much is a family or maternity session?", a: "Family sessions are $375 for an hour with up to six people, and maternity sessions are the same. Larger groups are quoted to fit, and studio sessions are available for families, maternity and newborns." },
       { q: "When should we book family photos for the holidays?", a: "Late summer or early fall. Sessions fill quickly before the holidays, and earlier dates leave time to order cards and prints." },
       { q: "What if my kids won't cooperate?", a: "They don't have to. We keep it playful and pace the session around them — the best family photos are rarely the posed ones." },
       { q: "What should we wear?", a: "Coordinating colors rather than matching outfits, comfortable shoes and layers for Pacific Northwest weather. We send a styling guide when you book." },

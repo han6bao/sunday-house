@@ -35,7 +35,7 @@ const SERVICE = serviceJsonLd({
 const SESSIONS = [
   { label: "Couples + Engagements", slug: "engagement-photography", note: "The two of you, before and after the aisle." },
   { label: "Seniors + Graduates", slug: "senior-portraits", note: "Your year, looking like you." },
-  { label: "Families + Maternity", slug: "family-photography", note: "Every season, kept — the bump included." },
+  { label: "Families + Maternity", slug: "family-photography", note: "Every season, kept — newborns and the bump included. Studio options available." },
   { label: "Creative Sessions", slug: "creative-portraits", note: "A still from your own film." },
 ];
 
@@ -43,7 +43,7 @@ const PRICES = [
   { name: "Couples", line: "An unhurried hour, just the two of you.", price: "$375", points: ["One hour, one location", "Gentle direction", "A private online gallery"] },
   { name: "Engagements", line: "Ninety minutes to celebrate the yes.", price: "$450", points: ["Two looks", "A location chosen together", "Included in most collections"] },
   { name: "Seniors", line: "Your year, in your own style.", price: "$375", points: ["One hour, two outfits", "Posing guidance throughout", "Extended session: $575"] },
-  { name: "Families", line: "Easygoing, and paced around little ones.", price: "$375", points: ["One hour, up to six people", "Planned around naps", "Larger groups welcome"] },
+  { name: "Families", line: "Easygoing, and paced around little ones.", price: "$375", points: ["One hour, up to six people", "Newborn + maternity too", "Studio options available"] },
   { name: "Creative", line: "A still from your own film.", price: "$550", points: ["Concept + styling direction", "Two hours of shooting", "A cinematic, editorial finish"] },
 ];
 
