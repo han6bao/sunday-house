@@ -28,6 +28,8 @@ export type Service = {
   strip?: (ServicePhoto & { w: number; h: number })[];
   /** More rows of natural-shape photos. */
   strips?: (ServicePhoto & { w: number; h: number })[][];
+  /** Extra full-screen slides for the phone deck. */
+  deckSlides?: { kicker: string; title: string; body: string; img: ServicePhoto }[];
   /** Optional extra photo story on the page (e.g. maternity on the family page). */
   feature?: { eyebrow: string; title: string; body: string; tall: ServicePhoto; wide: ServicePhoto[] };
   faqs: ServiceFaq[];
@@ -265,6 +267,14 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/family-siblings-two.jpg", alt: "A toddler and his sister by the water", w: 1800, h: 1800 },
         { src: "/assets/stills/family-window.jpg", alt: "Three children peeking through a gap in a wall at the water", w: 1800, h: 1200 },
       ],
+    ],
+    deckSlides: [
+      {
+        kicker: "Newborn",
+        title: "The first days, *kept*.",
+        body: "Soft, simple portraits of your newest arrival, held by the people who love them most.",
+        img: { src: "/assets/stills/newborn-mom.jpg", alt: "A mother cradling her sleeping newborn, wrapped in a cream knit" },
+      },
     ],
     feature: {
       eyebrow: "Maternity",
