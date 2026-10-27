@@ -52,10 +52,8 @@ export const SERVICES: Service[] = [
       { title: "Practice for the wedding day", body: "You'll learn how we work and how you photograph best, so the wedding day feels easy and familiar." },
     ],
     photos: [
-      { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in black and white" },
+      { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose, in black and white" },
       { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in black and white" },
-      { src: "/assets/stills/couple-sunset.jpg", alt: "A couple walking toward the sunset" },
-      { src: "/assets/stills/couple-field.jpg", alt: "A couple walking hand in hand across a green lawn" },
     ],
     faqs: [
       { q: "How much is an engagement or couples session?", a: "Couples sessions begin at $375 for an hour at one location. Engagement sessions are $450 for ninety minutes and two looks, and one is included with The Story and The Full Day wedding collections." },
@@ -88,10 +86,8 @@ export const SERVICES: Service[] = [
       { title: "Photography and film", body: "Add a short film and you'll keep your vows in your own voices — the part of an elopement couples treasure most." },
     ],
     photos: [
-      { src: "/assets/stills/couple-kiss.jpg", alt: "A couple sharing a kiss beneath a floral arch" },
-      { src: "/assets/motion/couple-hill.jpg", alt: "Newlyweds on a hilltop at sunset" },
-      { src: "/assets/film-posters/film-7.jpg", alt: "Bride and groom face to face beneath the trees" },
       { src: "/assets/stills/wed-dance.jpg", alt: "Newlyweds dancing in a misty golden field" },
+      { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil" },
     ],
     faqs: [
       { q: "How much does elopement photography cost?", a: "Intimate weddings and elopements begin at $1,800 for up to three hours at one location. Extra hours, a second location and film can all be added." },
@@ -125,10 +121,8 @@ export const SERVICES: Service[] = [
       { title: "One team, whole day", body: "Wedding photography and film together, from getting ready to the last dance." },
     ],
     photos: [
-      { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light" },
-      { src: "/assets/content-work/Dc-CZYLJuxk.jpg", alt: "Bride and groom dancing under chandeliers" },
-      { src: "/assets/film-posters/film-1.jpg", alt: "A first dance beneath string lights" },
-      { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil" },
+      { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil in golden light" },
+      { src: "/assets/stills/wed-forehead.jpg", alt: "A groom kissing his bride's forehead, in black and white" },
     ],
     faqs: [
       { q: "How much does a wedding photographer cost?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $5,800." },
@@ -161,10 +155,8 @@ export const SERVICES: Service[] = [
       { title: "Photo + film together", body: "One team for photographs and film, so the style, the timing and the story all match." },
     ],
     photos: [
-      { src: "/assets/motion/bride.jpg", alt: "A bride looking toward the light" },
-      { src: "/assets/stills/couple-field.jpg", alt: "Newlyweds walking together after their ceremony" },
+      { src: "/assets/stills/wed-forehead.jpg", alt: "A groom kissing his bride's forehead, in black and white" },
       { src: "/assets/stills/wed-hold.jpg", alt: "A groom leaning down to take his bride's hand, shot from below" },
-      { src: "/assets/motion/ring.jpg", alt: "A wedding ring on joined hands" },
     ],
     faqs: [
       { q: "How much is a Tacoma wedding photographer?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $5,800." },
@@ -250,10 +242,8 @@ export const SERVICES: Service[] = [
       { title: "Holiday-ready", body: "Book late summer or early fall and your photographs are ready for cards and gifts." },
     ],
     photos: [
-      { src: "/assets/motion/maternity-meadow.jpg", alt: "Expecting mother in a meadow with deer grazing behind her" },
       { src: "/assets/gallery/field-seated.png", alt: "A woman in a floral dress seated in the grass with baby's breath" },
       { src: "/assets/gallery/movement.png", alt: "A woman turning in a floral dress in a summer field" },
-      { src: "/assets/gallery/eyes-closed.png", alt: "A woman in a floral dress with eyes closed, holding baby's breath" },
     ],
     faqs: [
       { q: "How much is a family or maternity session?", a: "Family sessions are $375 for an hour with up to six people, and maternity sessions are the same. Larger groups are quoted to fit." },
@@ -286,10 +276,8 @@ export const SERVICES: Service[] = [
       { title: "Cinematic light", body: "Natural light shaped with care, edited in our film-like style." },
     ],
     photos: [
-      { src: "/assets/stills/creative-1.jpg", alt: "Silhouette in a mirror against a teal patterned screen" },
       { src: "/assets/stills/creative-2.jpg", alt: "Styled portrait in a patchwork suede dress and newsboy cap against a red wall" },
-      { src: "/assets/stills/creative-3.jpg", alt: "Styled portrait leaning against a teal wall in a color-block dress" },
-      { src: "/assets/gallery/flower-nose.png", alt: "Cinematic portrait with a daisy, eyes closed" },
+      { src: "/assets/stills/creative-1.jpg", alt: "Silhouette in a mirror against a teal patterned screen" },
     ],
     faqs: [
       { q: "How much is a creative session?", a: "Creative sessions begin at $550, including concept planning, styling direction and two hours of shooting. Bigger concepts are quoted to fit." },

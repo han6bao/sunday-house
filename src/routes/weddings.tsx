@@ -33,9 +33,6 @@ const SERVICE = serviceJsonLd({
 
 const GALLERY = [
   { src: "/assets/stills/wed-forehead.jpg", alt: "A groom kissing his bride's forehead, in black and white", ratio: "9/16" },
-  { src: "/assets/stills/couple-kiss.jpg", alt: "A couple sharing a kiss beneath a floral arch", ratio: "2/3" },
-  { src: "/assets/stills/couple-field.jpg", alt: "Bride and groom walking across the lawn after the ceremony", ratio: "2/3" },
-  { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light", ratio: "2/3" },
   { src: "/assets/stills/wed-dance.jpg", alt: "Newlyweds dancing in a misty golden field", ratio: "9/16" },
   { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil", ratio: "9/16" },
   { src: "/assets/stills/wed-hold.jpg", alt: "A groom leaning down to take his bride's hand, shot from below", ratio: "9/16" },
