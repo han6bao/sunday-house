@@ -1,43 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { pageHead } from "@/lib/seo";
 
 import { ContentShell } from "@/components/house/content-shell";
-import { Heart, HouseMark } from "@/components/house/marks";
 import { PLAYABLE_REELS, ReelCard } from "@/components/house/reel-card";
-
-type Reel = {
-  shortcode: string;
-  caption: string;
-  url: string;
-  thumb: string;
-};
-
-const REELS: Reel[] = [
-  { shortcode: "Dc-FW05tqrF", caption: "Dance lessons!", url: "https://www.instagram.com/reel/Dc-FW05tqrF/", thumb: "/assets/content-work/Dc-FW05tqrF.jpg" },
-  { shortcode: "Dc-ECVrSzy5", caption: "Group dance 🪩", url: "https://www.instagram.com/reel/Dc-ECVrSzy5/", thumb: "/assets/content-work/Dc-ECVrSzy5.jpg" },
-  { shortcode: "Dc-CDETMQt6", caption: "Dancing", url: "https://www.instagram.com/reel/Dc-CDETMQt6/", thumb: "/assets/content-work/Dc-CDETMQt6.jpg" },
-  { shortcode: "Dc-Q1TcSzgx", caption: "Moments made to last", url: "https://www.instagram.com/reel/Dc-Q1TcSzgx/", thumb: "/assets/content-work/Dc-Q1TcSzgx.jpg" },
-  { shortcode: "Dc-GM2nTfXA", caption: "BTS from the dance lessons", url: "https://www.instagram.com/reel/Dc-GM2nTfXA/", thumb: "/assets/content-work/Dc-GM2nTfXA.jpg" },
-  { shortcode: "Dc-F_kwzwjc", caption: "Nothing but dancing today!", url: "https://www.instagram.com/reel/Dc-F_kwzwjc/", thumb: "/assets/content-work/Dc-F_kwzwjc.jpg" },
-  { shortcode: "Dc95tOdJIq_", caption: "Time for some Jenga 😂", url: "https://www.instagram.com/reel/Dc95tOdJIq_/", thumb: "/assets/content-work/Dc95tOdJIq_.jpg" },
-  { shortcode: "Dc95iSEhbA_", caption: "Time for some food 🍽️", url: "https://www.instagram.com/reel/Dc95iSEhbA_/", thumb: "/assets/content-work/Dc95iSEhbA_.jpg" },
-  { shortcode: "Dc95F33Btpj", caption: "Lift off 🙌🏽", url: "https://www.instagram.com/reel/Dc95F33Btpj/", thumb: "/assets/content-work/Dc95F33Btpj.jpg" },
-  { shortcode: "Dc96OtPz2vo", caption: "Which side is going to win? 🤨", url: "https://www.instagram.com/reel/Dc96OtPz2vo/", thumb: "/assets/content-work/Dc96OtPz2vo.jpg" },
-  { shortcode: "Dc-B3czOfle", caption: "The reveal 😍", url: "https://www.instagram.com/reel/Dc-B3czOfle/", thumb: "/assets/content-work/Dc-B3czOfle.jpg" },
-  { shortcode: "Dc-CZYLJuxk", caption: "And another one", url: "https://www.instagram.com/reel/Dc-CZYLJuxk/", thumb: "/assets/content-work/Dc-CZYLJuxk.jpg" },
-];
-
-const TIMELINE = [
-  { time: "Morning", caption: "Getting ready, detail by detail.", thumb: "/assets/content-work/Dc-B3czOfle.jpg" },
-  { time: "The beginning", caption: "The people start arriving.", thumb: "/assets/content-work/Dc95F33Btpj.jpg" },
-  { time: "Tradition", caption: "Cultural moments as they unfold.", thumb: "/assets/content-work/Dc94ykltayq.jpg" },
-  { time: "Together", caption: "The couple, without pulling them away from their day.", thumb: "/assets/content-work/Dc-PNpPptSy.jpg" },
-  { time: "Family", caption: "Reactions, relationships and everything happening around them.", thumb: "/assets/content-work/Dc-Q1TcSzgx.jpg" },
-  { time: "In between", caption: "Games, conversations and the moments nobody scheduled.", thumb: "/assets/content-work/Dc95tOdJIq_.jpg" },
-  { time: "Speeches", caption: "The people who showed up, heard.", thumb: "/assets/content-work/Dc-X9nngA-w.jpg" },
-  { time: "The celebration", caption: "Dances taught on the floor. Everyone joining in.", thumb: "/assets/content-work/Dc-ECVrSzy5.jpg" },
-  { time: "After dark", caption: "The dance floor, finally.", thumb: "/assets/content-work/Dc-CDETMQt6.jpg" },
-];
 
 const COLLABORATORS = [
   { handle: "@soulkitchenllc", url: "https://www.instagram.com/soulkitchenllc/" },
@@ -45,16 +10,38 @@ const COLLABORATORS = [
   { handle: "@danceitout_vidhibhatia", url: "https://www.instagram.com/danceitout_vidhibhatia/" },
   { handle: "@linensensation", url: "https://www.instagram.com/linensensation/" },
   { handle: "@ruchikagupta_official", url: "https://www.instagram.com/ruchikagupta_official/" },
-  { handle: "@dreamsperfected", url: "https://www.instagram.com/dreamsperfected/", note: "DJ Prashant · the team behind the day" },
+  { handle: "@dreamsperfected", url: "https://www.instagram.com/dreamsperfected/", note: "DJ Prashant" },
+];
+
+const STATS = [
+  { n: "80K+", l: "Video views to date" },
+  { n: "60K+", l: "In the first three days" },
+  { n: "28", l: "Videos created" },
+  { n: "Live", l: "Shared throughout the day" },
+];
+
+const HOW = [
+  {
+    t: "The brief",
+    b: "A dedicated phone and direct access to an Instagram account created for the wedding — so the celebration could be shared as it happened, and kept as an archive afterward.",
+  },
+  {
+    t: "On the day",
+    b: "We filmed, selected, edited and published in real time: Stories in the order the day unfolded, reels set to music, captions written and every vendor credited.",
+  },
+  {
+    t: "Afterward",
+    b: "The complete library came home with the couple — every clip, every finished piece and the longer moments, from the speeches to the last dance.",
+  },
 ];
 
 const DELIVERY = [
-  { label: "Full content library", note: "A complete folder of captured content from throughout the wedding." },
-  { label: "Edited content", note: "Finished vertical pieces ready to keep, repost and share." },
-  { label: "Live Stories", note: "Posted in real time, so family who couldn't travel could follow every moment." },
-  { label: "Social-ready posts", note: "Captions, music, collaborator/vendor tags and hashtags when wanted." },
-  { label: "Speeches + longer moments", note: "Important moments captured beyond quick social clips." },
-  { label: "Continued editing", note: "Content that keeps being useful after the wedding — not just when the Stories do." },
+  { label: "The full library", note: "Every clip captured throughout the wedding, organized and delivered." },
+  { label: "Finished reels", note: "Edited vertical pieces, ready to keep, repost and share." },
+  { label: "Live Stories", note: "Shared in real time for family and friends who couldn't travel." },
+  { label: "Social-ready posts", note: "Captions, music and vendor credits, prepared with care." },
+  { label: "The longer moments", note: "Speeches and performances, captured in full." },
+  { label: "Continued editing", note: "Content that remains useful long after the wedding weekend." },
 ];
 
 export const Route = createFileRoute("/content-portfolio")({
@@ -72,225 +59,36 @@ export const Route = createFileRoute("/content-portfolio")({
 export default function ContentPortfolio() {
   return (
     <ContentShell breadcrumb={[{ name: "Wedding Content: Abha & Udit", path: "/content-portfolio" }]}>
-      {/* Hero */}
-      <section className="mx-auto max-w-[1400px] px-5 pt-14 md:px-8">
+      {/* 1 — Hero */}
+      <section className="sh-wrap pt-14 md:pt-20">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="sh-script  reveal">One day. Twenty-eight videos. One story.</p>
-          <h1 className="reveal reveal--delay-1 mt-3 sh-h1">
-            The wedding, shared while it happened.
+          <p className="eyebrow">Wedding content creation · Abha &amp; Udit</p>
+          <h1 className="sh-h1 mt-5">
+            The wedding, shared <em>while it happened</em>.
           </h1>
-          <p className="reveal reveal--delay-2 mt-5 font-serif text-lg leading-relaxed text-brown">
-            A full-day Indian-American wedding told in real time — live-edited
-            Stories, reels, captions, music, collaborator credits and a complete
-            content library afterward.
+          <p className="sh-lede mx-auto mt-6 max-w-2xl">
+            A full-day Indian-American celebration across Seattle and the South Sound, told in real time — and kept, in full, long after.
           </p>
         </div>
-      </section>
 
-      {/* Case study — Abha × Udit */}
-      <section className="mx-auto max-w-[1400px] px-5 pt-12 md:px-8">
-        <div className="border border-ink/15 bg-rose-paper/40 p-8 md:p-10">
-          <p className="eyebrow">The Wedding · Abha × Udit</p>
-          <p className="sh-script mt-3 ">From Carnegie to Carnation.</p>
-          <div className="mt-5 grid gap-8 lg:grid-cols-12">
-            <div className="lg:col-span-7">
-              <p className="font-serif text-lg leading-relaxed text-brown">
-                A full-day, fast-moving Indian-American wedding across Seattle and
-                the South Sound — cultural moments, family dances, guest
-                activities, games, vendors, food, speeches, multiple settings, and
-                a room full of people completely in on the celebration.
-              </p>
-              <p className="mt-4 font-serif text-lg leading-relaxed text-brown">
-                The job wasn't simply to record what happened. It was to read the
-                room while it was changing — adapting to the flow of the wedding
-                in real time, recognizing the relationships and chemistry around
-                us, and deciding what needed to be captured so dozens of
-                individual moments could still become{" "}
-                <span className="font-semibold text-ink">one cohesive story from beginning to end</span>.
-              </p>
-              <p className="mt-4 font-serif text-lg leading-relaxed text-brown">
-                The couple mattered, of course. But so did everyone surrounding
-                them — families, friends, the reactions across the room, the
-                traditions, the people laughing off-camera, the dances being
-                taught on the floor, and all the little interactions that made
-                this wedding theirs.
-              </p>
-              <p className="mt-4 font-serif italic leading-relaxed text-brown/80">
-                Delivered alongside <span className="text-ink">DJ Prashant</span> and{" "}
-                <a href="https://www.instagram.com/dreamsperfected/" target="_blank" rel="noreferrer" className="border-b border-ink/25 pb-0.5 text-antique hover:text-ink">
-                  @dreamsperfected
-                </a>
-                , the Indian-American wedding DJ team behind the day.
-              </p>
-            </div>
-            <div className="lg:col-span-5">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="border border-ink/15 bg-ivory p-5 text-center">
-                  <p className="font-display text-4xl text-ink">80K+</p>
-                  <p className="mt-1 label-xs text-antique">Video views to date</p>
-                </div>
-                <div className="border border-ink/15 bg-ivory p-5 text-center">
-                  <p className="font-display text-4xl text-ink">60K+</p>
-                  <p className="mt-1 label-xs text-antique">In the first 3 days</p>
-                </div>
-                <div className="border border-ink/15 bg-ivory p-5 text-center">
-                  <p className="font-display text-4xl text-ink">28</p>
-                  <p className="mt-1 label-xs text-antique">Videos created</p>
-                </div>
-                <div className="border border-ink/15 bg-rose-paper/60 p-5 text-center">
-                  <p className="font-display text-4xl text-ink">Live</p>
-                  <p className="mt-1 label-xs text-antique">From a phone, all day</p>
-                </div>
-              </div>
-              <p className="mt-5 text-center font-serif text-sm italic text-brown/60">
-                Performance measured within approximately three days of the
-                wedding.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results — the numbers are only part of it */}
-      <section className="mx-auto max-w-[1400px] px-5 pt-12 md:px-8">
-        <div className="max-w-3xl">
-          <p className="font-display text-2xl text-ink">The numbers are only part of it.</p>
-          <p className="mt-3 font-serif text-lg leading-relaxed text-brown">
-            More than 60,000 video views within three days, and over 80,000 to
-            date, from an Instagram account created specifically for the
-            wedding, which now doubles as their archive. Live Stories let family
-            and friends who couldn't make the trip follow along as it happened.
-            The top Reel alone passed 20,000. The content traveled
-            beyond the account's existing audience, but reach wasn't the purpose
-            of the day — the goal was to make the wedding feel alive online while
-            it was still happening, giving guests something to interact with,
-            families another way into the celebration, and the couple an immediate
-            record of the energy surrounding them. The response followed the
-            storytelling.
-          </p>
-        </div>
-      </section>
-
-      {/* Real-time coverage */}
-      <section className="border-y border-ink/15 bg-paper/40">
-        <div className="mx-auto max-w-[1400px] px-5 py-12 md:px-8 md:py-14">
-          <p className="eyebrow">Real-time coverage</p>
-          <h2 className="mt-2 font-display text-3xl leading-tight text-ink">The wedding, shared while it happened.</h2>
-          <div className="mt-6 grid gap-8 lg:grid-cols-12">
-            <div className="lg:col-span-7">
-              <p className="font-serif text-lg leading-relaxed text-brown">
-                We were given a phone dedicated to content creation and direct access
-                to the wedding's Instagram account. Throughout the day, we filmed,
-                selected moments, found music, edited vertically, structured
-                Stories, prepared social copy, tagged collaborators and published
-                the celebration in real time.
-              </p>
-              <p className="mt-4 font-serif text-lg leading-relaxed text-brown">
-                The Stories weren't random clips uploaded whenever there was time.
-                They followed the wedding chronologically, so someone watching from
-                their phone could actually understand the day: the beginning, the
-                people arriving, cultural moments, family, food, games, speeches,
-                performances, couple moments, dancing and everything in between.
-              </p>
-              <p className="sh-script mt-6 ">Film it. Edit it. Post it. Keep moving.</p>
-            </div>
-            <div className="lg:col-span-5">
-              <div className="relative aspect-[9/16] overflow-hidden bg-[#2c2726]">
-              <video src="/assets/reels/Dc-X9nngA-w.mp4" poster="/assets/content-work/Dc-X9nngA-w.jpg" autoPlay muted loop playsInline aria-label="A wedding reel, filmed and shared the same day" className="absolute inset-0 h-full w-full max-w-none object-cover" />
-            </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The day, moment to moment */}
-      <section className="mx-auto max-w-[1400px] px-5 py-12 md:px-8 md:py-16">
-        <p className="eyebrow">The day, moment to moment</p>
-        <h2 className="mt-2 font-display text-3xl leading-tight text-ink">A wedding, shared as it unfolded.</h2>
-        <div className="mt-8 grid grid-cols-3 gap-3 md:gap-6">
-          {TIMELINE.map((t, i) => (
-            <div key={t.caption} className="group">
-              <div className="border border-ink/15 bg-ivory p-2">
-                <img src={t.thumb} alt={t.caption} loading="lazy" className="aspect-[9/16] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
-              </div>
-              <div className="mt-3">
-                <p className="label-tiny--xs uppercase tracking-[0.14em] text-antique">{String(i + 1).padStart(2, "0")} — {t.time}</p>
-                <p className="mt-1 hidden font-serif text-base leading-snug text-ink md:block">{t.caption}</p>
-              </div>
+        {/* The numbers */}
+        <dl className="mx-auto mt-12 grid max-w-5xl grid-cols-2 border-y border-ink/15 md:grid-cols-4">
+          {STATS.map((x, i) => (
+            <div key={x.l} className={`px-4 py-7 text-center ${i ? "md:border-l md:border-ink/15" : ""} ${i % 2 ? "border-l border-ink/15 md:border-l" : ""} ${i > 1 ? "border-t border-ink/15 md:border-t-0" : ""}`}>
+              <dt className="sr-only">{x.l}</dt>
+              <dd className="font-display text-4xl text-ink md:text-5xl">{x.n}</dd>
+              <p className="mt-2 label-xs text-antique">{x.l}</p>
             </div>
           ))}
-        </div>
-
-        {/* Chemistry — an editorial break inside the timeline */}
-        <div className="mx-auto mt-14 max-w-2xl border-l border-ink/15 pl-6 md:pl-8">
-          <p className="sh-script ">Paying attention is part of the job.</p>
-          <p className="mt-4 font-serif text-lg leading-relaxed text-brown">
-            Who keeps looking at each other across the room? Who makes everyone
-            laugh? Which reaction matters as much as the moment everyone is
-            watching? What is happening behind the couple? What will they want to
-            see tomorrow that they missed today? Wedding content creation is as
-            much about noticing people as it is about knowing when to press
-            record.
-          </p>
-          <p className="mt-4 font-serif italic leading-relaxed text-brown/70">
-            That is what makes a folder of clips become a story.
-          </p>
-        </div>
+        </dl>
       </section>
 
-      {/* Collaborators + vendors */}
-      <section className="border-y border-ink/15 bg-paper/40">
-        <div className="mx-auto max-w-[1400px] px-5 py-12 md:px-8 md:py-14">
-          <p className="eyebrow">Collaborators + vendors</p>
-          <h2 className="mt-2 font-display text-3xl leading-tight text-ink">A wedding is an ecosystem.</h2>
-          <p className="mt-4 max-w-3xl font-serif text-lg leading-relaxed text-brown">
-            The social coverage also became a way to document and promote the
-            people who helped create the celebration — vendors, performers and
-            collaborators intentionally credited and tagged throughout relevant
-            content, so guests and viewers could discover the people behind what
-            they were seeing.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-x-7 gap-y-3">
-            {COLLABORATORS.map((c) => (
-              <a key={c.handle} href={c.url} target="_blank" rel="noreferrer" className="group inline-flex flex-col">
-                <span className="font-serif text-lg text-antique transition-colors group-hover:text-ink">{c.handle}</span>
-                {c.note ? <span className="label-tiny--xs uppercase tracking-[0.14em] text-brown/50">{c.note}</span> : null}
-              </a>
-            ))}
-          </div>
-          <p className="mt-6 font-serif italic leading-relaxed text-brown/70">
-            Good wedding content doesn't only show who got married. It remembers
-            who helped make the day happen.
-          </p>
-        </div>
-      </section>
-
-      {/* What they received */}
-      <section className="mx-auto max-w-[1400px] px-5 py-12 md:px-8 md:py-16">
-        <p className="eyebrow">What they received</p>
-        <h2 className="mt-2 font-display text-3xl leading-tight text-ink">And everything came home with them.</h2>
-        <p className="mt-3 max-w-2xl font-serif text-lg leading-relaxed text-brown">
-          The social coverage was only one part of the delivery.
-        </p>
-        <div className="mt-6 grid gap-x-8 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
-          {DELIVERY.map((d) => (
-            <div key={d.label} className="border-t border-ink/15 pt-4">
-              <p className="flex items-baseline gap-2 font-display text-lg text-ink">
-                <Heart filled className="h-3.5 w-3.5 shrink-0 text-rose-deep" />
-                {d.label}
-              </p>
-              <p className="mt-1.5 font-serif text-sm leading-relaxed text-brown/80">{d.note}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* The reels — the work itself */}
-      <section className="mx-auto max-w-[1400px] px-5 pb-12 md:px-8">
+      {/* 2 — The reels */}
+      <section className="sh-wrap sh-section" aria-labelledby="cp-reels">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="eyebrow">The reels</p>
-            <h2 className="mt-2 font-display text-3xl leading-tight text-ink">Every clip, ready to post.</h2>
+            <p className="eyebrow">The work</p>
+            <h2 id="cp-reels" className="cp-h2 mt-3">A few of the reels.</h2>
           </div>
           <p className="label-xs text-brown/60">Tap to play</p>
         </div>
@@ -299,57 +97,69 @@ export default function ContentPortfolio() {
             <ReelCard key={r.code} reel={r} />
           ))}
         </div>
-        <p className="mt-10 eyebrow">More from the day</p>
-        <div className="mt-4 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
-          {REELS.filter((r) => !PLAYABLE_REELS.some((t) => t.code === r.shortcode)).slice(0, 8).map((r) => (
-            <a
-              key={r.shortcode}
-              href={r.url}
-              target="_blank"
-              rel="noreferrer"
-              className="group border border-ink/15 bg-ivory p-3 transition-all hover:-translate-y-1 hover:sh-lift"
-            >
-              <img src={r.thumb} alt={r.caption} loading="lazy" className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-              <div className="p-1 pt-2.5">
-                <p className="font-serif text-sm text-ink group-hover:text-antique md:text-base">{r.caption}</p>
-                <p className="mt-1 label-tiny--xs uppercase tracking-[0.14em] text-antique">Watch →</p>
-              </div>
-            </a>
-          ))}
-        </div>
-        <div className="mt-8 text-center">
-          <a href="https://www.instagram.com/abha.udit/" target="_blank" rel="noreferrer" className="sh-invite__alt">
-            See every reel on Instagram →
+        <div className="mt-8">
+          <a href="https://www.instagram.com/abha.udit/" target="_blank" rel="noreferrer" className="sh-link">
+            The full account on Instagram →
           </a>
         </div>
       </section>
 
-      {/* The distinction + CTA */}
-      <section className="border-t border-ink/15 bg-paper/40">
-        <div className="mx-auto max-w-[1400px] px-5 py-14 text-center md:px-8 md:py-18">
-          <HouseMark className="mx-auto h-10 w-10 text-rose-deep" />
-          <p className="mx-auto mt-6 max-w-2xl font-display text-3xl leading-tight text-ink md:text-4xl">
-            Your photographer preserves it.
-            <br />
-            Your content creator catches it as it unfolds.
-          </p>
-          <p className="mx-auto mt-4 max-w-xl font-serif italic leading-relaxed text-brown/80">
-            Getting ready · first looks · ceremony · traditions · the people you
-            love · the things you planned · the things you didn't.
-          </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-              Inquire
-            </a>
-            <Link
-              to="/content-creation"
-              className="sh-invite__alt"
-            >
-              See how content creation works →
-            </Link>
+      {/* 3 — How it worked */}
+      <section className="rose-paper sh-section" aria-labelledby="cp-how">
+        <div className="sh-wrap grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div className="lg:col-span-7">
+            <p className="eyebrow">How it worked</p>
+            <h2 id="cp-how" className="cp-h2 mt-3">One day, three parts.</h2>
+            <ol className="mt-10 space-y-8">
+              {HOW.map((h, i) => (
+                <li key={h.t} className="grid grid-cols-[3rem_1fr] gap-4 border-t border-ink/15 pt-6">
+                  <p className="sh-num">0{i + 1}</p>
+                  <div>
+                    <h3 className="sh-h3">{h.t}</h3>
+                    <p className="sh-body mt-2">{h.b}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="mx-auto w-full max-w-[300px] lg:col-span-4 lg:col-start-9">
+            <div className="relative aspect-[9/16] overflow-hidden bg-[#2c2726]">
+              <video src="/assets/reels/Dc92Z0tBIDY.mp4" poster="/assets/reels/Dc92Z0tBIDY.jpg" autoPlay muted loop playsInline aria-label="Guests dancing on the lawn, filmed and shared the same day" className="absolute inset-0 h-full w-full max-w-none object-cover" />
+            </div>
           </div>
         </div>
       </section>
+
+      {/* 4 — What they received */}
+      <section className="sh-wrap sh-section" aria-labelledby="cp-received">
+        <p className="eyebrow">What they received</p>
+        <h2 id="cp-received" className="cp-h2 mt-3">Everything, kept.</h2>
+        <div className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          {DELIVERY.map((d, i) => (
+            <div key={d.label} className="border-t border-ink/15 pt-5">
+              <p className="sh-num">0{i + 1}</p>
+              <h3 className="sh-h3 mt-2">{d.label}</h3>
+              <p className="sh-body mt-1">{d.note}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 5 — Credits */}
+      <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-labelledby="cp-credits">
+        <div className="border-t border-ink/15 pt-10">
+          <p id="cp-credits" className="eyebrow">With thanks to</p>
+          <div className="mt-6 flex flex-wrap gap-x-8 gap-y-4">
+            {COLLABORATORS.map((c) => (
+              <a key={c.handle} href={c.url} target="_blank" rel="noreferrer" className="group inline-flex flex-col">
+                <span className="font-serif text-lg text-antique transition-colors group-hover:text-ink">{c.handle}</span>
+                {c.note ? <span className="label-tiny--xs uppercase tracking-[0.14em] text-brown/50">{c.note}</span> : null}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </ContentShell>
   );
 }

@@ -4099,3 +4099,5 @@ main h2#film-how:not(#a):not(#b):not(#c) { font-family: var(--font-display) !imp
 .sh-filmhow { display: grid; gap: 0; border-top: 1px solid rgb(44 39 38 / 0.15); }
 @media (min-width: 768px) { .sh-filmhow { grid-template-columns: 1fr 1fr; column-gap: clamp(2rem, 4vw, 4rem); } }
 .sh-filmhow li { padding: 1.4rem 0; border-bottom: 1px solid rgb(44 39 38 / 0.15); }
+main h2#cp-realtime:not(#a):not(#b):not(#c) { font-family: var(--font-display) !important; font-size: clamp(2.2rem, 3.6vw, 3.2rem) !important; line-height: 1.05 !important; letter-spacing: -0.01em !important; text-transform: none !important; font-weight: 400 !important; }
+main h2.cp-h2:not(#a):not(#b):not(#c) { font-family: var(--font-display) !important; font-size: clamp(2.3rem, 4vw, 3.4rem) !important; line-height: 1.04 !important; letter-spacing: -0.01em !important; text-transform: none !important; font-weight: 400 !important; color: var(--color-ink, #2c2726); }
