@@ -287,10 +287,10 @@ export const SERVICES: Service[] = [
       eyebrow: "Maternity",
       title: "The waiting, *kept*.",
       body: "Unhurried sessions outdoors in soft light, paced around how you feel — for the two of you, and the one on the way.",
-      tall: { src: "/assets/stills/maternity-ultrasound.jpg", alt: "An expecting couple laughing together, holding an ultrasound photo in a meadow of wildflowers" },
+      tall: { src: "/assets/stills/maternity-ultrasound-2.jpg", alt: "An expecting couple laughing together, holding an ultrasound photo in a meadow of wildflowers" },
       wide: [
         { src: "/assets/stills/maternity-deer.jpg", alt: "An expecting mother in a meadow of wildflowers with deer grazing behind her" },
-        { src: "/assets/stills/maternity-couple.jpg", alt: "An expecting couple holding her bump together in a flowering meadow" },
+        { src: "/assets/stills/maternity-couple-2.jpg", alt: "An expecting couple holding her bump together in a flowering meadow" },
       ],
     },
     faqs: [

@@ -176,7 +176,7 @@ export function ServicePage({ service }: { service: Service }) {
           <div className="mt-6 grid gap-8 md:grid-cols-3">
             {related.map((r) => (
               <Link key={r.slug} to="/services/$slug" params={{ slug: r.slug }} className="group">
-                <Photo src={r.photos[0].src} alt={r.photos[0].alt} need={r.photos[0].need} ratio="3/2" sizes="(max-width: 768px) 100vw, 33vw" />
+                <Photo src={r.photos[0].src} alt={r.photos[0].alt} ratio="4/5" position="center 25%" sizes="(max-width: 768px) 100vw, 33vw" />
                 <p className="sh-h3 mt-4 group-hover:italic">{r.name} →</p>
               </Link>
             ))}

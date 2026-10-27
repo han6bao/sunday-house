@@ -49,7 +49,7 @@ export function Photo({
       </figure>
     );
   }
-  if (need) {
+  if (need && !src) {
     return (
       <figure className={`sh-photo sh-need ${className}`} style={{ aspectRatio: `${w} / ${h}` }}>
         <figcaption className="sh-need__label">
