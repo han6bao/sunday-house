@@ -5,9 +5,9 @@ import { Heart } from "./marks";
 const STRIP = [
   "/assets/stills/couple-sunset.jpg",
   "/assets/stills/bride-garden.jpg",
-  "/assets/stills/couple-forehead.jpg",
+  "/assets/stills/wed-veil.jpg",
   "/assets/stills/couple-field.jpg",
-  "/assets/stills/maternity-water.jpg",
+  "/assets/stills/wed-forehead.jpg",
   "/assets/stills/hill-sunrise.jpg",
 ];
 

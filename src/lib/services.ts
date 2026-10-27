@@ -91,7 +91,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/couple-kiss.jpg", alt: "A couple sharing a kiss beneath a floral arch" },
       { src: "/assets/motion/couple-hill.jpg", alt: "Newlyweds on a hilltop at sunset" },
       { src: "/assets/film-posters/film-7.jpg", alt: "Bride and groom face to face beneath the trees" },
-      { src: "/assets/stills/couple-sunset.jpg", alt: "Newlyweds walking toward the sunset" },
+      { src: "/assets/stills/wed-dance.jpg", alt: "Newlyweds dancing in a misty golden field" },
     ],
     faqs: [
       { q: "How much does elopement photography cost?", a: "Intimate weddings and elopements begin at $1,800 for up to three hours at one location. Extra hours, a second location and film can all be added." },
@@ -128,7 +128,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light" },
       { src: "/assets/content-work/Dc-CZYLJuxk.jpg", alt: "Bride and groom dancing under chandeliers" },
       { src: "/assets/film-posters/film-1.jpg", alt: "A first dance beneath string lights" },
-      { src: "/assets/locations/kerry-park-night.jpg", alt: "Seattle skyline from Kerry Park at night" },
+      { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil" },
     ],
     faqs: [
       { q: "How much does a wedding photographer cost?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $5,800." },
@@ -163,7 +163,7 @@ export const SERVICES: Service[] = [
     photos: [
       { src: "/assets/motion/bride.jpg", alt: "A bride looking toward the light" },
       { src: "/assets/stills/couple-field.jpg", alt: "Newlyweds walking together after their ceremony" },
-      { src: "/assets/locations/ptdef-rose-arbor.jpg", alt: "Rose arbor at Point Defiance Park in Tacoma" },
+      { src: "/assets/stills/wed-hold.jpg", alt: "A groom leaning down to take his bride's hand, shot from below" },
       { src: "/assets/motion/ring.jpg", alt: "A wedding ring on joined hands" },
     ],
     faqs: [

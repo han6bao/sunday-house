@@ -39,6 +39,8 @@ const GALLERY = [
   { src: "/assets/stills/couple-field.jpg", alt: "Bride and groom walking across the lawn after the ceremony", ratio: "2/3" },
   { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light", ratio: "2/3" },
   { src: "/assets/content-work/Dc96eH_xHeK.jpg", alt: "A smiling bride in pink and jewels with her family", ratio: "9/16" },
+  { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil", ratio: "9/16" },
+  { src: "/assets/stills/wed-hold.jpg", alt: "A groom leaning down to take his bride's hand, shot from below", ratio: "9/16" },
 ];
 
 const COVERAGE = [
@@ -94,7 +96,7 @@ export default function Weddings() {
             kicker: "You said yes.",
             title: <>Wedding photography <em>&amp; film</em> in Seattle + Tacoma.</>,
             body: <p>Cinematic, honest and calm. We photograph the whole day — and the people who make it yours — so you can be fully in it.</p>,
-            img: { src: "/assets/gallery/bride-portrait.png", alt: "Bridal portrait in soft natural light" },
+            img: { src: "/assets/stills/wed-dance.jpg", alt: "Newlyweds dancing in a misty golden field" },
           },
           {
             kicker: "Coverage",
@@ -215,7 +217,7 @@ export default function Weddings() {
               From the first look to the last dance.
             </h2>
             <div className="mt-10 hidden lg:block">
-              <Photo src="/assets/stills/hill-sunrise.jpg" alt="Newlyweds on a hilltop at sunrise" ratio="4/5" sizes="35vw" />
+              <Photo src="/assets/stills/wed-dance.jpg" alt="Newlyweds dancing in a misty golden field" ratio="4/5" sizes="35vw" />
             </div>
           </div>
           <div className="lg:col-span-7 lg:pt-24">

@@ -132,7 +132,7 @@ function Home() {
             sizes="(max-width: 900px) 50vw, 33vw"
           />
           <Photo
-            src="/assets/gallery/kiss-bw.png" need="Wedding 3 of 5: ceremony or kiss"
+            src="/assets/stills/wed-forehead.jpg" need="Wedding 3 of 5: ceremony or kiss"
             alt="Black and white photograph of a groom kissing his bride's forehead"
             ratio="3/4"
             sizes="(max-width: 900px) 50vw, 25vw"
@@ -144,8 +144,8 @@ function Home() {
             sizes="(max-width: 900px) 50vw, 25vw"
           />
           <Photo
-            src="/assets/gallery/couple-walk.png" need="Wedding 5 of 5: candid or reception"
-            alt="Bride and groom walking away together after their ceremony"
+            src="/assets/stills/wed-veil.jpg" need="Wedding 5 of 5: candid or reception"
+            alt="Bride and groom forehead to forehead beneath her veil in golden light"
             ratio="4/5"
             sizes="(max-width: 900px) 50vw, 33vw"
           />
