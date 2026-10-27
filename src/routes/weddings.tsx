@@ -35,7 +35,7 @@ const GALLERY = [
   { src: "/assets/stills/wed-forehead-2.jpg", alt: "A groom kissing his bride's forehead, in black and white", ratio: "9/16" },
   { src: "/assets/stills/wed-dance.jpg", alt: "Newlyweds dancing in a misty golden field", ratio: "9/16" },
   { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil", ratio: "9/16" },
-  { src: "/assets/stills/wed-hold-2.jpg", alt: "A groom leaning down to take his bride's hand, shot from below", ratio: "9/16" },
+  { src: "/assets/stills/wed-hold-3.jpg", alt: "A groom leaning down to take his bride's hand, shot from below", ratio: "9/16" },
 ];
 
 const COVERAGE = [
@@ -131,7 +131,7 @@ export default function Weddings() {
             kicker: "Recent weddings",
             title: "The last dance, kept.",
             body: <p>Getting ready to the send-off, in photographs and film.</p>,
-            img: { src: "/assets/stills/wed-hold-2.jpg", alt: "A groom leaning down to take his bride's hand" },
+            img: { src: "/assets/stills/wed-hold-3.jpg", alt: "A groom leaning down to take his bride's hand" },
           },
         ]}
         primary={{ label: "Inquire", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}

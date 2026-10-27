@@ -164,7 +164,7 @@ export const SERVICES: Service[] = [
     ],
     photos: [
       { src: "/assets/stills/wed-forehead-2.jpg", alt: "A groom kissing his bride's forehead, in black and white" },
-      { src: "/assets/stills/wed-hold-2.jpg", alt: "A groom leaning down to take his bride's hand, shot from below" },
+      { src: "/assets/stills/wed-hold-3.jpg", alt: "A groom leaning down to take his bride's hand, shot from below" },
     ],
     faqs: [
       { q: "How much is a Tacoma wedding photographer?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $5,800." },
