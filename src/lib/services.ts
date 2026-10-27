@@ -267,7 +267,6 @@ export const SERVICES: Service[] = [
       [
         { src: "/assets/stills/family-siblings-two.jpg", alt: "A toddler and his sister by the water", w: 1800, h: 1800 },
         { src: "/assets/stills/family-window.jpg", alt: "Three children peeking through a gap in a wall at the water", w: 1800, h: 1200 },
-        { src: "/assets/stills/family-mother-daughter.jpg", alt: "A mother and daughter cheek to cheek, smiling against a golden backdrop", w: 1800, h: 1344 },
       ],
     ],
     deckSlides: [
