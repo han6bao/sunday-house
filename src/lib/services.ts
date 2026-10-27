@@ -7,7 +7,7 @@
  */
 
 /** `need` = placeholder label shown until the real photo is added. */
-export type ServicePhoto = { src: string; alt: string; need?: string };
+export type ServicePhoto = { src: string; alt: string; need?: string; ratio?: string };
 export type ServiceFaq = { q: string; a: string };
 
 export type Service = {
@@ -243,7 +243,7 @@ export const SERVICES: Service[] = [
     ],
     photos: [
       { src: "/assets/stills/family-stand.jpg", alt: "A family of five smiling together on a waterfront path lined with wild roses" },
-      { src: "/assets/stills/family-log.jpg", alt: "A family laughing together on a driftwood log by the water" },
+      { src: "/assets/stills/family-log.jpg", alt: "A family laughing together on a driftwood log by the water", ratio: "3/2" },
     ],
     faqs: [
       { q: "How much is a family or maternity session?", a: "Family sessions are $375 for an hour with up to six people, and maternity sessions are the same. Larger groups are quoted to fit." },

@@ -81,8 +81,8 @@ export function ServicePage({ service }: { service: Service }) {
             ))}
           </div>
           {rest.length === 1 ? (
-            <div className="lg:col-span-6 lg:col-start-7">
-              <Photo src={rest[0].src} alt={rest[0].alt} need={rest[0].need} ratio="4/5" sizes="(max-width: 1024px) 100vw, 45vw" />
+            <div className={rest[0].ratio ? "lg:col-span-7 lg:col-start-6" : "lg:col-span-6 lg:col-start-7"}>
+              <Photo src={rest[0].src} alt={rest[0].alt} need={rest[0].need} ratio={rest[0].ratio ?? "4/5"} sizes="(max-width: 1024px) 100vw, 45vw" />
             </div>
           ) : (
           <div className={rest.length > 6 ? "grid grid-cols-2 gap-3 sm:grid-cols-3 lg:col-span-12 lg:grid-cols-6" : `grid gap-4 lg:col-span-7 ${rest.length > 2 ? "grid-cols-3" : "grid-cols-2"}`}>
