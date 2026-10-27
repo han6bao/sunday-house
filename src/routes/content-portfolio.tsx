@@ -3,7 +3,6 @@ import { pageHead } from "@/lib/seo";
 
 import { ContentShell } from "@/components/house/content-shell";
 import { Heart, HouseMark } from "@/components/house/marks";
-import { ImageSlot } from "@/components/house/image-slot";
 import { PLAYABLE_REELS, ReelCard } from "@/components/house/reel-card";
 
 type Reel = {
@@ -196,7 +195,9 @@ export default function ContentPortfolio() {
               <p className="sh-script mt-6 ">Film it. Edit it. Post it. Keep moving.</p>
             </div>
             <div className="lg:col-span-5">
-              <ImageSlot ratio="9/16" src="/assets/content-work/Dc-Q1TcSzgx.jpg" alt="A still from the couple's wedding reels" />
+              <div className="relative aspect-[9/16] overflow-hidden bg-[#2c2726]">
+              <video src="/assets/reels/Dc-X9nngA-w.mp4" poster="/assets/content-work/Dc-X9nngA-w.jpg" autoPlay muted loop playsInline aria-label="A wedding reel, filmed and shared the same day" className="absolute inset-0 h-full w-full max-w-none object-cover" />
+            </div>
             </div>
           </div>
         </div>
