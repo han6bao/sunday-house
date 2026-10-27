@@ -4,6 +4,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
 import { FilmSnippet } from "@/components/house/film-snippet";
+import { FullFilm } from "@/components/house/full-film";
 import { PortraitDeck } from "@/components/house/portrait-deck";
 import { pageHead, serviceJsonLd } from "@/lib/seo";
 
@@ -44,6 +45,19 @@ const INCLUDES = [
   { t: "A free styled shoot", b: "An extra styled session, on us. Fit it into your wedding day or plan it for a day of its own." },
   { t: "One team, one story", b: "Photography and film working side by side all day, so nothing is missed and both feel like the same day." },
   { t: "Delivered online", b: "A private gallery and film link, easy to download and share with everyone who couldn't be there." },
+];
+
+/** The full Matt + Maddie film, hosted here. Set to its file once uploaded. */
+const FULL_FILM: string | undefined = undefined;
+
+/** What we film on the day. */
+const WE_FILM = [
+  { t: "The location", b: "The place you chose, filmed wide and slow — so your film opens where your day did." },
+  { t: "B-roll + details", b: "The dress, the rings, the light through the windows. The small things that set the scene." },
+  { t: "The two of you", b: "Real chemistry, real connection. Unposed time together, filmed the way you actually are." },
+  { t: "Vows + speeches", b: "Every word recorded clean on its own mic — the vows, the toasts, the laughter after." },
+  { t: "The whole day, documented", b: "Getting ready, the ceremony, the dance floor, the send-off — as it happens, start to finish." },
+  { t: "Interviews, if you'd like", b: "An option, never a must: a few words from you or the people who love you, woven into the story." },
 ];
 
 const FAQ = [
@@ -141,12 +155,12 @@ export default function Video() {
           </div>
         </div>
         <div className="sh-wrap pb-[clamp(4rem,8vw,7rem)]">
-          <FilmSnippet
-            src="/assets/films-web/film-7.mp4"
+          <FullFilm
+            film={FULL_FILM}
+            preview="/assets/films-web/film-7.mp4"
             poster="/assets/film-posters/film-7.jpg"
-            unframed
-            ariaLabel="Wedding film: Matt and Maddie face each other beneath the trees"
-            className="sh-film aspect-[16/9] w-full"
+            title="Matt + Maddie"
+            caption="The wedding film"
           />
           <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
             {FRAMES.map((f) => (
@@ -156,6 +170,27 @@ export default function Video() {
               </figure>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="sh-wrap sh-section" aria-labelledby="film-how">
+        <div className="grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <p className="eyebrow">How we film</p>
+            <h2 id="film-how" className="sh-h2 mt-4">
+              Everything that made it <em>yours</em>.
+            </h2>
+            <p className="sh-body mt-6">We shoot the whole picture, then shape it into one film you'll want to watch again.</p>
+          </div>
+          <ul className="sh-filmhow lg:col-span-8">
+            {WE_FILM.map((it, i) => (
+              <li key={it.t}>
+                <p className="sh-num">0{i + 1}</p>
+                <h3 className="sh-h3 mt-2">{it.t}</h3>
+                <p className="sh-body mt-1">{it.b}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
