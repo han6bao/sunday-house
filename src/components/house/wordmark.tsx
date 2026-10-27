@@ -4,7 +4,7 @@
  * any screen. White by default (for photos); pass tone for other grounds.
  */
 export function Wordmark({ className = "", tone = "white" }: { className?: string; tone?: "white" | "ink" | "pink" }) {
-  const base = `/assets/brand/logo-sh3-${tone}`;
+  const base = `/assets/brand/logo-sh4-${tone}`;
   return (
     <picture className={`sh-wordmark ${className}`}>
       <source srcSet={`${base}.webp`} type="image/webp" />
