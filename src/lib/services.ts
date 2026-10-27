@@ -242,8 +242,8 @@ export const SERVICES: Service[] = [
       { title: "Holiday-ready", body: "Book late summer or early fall and your photographs are ready for cards and gifts." },
     ],
     photos: [
-      { src: "/assets/gallery/field-seated.png", alt: "A woman in a floral dress seated in the grass with baby's breath" },
-      { src: "/assets/gallery/movement.png", alt: "A woman turning in a floral dress in a summer field" },
+      { src: "/assets/stills/family-stand.jpg", alt: "A family of five smiling together on a waterfront path lined with wild roses" },
+      { src: "/assets/stills/family-log.jpg", alt: "A family laughing together on a driftwood log by the water" },
     ],
     faqs: [
       { q: "How much is a family or maternity session?", a: "Family sessions are $375 for an hour with up to six people, and maternity sessions are the same. Larger groups are quoted to fit." },
