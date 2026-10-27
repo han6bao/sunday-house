@@ -26,6 +26,8 @@ export type Service = {
   photos: ServicePhoto[];
   /** Optional row of photos shown at their natural shapes, equal height. */
   strip?: (ServicePhoto & { w: number; h: number })[];
+  /** More rows of natural-shape photos. */
+  strips?: (ServicePhoto & { w: number; h: number })[][];
   /** Optional extra photo story on the page (e.g. maternity on the family page). */
   feature?: { eyebrow: string; title: string; body: string; tall: ServicePhoto; wide: ServicePhoto[] };
   faqs: ServiceFaq[];
@@ -253,6 +255,16 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/family-run.jpg", alt: "A boy waving and running toward the camera while his family laughs behind him", w: 1365, h: 2048 },
       { src: "/assets/stills/family-mom-baby.jpg", alt: "A mother holding her smiling toddler by the water", w: 2048, h: 1638 },
       { src: "/assets/stills/family-toddler.jpg", alt: "A toddler with a sour candy peeking over a driftwood log by the water", w: 1638, h: 2048 },
+    ],
+    strips: [
+      [
+        { src: "/assets/stills/family-bench-sunset.jpg", alt: "A family of five on a bench watching the water at sunset", w: 1800, h: 1200 },
+        { src: "/assets/stills/family-siblings-bench.jpg", alt: "Three siblings at a waterfront bench", w: 1440, h: 1800 },
+      ],
+      [
+        { src: "/assets/stills/family-siblings-two.jpg", alt: "A toddler and his sister by the water", w: 1800, h: 1800 },
+        { src: "/assets/stills/family-window.jpg", alt: "Three children peeking through a gap in a wall at the water", w: 1800, h: 1200 },
+      ],
     ],
     feature: {
       eyebrow: "Maternity",

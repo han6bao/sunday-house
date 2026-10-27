@@ -112,6 +112,15 @@ export function ServicePage({ service }: { service: Service }) {
               </figure>
             ))}
           </div>
+          {service.strips?.map((row, r) => (
+            <div key={r} className="svc-strip mt-3 md:mt-5">
+              {row.map((ph) => (
+                <figure key={ph.src} className="svc-strip__item" style={{ flexGrow: ph.w / ph.h, aspectRatio: `${ph.w} / ${ph.h}` }}>
+                  <img src={ph.src} alt={ph.alt} loading="lazy" decoding="async" />
+                </figure>
+              ))}
+            </div>
+          ))}
         </section>
       ) : null}
 
