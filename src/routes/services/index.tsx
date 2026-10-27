@@ -12,7 +12,7 @@ export const Route = createFileRoute("/services/")({
       description:
         "Every Sunday House service in one place: wedding photography and film, engagements, elopements, bridal portraits, couples, seniors, families and more in Seattle and Tacoma.",
       path: "/services",
-      image: "/assets/gallery/kiss-bw.png",
+      image: "/assets/gallery/kiss-bw-2.png",
     }),
   component: Services,
 });

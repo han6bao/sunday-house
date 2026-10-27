@@ -132,7 +132,7 @@ function Home() {
             sizes="(max-width: 900px) 50vw, 33vw"
           />
           <Photo
-            src="/assets/stills/wed-forehead.jpg" need="Wedding 3 of 5: ceremony or kiss"
+            src="/assets/stills/wed-forehead-2.jpg" need="Wedding 3 of 5: ceremony or kiss"
             alt="Black and white photograph of a groom kissing his bride's forehead"
             ratio="3/4"
             sizes="(max-width: 900px) 50vw, 25vw"

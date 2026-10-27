@@ -180,7 +180,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     title: "Where to Take Engagement Photos in Tacoma",
     room: "weddings",
     filter: "ENGAGEMENTS",
-    photo: "/assets/gallery/kiss-bw.png",
+    photo: "/assets/gallery/kiss-bw-2.png",
     category: "Engagements",
     categories: ["Engagements", "Locations", "Tacoma"],
     readTime: "6 min",

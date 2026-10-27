@@ -150,7 +150,7 @@ function ServiceDeck({ service, related }: { service: Service; related: Service[
   const price = service.faqs.find((f) => /how much|cost/i.test(f.q));
   return (
     <PortraitDeck
-      cover={pics[0] ? { src: pics[0].src, alt: pics[0].alt } : { src: "/assets/stills/couple-nose.jpg", alt: "" }}
+      cover={pics[0] ? { src: pics[0].src, alt: pics[0].alt } : { src: "/assets/stills/couple-nose-2.jpg", alt: "" }}
       label={service.name}
       slides={[
         { kicker: service.script, title: <Emph text={service.h1} />, body: <p>{service.intro[0]}</p>, img: pic(1) ?? pic(0) },

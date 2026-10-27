@@ -49,7 +49,7 @@ const PHOTOS: Record<string, { src: string; alt: string }> = {
   seniors: { src: "/assets/gallery/daisy.png", alt: "Senior portrait with a daisy in soft evening light" },
   families: { src: "/assets/gallery/field-walk.png", alt: "Walking through a summer field at golden hour" },
   "maternity-newborn": { src: "/assets/gallery/eyes-closed.png", alt: "A quiet portrait in a golden field" },
-  couples: { src: "/assets/gallery/couple-bw.png", alt: "Black and white couples portrait" },
+  couples: { src: "/assets/gallery/couple-bw-2.png", alt: "Black and white couples portrait" },
   creative: { src: "/assets/gallery/flower-nose.png", alt: "Cinematic portrait with a daisy" },
   events: { src: "/assets/content-work/Dc95F33Btpj.jpg", alt: "Guests celebrating on the dance floor" },
 };

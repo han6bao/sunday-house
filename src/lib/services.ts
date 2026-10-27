@@ -52,8 +52,8 @@ export const SERVICES: Service[] = [
       { title: "Practice for the wedding day", body: "You'll learn how we work and how you photograph best, so the wedding day feels easy and familiar." },
     ],
     photos: [
-      { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose, in black and white" },
-      { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in black and white" },
+      { src: "/assets/stills/couple-nose-2.jpg", alt: "A couple nose to nose, in black and white" },
+      { src: "/assets/stills/couple-forehead-2.jpg", alt: "A man kissing his partner's forehead, in black and white" },
     ],
     faqs: [
       { q: "How much is an engagement or couples session?", a: "Couples sessions begin at $375 for an hour at one location. Engagement sessions are $450 for ninety minutes and two looks, and one is included with The Story and The Full Day wedding collections." },
@@ -122,7 +122,7 @@ export const SERVICES: Service[] = [
     ],
     photos: [
       { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil in golden light" },
-      { src: "/assets/stills/wed-forehead.jpg", alt: "A groom kissing his bride's forehead, in black and white" },
+      { src: "/assets/stills/wed-forehead-2.jpg", alt: "A groom kissing his bride's forehead, in black and white" },
     ],
     faqs: [
       { q: "How much does a wedding photographer cost?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $5,800." },
@@ -155,8 +155,8 @@ export const SERVICES: Service[] = [
       { title: "Photo + film together", body: "One team for photographs and film, so the style, the timing and the story all match." },
     ],
     photos: [
-      { src: "/assets/stills/wed-forehead.jpg", alt: "A groom kissing his bride's forehead, in black and white" },
-      { src: "/assets/stills/wed-hold.jpg", alt: "A groom leaning down to take his bride's hand, shot from below" },
+      { src: "/assets/stills/wed-forehead-2.jpg", alt: "A groom kissing his bride's forehead, in black and white" },
+      { src: "/assets/stills/wed-hold-2.jpg", alt: "A groom leaning down to take his bride's hand, shot from below" },
     ],
     faqs: [
       { q: "How much is a Tacoma wedding photographer?", a: "Wedding collections begin at $3,800 for six hours. Most of our couples invest between $4,500 and $6,500, and photo + film collections begin at $5,800." },

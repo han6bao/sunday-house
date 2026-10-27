@@ -7,7 +7,7 @@ const STRIP = [
   "/assets/stills/bride-garden.jpg",
   "/assets/stills/wed-veil.jpg",
   "/assets/stills/couple-field.jpg",
-  "/assets/stills/wed-forehead.jpg",
+  "/assets/stills/wed-forehead-2.jpg",
   "/assets/stills/hill-sunrise.jpg",
 ];
 
