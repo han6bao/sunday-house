@@ -29,7 +29,7 @@ export type Service = {
   /** More rows of natural-shape photos. */
   strips?: (ServicePhoto & { w: number; h: number })[][];
   /** Extra full-screen slides for the phone deck. */
-  deckSlides?: { kicker: string; title: string; body: string; img: ServicePhoto }[];
+  deckSlides?: { kicker: string; title: string; body: string; img: ServicePhoto & { position?: string } }[];
   /** Optional extra photo story on the page (e.g. maternity on the family page). */
   feature?: { eyebrow: string; title: string; body: string; tall: ServicePhoto; wide: ServicePhoto[] };
   faqs: ServiceFaq[];
@@ -259,7 +259,6 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/family-toddler.jpg", alt: "A toddler with a sour candy peeking over a driftwood log by the water", w: 1638, h: 2048 },
     ],
     strips: [
-      [{ src: "/assets/stills/family-garden.jpg", alt: "A family of five smiling together in a flowering summer garden", w: 2000, h: 1116 }],
       [
         { src: "/assets/stills/family-bench-sunset.jpg", alt: "A family of five on a bench watching the water at sunset", w: 1800, h: 1200 },
         { src: "/assets/stills/family-siblings-bench.jpg", alt: "Three siblings at a waterfront bench", w: 1440, h: 1800 },
@@ -270,6 +269,12 @@ export const SERVICES: Service[] = [
       ],
     ],
     deckSlides: [
+      {
+        kicker: "Families",
+        title: "Everyone, *together*.",
+        body: "Relaxed portraits outdoors, planned around little ones and the light.",
+        img: { src: "/assets/stills/family-garden.jpg", alt: "A family of five smiling together in a flowering summer garden", position: "50% center" },
+      },
       {
         kicker: "Every generation",
         title: "The people who make you, *you*.",
