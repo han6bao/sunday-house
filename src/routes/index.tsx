@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
 const FAQ = [
   {
     q: "Where do we start?",
-    a: "With your date and where you're getting married. Send an inquiry and we'll reply with availability. If you're early in planning, the free Wedding Workbook shows the whole shape of your day — what's booked, what's missing, and what matters most.",
+    a: "With your date and where you're getting married. Send an inquiry and we'll reply with availability.",
   },
   {
     q: "Photo, film, or both?",
@@ -65,7 +65,7 @@ function Home() {
             Seattle &amp; Tacoma wedding photography and film for the days worth keeping
           </h1>
           <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-hero__btn">
-            Email us
+            Inquire
           </a>
         </div>
       </HeroFilm>

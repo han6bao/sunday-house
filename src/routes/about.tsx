@@ -144,7 +144,7 @@ export default function About() {
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-            Email us
+            Inquire
           </a>
           <Link to="/weddings" className="sh-invite__alt self-center">
             See the weddings →

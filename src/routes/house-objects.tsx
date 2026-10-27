@@ -120,7 +120,7 @@ export default function HouseObjects() {
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-4">
             <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-              Email us →
+              Inquire →
             </a>
             <Link
               to="/my-house"

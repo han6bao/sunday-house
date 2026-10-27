@@ -121,7 +121,7 @@ export default function Photography() {
             img: { src: "/assets/stills/maternity-water.jpg", alt: "Expecting mother floating in clear blue water" },
           },
         ]}
-        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
+        primary={{ label: "Inquire", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
         secondary={{ label: "Planning a wedding?", to: "/weddings" }}
         more={[
           { label: "Seniors + grads", to: "/services/senior-portraits" },
@@ -147,7 +147,7 @@ export default function Photography() {
             <p className="sh-num mt-5">Portrait sessions begin at $375 · Limited sessions each month</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-                Email us
+                Inquire
               </a>
               <Link to="/weddings" className="sh-invite__alt self-center">
                 Planning a wedding? →
@@ -191,7 +191,7 @@ export default function Photography() {
               one, voiceover included. Tap the speaker to listen.
             </p>
             <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-invite__alt mt-6 inline-block">
-              Email us about maternity →
+              Inquire about maternity →
             </a>
           </div>
           <SoundFilm
@@ -252,7 +252,7 @@ export default function Photography() {
           ))}
         </ul>
         <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
-          Email us
+          Inquire
         </a>
       </section>
 

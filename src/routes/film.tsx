@@ -40,11 +40,11 @@ const FRAMES = [
 ];
 
 const INCLUDES = [
-  { t: "A highlight film", b: "3–5 minutes, cut to music and shaped around how your day actually felt. The one you'll play every anniversary." },
-  { t: "Your vows, mic'd", b: "Every word of your vows and toasts recorded clean on its own mic, then given a 2–3 minute vow film of their own." },
-  { t: "A free styled shoot", b: "An extra styled session, on us. Fit it into your wedding day or plan it for a day of its own." },
-  { t: "One team, one story", b: "Photography and film working side by side all day, so nothing is missed and both feel like the same day." },
-  { t: "Delivered online", b: "A private gallery and film link, easy to download and share with everyone who couldn't be there." },
+  { t: "The highlight film", b: "Three to five minutes, scored and edited around how the day felt rather than the order it happened in. The one you'll return to every anniversary." },
+  { t: "Your vows, in your own voices", b: "Vows and toasts recorded on dedicated microphones, then given a two-to-three-minute vow film of their own." },
+  { t: "A complimentary styled session", b: "An additional editorial portrait session, included with this collection — on the wedding day or on a day of its own." },
+  { t: "One team, one vision", b: "Photography and film directed together from the first frame, so every image and every scene belongs to the same story." },
+  { t: "A private online gallery", b: "Your photographs and films, beautifully presented and ready to download and share with everyone who couldn't be there." },
 ];
 
 /** The full Matt + Maddie film, hosted here. Set to its file once uploaded. */
@@ -52,12 +52,12 @@ const FULL_FILM: string | undefined = undefined;
 
 /** What we film on the day. */
 const WE_FILM = [
-  { t: "The location", b: "The place you chose, filmed wide and slow — so your film opens where your day did." },
-  { t: "B-roll + details", b: "The dress, the rings, the light through the windows. The small things that set the scene." },
-  { t: "The two of you", b: "Real chemistry, real connection. Unposed time together, filmed the way you actually are." },
-  { t: "Vows + speeches", b: "Every word recorded clean on its own mic — the vows, the toasts, the laughter after." },
-  { t: "The whole day, documented", b: "Getting ready, the ceremony, the dance floor, the send-off — as it happens, start to finish." },
-  { t: "Interviews, if you'd like", b: "An option, never a must: a few words from you or the people who love you, woven into the story." },
+  { t: "The setting", b: "The place you chose, filmed wide and unhurried, so the film opens exactly where your day began." },
+  { t: "Detail + atmosphere", b: "The dress, the rings, the light moving across a room. The quiet frames that give a film its texture." },
+  { t: "The two of you", b: "Genuine chemistry, genuine connection. Unposed time together, filmed as you truly are." },
+  { t: "Vows + speeches", b: "Every word captured on dedicated microphones — the promises, the toasts and the laughter that follows." },
+  { t: "The day, documented", b: "From the first quiet moments of getting ready to the final send-off, observed as it unfolds." },
+  { t: "Interviews, by request", b: "Offered, never required: a few words from you or those closest to you, woven gently into the story." },
 ];
 
 const FAQ = [
@@ -67,7 +67,7 @@ const FAQ = [
   },
   {
     q: "How much does a wedding film cost?",
-    a: "Photography + film collections begin at $5,800, with eight hours of photographs, a highlight film, a 2–3 minute vow film and a free styled shoot. Tell us your date and plans, and we'll send a clear proposal for what you need.",
+    a: "Photography and film collections begin at $5,800, with eight hours of coverage, a highlight film, a two-to-three-minute vow film and a complimentary styled session. Share your date and plans, and we'll prepare a considered proposal for your day.",
   },
   {
     q: "What does a wedding film include?",
@@ -122,11 +122,11 @@ export default function Video() {
           {
             kicker: "Investment",
             title: "Photo + film",
-            body: <p>Photography and film collections begin at $5,800, with eight hours of photographs, a highlight film, a 2–3 minute vow film and a free styled shoot.</p>,
+            body: <p>Photography and film collections begin at $5,800: eight hours of coverage, a highlight film, a vow film and a complimentary styled session.</p>,
             img: { src: "/assets/film-posters/film-6.jpg", video: "/assets/films-web/film-6.mp4", alt: "The dance floor" },
           },
         ]}
-        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
+        primary={{ label: "Inquire", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
         secondary={{ label: "See the weddings", to: "/weddings" }}
         more={[
           { label: "Content creation", to: "/content-creation" },
@@ -149,7 +149,7 @@ export default function Video() {
             </p>
             <div className="flex flex-wrap gap-3 lg:col-span-6 lg:justify-end">
               <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill sh-btn-fill--light">
-                Email us about film
+                Inquire about film
               </a>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function Video() {
             <h2 id="film-how" className="sh-h2 mt-4">
               Everything that made it <em>yours</em>.
             </h2>
-            <p className="sh-body mt-6">We shoot the whole picture, then shape it into one film you'll want to watch again.</p>
+            <p className="sh-body mt-6">We capture the full picture, then shape it with care into a single film made to be watched for decades.</p>
           </div>
           <ul className="sh-filmhow lg:col-span-8">
             {WE_FILM.map((it, i) => (
@@ -224,13 +224,13 @@ export default function Video() {
               <p className="sh-price__amt mt-6">
                 <span>from</span> $5,800
               </p>
-              <p className="sh-body mt-3">Eight hours of photographs and film from one team: the quiet before, your vows in your own voices, the last dance. Plus a 2–3 minute vow film and a styled shoot, on us.</p>
+              <p className="sh-body mt-3">Eight hours of photography and film from a single team — the quiet before, your vows in your own voices, the last dance. Includes a vow film and a complimentary styled session.</p>
               <div className="mt-8 flex flex-wrap items-center gap-5">
                 <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-                  Email us
+                  Inquire
                 </a>
                 <Link to="/weddings" hash="investment" className="sh-invite__alt">
-                  All collections →
+                  View the collections →
                 </Link>
               </div>
             </div>

@@ -38,7 +38,7 @@ export default function ContentCreation() {
             </p>
             <div className="reveal reveal--delay-2 mt-7 flex flex-wrap items-center gap-4">
               <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-                <Heart className="h-4 w-4 text-rose-deep" /> Email us →
+                <Heart className="h-4 w-4 text-rose-deep" /> Inquire →
               </a>
               <Link
                 to="/film"
@@ -163,7 +163,7 @@ export default function ContentCreation() {
 
           <div className="mt-12">
             <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-              <Heart className="h-4 w-4 text-rose-deep" /> Email us →
+              <Heart className="h-4 w-4 text-rose-deep" /> Inquire →
             </a>
             <p className="mt-4 font-serif text-sm italic text-brown/60">
               No account needed. Tell us the date, the place and the feeling.

@@ -64,7 +64,7 @@ export function Footer() {
             the South Sound and the Pacific Northwest.
           </p>
           <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-footer__cta">
-            Email us
+            Inquire
           </a>
 
           {/* Phones: one short row of the essentials */}

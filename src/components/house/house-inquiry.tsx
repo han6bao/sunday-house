@@ -32,7 +32,7 @@ export function HouseInquiry() {
           </p>
           <div className="sh-invite__actions">
             <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-              Email us
+              Inquire
             </a>
             <span className="sh-btn-rule" aria-hidden="true" />
             <Link to="/photography" className="sh-btn-fill">

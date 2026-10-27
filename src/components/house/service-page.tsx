@@ -61,7 +61,7 @@ export function ServicePage({ service }: { service: Service }) {
             <p className="sh-lede mt-6 max-w-xl">{service.intro[0]}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid">
-                Email us
+                Inquire
               </a>
             </div>
           </div>
@@ -170,7 +170,7 @@ function ServiceDeck({ service, related }: { service: Service; related: Service[
         },
         ...(price ? [{ kicker: "Investment", title: "Simple, and in writing.", body: <p>{price.a}</p>, img: pic(2) ?? pic(0) }] : []),
       ]}
-      primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
+      primary={{ label: "Inquire", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
       secondary={{ label: "All sessions", to: "/services" }}
       more={[...related.map((r) => ({ label: r.name, to: `/services/${r.slug}` })), service.group === "portraits" ? { label: "All portraits", to: "/photography" } : { label: "Weddings", to: "/weddings" }, { label: "Home", to: "/" }]}
     />

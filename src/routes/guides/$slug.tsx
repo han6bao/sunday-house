@@ -167,7 +167,7 @@ function GuidePage({ guide: g }: { guide: Guide }) {
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid">
-            Email us
+            Inquire
           </a>
           <a href={s.service.to} className="hz-btn">
             {s.service.label}

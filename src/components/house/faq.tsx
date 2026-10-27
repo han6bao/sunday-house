@@ -56,7 +56,7 @@ export function Faq({
               <p className="sh-faq__cta-q">Still have a question?</p>
               <p className="sh-faq__cta-sub">Tell us your date and we’ll let you know if it’s open.</p>
               <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill">
-                Email us
+                Inquire
               </a>
             </div>
             <span className="sh-faq__cta-rule" aria-hidden="true" />

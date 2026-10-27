@@ -134,7 +134,7 @@ export default function Weddings() {
             img: { src: "/assets/stills/wed-hold.jpg", alt: "A groom leaning down to take his bride's hand" },
           },
         ]}
-        primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
+        primary={{ label: "Inquire", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
         secondary={{ label: "Watch the films", to: "/film" }}
         more={[
           { label: "Engagements", to: "/services/engagement-photography" },
@@ -159,7 +159,7 @@ export default function Weddings() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid">
-                Email us
+                Inquire
               </a>
               <Link to="/film" className="hz-btn">
                 Watch wedding films

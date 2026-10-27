@@ -93,7 +93,7 @@ export default function Extras() {
           </p>
           <p className="sh-body mx-auto mt-4 max-w-xl">Mention any of these when you inquire, and we'll include them in your proposal.</p>
           <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
-            Email us
+            Inquire
           </a>
         </div>
       </section>
