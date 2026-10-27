@@ -167,7 +167,7 @@ export default function Weddings() {
             </div>
           </div>
           <Photo
-            src="/assets/gallery/bride-portrait.png" motion="/assets/motion/bride" motionPosition="38% center" need="Weddings page: top photo, a bride or couple portrait (vertical)"
+            src="/assets/gallery/bride-portrait.png" need="Weddings page: top photo, a bride or couple portrait (vertical)"
             alt="Bride in a lace gown looking toward the light"
             ratio="4/5"
             priority
