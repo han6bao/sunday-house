@@ -256,7 +256,7 @@ export const SERVICES: Service[] = [
     strip: [
       { src: "/assets/stills/family-run.jpg", alt: "A boy waving and running toward the camera while his family laughs behind him", w: 1365, h: 2048 },
       { src: "/assets/stills/family-mom-baby.jpg", alt: "A mother holding her smiling toddler by the water", w: 2048, h: 1638 },
-      { src: "/assets/stills/family-toddler.jpg", alt: "A toddler with a sour candy peeking over a driftwood log by the water", w: 1638, h: 2048 },
+      { src: "/assets/stills/family-toddler-2.jpg", alt: "A toddler with a sour candy peeking over a driftwood log by the water", w: 1638, h: 2048 },
     ],
     strips: [
       [
@@ -265,7 +265,7 @@ export const SERVICES: Service[] = [
       ],
       [
         { src: "/assets/stills/family-siblings-two.jpg", alt: "A toddler and his sister by the water", w: 1800, h: 1800 },
-        { src: "/assets/stills/family-window.jpg", alt: "Three children peeking through a gap in a wall at the water", w: 1800, h: 1200 },
+        { src: "/assets/stills/family-window-2.jpg", alt: "Three children peeking through a gap in a wall at the water", w: 1800, h: 1200 },
       ],
     ],
     deckSlides: [
@@ -292,10 +292,10 @@ export const SERVICES: Service[] = [
       eyebrow: "Maternity",
       title: "The waiting, *kept*.",
       body: "Unhurried sessions outdoors in soft light, paced around how you feel — for the two of you, and the one on the way.",
-      tall: { src: "/assets/stills/maternity-ultrasound-2.jpg", alt: "An expecting couple laughing together, holding an ultrasound photo in a meadow of wildflowers" },
+      tall: { src: "/assets/stills/maternity-ultrasound-3.jpg", alt: "An expecting couple laughing together, holding an ultrasound photo in a meadow of wildflowers" },
       wide: [
         { src: "/assets/stills/maternity-deer.jpg", alt: "An expecting mother in a meadow of wildflowers with deer grazing behind her" },
-        { src: "/assets/stills/maternity-couple-2.jpg", alt: "An expecting couple holding her bump together in a flowering meadow" },
+        { src: "/assets/stills/maternity-couple-3.jpg", alt: "An expecting couple holding her bump together in a flowering meadow" },
       ],
     },
     faqs: [
