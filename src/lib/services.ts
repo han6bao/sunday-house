@@ -285,13 +285,13 @@ export const SERVICES: Service[] = [
         kicker: "Newborn",
         title: "Welcome home, *little one*.",
         body: "Unhurried sessions at home or in the studio, paced around feeds, naps and cuddles.",
-        img: { src: "/assets/stills/newborn-parents.jpg", alt: "New parents smiling at each other while holding their sleeping newborn", position: "60% center" },
+        img: { src: "/assets/stills/newborn-parents-2.jpg", alt: "New parents smiling at each other while holding their sleeping newborn", position: "60% center" },
       },
       {
         kicker: "Newborn",
         title: "The first days, *kept*.",
         body: "Soft, simple portraits of your newest arrival, held by the people who love them most.",
-        img: { src: "/assets/stills/newborn-mom.jpg", alt: "A mother cradling her sleeping newborn, wrapped in a cream knit" },
+        img: { src: "/assets/stills/newborn-mom-2.jpg", alt: "A mother cradling her sleeping newborn, wrapped in a cream knit" },
       },
     ],
     feature: {
