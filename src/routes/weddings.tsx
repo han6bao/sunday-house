@@ -34,7 +34,6 @@ const SERVICE = serviceJsonLd({
 const GALLERY = [
   { src: "/assets/stills/wed-forehead.jpg", alt: "A groom kissing his bride's forehead, in black and white", ratio: "9/16" },
   { src: "/assets/stills/couple-kiss.jpg", alt: "A couple sharing a kiss beneath a floral arch", ratio: "2/3" },
-  { src: "/assets/content-work/Dc-X9nngA-w.jpg", alt: "Wedding mandap draped in white with yellow florals", ratio: "9/16" },
   { src: "/assets/stills/couple-field.jpg", alt: "Bride and groom walking across the lawn after the ceremony", ratio: "2/3" },
   { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light", ratio: "2/3" },
   { src: "/assets/stills/wed-dance.jpg", alt: "Newlyweds dancing in a misty golden field", ratio: "9/16" },
@@ -135,7 +134,7 @@ export default function Weddings() {
             kicker: "Recent weddings",
             title: "The last dance, kept.",
             body: <p>Getting ready to the send-off, in photographs and film.</p>,
-            img: { src: "/assets/content-work/Dc-CZYLJuxk.jpg", alt: "Bride and groom dancing under chandeliers at a barn wedding reception" },
+            img: { src: "/assets/stills/wed-hold.jpg", alt: "A groom leaning down to take his bride's hand" },
           },
         ]}
         primary={{ label: "Email us", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
@@ -318,8 +317,8 @@ export default function Weddings() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-6">
             <Photo
-              src="/assets/content-work/Dc-CDETMQt6.jpg"
-              alt="The couple dancing in the barn on their wedding day"
+              src="/assets/content-work/Dc-X9nngA-w.jpg"
+              alt="Wedding mandap draped in white with yellow florals"
               ratio="4/5"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
