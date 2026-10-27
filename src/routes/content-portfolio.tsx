@@ -123,7 +123,7 @@ export default function ContentPortfolio() {
             </ol>
           </div>
           <div className="mx-auto w-full max-w-[300px] lg:col-span-4 lg:col-start-9">
-            <div className="relative aspect-[9/16] overflow-hidden bg-[#2c2726]">
+            <div className="relative aspect-[9/16] overflow-hidden bg-ink">
               <video src="/assets/reels/Dc92Z0tBIDY.mp4" poster="/assets/reels/Dc92Z0tBIDY.jpg" autoPlay muted loop playsInline aria-label="Guests dancing on the lawn, filmed and shared the same day" className="absolute inset-0 h-full w-full max-w-none object-cover" />
             </div>
           </div>

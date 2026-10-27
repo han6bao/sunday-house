@@ -48,7 +48,7 @@ export default function ContentCreation() {
             </div>
           </div>
           <div className="card-fade card-fade-2 lg:col-span-5">
-            <div className="relative aspect-[9/16] overflow-hidden bg-[#2c2726]">
+            <div className="relative aspect-[9/16] overflow-hidden bg-ink">
               <video src="/assets/reels/Dc-X9nngA-w.mp4" poster="/assets/content-work/Dc-X9nngA-w.jpg" autoPlay muted loop playsInline aria-label="A wedding reel, filmed and shared the same day" className="absolute inset-0 h-full w-full max-w-none object-cover" />
             </div>
             <p className="mt-3 text-center font-serif text-sm italic text-brown/60">The day, already in motion.</p>

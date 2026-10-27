@@ -106,10 +106,9 @@ export default function About() {
           <Photo src="/assets/motion/couple-hill.jpg" motion="/assets/motion/couple-hill" alt="A bride and groom on a hilltop at sunset" ratio="16/9" sizes="100vw" />
           <figcaption className="sh-caption">Somewhere in Puget Sound.</figcaption>
         </figure>
-        <div className="grid grid-cols-3 gap-3 md:gap-5">
-          <Photo src="/assets/stills/wed-veil.jpg" alt="Bride and groom forehead to forehead beneath her veil in golden light" ratio="2/3" sizes="33vw" />
-          <Photo src="/assets/stills/wed-forehead.jpg" alt="A groom kissing his bride's forehead, in black and white" ratio="2/3" sizes="33vw" />
-          <Photo src="/assets/stills/wed-dance.jpg" alt="Newlyweds dancing in a misty golden field" ratio="2/3" sizes="33vw" />
+        <div className="grid grid-cols-2 gap-3 md:gap-5">
+          <Photo src="/assets/stills/wed-veil.jpg" alt="Bride and groom forehead to forehead beneath her veil in golden light" ratio="4/5" sizes="50vw" />
+          <Photo src="/assets/stills/wed-dance.jpg" alt="Newlyweds dancing in a misty golden field" ratio="4/5" sizes="50vw" />
         </div>
       </section>
 
