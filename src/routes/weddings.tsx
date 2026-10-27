@@ -111,7 +111,7 @@ export default function Weddings() {
             kicker: "Cultural + two-day weddings",
             title: <>More than one day. <em>Every</em> tradition.</>,
             body: <p>A tea ceremony and a reception, a nikah and a walima — we photograph all of it as one story. A second day can be added to any collection.</p>,
-            img: { src: "/assets/content-work/Dc95F33Btpj.jpg", alt: "Family dancing together under a white tent at a wedding celebration" },
+            img: { src: "/assets/gallery/rings.jpg", alt: "A couple's hands joined, wedding rings close up" },
           },
           {
             kicker: "Investment",
@@ -249,8 +249,8 @@ export default function Weddings() {
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
             <Photo
-              src="/assets/content-work/Dc95F33Btpj.jpg"
-              alt="Family dancing together under a white tent at a wedding celebration"
+              src="/assets/gallery/rings.jpg"
+              alt="A couple's hands joined, wedding rings close up"
               ratio="4/5"
               sizes="(max-width: 1024px) 100vw, 45vw"
             />
@@ -313,12 +313,9 @@ export default function Weddings() {
       <section className="sh-wrap sh-section" aria-labelledby="wed-real">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-6">
-            <Photo
-              src="/assets/content-work/Dc-X9nngA-w.jpg"
-              alt="Wedding mandap draped in white with yellow florals"
-              ratio="4/5"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+            <div className="relative mx-auto aspect-[9/16] w-full max-w-[340px] overflow-hidden bg-ink">
+              <video src="/assets/reels/Dc92Z0tBIDY.mp4" poster="/assets/reels/Dc92Z0tBIDY.jpg" autoPlay muted loop playsInline aria-label="Guests dancing on the lawn at Abha and Udit's wedding" className="absolute inset-0 h-full w-full max-w-none object-cover" />
+            </div>
           </div>
           <div className="lg:col-span-5 lg:col-start-8">
             <p className="eyebrow">Wedding content creation · Abha &amp; Udit</p>
