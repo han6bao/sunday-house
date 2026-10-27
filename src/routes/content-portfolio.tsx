@@ -4,7 +4,7 @@ import { pageHead } from "@/lib/seo";
 import { ContentShell } from "@/components/house/content-shell";
 import { Heart, HouseMark } from "@/components/house/marks";
 import { ImageSlot } from "@/components/house/image-slot";
-import { ReelCard, TOP_REELS } from "@/components/house/reel-card";
+import { PLAYABLE_REELS, ReelCard } from "@/components/house/reel-card";
 
 type Reel = {
   shortcode: string;
@@ -293,14 +293,14 @@ export default function ContentPortfolio() {
           </div>
           <p className="label-xs text-brown/60">Tap to play</p>
         </div>
-        <div className="mt-8 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
-          {TOP_REELS.map((r) => (
+        <div className="mt-8 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-5">
+          {PLAYABLE_REELS.map((r) => (
             <ReelCard key={r.code} reel={r} />
           ))}
         </div>
         <p className="mt-10 eyebrow">More from the day</p>
         <div className="mt-4 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
-          {REELS.filter((r) => !TOP_REELS.some((t) => t.code === r.shortcode)).slice(0, 8).map((r) => (
+          {REELS.filter((r) => !PLAYABLE_REELS.some((t) => t.code === r.shortcode)).slice(0, 8).map((r) => (
             <a
               key={r.shortcode}
               href={r.url}

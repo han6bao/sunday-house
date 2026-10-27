@@ -4,7 +4,7 @@ import { pageHead } from "@/lib/seo";
 import { ContentShell } from "@/components/house/content-shell";
 import { HouseGuidance } from "@/components/house/house-guidance";
 import { ImageSlot } from "@/components/house/image-slot";
-import { ReelCard, TOP_REELS } from "@/components/house/reel-card";
+import { PLAYABLE_REELS, ReelCard } from "@/components/house/reel-card";
 import { Heart, HouseMark } from "@/components/house/marks";
 
 export const Route = createFileRoute("/content-creation")({
@@ -59,8 +59,8 @@ export default function ContentCreation() {
       <section className="mx-auto max-w-[1400px] px-5 pt-14 md:px-8" aria-labelledby="cc-reels">
         <p className="eyebrow">The reels</p>
         <h2 id="cc-reels" className="mt-2 font-display text-3xl leading-tight text-ink">Tap to play.</h2>
-        <div className="mt-6 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
-          {TOP_REELS.map((r) => (
+        <div className="mt-6 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-5">
+          {PLAYABLE_REELS.map((r) => (
             <ReelCard key={r.code} reel={r} />
           ))}
         </div>
