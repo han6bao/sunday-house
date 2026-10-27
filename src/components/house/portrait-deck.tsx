@@ -60,8 +60,8 @@ export function PortraitDeck({
               <img src={cover.src} alt={cover.alt} className="sh-deck__bg" style={{ objectPosition: cover.position }} />
             )}
             <picture className="sh-deck__mark">
-              <source srcSet="/assets/brand/logo-sh2-gold.webp" type="image/webp" />
-              <img src="/assets/brand/logo-sh2-gold.png" alt="Sunday House" />
+              <source srcSet="/assets/brand/logo-sh3-gold.webp" type="image/webp" />
+              <img src="/assets/brand/logo-sh3-gold.png" alt="Sunday House" />
             </picture>
           </div>
           <p className="sh-deck__label">{label}</p>
@@ -86,8 +86,8 @@ export function PortraitDeck({
         <article className="sh-deck__slide sh-deck__slide--end">
           <div className="sh-deck__text sh-deck__text--center">
             <picture className="sh-deck__mark sh-deck__mark--small">
-              <source srcSet="/assets/brand/logo-sh2-pink.webp" type="image/webp" />
-              <img src="/assets/brand/logo-sh2-pink.png" alt="" />
+              <source srcSet="/assets/brand/logo-sh3-pink.webp" type="image/webp" />
+              <img src="/assets/brand/logo-sh3-pink.png" alt="" />
             </picture>
             <h2 className="sh-deck__title">Shall we begin?</h2>
             <div className="sh-deck__ctas">

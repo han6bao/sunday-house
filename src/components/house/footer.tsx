@@ -55,8 +55,8 @@ export function Footer() {
 
         <div className="hz-footer__center">
           <picture>
-            <source srcSet="/assets/brand/logo-sh2-pink.webp" type="image/webp" />
-            <img src="/assets/brand/logo-sh2-pink.png" alt="Sunday House" className="hz-footer__logo-img" loading="lazy" />
+            <source srcSet="/assets/brand/logo-sh3-pink.webp" type="image/webp" />
+            <img src="/assets/brand/logo-sh3-pink.png" alt="Sunday House" className="hz-footer__logo-img" loading="lazy" />
           </picture>
           <p className="hz-footer__tag">For the days worth keeping.</p>
           <p className="hz-footer__about">
