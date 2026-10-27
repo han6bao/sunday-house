@@ -4,11 +4,11 @@
  * any screen. White by default (for photos); pass tone for other grounds.
  */
 export function Wordmark({ className = "", tone = "white" }: { className?: string; tone?: "white" | "ink" | "pink" }) {
-  const base = `/assets/brand/logo-sunday-house-${tone}`;
+  const base = `/assets/brand/logo-sh-${tone}`;
   return (
     <picture className={`sh-wordmark ${className}`}>
       <source srcSet={`${base}.webp`} type="image/webp" />
-      <img src={`${base}.png`} alt="Sunday House" width={2834} height={1494} decoding="async" fetchPriority="high" />
+      <img src={`${base}.png`} alt="Sunday House" width={3600} height={1662} decoding="async" fetchPriority="high" />
     </picture>
   );
 }
