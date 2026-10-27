@@ -3247,7 +3247,7 @@ a:hover .sh-photo img,
 
 /* Black-and-white toned in the house cocoa brown */
 .sh-rosetone { position: relative; isolation: isolate; }
-.sh-rosetone video, .sh-rosetone img { filter: grayscale(1) sepia(0.42) saturate(0.75) contrast(1.04) brightness(1.02); }
+.sh-rosetone video, .sh-rosetone img { filter: grayscale(1) contrast(1.04) brightness(1.02); }
 
 /* Scroll drift + script words writing in (modern browsers only) */
 @supports (animation-timeline: view()) {
@@ -3383,7 +3383,7 @@ a:hover .sh-photo img,
 @media (prefers-reduced-motion: reduce) {
   .sh-steps3__media img, .sh-steps3__step { transition: none; transform: none; }
 }
-.sh-steps3__media img[src*="ring"] { filter: grayscale(1) sepia(0.42) saturate(0.75) contrast(1.04) brightness(1.02); }
+.sh-steps3__media img[src*="ring"] { filter: grayscale(1) contrast(1.04) brightness(1.02); }
 
 /* Phones: intro collage as one calm picture — arch photo, smaller photo tucked
    at its lower left, "hello" whole and sitting above the arch */
@@ -3826,7 +3826,7 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 
 /* Footer: photo strip, centred logo, one button, drop-downs underneath */
 .hz-footer__strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.5rem; margin-inline: calc(-1 * clamp(1.25rem, 2vw, 2rem)); }
-.hz-footer__strip img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; max-width: none; filter: grayscale(1) sepia(0.35) saturate(0.7) brightness(0.92); opacity: 0.85; }
+.hz-footer__strip img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; max-width: none; filter: grayscale(1) brightness(0.92); opacity: 0.85; }
 @media (max-width: 767px) { .hz-footer__strip { grid-template-columns: repeat(3, 1fr); gap: 0.35rem; } .hz-footer__strip img:nth-child(n+4) { display: none; } }
 .hz-footer__center { display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: clamp(2.75rem, 6vw, 4.5rem); }
 .hz-footer__logo-img { width: clamp(11rem, 22vw, 15rem); height: auto; display: block; }
@@ -3855,7 +3855,7 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 /* Intro on computers: kiss photo on the arch in the brown tone; the lawn photo in the square */
 .sh-collage__arch picture { display: contents; }
 @media (min-width: 1024px) {
-  .sh-collage__arch-img { object-position: 50% center !important; filter: grayscale(1) sepia(0.42) saturate(0.75) contrast(1.04) brightness(1.02); }
+  .sh-collage__arch-img { object-position: 50% center !important; filter: grayscale(1) contrast(1.04) brightness(1.02); }
   .sh-collage__polaroid img { object-position: 62% 85% !important; }
 }
 /* Every dark surface on every page: the header brown */
@@ -3975,7 +3975,7 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
   .sh-deck__track { display: flex; height: 100%; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
   .sh-deck__track::-webkit-scrollbar { display: none; }
   .sh-deck__slide { position: relative; flex: 0 0 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; overflow: hidden; display: flex; flex-direction: column; justify-content: center; background: #2c2726; }
-  .sh-deck__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; max-width: none; filter: grayscale(1) sepia(0.32) saturate(0.7) contrast(1.06) brightness(0.86); }
+  .sh-deck__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; max-width: none; filter: grayscale(1) contrast(1.06) brightness(0.86); }
   .sh-deck__slide--cover::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgb(44 39 38 / 0.05) 0%, rgb(44 39 38 / 0.35) 75%), linear-gradient(180deg, rgb(44 39 38 / 0.35) 0%, transparent 25%, transparent 70%, rgb(44 39 38 / 0.55) 100%); }
   .sh-deck__mark { position: relative; z-index: 2; display: block; width: 66vw; max-width: 20rem; margin: 0 auto; }
   .sh-deck__mark img { width: 100%; height: auto; display: block; filter: drop-shadow(0 2px 14px rgb(0 0 0 / 0.25)); }
@@ -4052,7 +4052,7 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .sh-hero .sh-wordmark { width: clamp(250px, 30vw, 440px) !important; }
 @media (max-width: 639px) { .sh-hero .sh-wordmark { width: 76vw !important; } }
 /* Deck cover: same warm black-and-white as the slides after it */
-@media (max-width: 767px) { .sh-deck__print .sh-deck__bg { filter: grayscale(1) sepia(0.32) saturate(0.7) contrast(1.06) brightness(0.86) !important; } }
+@media (max-width: 767px) { .sh-deck__print .sh-deck__bg { filter: grayscale(1) contrast(1.06) brightness(0.86) !important; } }
 
 /* Reels that play on the page */
 .sh-reel { margin: 0; display: flex; flex-direction: column; min-width: 0; }
@@ -4077,7 +4077,6 @@ main h2:not(#home-film):not(#house-inquiry-title) em { font-style: normal !impor
 .sh-ytfilm__play::after { content: ""; position: absolute; left: 55%; top: 50%; transform: translate(-50%, -50%); border-style: solid; border-width: 0.38rem 0 0.38rem 0.6rem; border-color: transparent transparent transparent #fdf1f4; }
 @media (max-width: 639px) { .sh-ytfilm__label { font-size: 0.6rem; letter-spacing: 0.16em; padding: 0.6rem 1rem 0.6rem 0.6rem; } .sh-ytfilm__play { width: 1.8rem; height: 1.8rem; } }
 /* Keep the couple in frame when this photo is cropped tall */
-img[src*="couple-sunset"] { object-position: 12% center !important; }
 img[src*="couple-sunset"] { object-position: 12% center !important; }
 
 /* Film: "What's included" headline in the display serif */

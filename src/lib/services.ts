@@ -52,8 +52,8 @@ export const SERVICES: Service[] = [
       { title: "Practice for the wedding day", body: "You'll learn how we work and how you photograph best, so the wedding day feels easy and familiar." },
     ],
     photos: [
-      { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in soft sepia" },
-      { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in soft sepia" },
+      { src: "/assets/stills/couple-nose.jpg", alt: "A couple nose to nose in black and white" },
+      { src: "/assets/stills/couple-forehead.jpg", alt: "A man kissing his partner's forehead, in black and white" },
       { src: "/assets/stills/couple-sunset.jpg", alt: "A couple walking toward the sunset" },
       { src: "/assets/stills/couple-field.jpg", alt: "A couple walking hand in hand across a green lawn" },
     ],

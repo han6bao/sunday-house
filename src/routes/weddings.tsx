@@ -32,13 +32,12 @@ const SERVICE = serviceJsonLd({
 });
 
 const GALLERY = [
-  { src: "/assets/stills/couple-sunset.jpg", alt: "Newlyweds walking toward the sunset", ratio: "2/3" },
-  { src: "/assets/content-work/Dc-CZYLJuxk.jpg", alt: "Bride and groom dancing under chandeliers at a barn wedding reception", ratio: "9/16" },
+  { src: "/assets/stills/wed-forehead.jpg", alt: "A groom kissing his bride's forehead, in black and white", ratio: "9/16" },
   { src: "/assets/stills/couple-kiss.jpg", alt: "A couple sharing a kiss beneath a floral arch", ratio: "2/3" },
   { src: "/assets/content-work/Dc-X9nngA-w.jpg", alt: "Wedding mandap draped in white with yellow florals", ratio: "9/16" },
   { src: "/assets/stills/couple-field.jpg", alt: "Bride and groom walking across the lawn after the ceremony", ratio: "2/3" },
   { src: "/assets/stills/bride-garden.jpg", alt: "A bride in a garden in soft natural light", ratio: "2/3" },
-  { src: "/assets/content-work/Dc96eH_xHeK.jpg", alt: "A smiling bride in pink and jewels with her family", ratio: "9/16" },
+  { src: "/assets/stills/wed-dance.jpg", alt: "Newlyweds dancing in a misty golden field", ratio: "9/16" },
   { src: "/assets/stills/wed-veil.jpg", alt: "Bride and groom forehead to forehead beneath her veil", ratio: "9/16" },
   { src: "/assets/stills/wed-hold.jpg", alt: "A groom leaning down to take his bride's hand, shot from below", ratio: "9/16" },
 ];
@@ -195,9 +194,6 @@ export default function Weddings() {
           <h2 id="wed-gallery" className="sh-h2">
             Recent weddings
           </h2>
-          <Link to="/photography-archive" className="sh-link">
-            The full archive →
-          </Link>
         </div>
         <div className="sh-wrap">
           <div className="sh-rail">
