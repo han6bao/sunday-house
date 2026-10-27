@@ -42,7 +42,7 @@ const SESSIONS = [
 const PRICES = [
   { kicker: "The two of you", name: "Couples", price: "$375", points: ["One hour", "One location", "Online gallery"] },
   { kicker: "Before the aisle", name: "Engagements", price: "$450", points: ["Ninety minutes", "Two looks", "Included in most wedding collections"] },
-  { kicker: "Your year", name: "Seniors + grads", price: "$375", points: ["One hour, two outfits", "Or $575: two hours, two locations", "Three to four outfits"] },
+  { kicker: "Your year", name: "Seniors + grads", price: "$375", points: ["One hour, two outfits", "Extended: $575 for two hours, two locations and three to four outfits"] },
   { kicker: "Every season", name: "Families + maternity", price: "$375", points: ["One hour", "Up to six people", "Larger groups quoted to fit"] },
   { kicker: "Your own film", name: "Creative sessions", price: "$550", points: ["Concept planning", "Styling direction", "Two hours of shooting"] },
 ];
@@ -229,31 +229,35 @@ export default function Photography() {
         </div>
       </section>
 
-      {/* Session prices */}
+      {/* Session prices — a simple price list */}
       <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-labelledby="pt-prices">
-        <p className="eyebrow">Investment</p>
-        <h2 id="pt-prices" className="sh-h2 mt-4">
-          Session <em>prices</em>.
-        </h2>
-        <ul className="sh-prices sh-prices--five mt-10">
-          {PRICES.map((it) => (
-            <li key={it.name} className="sh-price">
-              <p className="eyebrow">{it.kicker}</p>
-              <h3 className="sh-h3 mt-3">{it.name}</h3>
-              <p className="sh-price__amt">
-                <span>from</span> {it.price}
-              </p>
-              <ul className="sh-price__pts">
-                {it.points.map((pt) => (
-                  <li key={pt}>{pt}</li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-        <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
-          Inquire
-        </a>
+        <div className="grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <p className="eyebrow">Investment</p>
+            <h2 id="pt-prices" className="pt-prices-h mt-4">
+              Session <em>prices</em>.
+            </h2>
+            <p className="sh-body mt-6">A starting point for every kind of portrait. Tell us what you have in mind, and we'll shape the session around it.</p>
+            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
+              Inquire
+            </a>
+          </div>
+          <ul className="pt-pricelist lg:col-span-8">
+            {PRICES.map((it) => (
+              <li key={it.name} className="pt-pricelist__row">
+                <div className="pt-pricelist__main">
+                  <p className="eyebrow">{it.kicker}</p>
+                  <h3 className="pt-pricelist__name">{it.name}</h3>
+                  <p className="pt-pricelist__pts">{it.points.join(" · ")}</p>
+                </div>
+                <p className="pt-pricelist__amt">
+                  <span>from</span>
+                  {it.price}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       {/* Creative sessions */}

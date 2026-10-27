@@ -92,7 +92,7 @@ export default function ContentPortfolio() {
           </div>
           <p className="label-xs text-brown/60">Tap to play</p>
         </div>
-        <div className="mt-8 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-5">
+        <div className="mt-8 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-6">
           {PLAYABLE_REELS.map((r) => (
             <ReelCard key={r.code} reel={r} />
           ))}

@@ -4,17 +4,18 @@ import { useState } from "react";
 
 export type Reel = { code: string; caption: string; thumb: string; video?: string };
 
-/** The four reels we lead with. */
+/** The four reels we lead with — the 20K-view dance lesson first. */
 export const TOP_REELS: Reel[] = [
+  { code: "Dc-FW05tqrF", caption: "The dance lesson · 20K+ views", thumb: "/assets/content-work/Dc-FW05tqrF.jpg", video: "/assets/reels/Dc-FW05tqrF.mp4" },
   { code: "Dc-X9nngA-w", caption: "The mandap", thumb: "/assets/content-work/Dc-X9nngA-w.jpg", video: "/assets/reels/Dc-X9nngA-w.mp4" },
   { code: "Dc96eH_xHeK", caption: "The bride, with family", thumb: "/assets/content-work/Dc96eH_xHeK.jpg", video: "/assets/reels/Dc96eH_xHeK.mp4" },
-  { code: "Dc95iSEhbA_", caption: "Time for some food", thumb: "/assets/content-work/Dc95iSEhbA_.jpg", video: "/assets/reels/Dc95iSEhbA_.mp4" },
   { code: "Dc92Z0tBIDY", caption: "The celebration", thumb: "/assets/reels/Dc92Z0tBIDY.jpg", video: "/assets/reels/Dc92Z0tBIDY.mp4" },
 ];
 
 /** Every reel that plays right on the site: the top four, plus more. */
 export const PLAYABLE_REELS: Reel[] = [
   ...TOP_REELS,
+  { code: "Dc95iSEhbA_", caption: "Time for some food", thumb: "/assets/content-work/Dc95iSEhbA_.jpg", video: "/assets/reels/Dc95iSEhbA_.mp4" },
   { code: "Dc-Q1TcSzgx", caption: "The welcome", thumb: "/assets/content-work/Dc-Q1TcSzgx.jpg", video: "/assets/reels/Dc-Q1TcSzgx.mp4" },
 ];
 

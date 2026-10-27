@@ -60,7 +60,7 @@ export default function ContentCreation() {
       <section className="mx-auto max-w-[1400px] px-5 pt-14 md:px-8" aria-labelledby="cc-reels">
         <p className="eyebrow">The reels</p>
         <h2 id="cc-reels" className="mt-2 font-display text-3xl leading-tight text-ink">Tap to play.</h2>
-        <div className="mt-6 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-5">
+        <div className="mt-6 grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-6">
           {PLAYABLE_REELS.map((r) => (
             <ReelCard key={r.code} reel={r} />
           ))}
