@@ -115,7 +115,7 @@ export default function Weddings() {
             kicker: "Cultural + two-day weddings",
             title: <>More than one day. <em>Every</em> tradition.</>,
             body: <p>A tea ceremony and a reception, a nikah and a walima — we photograph all of it as one story. A second day can be added to any collection.</p>,
-            img: { src: "/assets/content-work/Dc94ykltayq.jpg", alt: "Bride and groom embracing at a colorful mehndi celebration" },
+            img: { src: "/assets/content-work/Dc95F33Btpj.jpg", alt: "Family dancing together under a white tent at a wedding celebration" },
           },
           {
             kicker: "Investment",
@@ -253,8 +253,8 @@ export default function Weddings() {
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
             <Photo
-              src="/assets/content-work/Dc94ykltayq.jpg"
-              alt="Bride and groom embracing at a colorful mehndi celebration"
+              src="/assets/content-work/Dc95F33Btpj.jpg"
+              alt="Family dancing together under a white tent at a wedding celebration"
               ratio="4/5"
               sizes="(max-width: 1024px) 100vw, 45vw"
             />
