@@ -24,6 +24,8 @@ export type Service = {
   intro: string[];
   highlights: { title: string; body: string }[];
   photos: ServicePhoto[];
+  /** Optional row of photos shown at their natural shapes, equal height. */
+  strip?: (ServicePhoto & { w: number; h: number })[];
   /** Optional extra photo story on the page (e.g. maternity on the family page). */
   feature?: { eyebrow: string; title: string; body: string; tall: ServicePhoto; wide: ServicePhoto[] };
   faqs: ServiceFaq[];
@@ -246,6 +248,11 @@ export const SERVICES: Service[] = [
     photos: [
       { src: "/assets/stills/family-stand.jpg", alt: "A family of five smiling together on a waterfront path lined with wild roses" },
       { src: "/assets/stills/family-log.jpg", alt: "A family laughing together on a driftwood log by the water", ratio: "3/2" },
+    ],
+    strip: [
+      { src: "/assets/stills/family-run.jpg", alt: "A boy waving and running toward the camera while his family laughs behind him", w: 1365, h: 2048 },
+      { src: "/assets/stills/family-mom-baby.jpg", alt: "A mother holding her smiling toddler by the water", w: 2048, h: 1638 },
+      { src: "/assets/stills/family-toddler.jpg", alt: "A toddler with a sour candy peeking over a driftwood log by the water", w: 1638, h: 2048 },
     ],
     feature: {
       eyebrow: "Maternity",

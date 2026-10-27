@@ -102,6 +102,19 @@ export function ServicePage({ service }: { service: Service }) {
         </div>
       </section>
 
+      {/* A row of photos at their natural shapes */}
+      {service.strip?.length ? (
+        <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-label={`${service.name} photographs`}>
+          <div className="svc-strip">
+            {service.strip.map((ph) => (
+              <figure key={ph.src} className="svc-strip__item" style={{ flexGrow: ph.w / ph.h, aspectRatio: `${ph.w} / ${ph.h}` }}>
+                <img src={ph.src} alt={ph.alt} loading="lazy" decoding="async" />
+              </figure>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {/* Feature photo story (e.g. maternity) */}
       {service.feature ? (
         <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-labelledby="svc-feature">
