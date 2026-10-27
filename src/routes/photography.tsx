@@ -112,7 +112,7 @@ export default function Photography() {
             kicker: "Maternity",
             title: <>For those <em>expecting</em>.</>,
             body: <p>A meadow, the deer at the tree line, and the two of you waiting on someone new. Maternity sessions can include a short film, voiceover included.</p>,
-            img: { src: "/assets/motion/maternity-meadow.jpg", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
+            img: { src: "/assets/stills/maternity-deer.jpg", alt: "Expecting mother in a meadow with deer grazing behind her", position: "78% center" },
           },
           {
             kicker: "Where",

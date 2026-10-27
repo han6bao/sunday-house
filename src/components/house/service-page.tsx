@@ -102,6 +102,31 @@ export function ServicePage({ service }: { service: Service }) {
         </div>
       </section>
 
+      {/* Feature photo story (e.g. maternity) */}
+      {service.feature ? (
+        <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-labelledby="svc-feature">
+          <div className="grid gap-5 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-5">
+              <p className="eyebrow">{service.feature.eyebrow}</p>
+              <h2 id="svc-feature" className="svc-feature-h mt-4">
+                <Emph text={service.feature.title} />
+              </h2>
+              <p className="sh-body mt-5 max-w-md">{service.feature.body}</p>
+            </div>
+          </div>
+          <div className="mt-10 grid gap-4 md:gap-5 lg:grid-cols-12">
+            <div className="lg:col-span-5">
+              <Photo src={service.feature.tall.src} alt={service.feature.tall.alt} ratio="10/19.5" sizes="(max-width: 1024px) 100vw, 40vw" />
+            </div>
+            <div className="grid gap-4 md:gap-5 lg:col-span-7">
+              {service.feature.wide.map((ph) => (
+                <Photo key={ph.src} src={ph.src} alt={ph.alt} ratio="3/2" sizes="(max-width: 1024px) 100vw, 55vw" />
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {/* Highlights */}
       <section className="rose-paper sh-section">
         <div className="sh-wrap">

@@ -24,6 +24,8 @@ export type Service = {
   intro: string[];
   highlights: { title: string; body: string }[];
   photos: ServicePhoto[];
+  /** Optional extra photo story on the page (e.g. maternity on the family page). */
+  feature?: { eyebrow: string; title: string; body: string; tall: ServicePhoto; wide: ServicePhoto[] };
   faqs: ServiceFaq[];
   related: string[];
   inquire: string;
@@ -245,6 +247,16 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/family-stand.jpg", alt: "A family of five smiling together on a waterfront path lined with wild roses" },
       { src: "/assets/stills/family-log.jpg", alt: "A family laughing together on a driftwood log by the water", ratio: "3/2" },
     ],
+    feature: {
+      eyebrow: "Maternity",
+      title: "The waiting, *kept*.",
+      body: "Unhurried sessions outdoors in soft light, paced around how you feel — for the two of you, and the one on the way.",
+      tall: { src: "/assets/stills/maternity-ultrasound.jpg", alt: "An expecting couple laughing together, holding an ultrasound photo in a meadow of wildflowers" },
+      wide: [
+        { src: "/assets/stills/maternity-deer.jpg", alt: "An expecting mother in a meadow of wildflowers with deer grazing behind her" },
+        { src: "/assets/stills/maternity-couple.jpg", alt: "An expecting couple holding her bump together in a flowering meadow" },
+      ],
+    },
     faqs: [
       { q: "How much is a family or maternity session?", a: "Family sessions are $375 for an hour with up to six people, and maternity sessions are the same. Larger groups are quoted to fit." },
       { q: "When should we book family photos for the holidays?", a: "Late summer or early fall. Sessions fill quickly before the holidays, and earlier dates leave time to order cards and prints." },
