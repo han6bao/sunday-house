@@ -215,7 +215,10 @@ function ServiceDeck({ service, related }: { service: Service; related: Service[
             </ul>
           ),
         },
-        ...(price ? [{ kicker: "Investment", title: "Simple, and in writing.", body: <p>{price.a}</p>, img: pic(2) ?? pic(0) }] : []),
+        ...(service.feature
+          ? [{ kicker: service.feature.eyebrow, title: <Emph text={service.feature.title} />, body: <p>{service.feature.body}</p>, img: { src: service.feature.tall.src, alt: service.feature.tall.alt } }]
+          : []),
+        ...(price ? [{ kicker: "Investment", title: "Simple, and in writing.", body: <p>{price.a}</p>, img: pic(2) ?? (service.feature ? { src: service.feature.wide[0].src, alt: service.feature.wide[0].alt } : pic(0)) }] : []),
       ]}
       primary={{ label: "Inquire", to: "mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" }}
       secondary={{ label: "All sessions", to: "/services" }}
