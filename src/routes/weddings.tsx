@@ -209,7 +209,7 @@ export default function Weddings() {
               From the first look to the last dance.
             </h2>
             <div className="mt-10 hidden lg:block">
-              <Photo src="/assets/stills/wed-dance.jpg" alt="Newlyweds dancing in a misty golden field" ratio="4/5" sizes="35vw" />
+              <Photo src="/assets/stills/wed-dance-crop.jpg" alt="Newlyweds dancing in a misty golden field" ratio="35/38" sizes="35vw" />
             </div>
           </div>
           <div className="lg:col-span-7 lg:pt-24">
