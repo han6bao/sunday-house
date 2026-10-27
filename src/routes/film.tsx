@@ -40,11 +40,10 @@ const FRAMES = [
 ];
 
 const INCLUDES = [
-  { t: "The highlight film", b: "Three to five minutes, scored and edited around how the day felt rather than the order it happened in. The one you'll return to every anniversary." },
-  { t: "Your vows, in your own voices", b: "Vows and toasts recorded on dedicated microphones, then given a two-to-three-minute vow film of their own." },
-  { t: "A complimentary styled session", b: "An additional editorial portrait session, included with this collection — on the wedding day or on a day of its own." },
-  { t: "One team, one vision", b: "Photography and film directed together from the first frame, so every image and every scene belongs to the same story." },
-  { t: "A private online gallery", b: "Your photographs and films, beautifully presented and ready to download and share with everyone who couldn't be there." },
+  { t: "The highlight film", b: "Three to five minutes, scored to how the day felt." },
+  { t: "Your vows, in your own voices", b: "Recorded on dedicated microphones, with a vow film of their own." },
+  { t: "A complimentary styled session", b: "An editorial portrait session, on the day or a day of its own." },
+  { t: "One team, one vision", b: "Photography and film, directed together from the first frame." },
 ];
 
 /** The full Matt + Maddie film, hosted here. Set to its file once uploaded. */
