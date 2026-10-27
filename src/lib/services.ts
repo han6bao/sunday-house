@@ -259,6 +259,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/family-toddler.jpg", alt: "A toddler with a sour candy peeking over a driftwood log by the water", w: 1638, h: 2048 },
     ],
     strips: [
+      [{ src: "/assets/stills/family-garden.jpg", alt: "A family of five smiling together in a flowering summer garden", w: 2000, h: 1116 }],
       [
         { src: "/assets/stills/family-bench-sunset.jpg", alt: "A family of five on a bench watching the water at sunset", w: 1800, h: 1200 },
         { src: "/assets/stills/family-siblings-bench.jpg", alt: "Three siblings at a waterfront bench", w: 1440, h: 1800 },
