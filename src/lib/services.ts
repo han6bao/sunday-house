@@ -228,6 +228,13 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/quince-2.jpg", alt: "A smiling quinceañera with a yellow flower in her hair", w: 1200, h: 1800 },
       { src: "/assets/stills/milestone-3.jpg", alt: "A little girl in a tiara and embroidered dress holding a number three", w: 1228, h: 1536 },
       { src: "/assets/stills/quince-5.jpg", alt: "A quinceañera holding pink flowers beneath the trees", w: 1200, h: 1800 },
+      { src: "/assets/stills/daffodil-1.jpg", alt: "A Daffodil Festival princess in a crown holding a scepter and yellow bouquet", w: 1200, h: 1800 },
+    ],
+    strips: [
+      [
+        { src: "/assets/stills/daffodil-wide.jpg", alt: "A Daffodil Festival princess on a bench among tulips with Mount Rainier behind her", w: 1800, h: 1440 },
+        { src: "/assets/stills/creative-quince-back.jpg", alt: "A quinceañera from behind, pink flowers tucked in her long curls", w: 1200, h: 1800 },
+      ],
     ],
     stripLabels: ["Quinceañeras + milestones"],
     faqs: [
@@ -355,6 +362,16 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/creative-2.jpg", alt: "Styled portrait in a patchwork suede dress and newsboy cap against a red wall" },
       { src: "/assets/stills/creative-1.jpg", alt: "Silhouette in a mirror against a teal patterned screen" },
     ],
+    strip: [
+      { src: "/assets/stills/creative-angel-1.jpg", alt: "An angel with feathered wings, eyes closed in dappled forest light", w: 1200, h: 1800 },
+      { src: "/assets/stills/creative-floral.jpg", alt: "A golden-hour portrait in a floral slip dress under a pergola", w: 1200, h: 1800 },
+      { src: "/assets/stills/creative-3.jpg", alt: "Styled portrait leaning against a teal wall in a color-block dress", w: 1066, h: 1600 },
+    ],
+    strips: [
+      [
+        { src: "/assets/stills/creative-angel-2.jpg", alt: "An angel in a pink lace gown perched on a mossy brick wall", w: 1800, h: 1200 },
+      ],
+    ],
     faqs: [
       { q: "How much is a creative session?", a: "Creative sessions begin at $550, including concept planning, styling direction and two hours of shooting. Bigger concepts are quoted to fit." },
       { q: "What is a creative portrait session?", a: "A portrait session designed around a concept — a mood, a story or a look — with styling, location and lighting planned ahead, rather than a classic posed portrait." },
@@ -392,6 +409,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/hs-pro-1.jpg", alt: "A professional headshot in a black blazer on a white background", w: 1086, h: 1448 },
       { src: "/assets/stills/hs-pro-3.jpg", alt: "A warm, smiling business headshot on a white background", w: 1122, h: 1402 },
       { src: "/assets/stills/hs-creative-1.jpg", alt: "A glowing branding portrait against soft pink fabric", w: 1344, h: 1800 },
+      { src: "/assets/stills/hs-brand-roses.jpg", alt: "A smiling branding portrait in blush pink beside yellow roses", w: 1200, h: 1800 },
     ],
     strips: [
       [
@@ -405,6 +423,12 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/senior-20.jpg", alt: "A close portrait in glasses and a black top among evergreens", w: 1066, h: 1600 },
       ],
       [
+        { src: "/assets/stills/hs-port-stairs.jpg", alt: "A close portrait with long curls against a mint stairwell", w: 1200, h: 1800 },
+        { src: "/assets/stills/hs-port-curls.jpg", alt: "A sunlit portrait with golden curls in a red lace dress", w: 1200, h: 1800 },
+        { src: "/assets/stills/hs-port-flowers.jpg", alt: "A soft portrait resting her chin on her hand behind pink flowers", w: 1200, h: 1800 },
+        { src: "/assets/stills/hs-port-window.jpg", alt: "Seated on a window ledge in a leather jacket", w: 1200, h: 1800 },
+      ],
+      [
         { src: "/assets/stills/hs-digital-1.jpg", alt: "Modeling digital: a close portrait against a white brick wall", w: 1067, h: 1600 },
         { src: "/assets/stills/hs-digital-2.jpg", alt: "Modeling digital: a profile against a white brick wall", w: 1067, h: 1600 },
         { src: "/assets/stills/hs-digital-3.jpg", alt: "Modeling digital: a full-length look in wide-leg jeans", w: 1067, h: 1600 },
@@ -416,12 +440,13 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/hs-digital-7.jpg", alt: "Modeling digital: seated on the studio floor in denim", w: 1067, h: 1600 },
       ],
       [
+        { src: "/assets/stills/hs-loc-3.jpg", alt: "A smiling headshot in a white blouse against tall green grass", w: 1440, h: 1800 },
+        { src: "/assets/stills/hs-loc-1.jpg", alt: "A smiling portrait in a white blouse among the trees", w: 1200, h: 1800 },
         { src: "/assets/stills/senior-13.jpg", alt: "A smiling portrait in a shearling-collar jacket in the woods", w: 1066, h: 1600 },
         { src: "/assets/stills/senior-16.jpg", alt: "A laughing portrait in a yellow shirt", w: 1066, h: 1600 },
-        { src: "/assets/stills/senior-3.jpg", alt: "A smiling portrait in tall golden grass", w: 1066, h: 1600 },
       ],
     ],
-    stripLabels: ["Business + branding", "With Mandy", "Editorial", "Modeling digitals: Ellis", "", "On location"],
+    stripLabels: ["Business + branding", "With Mandy", "Editorial", "Portfolio", "Modeling digitals: Ellis", "", "On location"],
     stripNotes: ["", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves."],
     faqs: [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
