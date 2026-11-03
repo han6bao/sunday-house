@@ -263,7 +263,7 @@ export const SERVICES: Service[] = [
       "Expecting? Maternity sessions keep the waiting — outdoors in golden light or somewhere meaningful to you, unhurried and paced around how you feel.",
     ],
     highlights: [
-      { title: "Paced around you", body: "Unhurried sessions that follow how you feel — rest when you need it, no rushing." },
+      { title: "Great with little ones", body: "We used to teach at an elementary school and worked closely with preschoolers, so toddlers and wiggly kids don't faze us. We bring patience, games and plenty of time." },
       { title: "Everyone included", body: "Partners, little ones, grandparents and pets — big groups and small, with a plan for every combination." },
       { title: "Studio options", body: "Prefer indoors? Studio sessions are available for families, maternity and newborns — soft light, any season, any weather." },
     ],
@@ -406,6 +406,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/hs-pro-2.jpg", alt: "A smiling professional headshot on a clean white background" },
     ],
     strip: [
+      { src: "/assets/stills/hs-brand-black.jpg", alt: "A smiling business portrait in black with a statement necklace, outdoors", w: 1030, h: 1288 },
       { src: "/assets/stills/hs-pro-1.jpg", alt: "A professional headshot in a black blazer on a white background", w: 1086, h: 1448 },
       { src: "/assets/stills/hs-pro-3.jpg", alt: "A warm, smiling business headshot on a white background", w: 1122, h: 1402 },
       { src: "/assets/stills/hs-creative-1.jpg", alt: "A glowing branding portrait against soft pink fabric", w: 1344, h: 1800 },
@@ -452,6 +453,7 @@ export const SERVICES: Service[] = [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
       { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look for business headshots and digitals; on location adds natural light and a sense of place for branding and creative work." },
       { q: "What should I wear?", a: "Solid colors and clothes you feel good in. Bring a couple of options and we'll help you choose. For digitals, fitted basics in neutral tones work best." },
+      { q: "Do you photograph kids and teens?", a: "Yes, often. We used to teach at an elementary school and worked with preschoolers, so we're patient and know how to keep little ones comfortable, whether it's a first headshot or a school portrait." },
       { q: "Can you do headshots for a whole team?", a: "Yes. Tell us how many people and where, and we'll plan a consistent look for everyone." },
     ],
     related: ["senior-portraits", "creative-portraits", "family-photography"],

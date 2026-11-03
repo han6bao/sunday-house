@@ -80,6 +80,12 @@ export default function About() {
               Michigan State University. She works with a small team she trusts.
             </p>
             <p className="sh-body">
+              Before photography took over, Hana taught at an elementary school
+              and worked with preschoolers. It's why kids, toddlers and even the
+              most camera-shy little ones tend to relax around her. Patience is
+              just part of how she works.
+            </p>
+            <p className="sh-body">
               It started with senior portraits: helping people feel like
               themselves in front of a lens. Then came weddings, and with them a
               whole new world. A wedding holds everything at once — nerves and
