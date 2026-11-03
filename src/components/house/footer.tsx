@@ -32,6 +32,7 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
       { label: "Families + Maternity", href: "/services/$slug", params: { slug: "family-photography" } },
       { label: "Creative Sessions", href: "/services/$slug", params: { slug: "creative-portraits" } },
       { label: "Headshots", href: "/services/$slug", params: { slug: "headshots" } },
+      { label: "Modeling Digitals", href: "/services/$slug", params: { slug: "modeling-digitals" } },
       { label: "All Services", href: "/services" },
     ],
   },

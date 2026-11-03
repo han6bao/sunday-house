@@ -392,7 +392,7 @@ export const SERVICES: Service[] = [
     slug: "headshots",
     name: "Headshots",
     group: "portraits",
-    title: "Headshots + Modeling Digitals, Seattle + Tacoma | Sunday House",
+    title: "Headshot Photographer, Seattle + Tacoma | Sunday House",
     description:
       "Professional headshots, personal branding, editorial portraits and modeling digitals in Seattle and Tacoma — in the studio or on location.",
     script: "Look like yourself, at your best.",
@@ -439,23 +439,12 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/hs-port-window.jpg", alt: "Seated on a window ledge in a leather jacket", w: 1200, h: 1800 },
       ],
       [
-        { src: "/assets/stills/hs-digital-1.jpg", alt: "Modeling digital: a close portrait against a white brick wall", w: 1067, h: 1600 },
-        { src: "/assets/stills/hs-digital-2.jpg", alt: "Modeling digital: a profile against a white brick wall", w: 1067, h: 1600 },
-        { src: "/assets/stills/hs-digital-3.jpg", alt: "Modeling digital: a full-length look in wide-leg jeans", w: 1067, h: 1600 },
-        { src: "/assets/stills/hs-digital-4.jpg", alt: "Modeling digital: a full-length look in a denim jacket", w: 1067, h: 1600 },
-      ],
-      [
-        { src: "/assets/stills/hs-digital-5.jpg", alt: "Modeling digital: a straight-on portrait against a white brick wall", w: 1067, h: 1600 },
-        { src: "/assets/stills/hs-digital-6.jpg", alt: "Modeling digital: seated on a velvet chaise in a white studio", w: 1067, h: 1600 },
-        { src: "/assets/stills/hs-digital-7.jpg", alt: "Modeling digital: seated on the studio floor in denim", w: 1067, h: 1600 },
-      ],
-      [
         { src: "/assets/stills/hs-loc-3.jpg", alt: "A smiling headshot in a white blouse against tall green grass", w: 1440, h: 1800 },
         { src: "/assets/stills/senior-13.jpg", alt: "A smiling portrait in a shearling-collar jacket in the woods", w: 1066, h: 1600 },
         { src: "/assets/stills/senior-16.jpg", alt: "A laughing portrait in a yellow shirt", w: 1066, h: 1600 },
       ],
     ],
-    stripLabels: ["Classic: business + branding", "", "With Mandy", "Editorial + creative", "Portfolio", "Modeling digitals: Ellis", "", "On location"],
+    stripLabels: ["Classic: business + branding", "", "With Mandy", "Editorial + creative", "Portfolio", "On location"],
     stripNotes: ["", "", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves."],
     deckSlides: [
       { kicker: "With Mandy", title: "Just for *fun*.", body: "A longtime friend, a spur-of-the-moment shoot and a look we styled ourselves.", img: { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop" } },
@@ -469,9 +458,62 @@ export const SERVICES: Service[] = [
       { q: "Do you photograph kids and teens?", a: "Yes, often. We used to teach at an elementary school and worked with preschoolers, so we're patient and know how to keep little ones comfortable, whether it's a first headshot or a school portrait." },
       { q: "Can you do headshots for a whole team?", a: "Yes. Tell us how many people and where, and we'll plan a consistent look for everyone." },
     ],
-    related: ["senior-portraits", "creative-portraits", "family-photography"],
+    related: ["modeling-digitals", "senior-portraits", "creative-portraits"],
     inquire: "headshots",
     serviceType: "Headshot photography",
+  },
+  {
+    slug: "modeling-digitals",
+    name: "Modeling Digitals",
+    group: "portraits",
+    title: "Modeling Digitals + Polaroids, Seattle + Tacoma | Sunday House",
+    description:
+      "Modeling digitals and polaroids in Seattle and Tacoma — clean, natural photographs for agencies, castings and portfolios, in the studio or on location.",
+    script: "Simple, honest, you.",
+    h1: "Modeling digitals, *done right*.",
+    intro: [
+      "Digitals are the photographs agencies and casting directors actually ask for: clean light, minimal makeup and fitted clothes, showing you exactly as you are today.",
+      "We shoot the full set — close-ups, profiles, three-quarter and full-length — plus a few relaxed, styled frames if you want something extra for your portfolio. In the studio or on location around Seattle and Tacoma.",
+    ],
+    highlights: [
+      { title: "The full agency set", body: "Front, profile, three-quarter and full-length, framed the way agencies expect." },
+      { title: "Natural and true", body: "Light retouching only, so you look like you'll look when you walk in the door." },
+      { title: "A little extra", body: "Add a few styled, editorial frames to round out your portfolio." },
+    ],
+    photos: [
+      { src: "/assets/stills/hs-digital-1.jpg", alt: "Modeling digital: a close portrait against a white brick wall" },
+      { src: "/assets/stills/hs-digital-3.jpg", alt: "Modeling digital: a full-length look in wide-leg jeans" },
+    ],
+    strip: [
+      { src: "/assets/stills/hs-digital-5.jpg", alt: "Digital: straight-on portrait against white brick", w: 1067, h: 1600 },
+      { src: "/assets/stills/hs-digital-2.jpg", alt: "Digital: profile against white brick", w: 1067, h: 1600 },
+      { src: "/assets/stills/dg-5841.jpg", alt: "Digital: full length against white brick", w: 1067, h: 1600 },
+      { src: "/assets/stills/dg-5844.jpg", alt: "Digital: from behind, reflected in a studio mirror", w: 1067, h: 1600 },
+    ],
+    strips: [
+      [
+        { src: "/assets/stills/hs-digital-4.jpg", alt: "Styled frame in a denim jacket", w: 1067, h: 1600 },
+        { src: "/assets/stills/dg-5862.jpg", alt: "Styled frame seated on the studio floor in denim", w: 1067, h: 1600 },
+        { src: "/assets/stills/dg-5853.jpg", alt: "Styled frame on a velvet chaise", w: 1067, h: 1600 },
+        { src: "/assets/stills/dg-5860.jpg", alt: "Styled frame leaning on a white brick wall in denim", w: 1067, h: 1600 },
+      ],
+      [
+        { src: "/assets/stills/dg-5858.jpg", alt: "Styled frame reclining on a velvet chaise", w: 1280, h: 1600 },
+        { src: "/assets/stills/hs-digital-6.jpg", alt: "Styled frame seated on a velvet chaise", w: 1067, h: 1600 },
+        { src: "/assets/stills/hs-digital-7.jpg", alt: "Styled frame seated on the studio floor", w: 1067, h: 1600 },
+      ],
+    ],
+    stripLabels: ["The digitals", "A little styled"],
+    stripNotes: ["", ""],
+    faqs: [
+      { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
+      { q: "What should I wear?", a: "Fitted basics in neutral tones: a plain tank or tee and well-fitting jeans or leggings. Bring one extra look if you'd like a few styled frames." },
+      { q: "Hair and makeup?", a: "Keep it natural — clean skin, hair down and off the face. Agencies want to see the real you." },
+      { q: "Can you shoot digitals for younger models?", a: "Yes. We used to teach at an elementary school and worked with preschoolers, so we know how to keep kids relaxed and patient through a full set, with a parent there the whole time." },
+    ],
+    related: ["headshots", "creative-portraits", "senior-portraits"],
+    inquire: "digitals",
+    serviceType: "Modeling digitals photography",
   },
 ];
 
