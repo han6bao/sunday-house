@@ -123,16 +123,6 @@ export default function About() {
         </div>
       </section>
 
-      <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-labelledby="about-reel">
-        <p id="about-reel" className="eyebrow mb-6">A little of everything we do</p>
-        <SoundFilm
-          className="sh-soundfilm--wide"
-          src="/assets/reels/sunday-house-reel.mp4"
-          poster="/assets/reels/sunday-house-reel.jpg"
-          label="Sunday House reel: weddings, portraits, families and maternity"
-        />
-      </section>
-
       <section className="rose-paper sh-section">
         <div className="sh-wrap grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">

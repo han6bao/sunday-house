@@ -189,8 +189,8 @@ export default function Weddings() {
       <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-label="Wedding reel">
         <SoundFilm
           className="sh-soundfilm--wide"
-          src="/assets/reels/wedding-reel.mp4"
-          poster="/assets/reels/wedding-reel.jpg"
+          src="/assets/motion/hero.mp4"
+          poster="/assets/motion/hero.jpg"
           label="A short reel of recent weddings: couples at golden hour, florals, first looks and quiet moments"
         />
       </section>
