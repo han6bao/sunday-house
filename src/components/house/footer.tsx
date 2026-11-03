@@ -27,6 +27,7 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
   {
     head: "Portraits",
     links: [
+      { label: "Portrait Sessions", href: "/photography" },
       { label: "Seniors + Grads", href: "/services/$slug", params: { slug: "senior-portraits" } },
       { label: "Families + Maternity", href: "/services/$slug", params: { slug: "family-photography" } },
       { label: "Creative Sessions", href: "/services/$slug", params: { slug: "creative-portraits" } },

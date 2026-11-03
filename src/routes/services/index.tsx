@@ -67,6 +67,7 @@ function Services() {
         <div>
           <h2 className="eyebrow">Portraits + celebrations</h2>
           <ul className="mt-6">
+            <ServiceRow to="/photography" name="Portrait Sessions" note="Every kind of portrait, with session prices." photo={{ src: "/assets/stills/senior-6.jpg", alt: "Senior in a white blouse in a sunlit meadow" }} />
             {portraits.map((s) => (
               <ServiceRow key={s.slug} to="/services/$slug" params={{ slug: s.slug }} name={s.name} note={s.script} photo={s.photos[0]} />
             ))}
