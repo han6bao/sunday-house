@@ -58,6 +58,10 @@ const FAQ = [
     a: "Portrait sessions begin at $375 for an hour. Engagement sessions are $450, extended senior sessions $575, and creative sessions begin at $550. Tell us what you're celebrating and where, and we'll send a clear proposal.",
   },
   {
+    q: "What's your editing style?",
+    a: "Cinematic and film-like, often a little editorial. If you'd rather something classic, we also deliver clean, timeless edits that still feel soft. Just tell us the feel you want.",
+  },
+  {
     q: "What should we wear?",
     a: "Bring you, in colors you love, and let us worry about the light. Once you book, we'll send a real guide: how to coordinate without matching and what photographs well.",
   },

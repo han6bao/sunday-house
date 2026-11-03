@@ -100,6 +100,11 @@ export default function About() {
               film.
             </p>
             <p className="sh-body">
+              Our signature edit is film-like with an editorial edge. When you
+              need something classic, like a LinkedIn headshot, we keep it clean
+              and timeless while holding on to a little softness.
+            </p>
+            <p className="sh-body">
               Based in Tacoma, photographing weddings across Seattle, the Pacific
               Northwest and wherever your story takes us.
             </p>

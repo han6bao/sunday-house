@@ -196,14 +196,18 @@ export const SERVICES: Service[] = [
     intro: [
       "Senior photos should feel like the person you are right now — not a costume, not a template. Bring the outfits you actually love, the places you actually go, and maybe the friend who makes you laugh.",
       "We photograph seniors and graduates across Seattle, Tacoma and the South Sound, at parks, beaches, campuses and city spots — and quinceañeras and milestone birthdays, too.",
+      "Our signature look is cinematic and film-like, often with an editorial edge. Prefer something classic? We also deliver clean, timeless edits that still feel soft and a little magazine.",
     ],
     highlights: [
       { title: "Your style, your places", body: "Plan the session around your favorite spots, your hobbies and the outfits that feel most like you." },
       { title: "Easy for parents", body: "Clear planning, a simple timeline and photographs you'll want on the wall and in the yearbook." },
-      { title: "Graduates too", body: "College and graduate portraits with caps, gowns and campus favorites." },
+      { title: "Classic or editorial", body: "Cinematic and film-like by default, or clean and classic if that's more you. Tell us the feel and we'll edit to match." },
     ],
     photos: [
       { src: "/assets/stills/senior-3.jpg", alt: "Senior smiling, seated in tall golden grass" },
+      { src: "/assets/stills/hs-loc-1.jpg", alt: "Senior in a white blouse smiling among the trees" },
+      { src: "/assets/stills/hs-loc-2.jpg", alt: "Senior in a white blouse seated in tall green grass" },
+      { src: "/assets/stills/hs-loc-3.jpg", alt: "Close senior portrait in a white blouse against green grass" },
       { src: "/assets/stills/senior-1.jpg", alt: "Senior in a sheer blue cardigan, hands on hips in a golden field" },
       { src: "/assets/stills/senior-2.jpg", alt: "Senior with hands to her heart, looking into the summer light" },
       { src: "/assets/stills/senior-4.jpg", alt: "Senior in a black jumpsuit seated on a stone in the park" },
@@ -395,6 +399,7 @@ export const SERVICES: Service[] = [
     intro: [
       "A good headshot looks like you on your best day — relaxed, confident and unmistakably you. We guide every expression and pose, so you never have to wonder what to do with your hands.",
       "We photograph headshots for professionals, creatives, actors and models across Seattle and Tacoma: clean studio portraits for work and LinkedIn, editorial looks for branding, and simple digitals for agencies and castings.",
+      "Our signature look is cinematic and film-like, often with an editorial edge. Prefer something classic? We also deliver clean, timeless edits that still feel soft and a little magazine.",
     ],
     highlights: [
       { title: "Guided, start to finish", body: "Gentle direction on posture, angles and expression, so every frame looks natural." },
@@ -406,6 +411,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/hs-pro-2.jpg", alt: "A smiling professional headshot on a clean white background" },
     ],
     strip: [
+      { src: "/assets/stills/hs-brand-black-2.jpg", alt: "A classic business headshot in black with a statement necklace among the trees", w: 1030, h: 1288 },
       { src: "/assets/stills/hs-brand-black.jpg", alt: "A smiling business portrait in black with a statement necklace, outdoors", w: 1030, h: 1288 },
       { src: "/assets/stills/hs-pro-1.jpg", alt: "A professional headshot in a black blazer on a white background", w: 1086, h: 1448 },
       { src: "/assets/stills/hs-pro-3.jpg", alt: "A warm, smiling business headshot on a white background", w: 1122, h: 1402 },
@@ -442,12 +448,11 @@ export const SERVICES: Service[] = [
       ],
       [
         { src: "/assets/stills/hs-loc-3.jpg", alt: "A smiling headshot in a white blouse against tall green grass", w: 1440, h: 1800 },
-        { src: "/assets/stills/hs-loc-1.jpg", alt: "A smiling portrait in a white blouse among the trees", w: 1200, h: 1800 },
         { src: "/assets/stills/senior-13.jpg", alt: "A smiling portrait in a shearling-collar jacket in the woods", w: 1066, h: 1600 },
         { src: "/assets/stills/senior-16.jpg", alt: "A laughing portrait in a yellow shirt", w: 1066, h: 1600 },
       ],
     ],
-    stripLabels: ["Business + branding", "With Mandy", "Editorial", "Portfolio", "Modeling digitals: Ellis", "", "On location"],
+    stripLabels: ["Classic: business + branding", "With Mandy", "Editorial + creative", "Portfolio", "Modeling digitals: Ellis", "", "On location"],
     stripNotes: ["", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves."],
     faqs: [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
