@@ -26,6 +26,8 @@ export type Service = {
   photos: ServicePhoto[];
   /** Optional row of photos shown at their natural shapes, equal height. */
   strip?: (ServicePhoto & { w: number; h: number })[];
+  /** Optional small labels above each photo row: [strip, ...strips]. */
+  stripLabels?: string[];
   /** More rows of natural-shape photos. */
   strips?: (ServicePhoto & { w: number; h: number })[][];
   /** Extra full-screen slides for the phone deck. */
@@ -191,7 +193,7 @@ export const SERVICES: Service[] = [
     h1: "Senior portraits that *look like you*.",
     intro: [
       "Senior photos should feel like the person you are right now — not a costume, not a template. Bring the outfits you actually love, the places you actually go, and maybe the friend who makes you laugh.",
-      "We photograph seniors and graduates across Seattle, Tacoma and the South Sound, at parks, beaches, campuses and city spots.",
+      "We photograph seniors and graduates across Seattle, Tacoma and the South Sound, at parks, beaches, campuses and city spots — and quinceañeras and milestone birthdays, too.",
     ],
     highlights: [
       { title: "Your style, your places", body: "Plan the session around your favorite spots, your hobbies and the outfits that feel most like you." },
@@ -219,6 +221,12 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/senior-15.jpg", alt: "Senior seated on a log in the forest, looking off to the side" },
       { src: "/assets/stills/senior-19.jpg", alt: "Senior with hands behind their head beneath a white pergola" },
     ],
+    strip: [
+      { src: "/assets/stills/quince-1.jpg", alt: "A quinceañera in a floral tulle gown, hand to her cheek", w: 1200, h: 1800 },
+      { src: "/assets/stills/quince-2.jpg", alt: "A smiling quinceañera with a yellow flower in her hair", w: 1200, h: 1800 },
+      { src: "/assets/stills/quince-5.jpg", alt: "A quinceañera holding pink flowers beneath the trees", w: 1200, h: 1800 },
+    ],
+    stripLabels: ["Quinceañeras + milestones"],
     faqs: [
       { q: "How much are senior portraits?", a: "$375 for one hour and two outfits, or $575 for two hours with three to four outfits and two locations." },
       { q: "When should seniors book their photos?", a: "Many seniors book in spring or summer for fall sessions, when the light and leaves are beautiful and yearbook deadlines are ahead. Ask early for the most choice." },
@@ -267,7 +275,13 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/family-siblings-two.jpg", alt: "A toddler and his sister by the water", w: 1800, h: 1800 },
         { src: "/assets/stills/family-window-2.jpg", alt: "Three children peeking through a gap in a wall at the water", w: 1800, h: 1200 },
       ],
+      [
+        { src: "/assets/stills/studio-mom-1.jpg", alt: "A mother kissing her laughing toddler's cheek in the studio", w: 1200, h: 1800 },
+        { src: "/assets/stills/studio-baby-1.jpg", alt: "A toddler in a pink dress perched on a wooden box in the studio", w: 1200, h: 1800 },
+        { src: "/assets/stills/studio-mom-2.jpg", alt: "A mother and her toddler face to face by a sunlit window", w: 1200, h: 1800 },
+      ],
     ],
+    stripLabels: ["", "", "", "In the studio"],
     deckSlides: [
       {
         kicker: "Families",
@@ -348,6 +362,62 @@ export const SERVICES: Service[] = [
     related: ["senior-portraits", "engagement-photography", "family-photography"],
     inquire: "creative",
     serviceType: "Creative portrait photography",
+  },
+  {
+    slug: "headshots",
+    name: "Headshots",
+    group: "portraits",
+    title: "Headshots + Modeling Digitals, Seattle + Tacoma | Sunday House",
+    description:
+      "Professional headshots, personal branding, editorial portraits and modeling digitals in Seattle and Tacoma — in the studio or on location.",
+    script: "Look like yourself, at your best.",
+    h1: "Headshots that *feel like you*.",
+    intro: [
+      "A good headshot looks like you on your best day — relaxed, confident and unmistakably you. We guide every expression and pose, so you never have to wonder what to do with your hands.",
+      "We photograph headshots for professionals, creatives, actors and models across Seattle and Tacoma: clean studio portraits for work and LinkedIn, editorial looks for branding, and simple digitals for agencies and castings.",
+    ],
+    highlights: [
+      { title: "Guided, start to finish", body: "Gentle direction on posture, angles and expression, so every frame looks natural." },
+      { title: "Studio or on location", body: "A clean backdrop in the studio, or natural light somewhere that suits your work." },
+      { title: "Made for how you'll use them", body: "Business, branding, acting or modeling — we plan the looks and crops around where they'll live." },
+    ],
+    photos: [
+      { src: "/assets/stills/hs-editorial-1.jpg", alt: "An editorial headshot, hands framing her face against a warm studio backdrop" },
+      { src: "/assets/stills/hs-pro-2.jpg", alt: "A smiling professional headshot on a clean white background" },
+    ],
+    strip: [
+      { src: "/assets/stills/hs-pro-1.jpg", alt: "A professional headshot in a black blazer on a white background", w: 1086, h: 1448 },
+      { src: "/assets/stills/hs-pro-3.jpg", alt: "A warm, smiling business headshot on a white background", w: 1122, h: 1402 },
+      { src: "/assets/stills/hs-creative-1.jpg", alt: "A glowing branding portrait against soft pink fabric", w: 1344, h: 1800 },
+    ],
+    strips: [
+      [
+        { src: "/assets/stills/hs-editorial-2.jpg", alt: "An editorial studio portrait looking upward, hands to her face", w: 1200, h: 1800 },
+        { src: "/assets/stills/hs-editorial-bw.jpg", alt: "A black and white editorial headshot with hands framing the face", w: 1200, h: 1800 },
+        { src: "/assets/stills/senior-20.jpg", alt: "A close portrait in glasses and a black top among evergreens", w: 1066, h: 1600 },
+      ],
+      [
+        { src: "/assets/stills/hs-digital-1.jpg", alt: "Modeling digital: a close portrait against a white brick wall", w: 1067, h: 1600 },
+        { src: "/assets/stills/hs-digital-2.jpg", alt: "Modeling digital: a profile against a white brick wall", w: 1067, h: 1600 },
+        { src: "/assets/stills/hs-digital-3.jpg", alt: "Modeling digital: a full-length look in wide-leg jeans", w: 1067, h: 1600 },
+        { src: "/assets/stills/hs-digital-4.jpg", alt: "Modeling digital: a full-length look in a denim jacket", w: 1067, h: 1600 },
+      ],
+      [
+        { src: "/assets/stills/senior-13.jpg", alt: "A smiling portrait in a shearling-collar jacket in the woods", w: 1066, h: 1600 },
+        { src: "/assets/stills/senior-16.jpg", alt: "A laughing portrait in a yellow shirt", w: 1066, h: 1600 },
+        { src: "/assets/stills/senior-3.jpg", alt: "A smiling portrait in tall golden grass", w: 1066, h: 1600 },
+      ],
+    ],
+    stripLabels: ["Business + branding", "Editorial", "Modeling digitals", "On location"],
+    faqs: [
+      { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
+      { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look for business headshots and digitals; on location adds natural light and a sense of place for branding and creative work." },
+      { q: "What should I wear?", a: "Solid colors and clothes you feel good in. Bring a couple of options and we'll help you choose. For digitals, fitted basics in neutral tones work best." },
+      { q: "Can you do headshots for a whole team?", a: "Yes. Tell us how many people and where, and we'll plan a consistent look for everyone." },
+    ],
+    related: ["senior-portraits", "creative-portraits", "family-photography"],
+    inquire: "headshots",
+    serviceType: "Headshot photography",
   },
 ];
 

@@ -37,6 +37,7 @@ const SESSIONS = [
   { label: "Seniors + Graduates", slug: "senior-portraits", note: "Your year, looking like you." },
   { label: "Families + Maternity", slug: "family-photography", note: "Every season, kept — newborns and the bump included. Studio options available." },
   { label: "Creative Sessions", slug: "creative-portraits", note: "A still from your own film." },
+  { label: "Headshots + Digitals", slug: "headshots", note: "Business, branding, acting and modeling — studio or on location." },
 ];
 
 const PRICES = [
@@ -127,6 +128,7 @@ export default function Photography() {
           { label: "Seniors + grads", to: "/services/senior-portraits" },
           { label: "Families + maternity", to: "/services/family-photography" },
           { label: "Creative", to: "/services/creative-portraits" },
+          { label: "Headshots", to: "/services/headshots" },
           { label: "Weddings", to: "/weddings" },
           { label: "Home", to: "/" },
         ]}

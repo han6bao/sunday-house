@@ -30,6 +30,7 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
       { label: "Seniors + Grads", href: "/services/$slug", params: { slug: "senior-portraits" } },
       { label: "Families + Maternity", href: "/services/$slug", params: { slug: "family-photography" } },
       { label: "Creative Sessions", href: "/services/$slug", params: { slug: "creative-portraits" } },
+      { label: "Headshots", href: "/services/$slug", params: { slug: "headshots" } },
       { label: "All Services", href: "/services" },
     ],
   },

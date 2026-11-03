@@ -105,6 +105,7 @@ export function ServicePage({ service }: { service: Service }) {
       {/* A row of photos at their natural shapes */}
       {service.strip?.length ? (
         <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-label={`${service.name} photographs`}>
+          {service.stripLabels?.[0] ? <p className="eyebrow mb-4">{service.stripLabels[0]}</p> : null}
           <div className="svc-strip">
             {service.strip.map((ph) => (
               <figure key={ph.src} className="svc-strip__item" style={{ flexGrow: ph.w / ph.h, aspectRatio: `${ph.w} / ${ph.h}` }}>
@@ -113,12 +114,15 @@ export function ServicePage({ service }: { service: Service }) {
             ))}
           </div>
           {service.strips?.map((row, r) => (
-            <div key={r} className="svc-strip mt-3 md:mt-5">
+            <div key={r}>
+            {service.stripLabels?.[r + 1] ? <p className="eyebrow mb-4 mt-12">{service.stripLabels[r + 1]}</p> : null}
+            <div className="svc-strip mt-3 md:mt-5">
               {row.map((ph) => (
                 <figure key={ph.src} className="svc-strip__item" style={{ flexGrow: ph.w / ph.h, aspectRatio: `${ph.w} / ${ph.h}` }}>
                   <img src={ph.src} alt={ph.alt} loading="lazy" decoding="async" />
                 </figure>
               ))}
+            </div>
             </div>
           ))}
         </section>
