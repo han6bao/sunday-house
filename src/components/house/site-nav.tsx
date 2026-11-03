@@ -16,6 +16,20 @@ const NAV = [
   { label: "About", href: "/about" },
 ];
 
+/** What sits under Services. */
+const SERVICE_LINKS = [
+  { label: "Portrait Sessions", href: "/photography" },
+  { label: "Seniors + Grads", href: "/services/senior-portraits" },
+  { label: "Families + Maternity", href: "/services/family-photography" },
+  { label: "Headshots + Digitals", href: "/services/headshots" },
+  { label: "Creative Sessions", href: "/services/creative-portraits" },
+  { label: "Engagements", href: "/services/engagement-photography" },
+  { label: "Weddings", href: "/weddings" },
+  { label: "Wedding Film", href: "/film" },
+  { label: "Content Creation", href: "/content-creation" },
+  { label: "All services", href: "/services" },
+];
+
 export function SiteNav({ path, overlay = false }: { path?: string; overlay?: boolean }) {
   const ref = useRef<HTMLElement>(null);
 
@@ -45,16 +59,31 @@ export function SiteNav({ path, overlay = false }: { path?: string; overlay?: bo
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
-          {NAV.map((item) => (
-            <Link
-              aria-current={path === item.href ? "page" : undefined}
-              className="nav-link"
-              key={item.href}
-              to={item.href}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {NAV.map((item) =>
+            item.href === "/services" ? (
+              <div key={item.href} className="sh-navdrop">
+                <Link aria-current={path === item.href ? "page" : undefined} className="nav-link" to={item.href}>
+                  {item.label}
+                </Link>
+                <div className="sh-navdrop__panel">
+                  {SERVICE_LINKS.map((l) => (
+                    <Link key={l.href} to={l.href as never} className="sh-navdrop__link">
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                aria-current={path === item.href ? "page" : undefined}
+                className="nav-link"
+                key={item.href}
+                to={item.href}
+              >
+                {item.label}
+              </Link>
+            ),
+          )}
         </nav>
 
         <div className="flex items-center gap-2.5">
@@ -69,9 +98,18 @@ export function SiteNav({ path, overlay = false }: { path?: string; overlay?: bo
             </summary>
             <nav aria-label="Mobile" className="sh-menu__panel">
               {NAV.map((item) => (
-                <Link key={item.href} to={item.href} className="sh-menu__link">
-                  {item.label}
-                </Link>
+                <div key={item.href} className="contents">
+                  <Link to={item.href} className="sh-menu__link">
+                    {item.label}
+                  </Link>
+                  {item.href === "/services"
+                    ? SERVICE_LINKS.slice(0, 5).map((l) => (
+                        <Link key={l.href} to={l.href as never} className="sh-menu__link sh-menu__link--quiet sh-menu__sub">
+                          {l.label}
+                        </Link>
+                      ))
+                    : null}
+                </div>
               ))}
             </nav>
           </details>
