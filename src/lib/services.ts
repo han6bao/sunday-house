@@ -413,12 +413,14 @@ export const SERVICES: Service[] = [
     strip: [
       { src: "/assets/stills/hs-brand-black-2.jpg", alt: "A classic business headshot in black with a statement necklace among the trees", w: 1030, h: 1288 },
       { src: "/assets/stills/hs-brand-black.jpg", alt: "A smiling business portrait in black with a statement necklace, outdoors", w: 1030, h: 1288 },
-      { src: "/assets/stills/hs-pro-1.jpg", alt: "A professional headshot in a black blazer on a white background", w: 1086, h: 1448 },
-      { src: "/assets/stills/hs-pro-3.jpg", alt: "A warm, smiling business headshot on a white background", w: 1122, h: 1402 },
-      { src: "/assets/stills/hs-creative-1.jpg", alt: "A glowing branding portrait against soft pink fabric", w: 1344, h: 1800 },
       { src: "/assets/stills/hs-brand-roses.jpg", alt: "A smiling branding portrait in blush pink beside yellow roses", w: 1200, h: 1800 },
     ],
     strips: [
+      [
+        { src: "/assets/stills/hs-pro-1.jpg", alt: "A professional headshot in a black blazer on a white background", w: 1086, h: 1448 },
+        { src: "/assets/stills/hs-pro-3.jpg", alt: "A warm, smiling business headshot on a white background", w: 1122, h: 1402 },
+        { src: "/assets/stills/hs-creative-1.jpg", alt: "A glowing branding portrait against soft pink fabric", w: 1344, h: 1800 },
+      ],
       [
         { src: "/assets/stills/hs-mandy-2.jpg", alt: "Mandy in a green pinstripe top against an orange backdrop, hand at her neck", w: 953, h: 1072 },
         { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop", w: 856, h: 1072 },
@@ -452,8 +454,13 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/senior-16.jpg", alt: "A laughing portrait in a yellow shirt", w: 1066, h: 1600 },
       ],
     ],
-    stripLabels: ["Classic: business + branding", "With Mandy", "Editorial + creative", "Portfolio", "Modeling digitals: Ellis", "", "On location"],
-    stripNotes: ["", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves."],
+    stripLabels: ["Classic: business + branding", "", "With Mandy", "Editorial + creative", "Portfolio", "Modeling digitals: Ellis", "", "On location"],
+    stripNotes: ["", "", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves."],
+    deckSlides: [
+      { kicker: "With Mandy", title: "Just for *fun*.", body: "A longtime friend, a spur-of-the-moment shoot and a look we styled ourselves.", img: { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop" } },
+      { kicker: "Portfolio", title: "Editorial, *on location*.", body: "Natural light and real places, for actors, models and creatives building a portfolio.", img: { src: "/assets/stills/hs-port-stairs.jpg", alt: "A close portrait with long curls against a mint stairwell" } },
+      { kicker: "Modeling digitals", title: "Simple, honest, *you*.", body: "Clean light, close-ups, profiles and full-length looks for agencies and castings.", img: { src: "/assets/stills/hs-digital-1.jpg", alt: "Modeling digital against a white brick wall" } },
+    ],
     faqs: [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
       { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look for business headshots and digitals; on location adds natural light and a sense of place for branding and creative work." },
