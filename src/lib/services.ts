@@ -411,12 +411,17 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/hs-digital-4.jpg", alt: "Modeling digital: a full-length look in a denim jacket", w: 1067, h: 1600 },
       ],
       [
+        { src: "/assets/stills/hs-digital-5.jpg", alt: "Modeling digital: a straight-on portrait against a white brick wall", w: 1067, h: 1600 },
+        { src: "/assets/stills/hs-digital-6.jpg", alt: "Modeling digital: seated on a velvet chaise in a white studio", w: 1067, h: 1600 },
+        { src: "/assets/stills/hs-digital-7.jpg", alt: "Modeling digital: seated on the studio floor in denim", w: 1067, h: 1600 },
+      ],
+      [
         { src: "/assets/stills/senior-13.jpg", alt: "A smiling portrait in a shearling-collar jacket in the woods", w: 1066, h: 1600 },
         { src: "/assets/stills/senior-16.jpg", alt: "A laughing portrait in a yellow shirt", w: 1066, h: 1600 },
         { src: "/assets/stills/senior-3.jpg", alt: "A smiling portrait in tall golden grass", w: 1066, h: 1600 },
       ],
     ],
-    stripLabels: ["Business + branding", "With Mandy", "Editorial", "Modeling digitals", "On location"],
+    stripLabels: ["Business + branding", "With Mandy", "Editorial", "Modeling digitals: Ellis", "", "On location"],
     stripNotes: ["", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves."],
     faqs: [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
