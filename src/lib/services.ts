@@ -226,6 +226,7 @@ export const SERVICES: Service[] = [
     strip: [
       { src: "/assets/stills/quince-1.jpg", alt: "A quinceañera in a floral tulle gown, hand to her cheek", w: 1200, h: 1800 },
       { src: "/assets/stills/quince-2.jpg", alt: "A smiling quinceañera with a yellow flower in her hair", w: 1200, h: 1800 },
+      { src: "/assets/stills/milestone-3.jpg", alt: "A little girl in a tiara and embroidered dress holding a number three", w: 1228, h: 1536 },
       { src: "/assets/stills/quince-5.jpg", alt: "A quinceañera holding pink flowers beneath the trees", w: 1200, h: 1800 },
     ],
     stripLabels: ["Quinceañeras + milestones"],
