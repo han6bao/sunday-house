@@ -35,7 +35,7 @@ export type Service = {
   /** Extra full-screen slides for the phone deck. */
   deckSlides?: { kicker: string; title: string; body: string; img: ServicePhoto & { position?: string } }[];
   /** Optional extra photo story on the page (e.g. maternity on the family page). */
-  feature?: { eyebrow: string; title: string; body: string; tall: ServicePhoto; wide: ServicePhoto[] };
+  feature?: { eyebrow: string; title: string; body: string; tall: ServicePhoto; wide: ServicePhoto[]; film?: { src: string; poster: string; label: string } };
   faqs: ServiceFaq[];
   related: string[];
   inquire: string;
@@ -324,6 +324,7 @@ export const SERVICES: Service[] = [
     ],
     feature: {
       eyebrow: "Maternity",
+      film: { src: "/assets/motion/maternity-film.mp4", poster: "/assets/motion/maternity-film.jpg", label: "Maternity film with voiceover: an expecting couple in a meadow with deer" },
       title: "The waiting, *kept*.",
       body: "Unhurried sessions outdoors in soft light, paced around how you feel — for the two of you, and the one on the way.",
       tall: { src: "/assets/stills/maternity-ultrasound-3.jpg", alt: "An expecting couple laughing together, holding an ultrasound photo in a meadow of wildflowers" },

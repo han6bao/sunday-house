@@ -5,6 +5,7 @@ import { ContentShell } from "@/components/house/content-shell";
 import { Faq } from "@/components/house/faq";
 import { Photo } from "@/components/house/photo";
 import { PortraitDeck } from "@/components/house/portrait-deck";
+import { SoundFilm } from "@/components/house/sound-film";
 import { pageHead, serviceJsonLd } from "@/lib/seo";
 
 const TITLE = "Seattle & Tacoma Wedding Photographer | Sunday House";
@@ -182,6 +183,16 @@ export default function Weddings() {
           No stiff poses, no shouting across the lawn. Just a quiet eye on the
           moments that <em>actually</em> happened.
         </p>
+      </section>
+
+      {/* Wedding reel */}
+      <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-label="Wedding reel">
+        <SoundFilm
+          className="sh-soundfilm--wide"
+          src="/assets/reels/wedding-reel.mp4"
+          poster="/assets/reels/wedding-reel.jpg"
+          label="A short reel of recent weddings: couples at golden hour, florals, first looks and quiet moments"
+        />
       </section>
 
       {/* Gallery rail */}

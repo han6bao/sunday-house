@@ -8,6 +8,7 @@ import { ContentShell } from "./content-shell";
 import { Faq } from "./faq";
 import { Photo } from "./photo";
 import { PortraitDeck } from "./portrait-deck";
+import { SoundFilm } from "./sound-film";
 
 /** Renders "Words *emphasis* words" with the starred part in italics. */
 export function Emph({ text }: { text: string }) {
@@ -141,6 +142,9 @@ export function ServicePage({ service }: { service: Service }) {
               <p className="sh-body mt-5 max-w-md">{service.feature.body}</p>
             </div>
           </div>
+          {service.feature.film ? (
+            <SoundFilm className="mt-10" src={service.feature.film.src} poster={service.feature.film.poster} label={service.feature.film.label} />
+          ) : null}
           <div className="mt-10 grid gap-4 md:gap-5 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <Photo src={service.feature.tall.src} alt={service.feature.tall.alt} ratio="10/19.5" sizes="(max-width: 1024px) 100vw, 40vw" />
