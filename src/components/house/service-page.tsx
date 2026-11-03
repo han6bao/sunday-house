@@ -116,6 +116,7 @@ export function ServicePage({ service }: { service: Service }) {
           {service.strips?.map((row, r) => (
             <div key={r}>
             {service.stripLabels?.[r + 1] ? <p className="eyebrow mb-4 mt-12">{service.stripLabels[r + 1]}</p> : null}
+            {service.stripNotes?.[r + 1] ? <p className="sh-body -mt-1 mb-5 max-w-xl">{service.stripNotes[r + 1]}</p> : null}
             <div className="svc-strip mt-3 md:mt-5">
               {row.map((ph) => (
                 <figure key={ph.src} className="svc-strip__item" style={{ flexGrow: ph.w / ph.h, aspectRatio: `${ph.w} / ${ph.h}` }}>

@@ -28,6 +28,8 @@ export type Service = {
   strip?: (ServicePhoto & { w: number; h: number })[];
   /** Optional small labels above each photo row: [strip, ...strips]. */
   stripLabels?: string[];
+  /** Optional short notes under each row label. */
+  stripNotes?: string[];
   /** More rows of natural-shape photos. */
   strips?: (ServicePhoto & { w: number; h: number })[][];
   /** Extra full-screen slides for the phone deck. */
@@ -392,6 +394,11 @@ export const SERVICES: Service[] = [
     ],
     strips: [
       [
+        { src: "/assets/stills/hs-mandy-2.jpg", alt: "Mandy in a green pinstripe top against an orange backdrop, hand at her neck", w: 953, h: 1072 },
+        { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop", w: 856, h: 1072 },
+        { src: "/assets/stills/hs-mandy-3.jpg", alt: "Mandy laughing, seated against an orange backdrop", w: 953, h: 1072 },
+      ],
+      [
         { src: "/assets/stills/hs-editorial-2.jpg", alt: "An editorial studio portrait looking upward, hands to her face", w: 1200, h: 1800 },
         { src: "/assets/stills/hs-editorial-bw.jpg", alt: "A black and white editorial headshot with hands framing the face", w: 1200, h: 1800 },
         { src: "/assets/stills/senior-20.jpg", alt: "A close portrait in glasses and a black top among evergreens", w: 1066, h: 1600 },
@@ -408,7 +415,8 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/senior-3.jpg", alt: "A smiling portrait in tall golden grass", w: 1066, h: 1600 },
       ],
     ],
-    stripLabels: ["Business + branding", "Editorial", "Modeling digitals", "On location"],
+    stripLabels: ["Business + branding", "With Mandy", "Editorial", "Modeling digitals", "On location"],
+    stripNotes: ["", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves."],
     faqs: [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
       { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look for business headshots and digitals; on location adds natural light and a sense of place for branding and creative work." },
