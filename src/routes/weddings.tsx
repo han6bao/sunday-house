@@ -40,14 +40,24 @@ const GALLERY = [
 ];
 
 const COVERAGE = [
-  { title: "The whole day", body: "Getting ready, first look, ceremony, family portraits, toasts and the last dance — one team carries it start to finish." },
-  { title: "Photography + film", body: "Book both and they're made side by side, so the photographs and the film read as one story." },
-  { title: "Engagements + elopements", body: "Engagement sessions, intimate elopements and full wedding weekends, wherever in Washington you're saying yes." },
+  { title: "Getting ready", body: "The dress, the details and the last quiet moments with your people before everything starts." },
+  { title: "Portraits of each of you", body: "Bridal portraits and groom portraits, on your own, before or after you see each other." },
+  { title: "Your people", body: "Bridesmaids, groomsmen and family all together. Send us your list and we'll make sure no one is missed." },
+  { title: "A styled portrait block", body: "A set time in the day for more styled, editorial portraits of the two of you and your closest people. It's built into every collection, if that's what you'd like." },
+  { title: "The ceremony + celebration", body: "Moments all through the day: the vows, the toasts, the dances and everything in between." },
+  { title: "Your edited gallery", body: "Every image edited by hand and delivered in an online gallery, usually within 2 to 3 months depending on the wedding and the season." },
+  { title: "A keepsake book", body: "Once your gallery is done, choose your favorites and we'll make a small, thin printed book of the best shots and the feeling of the night. Included with every wedding collection." },
+];
+
+const GOOD_TO_KNOW = [
+  { title: "No time on the day?", body: "If there isn't a set window for portraits, we can photograph them on a separate day. That's an additional fee, since it's outside your wedding timeline, and it's perfect for prints, cards and anything digital." },
+  { title: "Prints + framing", body: "Framed prints, wall pieces and larger albums are available as add-ons, whenever you're ready for them." },
+  { title: "Your guests' photos too", body: "Add a Sunday House wedding website and guests can send their photos to one place. Pick favorites from theirs and ours for your book." },
 ];
 
 const INVESTMENT = [
   { kicker: "Small + intimate", name: "Elopements", price: "$1,800", points: ["Up to 3 hours", "One location", "Online gallery"] },
-  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "Engagement session in most", "Sneak peeks in 48 hours"] },
+  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "Styled portrait block", "A keepsake book of favorites"] },
   { kicker: "The whole story", name: "Photography + film", price: "$5,800", points: ["8 hours of photographs", "A highlight film", "Engagement session"] },
 ];
 
@@ -71,6 +81,14 @@ const FAQ = [
   {
     q: "How much does wedding photography cost?",
     a: "Wedding collections begin at $3,800 for six hours, and most of our couples invest between $4,500 and $6,500. Intimate weddings and elopements begin at $1,800, and photo + film collections at $5,800. After you inquire, we send a clear proposal with every option.",
+  },
+  {
+    q: "How long until we get our photos?",
+    a: "Your full gallery is usually ready in 2 to 3 months, depending on the wedding and the season. Once it's done, you choose your favorites for your keepsake book.",
+  },
+  {
+    q: "Can we add prints or a bigger album?",
+    a: "Yes. Framed prints, wall pieces and larger albums are available as add-ons. Every wedding collection already includes a small keepsake book of your favorites.",
   },
   {
     q: "Do you photograph cultural and two-day weddings?",
@@ -218,30 +236,45 @@ export default function Weddings() {
         </div>
       </section>
 
-      {/* Coverage */}
+      {/* What's included */}
       <section className="rose-paper sh-section" aria-labelledby="wed-coverage">
         <div className="sh-wrap grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <p className="eyebrow">What&rsquo;s covered</p>
+            <p className="eyebrow">What&rsquo;s included</p>
             <h2 id="wed-coverage" className="sh-h2 mt-4">
-              From the first look to the last dance.
+              Every part of the day, <em>planned</em>.
             </h2>
+            <p className="sh-body mt-6 max-w-md">
+              Here&rsquo;s what a full wedding day looks like with us, from the
+              morning to the last dance and the book you keep after.
+            </p>
             <div className="mt-10 hidden lg:block">
               <Photo src="/assets/stills/wed-dance-crop.jpg" alt="Newlyweds dancing in a misty golden field" ratio="35/38" sizes="35vw" />
             </div>
           </div>
-          <div className="lg:col-span-7 lg:pt-24">
+          <div className="lg:col-span-7 lg:pt-6">
             {COVERAGE.map((c, i) => (
-              <div key={c.title} className="sh-step mb-10">
+              <div key={c.title} className="sh-step mb-9">
                 <p className="sh-num">0{i + 1}</p>
                 <h3 className="sh-h3 mt-3">{c.title}</h3>
                 <p className="sh-body mt-3 max-w-xl">{c.body}</p>
               </div>
             ))}
-            <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid mt-2">
-              Ask about your date
-            </a>
           </div>
+        </div>
+        <div className="sh-wrap mt-6 border-t border-ink/15 pt-10">
+          <p className="eyebrow">Good to know</p>
+          <div className="mt-6 grid gap-8 md:grid-cols-3">
+            {GOOD_TO_KNOW.map((g) => (
+              <div key={g.title}>
+                <h3 className="sh-h3">{g.title}</h3>
+                <p className="sh-body mt-3">{g.body}</p>
+              </div>
+            ))}
+          </div>
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid mt-10">
+            Ask about your date
+          </a>
         </div>
       </section>
 
