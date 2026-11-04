@@ -195,12 +195,12 @@ export const SERVICES: Service[] = [
     h1: "Senior portraits that *look like you*.",
     intro: [
       "Senior photos should feel like the person you are right now — not a costume, not a template. Bring the outfits you actually love, the places you actually go, and maybe the friend who makes you laugh.",
-      "We photograph seniors and graduates across Seattle, Tacoma and the South Sound, at parks, beaches, campuses and city spots — and quinceañeras and milestone birthdays, too.",
+      "We photograph seniors and graduates across Seattle, Tacoma and the South Sound, at parks, beaches, campuses and city spots.",
       "Our signature look is cinematic and film-like, often with an editorial edge. Prefer something classic? We also deliver clean, timeless edits that still feel soft and a little magazine.",
     ],
     highlights: [
       { title: "Your style, your places", body: "Plan the session around your favorite spots, your hobbies and the outfits that feel most like you." },
-      { title: "Easy for parents", body: "Clear planning, a simple timeline and photographs you'll want on the wall and in the yearbook." },
+      { title: "Bring your people", body: "Packages can be curated to include your whole family or your best friends. There's also a complimentary package, so ask us for the details." },
       { title: "Classic or editorial", body: "Cinematic and film-like by default, or clean and classic if that's more you. Tell us the feel and we'll edit to match." },
     ],
     photos: [
@@ -227,28 +227,14 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/senior-15.jpg", alt: "Senior seated on a log in the forest, looking off to the side" },
       { src: "/assets/stills/senior-19.jpg", alt: "Senior with hands behind their head beneath a white pergola" },
     ],
-    strip: [
-      { src: "/assets/stills/quince-1.jpg", alt: "A quinceañera in a floral tulle gown, hand to her cheek", w: 1200, h: 1800 },
-      { src: "/assets/stills/quince-2.jpg", alt: "A smiling quinceañera with a yellow flower in her hair", w: 1200, h: 1800 },
-      { src: "/assets/stills/milestone-3.jpg", alt: "A little girl in a tiara and embroidered dress holding a number three", w: 1228, h: 1536 },
-      { src: "/assets/stills/quince-5.jpg", alt: "A quinceañera holding pink flowers beneath the trees", w: 1200, h: 1800 },
-      { src: "/assets/stills/daffodil-1.jpg", alt: "A Daffodil Festival princess in a crown holding a scepter and yellow bouquet", w: 1200, h: 1800 },
-    ],
-    strips: [
-      [
-        { src: "/assets/stills/daffodil-wide.jpg", alt: "A Daffodil Festival princess on a bench among tulips with Mount Rainier behind her", w: 1800, h: 1440 },
-        { src: "/assets/stills/creative-quince-back.jpg", alt: "A quinceañera from behind, pink flowers tucked in her long curls", w: 1200, h: 1800 },
-      ],
-    ],
-    stripLabels: ["Quinceañeras + milestones"],
     faqs: [
       { q: "How much are senior portraits?", a: "$375 for one hour and two outfits, or $575 for two hours with three to four outfits and two locations." },
       { q: "When should seniors book their photos?", a: "Many seniors book in spring or summer for fall sessions, when the light and leaves are beautiful and yearbook deadlines are ahead. Ask early for the most choice." },
       { q: "Where are good senior photo spots in Tacoma and Seattle?", a: "Waterfronts, gardens, campuses and city streets all work, and our location archive lists dozens of spots around Tacoma and Seattle." },
       { q: "How many outfits can I bring?", a: "Bring a few you love — we'll plan the session so there's time for changes without rushing." },
-      { q: "Can a friend or parent come along?", a: "Yes, and a friend often helps you relax and laugh on camera." },
+      { q: "Can a friend or parent come along?", a: "Yes, and a friend often helps you relax and laugh on camera. We can also curate a package that includes your whole family or your best friends, and there's a complimentary package too. Ask us for more information." },
     ],
-    related: ["headshots", "creative-portraits", "family-photography"],
+    related: ["quinceaneras-milestones", "headshots", "family-photography"],
     inquire: "seniors",
     serviceType: "Senior portrait photography",
   },
@@ -267,7 +253,7 @@ export const SERVICES: Service[] = [
       "Expecting? Maternity sessions keep the waiting — outdoors in golden light or somewhere meaningful to you, unhurried and paced around how you feel.",
     ],
     highlights: [
-      { title: "Great with little ones", body: "We used to teach at an elementary school and worked closely with preschoolers, so toddlers and wiggly kids don't faze us. We bring patience, games and plenty of time." },
+      { title: "Great with little ones", body: "I used to teach at an elementary school, working with the younger kids, so toddlers and wiggly little ones don't faze me. I'm patient, I keep it fun, and there's always plenty of time." },
       { title: "Everyone included", body: "Partners, little ones, grandparents and pets — big groups and small, with a plan for every combination." },
       { title: "Studio options", body: "Prefer indoors? Studio sessions are available for families, maternity and newborns — soft light, any season, any weather." },
     ],
@@ -279,6 +265,7 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/family-run.jpg", alt: "A boy waving and running toward the camera while his family laughs behind him", w: 1365, h: 2048 },
       { src: "/assets/stills/family-mom-baby.jpg", alt: "A mother holding her smiling toddler by the water", w: 2048, h: 1638 },
       { src: "/assets/stills/family-toddler-2.jpg", alt: "A toddler with a sour candy peeking over a driftwood log by the water", w: 1638, h: 2048 },
+      { src: "/assets/stills/milestone-3.jpg", alt: "A little girl in a tiara and embroidered dress holding a number three", w: 1228, h: 1536 },
     ],
     strips: [
       [
@@ -344,6 +331,51 @@ export const SERVICES: Service[] = [
     related: ["senior-portraits", "engagement-photography", "creative-portraits"],
     inquire: "families",
     serviceType: "Family photography",
+  },
+  {
+    slug: "quinceaneras-milestones",
+    name: "Quinceañeras + Milestones",
+    group: "portraits",
+    title: "Quinceañera + Milestone Photographer, Seattle + Tacoma | Sunday House",
+    description:
+      "Quinceañera, birthday and milestone portraits in Seattle and Tacoma, plus court and celebration photos, with cinematic, film-like editing.",
+    script: "A big day, kept.",
+    h1: "Quinceañeras and milestones, *beautifully kept*.",
+    intro: [
+      "Some birthdays only happen once. Quinceañeras, first and third birthdays, sweet sixteens, festival court portraits and the celebrations around them.",
+      "I know how big these days are, for the person being celebrated and for the whole family. I'll help you plan the details and get every shot you have in mind written down, so nothing important gets missed.",
+      "I used to teach at an elementary school with younger kids, so little ones in tiaras and teens who feel shy on camera are both in good hands. I'm patient, I keep it fun, and we take the time it needs.",
+    ],
+    highlights: [
+      { title: "Planned with you", body: "We talk through the dress, the court, the family and the must-have shots, and make a simple plan for the day." },
+      { title: "Portraits + the party", body: "A portrait session before the day, coverage of the celebration itself, or both." },
+      { title: "Cinematic or classic", body: "A soft, film-like look by default, or clean and classic if that suits the day better." },
+    ],
+    photos: [
+      { src: "/assets/stills/quince-1.jpg", alt: "A quinceañera in a floral tulle gown, hand to her cheek" },
+      { src: "/assets/stills/quince-2.jpg", alt: "A smiling quinceañera with a yellow flower in her hair" },
+    ],
+    strip: [
+      { src: "/assets/stills/quince-5.jpg", alt: "A quinceañera holding pink flowers beneath the trees", w: 1200, h: 1800 },
+      { src: "/assets/stills/creative-quince-back.jpg", alt: "A quinceañera from behind, pink flowers tucked in her long curls", w: 1200, h: 1800 },
+      { src: "/assets/stills/milestone-3.jpg", alt: "A little girl in a tiara and embroidered dress holding a number three", w: 1228, h: 1536 },
+    ],
+    strips: [
+      [
+        { src: "/assets/stills/daffodil-wide.jpg", alt: "A Daffodil Festival princess on a bench among tulips with Mount Rainier behind her", w: 1800, h: 1440 },
+        { src: "/assets/stills/daffodil-1.jpg", alt: "A Daffodil Festival princess in a crown holding a scepter and yellow bouquet", w: 1200, h: 1800 },
+      ],
+    ],
+    stripLabels: ["Quinceañeras + birthdays", "Court + festival portraits"],
+    faqs: [
+      { q: "Do you photograph the celebration too?", a: "Yes. Book a portrait session before the day, coverage of the party itself, or both. Tell us what you're planning and we'll put together a package." },
+      { q: "How far ahead should we book?", a: "As soon as you have a date. Spring and summer weekends fill up early." },
+      { q: "Can family and the court be in the photos?", a: "Of course. Parents, padrinos, siblings and the whole court are welcome, and we'll plan time for the groups you want." },
+      { q: "Is my little one too young?", a: "Not at all. I used to teach at an elementary school with younger kids, so I'm patient and know how to keep little ones comfortable and smiling." },
+    ],
+    related: ["senior-portraits", "family-photography", "creative-portraits"],
+    inquire: "milestones",
+    serviceType: "Quinceañera and milestone photography",
   },
   {
     slug: "creative-portraits",
@@ -455,7 +487,7 @@ export const SERVICES: Service[] = [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
       { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look for business headshots and digitals; on location adds natural light and a sense of place for branding and creative work." },
       { q: "What should I wear?", a: "Solid colors and clothes you feel good in. Bring a couple of options and we'll help you choose. For digitals, fitted basics in neutral tones work best." },
-      { q: "Do you photograph kids and teens?", a: "Yes, often. We used to teach at an elementary school and worked with preschoolers, so we're patient and know how to keep little ones comfortable, whether it's a first headshot or a school portrait." },
+      { q: "Do you photograph kids and teens?", a: "Yes, often. I used to teach at an elementary school with younger kids, so I'm patient and know how to keep little ones comfortable and engaged, whether it's a first headshot or a school portrait." },
       { q: "Can you do headshots for a whole team?", a: "Yes. Tell us how many people and where, and we'll plan a consistent look for everyone." },
     ],
     related: ["modeling-digitals", "senior-portraits", "creative-portraits"],
@@ -509,7 +541,7 @@ export const SERVICES: Service[] = [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
       { q: "What should I wear?", a: "Fitted basics in neutral tones: a plain tank or tee and well-fitting jeans or leggings. Bring one extra look if you'd like a few styled frames." },
       { q: "Hair and makeup?", a: "Keep it natural — clean skin, hair down and off the face. Agencies want to see the real you." },
-      { q: "Can you shoot digitals for younger models?", a: "Yes. We used to teach at an elementary school and worked with preschoolers, so we know how to keep kids relaxed and patient through a full set, with a parent there the whole time." },
+      { q: "Can you shoot digitals for younger models?", a: "Yes. I used to teach at an elementary school with younger kids, so I know how to keep them relaxed and engaged through a full set, with a parent there the whole time." },
     ],
     related: ["headshots", "creative-portraits", "senior-portraits"],
     inquire: "digitals",

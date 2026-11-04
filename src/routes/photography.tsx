@@ -36,6 +36,7 @@ const SESSIONS = [
   { label: "Couples + Engagements", slug: "engagement-photography", note: "The two of you, before and after the aisle." },
   { label: "Seniors + Graduates", slug: "senior-portraits", note: "Your year, looking like you." },
   { label: "Families + Maternity", slug: "family-photography", note: "Every season, kept — newborns and the bump included. Studio options available." },
+  { label: "Quinceañeras + Milestones", slug: "quinceaneras-milestones", note: "Quinceañeras, birthdays and the celebrations around them." },
   { label: "Creative Sessions", slug: "creative-portraits", note: "A still from your own film." },
   { label: "Headshots", slug: "headshots", note: "Business, branding, acting and creative — studio or on location." },
   { label: "Modeling Digitals", slug: "modeling-digitals", note: "Clean agency digitals, plus a few styled frames." },

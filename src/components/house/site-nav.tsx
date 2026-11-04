@@ -21,6 +21,7 @@ export const SERVICE_LINKS = [
   { label: "Portrait Sessions", href: "/photography" },
   { label: "Seniors + Grads", href: "/services/senior-portraits" },
   { label: "Families + Maternity", href: "/services/family-photography" },
+  { label: "Quinceañeras + Milestones", href: "/services/quinceaneras-milestones" },
   { label: "Headshots", href: "/services/headshots" },
   { label: "Modeling Digitals", href: "/services/modeling-digitals" },
   { label: "Creative Sessions", href: "/services/creative-portraits" },
@@ -104,7 +105,7 @@ export function SiteNav({ path, overlay = false }: { path?: string; overlay?: bo
                     {item.label}
                   </Link>
                   {item.href === "/services"
-                    ? SERVICE_LINKS.slice(0, 6).map((l) => (
+                    ? SERVICE_LINKS.slice(0, 7).map((l) => (
                         <Link key={l.href} to={l.href as never} className="sh-menu__link sh-menu__link--quiet sh-menu__sub">
                           {l.label}
                         </Link>
