@@ -30,7 +30,7 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
       { label: "Portrait Sessions", href: "/photography" },
       { label: "Seniors + Grads", href: "/services/$slug", params: { slug: "senior-portraits" } },
       { label: "Families + Maternity", href: "/services/$slug", params: { slug: "family-photography" } },
-      { label: "Quinceañeras + Milestones", href: "/services/$slug", params: { slug: "quinceaneras-milestones" } },
+      { label: "Milestones + Events", href: "/services/$slug", params: { slug: "milestones-events" } },
       { label: "Creative Sessions", href: "/services/$slug", params: { slug: "creative-portraits" } },
       { label: "Headshots", href: "/services/$slug", params: { slug: "headshots" } },
       { label: "Modeling Digitals", href: "/services/$slug", params: { slug: "modeling-digitals" } },

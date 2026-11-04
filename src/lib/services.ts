@@ -234,7 +234,7 @@ export const SERVICES: Service[] = [
       { q: "How many outfits can I bring?", a: "Bring a few you love — we'll plan the session so there's time for changes without rushing." },
       { q: "Can a friend or parent come along?", a: "Yes, and a friend often helps you relax and laugh on camera. We can also curate a package that includes your whole family or your best friends, and there's a complimentary package too. Ask us for more information." },
     ],
-    related: ["quinceaneras-milestones", "headshots", "family-photography"],
+    related: ["milestones-events", "headshots", "family-photography"],
     inquire: "seniors",
     serviceType: "Senior portrait photography",
   },
@@ -333,22 +333,22 @@ export const SERVICES: Service[] = [
     serviceType: "Family photography",
   },
   {
-    slug: "quinceaneras-milestones",
-    name: "Quinceañeras + Milestones",
+    slug: "milestones-events",
+    name: "Milestones + Events",
     group: "portraits",
-    title: "Quinceañera + Milestone Photographer, Seattle + Tacoma | Sunday House",
+    title: "Milestone + Event Photographer, Seattle + Tacoma | Sunday House",
     description:
-      "Quinceañera, birthday and milestone portraits in Seattle and Tacoma, plus court and celebration photos, with cinematic, film-like editing.",
+      "Milestone and event photography in Seattle and Tacoma: birthdays, quinceañeras, graduations, showers, parties and community events, with cinematic, film-like editing.",
     script: "A big day, kept.",
-    h1: "Quinceañeras and milestones, *beautifully kept*.",
+    h1: "Milestones and events, *beautifully kept*.",
     intro: [
-      "Some birthdays only happen once. Quinceañeras, first and third birthdays, sweet sixteens, festival court portraits and the celebrations around them.",
+      "Some days only happen once. Birthdays big and small, quinceañeras and sweet sixteens, graduation parties, showers, anniversaries, festival court portraits and community events.",
       "I know how big these days are, for the person being celebrated and for the whole family. I'll help you plan the details and get every shot you have in mind written down, so nothing important gets missed.",
       "I used to teach at an elementary school with younger kids, so little ones in tiaras and teens who feel shy on camera are both in good hands. I'm patient, I keep it fun, and we take the time it needs.",
     ],
     highlights: [
       { title: "Planned with you", body: "We talk through the dress, the court, the family and the must-have shots, and make a simple plan for the day." },
-      { title: "Portraits + the party", body: "A portrait session before the day, coverage of the celebration itself, or both." },
+      { title: "Portraits + the event", body: "A portrait session before the day, coverage of the event itself, or both." },
       { title: "Cinematic or classic", body: "A soft, film-like look by default, or clean and classic if that suits the day better." },
     ],
     photos: [
@@ -366,16 +366,16 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/daffodil-1.jpg", alt: "A Daffodil Festival princess in a crown holding a scepter and yellow bouquet", w: 1200, h: 1800 },
       ],
     ],
-    stripLabels: ["Quinceañeras + birthdays", "Court + festival portraits"],
+    stripLabels: ["Birthdays + celebrations", "Court + festival portraits"],
     faqs: [
-      { q: "Do you photograph the celebration too?", a: "Yes. Book a portrait session before the day, coverage of the party itself, or both. Tell us what you're planning and we'll put together a package." },
+      { q: "What kinds of events do you photograph?", a: "Birthdays, quinceañeras, graduation parties, showers, anniversaries and community events. Book a portrait session before the day, coverage of the event itself, or both. Tell us what you're planning and we'll put together a package." },
       { q: "How far ahead should we book?", a: "As soon as you have a date. Spring and summer weekends fill up early." },
-      { q: "Can family and the court be in the photos?", a: "Of course. Parents, padrinos, siblings and the whole court are welcome, and we'll plan time for the groups you want." },
+      { q: "Can family and friends be in the photos?", a: "Of course. Family, friends and everyone who shows up for the day are welcome, and we'll plan time for the groups you want." },
       { q: "Is my little one too young?", a: "Not at all. I used to teach at an elementary school with younger kids, so I'm patient and know how to keep little ones comfortable and smiling." },
     ],
     related: ["senior-portraits", "family-photography", "creative-portraits"],
-    inquire: "milestones",
-    serviceType: "Quinceañera and milestone photography",
+    inquire: "events",
+    serviceType: "Milestone and event photography",
   },
   {
     slug: "creative-portraits",
@@ -562,7 +562,8 @@ export const RETIRED_SERVICES: Record<string, string> = {
   "bridal-portraits": "/weddings",
   "couples-photography": "/services/engagement-photography",
   "maternity-newborn-photography": "/services/family-photography",
-  "event-photography": "/photography",
+  "event-photography": "/services/milestones-events",
+  "quinceaneras-milestones": "/services/milestones-events",
 };
 
 export function getService(slug: string): Service | undefined {

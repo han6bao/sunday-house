@@ -21,7 +21,7 @@ export const SERVICE_LINKS = [
   { label: "Portrait Sessions", href: "/photography" },
   { label: "Seniors + Grads", href: "/services/senior-portraits" },
   { label: "Families + Maternity", href: "/services/family-photography" },
-  { label: "Quinceañeras + Milestones", href: "/services/quinceaneras-milestones" },
+  { label: "Milestones + Events", href: "/services/milestones-events" },
   { label: "Headshots", href: "/services/headshots" },
   { label: "Modeling Digitals", href: "/services/modeling-digitals" },
   { label: "Creative Sessions", href: "/services/creative-portraits" },
