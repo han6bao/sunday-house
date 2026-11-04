@@ -540,7 +540,7 @@ export const SERVICES: Service[] = [
     strip: [
       { src: "/assets/stills/hs-ed-2-c.jpg", alt: "An editorial studio portrait looking upward, hands to her face", w: 1100, h: 1375 },
       { src: "/assets/stills/hs-ed-bw-c.jpg", alt: "A black and white editorial headshot with hands framing the face", w: 1200, h: 1500 },
-      { src: "/assets/stills/senior-20.jpg", alt: "A close portrait in glasses and a black top among evergreens", w: 1066, h: 1600 },
+      { src: "/assets/stills/senior-20c.jpg", alt: "A close portrait in glasses and a black top among evergreens", w: 896, h: 1120 },
     ],
     strips: [
       [
