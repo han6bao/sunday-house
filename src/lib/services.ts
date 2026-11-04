@@ -281,6 +281,7 @@ export const SERVICES: Service[] = [
       [
         { src: "/assets/stills/family-siblings-two.jpg", alt: "A toddler and his sister by the water", w: 1800, h: 1800 },
         { src: "/assets/stills/family-window-2.jpg", alt: "Three children peeking through a gap in a wall at the water", w: 1800, h: 1200 },
+        { src: "/assets/stills/kid-curls.jpg", alt: "A smiling little girl with blonde curls and a pink bow in golden light", w: 1208, h: 1800 },
       ],
       [
         { src: "/assets/stills/studio-mom-1.jpg", alt: "A mother kissing her laughing toddler's cheek in the studio", w: 1200, h: 1800 },
@@ -464,9 +465,10 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/hs-loc-3.jpg", alt: "A smiling headshot in a white blouse against tall green grass", w: 1440, h: 1800 },
         { src: "/assets/stills/senior-13.jpg", alt: "A smiling portrait in a shearling-collar jacket in the woods", w: 1066, h: 1600 },
         { src: "/assets/stills/senior-16.jpg", alt: "A laughing portrait in a yellow shirt", w: 1066, h: 1600 },
+        { src: "/assets/stills/kid-curls.jpg", alt: "A smiling little girl with blonde curls and a pink bow in golden light", w: 1208, h: 1800 },
       ],
     ],
-    stripLabels: ["Business + branding", "In the studio", "On location"],
+    stripLabels: ["Business + branding", "In the studio", "On location, kids included"],
     crossLink: {
       eyebrow: "For actors, models + creatives",
       body: "We shoot for creatives too. Acting headshots, model portfolios and agency digitals have their own page, with a little more room to play.",
