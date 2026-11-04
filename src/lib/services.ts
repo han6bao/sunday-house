@@ -565,8 +565,6 @@ export const SERVICES: Service[] = [
       [
         { src: "/assets/stills/hs-digital-4.jpg", alt: "Styled frame in a denim jacket", w: 1067, h: 1600 },
         { src: "/assets/stills/dg-5853.jpg", alt: "Styled frame on a velvet chaise", w: 1067, h: 1600 },
-        { src: "/assets/stills/dg-5858.jpg", alt: "Styled frame reclining on a velvet chaise", w: 1280, h: 1600 },
-        { src: "/assets/stills/hs-digital-7.jpg", alt: "Styled frame seated on the studio floor", w: 1067, h: 1600 },
       ],
     ],
     stripLabels: ["Acting + editorial headshots", "Model portfolio", "With Mandy", "Agency digitals", "Digitals, a little styled"],
