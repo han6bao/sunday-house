@@ -33,7 +33,7 @@ export type Service = {
   /** More rows of natural-shape photos. */
   strips?: (ServicePhoto & { w: number; h: number })[][];
   /** Optional pointer to a sister page, shown under the photo rows. */
-  crossLink?: { eyebrow: string; body: string; slug: string; label: string };
+  crossLink?: { eyebrow: string; body: string; slug: string; label: string; img?: ServicePhoto };
   /** Extra full-screen slides for the phone deck. */
   deckSlides?: { kicker: string; title: string; body: string; img: ServicePhoto & { position?: string } }[];
   /** Optional extra photo story on the page (e.g. maternity on the family page). */
@@ -467,6 +467,7 @@ export const SERVICES: Service[] = [
       body: "We shoot for creatives too. Acting headshots, model portfolios and agency digitals have their own page, with a little more room to play.",
       slug: "modeling-acting",
       label: "Modeling + Acting",
+      img: { src: "/assets/stills/hs-editorial-1.jpg", alt: "An editorial headshot, hands framing her face against a warm studio backdrop" },
     },
     deckSlides: [
       { kicker: "Business + branding", title: "Classic, *never stiff*.", body: "Clean headshots for LinkedIn, your website and your whole team.", img: { src: "/assets/stills/hs-brand-black-2.jpg", alt: "A classic business headshot in black with a statement necklace among the trees" } },
@@ -524,8 +525,8 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/hs-mandy-3.jpg", alt: "Mandy laughing, seated against an orange backdrop", w: 953, h: 1072 },
       ],
       [
-        { src: "/assets/stills/hs-digital-5.jpg", alt: "Digital: straight-on portrait against white brick", w: 1067, h: 1600 },
-        { src: "/assets/stills/hs-digital-2.jpg", alt: "Digital: profile against white brick", w: 1067, h: 1600 },
+        { src: "/assets/stills/dg-close.jpg", alt: "Digital: straight-on close-up against white brick", w: 800, h: 1000 },
+        { src: "/assets/stills/dg-profile.jpg", alt: "Digital: profile against white brick", w: 960, h: 1200 },
         { src: "/assets/stills/dg-5841.jpg", alt: "Digital: full length against white brick", w: 1067, h: 1600 },
         { src: "/assets/stills/dg-5844.jpg", alt: "Digital: from behind, reflected in a studio mirror", w: 1067, h: 1600 },
       ],
@@ -543,6 +544,7 @@ export const SERVICES: Service[] = [
       body: "For LinkedIn, your website or your whole team, our standard headshots are clean and classic, with a little softness.",
       slug: "headshots",
       label: "Headshots",
+      img: { src: "/assets/stills/hs-pro-2.jpg", alt: "A smiling professional headshot on a clean white background" },
     },
     deckSlides: [
       { kicker: "Model portfolio", title: "Editorial, *on location*.", body: "Natural light and real places, styled to show your range.", img: { src: "/assets/stills/hs-port-stairs.jpg", alt: "A close portrait with long curls against a mint stairwell" } },

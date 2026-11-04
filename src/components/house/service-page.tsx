@@ -139,15 +139,19 @@ export function ServicePage({ service }: { service: Service }) {
             </div>
           ))}
           {service.crossLink ? (
-            <div className="mt-14 flex flex-col gap-4 border-t border-ink/15 pt-8 md:flex-row md:items-center md:justify-between">
-              <div className="max-w-2xl">
-                <p className="eyebrow">{service.crossLink.eyebrow}</p>
-                <p className="sh-body mt-3">{service.crossLink.body}</p>
+            <Link to="/services/$slug" params={{ slug: service.crossLink.slug }} className="svc-xlink group mt-16">
+              <div className="svc-xlink__text">
+                <p className="svc-xlink__eyebrow">{service.crossLink.eyebrow}</p>
+                <p className="svc-xlink__title">{service.crossLink.label}</p>
+                <p className="svc-xlink__body">{service.crossLink.body}</p>
+                <span className="svc-xlink__cta">See {service.crossLink.label} →</span>
               </div>
-              <Link to="/services/$slug" params={{ slug: service.crossLink.slug }} className="sh-chip shrink-0">
-                {service.crossLink.label} →
-              </Link>
-            </div>
+              {service.crossLink.img ? (
+                <div className="svc-xlink__img">
+                  <img src={service.crossLink.img.src} alt={service.crossLink.img.alt} loading="lazy" decoding="async" />
+                </div>
+              ) : null}
+            </Link>
           ) : null}
         </section>
       ) : null}
