@@ -43,11 +43,11 @@ const SESSIONS = [
 ];
 
 const PRICES = [
-  { name: "Couples", line: "An unhurried hour, just the two of you.", price: "$375", points: ["One hour, one location", "Gentle direction", "A private online gallery"] },
-  { name: "Engagements", line: "Ninety minutes to celebrate the yes.", price: "$450", points: ["Two looks", "A location chosen together", "Included in most collections"] },
-  { name: "Seniors", line: "Your year, in your own style.", price: "$375", points: ["One hour, two outfits", "Posing guidance throughout", "Extended session: $575"] },
-  { name: "Families", line: "Easygoing, and paced around little ones.", price: "$375", points: ["One hour, up to six people", "Newborn + maternity too", "Studio options available"] },
-  { name: "Creative", line: "A still from your own film.", price: "$550", points: ["Concept + styling direction", "Two hours of shooting", "A cinematic, editorial finish"] },
+  { slug: "engagement-photography", img: "/assets/stills/eng-water-2.jpg", name: "Couples", line: "An unhurried hour, just the two of you.", price: "$375", points: ["One hour, one location", "Gentle direction", "A private online gallery"] },
+  { slug: "engagement-photography", img: "/assets/stills/eng-water-1.jpg", name: "Engagements", line: "Ninety minutes to celebrate the yes.", price: "$450", points: ["Two looks", "A location chosen together", "Included in most collections"] },
+  { slug: "senior-portraits", img: "/assets/stills/senior-6.jpg", name: "Seniors", line: "Your year, in your own style.", price: "$375", points: ["One hour, two outfits", "Posing guidance throughout", "Extended session: $575"] },
+  { slug: "family-photography", img: "/assets/stills/family-stand.jpg", name: "Families", line: "Easygoing, and paced around little ones.", price: "$375", points: ["One hour, up to six people", "Newborn + maternity too", "Studio options available"] },
+  { slug: "creative-portraits", img: "/assets/stills/creative-angel-1.jpg", name: "Creative", line: "A still from your own film.", price: "$550", points: ["Concept + styling direction", "Two hours of shooting", "A cinematic, editorial finish"] },
 ];
 
 const FAQ = [
@@ -244,19 +244,24 @@ export default function Photography() {
         <h2 id="pt-prices" className="sh-h2 mt-4">
           Session <em>prices</em>.
         </h2>
-        <ul className="sh-prices sh-prices--five mt-10">
+        <ul className="pt-menu mt-10">
           {PRICES.map((it) => (
-            <li key={it.name} className="sh-price">
-              <h3 className="sh-h3">{it.name}</h3>
-              <p className="sh-price__line">{it.line}</p>
-              <p className="sh-price__amt">
-                <span>from</span> {it.price}
-              </p>
-              <ul className="sh-price__pts">
-                {it.points.map((pt) => (
-                  <li key={pt}>{pt}</li>
-                ))}
-              </ul>
+            <li key={it.name}>
+              <Link to="/services/$slug" params={{ slug: it.slug }} className="pt-menu__row group">
+                <span className="pt-menu__img">
+                  <img src={it.img} alt="" loading="lazy" decoding="async" />
+                </span>
+                <span className="pt-menu__main">
+                  <span className="pt-menu__name">{it.name}</span>
+                  <span className="pt-menu__line">{it.line}</span>
+                  <span className="pt-menu__pts">{it.points.join("  ·  ")}</span>
+                </span>
+                <span className="pt-menu__price">
+                  <span className="pt-menu__from">from</span>
+                  <span className="pt-menu__amt">{it.price}</span>
+                  <span className="pt-menu__view">View →</span>
+                </span>
+              </Link>
             </li>
           ))}
         </ul>
