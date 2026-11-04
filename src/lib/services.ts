@@ -434,6 +434,7 @@ export const SERVICES: Service[] = [
     intro: [
       "A good headshot looks like you on your best day: relaxed, confident and unmistakably you. We guide every expression and pose, so you never have to wonder what to do with your hands.",
       "These are headshots for work: LinkedIn, your website, speaker bios, branding and whole teams, across Seattle and Tacoma. Clean and classic, with a little softness and creativity so they never feel stiff.",
+      "I specialize in a cinematic, film-like look, but headshots can always be more classic when that's what you need, and still have a creative approach.",
       "Actor, model or creative? We have a page just for that. Acting headshots, model portfolios and digitals are a little different, and we treat them that way.",
     ],
     highlights: [
@@ -496,7 +497,7 @@ export const SERVICES: Service[] = [
     intro: [
       "Actors, models and creatives need photographs that do a job. Casting directors and agencies want to see who you really are, and your portfolio should show what you can do.",
       "We shoot acting headshots, model portfolios and agency digitals across Seattle and Tacoma. Close to a standard headshot, but planned around castings, agencies and your book, with more room for character, styling and creativity.",
-      "Our signature look is cinematic and film-like with an editorial edge, and we keep digitals clean and true, exactly the way agencies expect.",
+      "I specialize in a cinematic, film-like look. When a casting, agency or brand needs something more classic, I can shoot it that way too, with the same creative approach. Digitals stay clean and true, exactly the way agencies expect.",
       "Some of the people you see here are signed with Seattle Models Guild (SMG), and others do commercial work around the Seattle and Tacoma creative scene.",
     ],
     highlights: [
