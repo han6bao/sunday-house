@@ -538,8 +538,8 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/hs-digital-1.jpg", alt: "Modeling digital: a close portrait against a white brick wall" },
     ],
     strip: [
-      { src: "/assets/stills/hs-editorial-2.jpg", alt: "An editorial studio portrait looking upward, hands to her face", w: 1200, h: 1800 },
-      { src: "/assets/stills/hs-editorial-bw.jpg", alt: "A black and white editorial headshot with hands framing the face", w: 1200, h: 1800 },
+      { src: "/assets/stills/hs-ed-2-c.jpg", alt: "An editorial studio portrait looking upward, hands to her face", w: 1100, h: 1375 },
+      { src: "/assets/stills/hs-ed-bw-c.jpg", alt: "A black and white editorial headshot with hands framing the face", w: 1200, h: 1500 },
       { src: "/assets/stills/senior-20.jpg", alt: "A close portrait in glasses and a black top among evergreens", w: 1066, h: 1600 },
     ],
     strips: [
@@ -568,7 +568,7 @@ export const SERVICES: Service[] = [
       ],
     ],
     stripLabels: ["Acting + editorial headshots", "Model portfolio", "With Mandy", "Agency digitals", "Digitals, a little styled"],
-    stripNotes: ["", "", "Mandy has walked in fashion shows around Seattle and done brand and commercial work. We shot this set in the studio and styled the whole look, to add some color and a fun, bubbly side to her portfolio, the kind of shots that connect with commercial clients.", "The clean set agencies ask for: close-up, profile and full length."],
+    stripNotes: ["", "", "Mandy has been a client since 2019. She's walked in fashion shows around Seattle and done brand and commercial work. We shot this set in the studio and styled the whole look, to add some color and a fun, bubbly side to her portfolio, the kind of shots that connect with commercial clients.", "The clean set agencies ask for: close-up, profile and full length."],
     crossLink: {
       eyebrow: "Need something for work?",
       body: "For LinkedIn, your website or your whole team, our standard headshots are clean and classic, with a little softness.",
