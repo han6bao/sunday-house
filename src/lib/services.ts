@@ -497,6 +497,7 @@ export const SERVICES: Service[] = [
       "Actors, models and creatives need photographs that do a job. Casting directors and agencies want to see who you really are, and your portfolio should show what you can do.",
       "We shoot acting headshots, model portfolios and agency digitals across Seattle and Tacoma. Close to a standard headshot, but planned around castings, agencies and your book, with more room for character, styling and creativity.",
       "Our signature look is cinematic and film-like with an editorial edge, and we keep digitals clean and true, exactly the way agencies expect.",
+      "Some of the people you see here are signed with Seattle Models Guild (SMG), and others do commercial work around the Seattle and Tacoma creative scene.",
     ],
     highlights: [
       { title: "Acting headshots", body: "Natural, castable frames with a few looks, so you have options for theatrical and commercial." },
