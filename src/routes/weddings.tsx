@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 
 import { StructuredData } from "@/components/StructuredData";
 import { ContentShell } from "@/components/house/content-shell";
@@ -44,7 +45,7 @@ const COVERAGE = [
   { title: "Portraits, with a designated time", body: "A set block in the day for bridal and groom portraits, styled portraits of the two of you and your closest people, plus bridesmaids, groomsmen and the whole family together." },
   { title: "The ceremony + celebration", body: "Moments all through the day: the vows, the toasts, the dances and everything in between." },
   { title: "A checklist, made together", body: "Anything that matters to you goes on a shared checklist, so we know exactly what's needed. We'll go deeper into the details as we plan." },
-  { title: "Your edited gallery", body: "Every image edited by hand and delivered in an online gallery, usually within 2 to 3 months depending on the wedding and the season. Sneak peeks arrive within 48 hours." },
+  { title: "Your edited gallery", body: "Every image edited by hand and delivered in an online gallery with digital downloads, usually within 2 to 3 months depending on the wedding and the season. Sneak peeks arrive within 48 hours." },
   { title: "A hardcover keepsake book", body: "Once your gallery is done, choose your favorites and we'll design a thick, hardcover book of the best shots and the feeling of the night. Made by a professional lab that only works with photographers, and included with every wedding collection." },
 ];
 
@@ -80,7 +81,7 @@ const ADD_ONS = [
 
 const INVESTMENT = [
   { kicker: "Small + intimate", name: "Elopements", price: "$1,800", points: ["Up to 3 hours", "One location", "Online gallery"] },
-  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "A 45-minute engagement session, styled if you like", "Sneak peeks within 48 hours", "A hardcover keepsake book"] },
+  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "A 45-minute engagement session, styled if you like", "Sneak peeks within 48 hours", "An online gallery with digital downloads", "A hardcover keepsake book"] },
   { kicker: "The whole story", name: "Photography + film", price: "$5,800", points: ["8 hours of photographs", "A highlight film", "Engagement session"] },
 ];
 
@@ -118,6 +119,28 @@ const FAQ = [
     a: "Yes. Tea ceremonies, nikah and walima, mehndi and sangeet, a ceremony one day and the reception the next — we plan coverage around the traditions that matter to your families. A second day of up to four hours can be added to any collection for $1,200.",
   },
 ];
+
+function BridalGallery() {
+  const [open, setOpen] = useState(false);
+  const rows = open ? BRIDAL_ROWS : BRIDAL_ROWS.slice(0, 1);
+  const more = BRIDAL_ROWS.slice(1).reduce((n, r) => n + r.length, 0);
+  return (
+    <>
+      {rows.map((row, r) => (
+        <div key={r} className={`svc-strip ${r ? "mt-3 md:mt-5" : "mt-10"}`}>
+          {row.map((ph) => (
+            <figure key={ph.src} className="svc-strip__item" style={{ flexGrow: ph.w / ph.h, aspectRatio: `${ph.w} / ${ph.h}` }}>
+              <img src={ph.src} alt={ph.alt} loading="lazy" decoding="async" />
+            </figure>
+          ))}
+        </div>
+      ))}
+      <button type="button" className="sh-chip mt-8" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+        {open ? "Show fewer" : `See ${more} more from her session`}
+      </button>
+    </>
+  );
+}
 
 export default function Weddings() {
   return (
@@ -270,15 +293,7 @@ export default function Weddings() {
           the park. Time that&rsquo;s only about her, away from the rush of
           the day.
         </p>
-        {BRIDAL_ROWS.map((row, r) => (
-          <div key={r} className={`svc-strip ${r ? "mt-3 md:mt-5" : "mt-10"}`}>
-            {row.map((ph) => (
-              <figure key={ph.src} className="svc-strip__item" style={{ flexGrow: ph.w / ph.h, aspectRatio: `${ph.w} / ${ph.h}` }}>
-                <img src={ph.src} alt={ph.alt} loading="lazy" decoding="async" />
-              </figure>
-            ))}
-          </div>
-        ))}
+        <BridalGallery />
       </section>
 
       {/* What's included */}
