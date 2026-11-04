@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { ContentShell } from "@/components/house/content-shell";
 import { Photo } from "@/components/house/photo";
+import { SERVICE_LINKS } from "@/components/house/site-nav";
 import { pageHead } from "@/lib/seo";
 import { OTHER_SERVICE_PAGES, SERVICES } from "@/lib/services";
 
@@ -50,6 +51,13 @@ function Services() {
           Weddings come first here, with portraits and celebrations close
           behind. Choose what you&rsquo;re planning to see how we approach it.
         </p>
+        <nav aria-label="Jump to a service" className="mt-8 flex max-w-4xl flex-wrap gap-2">
+          {SERVICE_LINKS.filter((l) => l.href !== "/services").map((l) => (
+            <Link key={l.href} to={l.href as never} className="sh-chip">
+              {l.label}
+            </Link>
+          ))}
+        </nav>
       </section>
 
       <section className="sh-wrap sh-section grid gap-14 lg:grid-cols-2" aria-label="Services">

@@ -17,7 +17,7 @@ const NAV = [
 ];
 
 /** What sits under Services. */
-const SERVICE_LINKS = [
+export const SERVICE_LINKS = [
   { label: "Portrait Sessions", href: "/photography" },
   { label: "Seniors + Grads", href: "/services/senior-portraits" },
   { label: "Families + Maternity", href: "/services/family-photography" },
