@@ -46,18 +46,19 @@ const COVERAGE = [
   { title: "A styled portrait block", body: "A set time in the day for more styled, editorial portraits of the two of you and your closest people. It's built into every collection, if that's what you'd like." },
   { title: "The ceremony + celebration", body: "Moments all through the day: the vows, the toasts, the dances and everything in between." },
   { title: "Your edited gallery", body: "Every image edited by hand and delivered in an online gallery, usually within 2 to 3 months depending on the wedding and the season." },
-  { title: "A keepsake book", body: "Once your gallery is done, choose your favorites and we'll make a small, thin printed book of the best shots and the feeling of the night. Included with every wedding collection." },
+  { title: "A hardcover keepsake book", body: "Once your gallery is done, choose your favorites and we'll design a thick, hardcover book of the best shots and the feeling of the night. Included with every wedding collection." },
+  { title: "A simple wedding website", body: "A clean, simple website for your details, RSVPs and a place for guests to send their photos. Included with every wedding collection, and only available when you book your wedding with us." },
 ];
 
 const GOOD_TO_KNOW = [
   { title: "No time on the day?", body: "If there isn't a set window for portraits, we can photograph them on a separate day. That's an additional fee, since it's outside your wedding timeline, and it's perfect for prints, cards and anything digital." },
   { title: "Prints + framing", body: "Framed prints, wall pieces and larger albums are available as add-ons, whenever you're ready for them." },
-  { title: "Your guests' photos too", body: "Add a Sunday House wedding website and guests can send their photos to one place. Pick favorites from theirs and ours for your book." },
+  { title: "Your guests' photos too", body: "Guests can send their photos to your wedding website, all in one place. Pick favorites from theirs and ours for your book." },
 ];
 
 const INVESTMENT = [
   { kicker: "Small + intimate", name: "Elopements", price: "$1,800", points: ["Up to 3 hours", "One location", "Online gallery"] },
-  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "Styled portrait block", "A keepsake book of favorites"] },
+  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "A hardcover keepsake book", "A simple wedding website"] },
   { kicker: "The whole story", name: "Photography + film", price: "$5,800", points: ["8 hours of photographs", "A highlight film", "Engagement session"] },
 ];
 
@@ -88,7 +89,7 @@ const FAQ = [
   },
   {
     q: "Can we add prints or a bigger album?",
-    a: "Yes. Framed prints, wall pieces and larger albums are available as add-ons. Every wedding collection already includes a small keepsake book of your favorites.",
+    a: "Yes. Framed prints, wall pieces and larger albums are available as add-ons. Every wedding collection already includes a thick hardcover keepsake book of your favorites.",
   },
   {
     q: "Do you photograph cultural and two-day weddings?",
