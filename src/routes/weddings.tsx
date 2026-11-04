@@ -368,8 +368,8 @@ export default function Weddings() {
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
             <Photo
-              src="/assets/gallery/rings.jpg"
-              alt="A couple's hands joined, wedding rings close up"
+              src="/assets/stills/rings-bw.jpg"
+              alt="A couple's hands joined, wedding rings close up, in black and white"
               ratio="4/5"
               sizes="(max-width: 1024px) 100vw, 45vw"
             />
