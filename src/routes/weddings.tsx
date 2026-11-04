@@ -41,24 +41,28 @@ const GALLERY = [
 
 const COVERAGE = [
   { title: "Getting ready", body: "The dress, the details and the last quiet moments with your people before everything starts." },
-  { title: "Portraits of each of you", body: "Bridal portraits and groom portraits, on your own, before or after you see each other." },
-  { title: "Your people", body: "Bridesmaids, groomsmen and family all together. Send us your list and we'll make sure no one is missed." },
-  { title: "A styled portrait block", body: "A set time in the day for more styled, editorial portraits of the two of you and your closest people. It's built into every collection, if that's what you'd like." },
+  { title: "Portraits, with a designated time", body: "A set block in the day for bridal and groom portraits, styled portraits of the two of you and your closest people, plus bridesmaids, groomsmen and the whole family together." },
   { title: "The ceremony + celebration", body: "Moments all through the day: the vows, the toasts, the dances and everything in between." },
-  { title: "Your edited gallery", body: "Every image edited by hand and delivered in an online gallery, usually within 2 to 3 months depending on the wedding and the season." },
-  { title: "A hardcover keepsake book", body: "Once your gallery is done, choose your favorites and we'll design a thick, hardcover book of the best shots and the feeling of the night. Included with every wedding collection." },
-  { title: "A simple wedding website", body: "A clean, simple website for your details, RSVPs and a place for guests to send their photos. Included with every wedding collection, and only available when you book your wedding with us." },
+  { title: "A checklist, made together", body: "Anything that matters to you goes on a shared checklist, so we know exactly what's needed. We'll go deeper into the details as we plan." },
+  { title: "Your edited gallery", body: "Every image edited by hand and delivered in an online gallery, usually within 2 to 3 months depending on the wedding and the season. Sneak peeks arrive within 48 hours." },
+  { title: "A hardcover keepsake book", body: "Once your gallery is done, choose your favorites and we'll design a thick, hardcover book of the best shots and the feeling of the night. Made by a professional lab that only works with photographers, and included with every wedding collection." },
 ];
 
 const GOOD_TO_KNOW = [
-  { title: "No time on the day?", body: "If there isn't a set window for portraits, we can photograph them on a separate day. That's an additional fee, since it's outside your wedding timeline, and it's perfect for prints, cards and anything digital." },
+  { title: "No time on the day?", body: "If there isn't a set window for portraits, we can photograph them on a separate day. That's an additional fee, since it's outside your wedding timeline." },
+  { title: "Book upgrades", body: "The classic hardcover is included. Linen or suede covers, thick textured paper and other custom touches can be added for an extra cost." },
   { title: "Prints + framing", body: "Framed prints, wall pieces and larger albums are available as add-ons, whenever you're ready for them." },
-  { title: "Your guests' photos too", body: "Guests can send their photos to your wedding website, all in one place. Pick favorites from theirs and ours for your book." },
+];
+
+const ADD_ONS = [
+  { title: "Printed cards", body: "Your engagement photos or sneak peeks, designed into save-the-dates, thank-you cards and more, then printed for you." },
+  { title: "Invitations", body: "Invitation suites designed around your photos and the feel of your day." },
+  { title: "A wedding website", body: "Your details, RSVPs and a place for guests to send their photos, which you can add to your book. Email us for an estimate." },
 ];
 
 const INVESTMENT = [
   { kicker: "Small + intimate", name: "Elopements", price: "$1,800", points: ["Up to 3 hours", "One location", "Online gallery"] },
-  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "A hardcover keepsake book", "A simple wedding website"] },
+  { kicker: "Most couples", name: "Wedding collections", price: "$3,800", points: ["6 hours", "A 45-minute engagement session, styled if you like", "Sneak peeks within 48 hours", "A hardcover keepsake book"] },
   { kicker: "The whole story", name: "Photography + film", price: "$5,800", points: ["8 hours of photographs", "A highlight film", "Engagement session"] },
 ];
 
@@ -89,7 +93,7 @@ const FAQ = [
   },
   {
     q: "Can we add prints or a bigger album?",
-    a: "Yes. Framed prints, wall pieces and larger albums are available as add-ons. Every wedding collection already includes a thick hardcover keepsake book of your favorites.",
+    a: "Yes. Framed prints, wall pieces and larger albums are available as add-ons. Every wedding collection already includes a thick hardcover keepsake book of your favorites, and linen or suede covers and textured paper can be added.",
   },
   {
     q: "Do you photograph cultural and two-day weddings?",
@@ -275,6 +279,29 @@ export default function Weddings() {
           <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-btn hz-btn--solid mt-10">
             Ask about your date
           </a>
+        </div>
+      </section>
+
+      {/* Add-ons: cards, invitations, website */}
+      <section className="sh-wrap sh-section" aria-labelledby="wed-addons">
+        <p className="eyebrow">Add-ons</p>
+        <h2 id="wed-addons" className="sh-h2 mt-4 max-w-3xl">
+          Cards, invitations and a <em>website</em>.
+        </h2>
+        <p className="sh-body mt-6 max-w-2xl">
+          Your photos can do more than live in a gallery. These are designed by
+          us and priced separately. Email us for an estimate.
+        </p>
+        <div className="mt-10 grid gap-8 md:grid-cols-3">
+          {ADD_ONS.map((a) => (
+            <div key={a.title}>
+              <div className="sh-ph flex aspect-[4/5] items-end p-5" role="img" aria-label={`${a.title} sample, coming soon`}>
+                <span className="eyebrow">Samples coming soon</span>
+              </div>
+              <h3 className="sh-h3 mt-5">{a.title}</h3>
+              <p className="sh-body mt-3">{a.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
