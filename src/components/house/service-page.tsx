@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { useState } from "react";
 
 import { StructuredData } from "@/components/StructuredData";
 import { getService, SERVICES, type Service } from "@/lib/services";
@@ -22,6 +23,9 @@ export function Emph({ text }: { text: string }) {
 
 export function ServicePage({ service }: { service: Service }) {
   const [hero, ...rest] = service.photos;
+  const big = rest.length > 6;
+  const [showAll, setShowAll] = useState(false);
+  const shown = big && !showAll ? rest.slice(0, 6) : rest;
   const related = service.related.map(getService).filter(Boolean) as Service[];
   const groupLabel = service.group === "weddings" ? "Weddings" : "Portraits";
   const groupPath = service.group === "weddings" ? "/weddings" : "/photography";
@@ -73,7 +77,7 @@ export function ServicePage({ service }: { service: Service }) {
       {/* Story + photos */}
       <section className="sh-wrap sh-section">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-start">
-          <div className={rest.length > 6 ? "lg:col-span-8" : "lg:col-span-5"}>
+          <div className={big ? "lg:col-span-8" : "lg:col-span-5"}>
             <h2 className="sh-h2">What to expect</h2>
             {service.intro.slice(1).map((p) => (
               <p key={p} className="sh-body mt-6">
@@ -86,18 +90,25 @@ export function ServicePage({ service }: { service: Service }) {
               <Photo src={rest[0].src} alt={rest[0].alt} need={rest[0].need} ratio={rest[0].ratio ?? "4/5"} sizes="(max-width: 1024px) 100vw, 45vw" />
             </div>
           ) : (
-          <div className={rest.length > 6 ? "grid grid-cols-2 gap-3 sm:grid-cols-3 lg:col-span-12 lg:grid-cols-6" : `grid gap-4 lg:col-span-7 ${rest.length > 2 ? "grid-cols-3" : "grid-cols-2"}`}>
-            {rest.map((ph, i) => (
-              <Photo
-                key={ph.src}
-                src={ph.src}
-                alt={ph.alt}
-                need={ph.need}
-                ratio="2/3"
-                className={rest.length <= 6 && i % 2 ? "mt-10" : ""}
-                sizes="(max-width: 1024px) 50vw, 25vw"
-              />
-            ))}
+          <div className={big ? "lg:col-span-12" : `grid gap-4 lg:col-span-7 ${rest.length > 2 ? "grid-cols-3" : "grid-cols-2"}`}>
+            <div className={big ? "grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6" : "contents"}>
+              {shown.map((ph, i) => (
+                <Photo
+                  key={ph.src}
+                  src={ph.src}
+                  alt={ph.alt}
+                  need={ph.need}
+                  ratio={big ? "4/5" : "2/3"}
+                  className={!big && i % 2 ? "mt-10" : ""}
+                  sizes={big ? "(max-width: 768px) 50vw, 30vw" : "(max-width: 1024px) 50vw, 25vw"}
+                />
+              ))}
+            </div>
+            {big ? (
+              <button type="button" className="sh-chip mt-8" aria-expanded={showAll} onClick={() => setShowAll((v) => !v)}>
+                {showAll ? "Show fewer photos" : `See ${rest.length - 6} more photos`}
+              </button>
+            ) : null}
           </div>
           )}
         </div>
