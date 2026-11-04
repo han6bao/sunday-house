@@ -74,7 +74,7 @@ export function ConciergeInquiry({ preset, wantsGuide: guidePreset = false }: { 
         <h2 className="sh-h2 mt-4">Thank you, {f.name.split(" ")[0]}.</h2>
         <p className="sh-lede mt-5 max-w-xl">
           We reply personally within 24 hours, often with a short voice note, so you can hear who's behind the camera.
-          {f.wantsGuide ? " Your collections guide will come with it." : ""}
+          
         </p>
         <p className="sh-body mt-6 max-w-xl">
           While you wait, look for an email from Sunday House, and check your spam folder just in case.
@@ -208,10 +208,6 @@ export function ConciergeInquiry({ preset, wantsGuide: guidePreset = false }: { 
               <input id="inq-heard" className="sh-field" value={f.heard} onChange={(e) => set("heard", e.target.value)} placeholder="Instagram, a friend, Google…" />
             </label>
           </div>
-          <label className="sh-check mt-8">
-            <input id="inq-guide" type="checkbox" checked={f.wantsGuide} onChange={(e) => set("wantsGuide", e.target.checked)} />
-            <span>Send me the full collections guide</span>
-          </label>
           <label className="sh-honey" aria-hidden="true">
             Website
             <input id="inq-website" tabIndex={-1} autoComplete="off" value={f.website} onChange={(e) => set("website", e.target.value)} />

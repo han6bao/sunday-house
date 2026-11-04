@@ -180,8 +180,8 @@ export default function Weddings() {
       {/* Statement */}
       <section className="sh-wrap sh-section">
         <p className="sh-statement max-w-5xl">
-          No stiff poses, no shouting across the lawn. Just a quiet eye on the
-          moments that <em>actually</em> happened.
+          Gentle direction when you want it, room to just be together when
+          you don&rsquo;t. Your day, exactly as it <em>felt</em>.
         </p>
       </section>
 
@@ -203,6 +203,10 @@ export default function Weddings() {
               Real weddings
             </h2>
             <p className="sh-script mt-2">Abdul + Layla</p>
+            <p className="sh-body mt-3 max-w-xl">
+              They asked for cinematic with a moodier feel, and these are some
+              of my all-time favorites. Photographed in Redmond.
+            </p>
           </div>
         </div>
         <div className="sh-wrap">
@@ -314,7 +318,7 @@ export default function Weddings() {
               <span className="sh-price__addon-amt">+ $1,200</span>
             </p>
             <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
-              Request the collections guide
+              Ask about your date
             </a>
             <p className="sh-body mt-4 text-sm">
               Every collection can end with something you can hold: heirloom albums and framed prints, made to last.

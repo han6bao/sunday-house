@@ -165,7 +165,7 @@ export const SERVICES: Service[] = [
     ],
     highlights: [
       { title: "Local knowledge", body: "We know the South Sound's venues, parks and waterfronts — and where the light falls at every hour." },
-      { title: "Calm on the day", body: "No shouting across the lawn. We direct gently and stay out of the way of the moments that matter." },
+      { title: "Calm on the day", body: "Gentle direction when you want it, and plenty of room to just be together when you don't." },
       { title: "Photo + film together", body: "One team for photographs and film, so the style, the timing and the story all match." },
     ],
     photos: [
