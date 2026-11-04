@@ -50,19 +50,19 @@ const COVERAGE = [
 
 const BRIDAL_ROWS = [
   [
-    { src: "/assets/stills/bride-solo-1.jpg", alt: "A bride leaning on a tree branch in golden evening light", w: 1200, h: 1800 },
-    { src: "/assets/stills/bride-solo-6.jpg", alt: "A bride with her eyes closed, holding baby's breath", w: 1200, h: 1800 },
-    { src: "/assets/stills/bride-solo-10.jpg", alt: "A bride smiling down at her bouquet", w: 1200, h: 1800 },
+    { src: "/assets/stills/bride-c1.jpg", alt: "A bride leaning on a tree branch in golden evening light", w: 1200, h: 1500 },
+    { src: "/assets/stills/bride-c6.jpg", alt: "A bride with her eyes closed, holding baby's breath", w: 1200, h: 1500 },
+    { src: "/assets/stills/bride-c10.jpg", alt: "A bride smiling down at her bouquet", w: 1200, h: 1500 },
   ],
   [
-    { src: "/assets/stills/bride-solo-4.jpg", alt: "A bride walking through the grass with her bouquet", w: 1200, h: 1800 },
-    { src: "/assets/stills/bride-solo-3.jpg", alt: "Detail of an eyelet floral dress and baby's breath", w: 1440, h: 1800 },
-    { src: "/assets/stills/bride-solo-5.jpg", alt: "A bride twirling her dress in the park", w: 1200, h: 1800 },
+    { src: "/assets/stills/bride-c4.jpg", alt: "A bride walking through the grass with her bouquet", w: 900, h: 1125 },
+    { src: "/assets/stills/bride-c3.jpg", alt: "Detail of an eyelet floral dress and baby's breath", w: 1440, h: 1800 },
+    { src: "/assets/stills/bride-c5.jpg", alt: "A bride twirling her dress in the park", w: 1000, h: 1250 },
   ],
   [
-    { src: "/assets/stills/bride-solo-7.jpg", alt: "A bride with a daisy resting on her nose, eyes closed", w: 1200, h: 1800 },
-    { src: "/assets/stills/bride-solo-8.jpg", alt: "A bride holding a daisy to her face", w: 1200, h: 1800 },
-    { src: "/assets/stills/bride-solo-9.jpg", alt: "A bride looking down at baby's breath, eyes closed", w: 1200, h: 1800 },
+    { src: "/assets/stills/bride-c7.jpg", alt: "A bride with a daisy resting on her nose, eyes closed", w: 1200, h: 1500 },
+    { src: "/assets/stills/bride-c8.jpg", alt: "A bride holding a daisy to her face", w: 1200, h: 1500 },
+    { src: "/assets/stills/bride-c9.jpg", alt: "A bride looking down at baby's breath, eyes closed", w: 1200, h: 1500 },
   ],
 ];
 
@@ -325,24 +325,29 @@ export default function Weddings() {
 
       {/* Add-ons: cards, invitations, website */}
       <section className="sh-wrap sh-section" aria-labelledby="wed-addons">
-        <p className="eyebrow">Add-ons</p>
-        <h2 id="wed-addons" className="sh-h2 mt-4 max-w-3xl">
-          Cards, invitations and a <em>website</em>.
-        </h2>
-        <p className="sh-body mt-6 max-w-2xl">
-          Your photos can do more than live in a gallery. These are designed by
-          us and priced separately. Email us for an estimate.
-        </p>
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
-          {ADD_ONS.map((a) => (
-            <div key={a.title}>
-              <div className="sh-ph flex aspect-[4/5] items-end p-5" role="img" aria-label={`${a.title} sample, coming soon`}>
-                <span className="eyebrow">Samples coming soon</span>
+        <div className="wed-addons-box">
+          <p className="eyebrow">Add-ons</p>
+          <h2 id="wed-addons" className="sh-h2 mt-4 max-w-3xl">
+            Cards, invitations and a <em>website</em>.
+          </h2>
+          <p className="sh-body mt-6 max-w-2xl">
+            Your photos can do more than live in a gallery. These are designed by
+            us and priced separately.
+          </p>
+          <div className="mt-10 grid gap-8 md:grid-cols-3">
+            {ADD_ONS.map((a) => (
+              <div key={a.title}>
+                <div className="sh-ph flex aspect-[4/5] items-end p-5" role="img" aria-label={`${a.title} sample, coming soon`}>
+                  <span className="eyebrow">Samples coming soon</span>
+                </div>
+                <h3 className="sh-h3 mt-5">{a.title}</h3>
+                <p className="sh-body mt-3">{a.body}</p>
               </div>
-              <h3 className="sh-h3 mt-5">{a.title}</h3>
-              <p className="sh-body mt-3">{a.body}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20add-ons" className="hz-btn hz-btn--solid mt-10">
+            Inquire for more
+          </a>
         </div>
       </section>
 
