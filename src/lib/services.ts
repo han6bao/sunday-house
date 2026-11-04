@@ -34,6 +34,10 @@ export type Service = {
   strips?: (ServicePhoto & { w: number; h: number })[][];
   /** Optional pointer to a sister page, shown under the photo rows. */
   crossLink?: { eyebrow: string; body: string; slug: string; label: string; img?: ServicePhoto };
+  /** Optional practical guide shown before the FAQs. */
+  guideEyebrow?: string;
+  guideTitle?: string;
+  guide?: { title: string; body: string; points: string[] }[];
   /** Extra full-screen slides for the phone deck. */
   deckSlides?: { kicker: string; title: string; body: string; img: ServicePhoto & { position?: string } }[];
   /** Optional extra photo story on the page (e.g. maternity on the family page). */
@@ -474,6 +478,30 @@ export const SERVICES: Service[] = [
       { kicker: "Business + branding", title: "Classic, *never stiff*.", body: "Clean headshots for LinkedIn, your website and your whole team.", img: { src: "/assets/stills/hs-brand-black-2.jpg", alt: "A classic business headshot in black with a statement necklace among the trees" } },
       { kicker: "Actors, models + creatives", title: "A page of *its own*.", body: "Acting headshots, model portfolios and digitals live on our Modeling + Acting page.", img: { src: "/assets/stills/hs-editorial-1.jpg", alt: "An editorial headshot, hands framing her face against a warm studio backdrop" } },
     ],
+    guideEyebrow: "Where you are now",
+    guideTitle: "Starting out or *refreshing* your book",
+    guide: [
+      {
+        title: "Just getting started",
+        body: "You don't need an agency or a big portfolio to book a session. A few strong, honest images are what get you noticed.",
+        points: [
+          "Start with digitals and one or two clean headshots. Agencies want to see the real you first.",
+          "Add a couple of styled looks that show your personality and range.",
+          "Keep hair and makeup natural, and bring fitted basics in neutral colors.",
+          "We'll help you choose the images to send, and how to crop them for submissions.",
+        ],
+      },
+      {
+        title: "Refreshing what you have",
+        body: "Your book should look like you today. If your hair, look or age range has changed, it's time for new photos.",
+        points: [
+          "Updated digitals every six months to a year keep your agency current.",
+          "Fill the gaps: commercial smiles, editorial looks or a new character for castings.",
+          "Bring your current book or comp card and we'll plan around what's missing.",
+          "Actors: a few looks for theatrical and commercial, so you're ready for both.",
+        ],
+      },
+    ],
     faqs: [
       { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look; on location adds natural light and a sense of place for branding." },
       { q: "What should I wear?", a: "Solid colors and clothes you feel good in. Bring a couple of options and we'll help you choose." },
@@ -558,6 +586,9 @@ export const SERVICES: Service[] = [
       { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today, with close-ups, profiles and full-length." },
       { q: "What should I wear?", a: "For acting headshots, solid colors in a few looks that fit the roles you go out for. For digitals, fitted basics in neutral tones. Bring options and we'll help you choose." },
       { q: "Hair and makeup?", a: "Keep it natural for digitals and acting headshots. For portfolio looks, we can plan styling together." },
+      { q: "Do I need an agency to book?", a: "No. Plenty of people come to us before they're signed. Good digitals and a few strong headshots are exactly what you'd send to agencies like Seattle Models Guild when you apply." },
+      { q: "How many looks should I bring?", a: "Two to four is a good range. Bring more than you need and we'll choose together, based on what you're submitting for." },
+      { q: "How often should I update my photos?", a: "Digitals every six months to a year, or any time your hair or look changes. Headshots and portfolio images when they no longer look like you." },
       { q: "Do you work with younger models and actors?", a: "Yes. I used to teach at an elementary school with younger kids, so I know how to keep them relaxed and engaged, with a parent there the whole time." },
     ],
     related: ["headshots", "creative-portraits", "senior-portraits"],

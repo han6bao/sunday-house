@@ -209,6 +209,32 @@ export function ServicePage({ service }: { service: Service }) {
         </div>
       </section>
 
+      {/* Practical guide */}
+      {service.guide?.length ? (
+        <section className="sh-wrap sh-section" aria-labelledby="svc-guide">
+          <p className="eyebrow">{service.guideEyebrow ?? "Good to know"}</p>
+          <h2 id="svc-guide" className="sh-h2 mt-4 max-w-3xl">
+            <Emph text={service.guideTitle ?? "Before your session"} />
+          </h2>
+          <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-14">
+            {service.guide.map((g) => (
+              <div key={g.title} className="border-t border-ink/15 pt-6">
+                <h3 className="sh-h3">{g.title}</h3>
+                <p className="sh-body mt-3">{g.body}</p>
+                <ul className="mt-5 grid gap-3">
+                  {g.points.map((pt) => (
+                    <li key={pt} className="sh-body flex gap-3 text-base">
+                      <span aria-hidden="true">—</span>
+                      <span>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       <Faq title={`${service.name} questions`} items={service.faqs} />
 
       {/* Related services — internal links */}
