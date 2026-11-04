@@ -73,6 +73,13 @@ export const SERVICES: Service[] = [
       { src: "/assets/stills/couple-nose-2.jpg", alt: "A couple nose to nose, in black and white" },
       { src: "/assets/stills/couple-forehead-2.jpg", alt: "A man kissing his partner's forehead, in black and white" },
     ],
+    strip: [
+      { src: "/assets/stills/eng-water-1.jpg", alt: "An engaged couple face to face by the water on a grey day", w: 1125, h: 1394 },
+      { src: "/assets/stills/eng-water-2.jpg", alt: "He kisses her forehead as she laughs in his arms by the water", w: 1125, h: 1394 },
+      { src: "/assets/stills/eng-water-3.jpg", alt: "The couple swaying together on the shoreline, mid-laugh", w: 1115, h: 1394 },
+      { src: "/assets/stills/eng-water-4.jpg", alt: "The couple kissing by the water under a cloudy sky", w: 1125, h: 1394 },
+    ],
+    stripLabels: ["Cinematic engagement, on the water"],
     faqs: [
       { q: "How much is an engagement or couples session?", a: "Couples sessions begin at $375 for an hour at one location. Engagement sessions are $450 for ninety minutes and two looks, and one is included with The Story and The Full Day wedding collections." },
       { q: "When should we schedule engagement photos?", a: "Most couples shoot six to nine months before the wedding, which leaves time to use the photos for save-the-dates and a wedding website. Spring and early fall bring the softest light around Seattle and Tacoma." },
