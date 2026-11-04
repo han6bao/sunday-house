@@ -33,7 +33,7 @@ const COLS: { head: string; links: { label: string; href: string; params?: Recor
       { label: "Milestones + Events", href: "/services/$slug", params: { slug: "milestones-events" } },
       { label: "Creative Sessions", href: "/services/$slug", params: { slug: "creative-portraits" } },
       { label: "Headshots", href: "/services/$slug", params: { slug: "headshots" } },
-      { label: "Modeling Digitals", href: "/services/$slug", params: { slug: "modeling-digitals" } },
+      { label: "Modeling + Acting", href: "/services/$slug", params: { slug: "modeling-acting" } },
       { label: "All Services", href: "/services" },
     ],
   },

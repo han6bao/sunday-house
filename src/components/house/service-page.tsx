@@ -138,6 +138,17 @@ export function ServicePage({ service }: { service: Service }) {
             </div>
             </div>
           ))}
+          {service.crossLink ? (
+            <div className="mt-14 flex flex-col gap-4 border-t border-ink/15 pt-8 md:flex-row md:items-center md:justify-between">
+              <div className="max-w-2xl">
+                <p className="eyebrow">{service.crossLink.eyebrow}</p>
+                <p className="sh-body mt-3">{service.crossLink.body}</p>
+              </div>
+              <Link to="/services/$slug" params={{ slug: service.crossLink.slug }} className="sh-chip shrink-0">
+                {service.crossLink.label} →
+              </Link>
+            </div>
+          ) : null}
         </section>
       ) : null}
 

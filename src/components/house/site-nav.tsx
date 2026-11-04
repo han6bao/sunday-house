@@ -23,7 +23,7 @@ export const SERVICE_LINKS = [
   { label: "Families + Maternity", href: "/services/family-photography" },
   { label: "Milestones + Events", href: "/services/milestones-events" },
   { label: "Headshots", href: "/services/headshots" },
-  { label: "Modeling Digitals", href: "/services/modeling-digitals" },
+  { label: "Modeling + Acting", href: "/services/modeling-acting" },
   { label: "Creative Sessions", href: "/services/creative-portraits" },
   { label: "Engagements", href: "/services/engagement-photography" },
   { label: "Weddings", href: "/weddings" },

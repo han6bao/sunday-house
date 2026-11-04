@@ -32,6 +32,8 @@ export type Service = {
   stripNotes?: string[];
   /** More rows of natural-shape photos. */
   strips?: (ServicePhoto & { w: number; h: number })[][];
+  /** Optional pointer to a sister page, shown under the photo rows. */
+  crossLink?: { eyebrow: string; body: string; slug: string; label: string };
   /** Extra full-screen slides for the phone deck. */
   deckSlides?: { kicker: string; title: string; body: string; img: ServicePhoto & { position?: string } }[];
   /** Optional extra photo story on the page (e.g. maternity on the family page). */
@@ -424,24 +426,24 @@ export const SERVICES: Service[] = [
     slug: "headshots",
     name: "Headshots",
     group: "portraits",
-    title: "Headshot Photographer, Seattle + Tacoma | Sunday House",
+    title: "Professional Headshots, Seattle + Tacoma | Sunday House",
     description:
-      "Professional headshots, personal branding, editorial portraits and modeling digitals in Seattle and Tacoma — in the studio or on location.",
+      "Professional headshots and personal branding portraits in Seattle and Tacoma, for LinkedIn, websites and teams, in the studio or on location.",
     script: "Look like yourself, at your best.",
     h1: "Headshots that *feel like you*.",
     intro: [
-      "A good headshot looks like you on your best day — relaxed, confident and unmistakably you. We guide every expression and pose, so you never have to wonder what to do with your hands.",
-      "We photograph headshots for professionals, creatives, actors and models across Seattle and Tacoma: clean studio portraits for work and LinkedIn, editorial looks for branding, and simple digitals for agencies and castings.",
-      "Our signature look is cinematic and film-like, often with an editorial edge. Prefer something classic? We also deliver clean, timeless edits that still feel soft and a little magazine.",
+      "A good headshot looks like you on your best day: relaxed, confident and unmistakably you. We guide every expression and pose, so you never have to wonder what to do with your hands.",
+      "These are headshots for work: LinkedIn, your website, speaker bios, branding and whole teams, across Seattle and Tacoma. Clean and classic, with a little softness and creativity so they never feel stiff.",
+      "Actor, model or creative? We have a page just for that. Acting headshots, model portfolios and digitals are a little different, and we treat them that way.",
     ],
     highlights: [
       { title: "Guided, start to finish", body: "Gentle direction on posture, angles and expression, so every frame looks natural." },
       { title: "Studio or on location", body: "A clean backdrop in the studio, or natural light somewhere that suits your work." },
-      { title: "Made for how you'll use them", body: "Business, branding, acting or modeling — we plan the looks and crops around where they'll live." },
+      { title: "Classic, not stiff", body: "Clean, timeless edits that still feel soft and a little magazine, made for wherever they'll live." },
     ],
     photos: [
-      { src: "/assets/stills/hs-editorial-1.jpg", alt: "An editorial headshot, hands framing her face against a warm studio backdrop" },
       { src: "/assets/stills/hs-pro-2.jpg", alt: "A smiling professional headshot on a clean white background" },
+      { src: "/assets/stills/hs-creative-1.jpg", alt: "A glowing branding portrait against soft pink fabric" },
     ],
     strip: [
       { src: "/assets/stills/hs-brand-black-2.jpg", alt: "A classic business headshot in black with a statement necklace among the trees", w: 1030, h: 1288 },
@@ -452,23 +454,6 @@ export const SERVICES: Service[] = [
       [
         { src: "/assets/stills/hs-pro-1.jpg", alt: "A professional headshot in a black blazer on a white background", w: 1086, h: 1448 },
         { src: "/assets/stills/hs-pro-3.jpg", alt: "A warm, smiling business headshot on a white background", w: 1122, h: 1402 },
-        { src: "/assets/stills/hs-creative-1.jpg", alt: "A glowing branding portrait against soft pink fabric", w: 1344, h: 1800 },
-      ],
-      [
-        { src: "/assets/stills/hs-mandy-2.jpg", alt: "Mandy in a green pinstripe top against an orange backdrop, hand at her neck", w: 953, h: 1072 },
-        { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop", w: 856, h: 1072 },
-        { src: "/assets/stills/hs-mandy-3.jpg", alt: "Mandy laughing, seated against an orange backdrop", w: 953, h: 1072 },
-      ],
-      [
-        { src: "/assets/stills/hs-editorial-2.jpg", alt: "An editorial studio portrait looking upward, hands to her face", w: 1200, h: 1800 },
-        { src: "/assets/stills/hs-editorial-bw.jpg", alt: "A black and white editorial headshot with hands framing the face", w: 1200, h: 1800 },
-        { src: "/assets/stills/senior-20.jpg", alt: "A close portrait in glasses and a black top among evergreens", w: 1066, h: 1600 },
-      ],
-      [
-        { src: "/assets/stills/hs-port-stairs.jpg", alt: "A close portrait with long curls against a mint stairwell", w: 1200, h: 1800 },
-        { src: "/assets/stills/hs-port-curls.jpg", alt: "A sunlit portrait with golden curls in a red lace dress", w: 1200, h: 1800 },
-        { src: "/assets/stills/hs-port-flowers.jpg", alt: "A soft portrait resting her chin on her hand behind pink flowers", w: 1200, h: 1800 },
-        { src: "/assets/stills/hs-port-window.jpg", alt: "Seated on a window ledge in a leather jacket", w: 1200, h: 1800 },
       ],
       [
         { src: "/assets/stills/hs-loc-3.jpg", alt: "A smiling headshot in a white blouse against tall green grass", w: 1440, h: 1800 },
@@ -476,76 +461,104 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/senior-16.jpg", alt: "A laughing portrait in a yellow shirt", w: 1066, h: 1600 },
       ],
     ],
-    stripLabels: ["Classic: business + branding", "", "With Mandy", "Editorial + creative", "Portfolio", "On location"],
-    stripNotes: ["", "", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves."],
+    stripLabels: ["Business + branding", "In the studio", "On location"],
+    crossLink: {
+      eyebrow: "For actors, models + creatives",
+      body: "We shoot for creatives too. Acting headshots, model portfolios and agency digitals have their own page, with a little more room to play.",
+      slug: "modeling-acting",
+      label: "Modeling + Acting",
+    },
     deckSlides: [
-      { kicker: "With Mandy", title: "Just for *fun*.", body: "A longtime friend, a spur-of-the-moment shoot and a look we styled ourselves.", img: { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop" } },
-      { kicker: "Portfolio", title: "Editorial, *on location*.", body: "Natural light and real places, for actors, models and creatives building a portfolio.", img: { src: "/assets/stills/hs-port-stairs.jpg", alt: "A close portrait with long curls against a mint stairwell" } },
-      { kicker: "Modeling digitals", title: "Simple, honest, *you*.", body: "Clean light, close-ups, profiles and full-length looks for agencies and castings.", img: { src: "/assets/stills/hs-digital-1.jpg", alt: "Modeling digital against a white brick wall" } },
+      { kicker: "Business + branding", title: "Classic, *never stiff*.", body: "Clean headshots for LinkedIn, your website and your whole team.", img: { src: "/assets/stills/hs-brand-black-2.jpg", alt: "A classic business headshot in black with a statement necklace among the trees" } },
+      { kicker: "Actors, models + creatives", title: "A page of *its own*.", body: "Acting headshots, model portfolios and digitals live on our Modeling + Acting page.", img: { src: "/assets/stills/hs-editorial-1.jpg", alt: "An editorial headshot, hands framing her face against a warm studio backdrop" } },
     ],
     faqs: [
-      { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
-      { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look for business headshots and digitals; on location adds natural light and a sense of place for branding and creative work." },
-      { q: "What should I wear?", a: "Solid colors and clothes you feel good in. Bring a couple of options and we'll help you choose. For digitals, fitted basics in neutral tones work best." },
+      { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look; on location adds natural light and a sense of place for branding." },
+      { q: "What should I wear?", a: "Solid colors and clothes you feel good in. Bring a couple of options and we'll help you choose." },
+      { q: "Do you do acting headshots or modeling digitals?", a: "Yes. Those live on our Modeling + Acting page, since they're shot a little differently from business headshots." },
       { q: "Do you photograph kids and teens?", a: "Yes, often. I used to teach at an elementary school with younger kids, so I'm patient and know how to keep little ones comfortable and engaged, whether it's a first headshot or a school portrait." },
       { q: "Can you do headshots for a whole team?", a: "Yes. Tell us how many people and where, and we'll plan a consistent look for everyone." },
     ],
-    related: ["modeling-digitals", "senior-portraits", "creative-portraits"],
+    related: ["modeling-acting", "senior-portraits", "creative-portraits"],
     inquire: "headshots",
     serviceType: "Headshot photography",
   },
   {
-    slug: "modeling-digitals",
-    name: "Modeling Digitals",
+    slug: "modeling-acting",
+    name: "Modeling + Acting",
     group: "portraits",
-    title: "Modeling Digitals + Polaroids, Seattle + Tacoma | Sunday House",
+    title: "Acting Headshots, Model Portfolios + Digitals, Seattle + Tacoma | Sunday House",
     description:
-      "Modeling digitals and polaroids in Seattle and Tacoma — clean, natural photographs for agencies, castings and portfolios, in the studio or on location.",
-    script: "Simple, honest, you.",
-    h1: "Modeling digitals, *done right*.",
+      "Acting headshots, model portfolios and agency digitals in Seattle and Tacoma, for actors, models and creatives, in the studio or on location.",
+    script: "For actors, models + creatives.",
+    h1: "Modeling and acting, *made for the work*.",
     intro: [
-      "Digitals are the photographs agencies and casting directors actually ask for: clean light, minimal makeup and fitted clothes, showing you exactly as you are today.",
-      "We shoot the full set — close-ups, profiles, three-quarter and full-length — plus a few relaxed, styled frames if you want something extra for your portfolio. In the studio or on location around Seattle and Tacoma.",
+      "Actors, models and creatives need photographs that do a job. Casting directors and agencies want to see who you really are, and your portfolio should show what you can do.",
+      "We shoot acting headshots, model portfolios and agency digitals across Seattle and Tacoma. Close to a standard headshot, but planned around castings, agencies and your book, with more room for character, styling and creativity.",
+      "Our signature look is cinematic and film-like with an editorial edge, and we keep digitals clean and true, exactly the way agencies expect.",
     ],
     highlights: [
-      { title: "The full agency set", body: "Front, profile, three-quarter and full-length, framed the way agencies expect." },
-      { title: "Natural and true", body: "Light retouching only, so you look like you'll look when you walk in the door." },
-      { title: "A little extra", body: "Add a few styled, editorial frames to round out your portfolio." },
+      { title: "Acting headshots", body: "Natural, castable frames with a few looks, so you have options for theatrical and commercial." },
+      { title: "Model portfolios", body: "Editorial, on location or in the studio, styled to show your range." },
+      { title: "Agency digitals", body: "Front, profile, three-quarter and full-length, lightly retouched so you look like you'll look when you walk in." },
     ],
     photos: [
+      { src: "/assets/stills/hs-editorial-1.jpg", alt: "An editorial headshot, hands framing her face against a warm studio backdrop" },
       { src: "/assets/stills/hs-digital-1.jpg", alt: "Modeling digital: a close portrait against a white brick wall" },
-      { src: "/assets/stills/hs-digital-3.jpg", alt: "Modeling digital: a full-length look in wide-leg jeans" },
     ],
     strip: [
-      { src: "/assets/stills/hs-digital-5.jpg", alt: "Digital: straight-on portrait against white brick", w: 1067, h: 1600 },
-      { src: "/assets/stills/hs-digital-2.jpg", alt: "Digital: profile against white brick", w: 1067, h: 1600 },
-      { src: "/assets/stills/dg-5841.jpg", alt: "Digital: full length against white brick", w: 1067, h: 1600 },
-      { src: "/assets/stills/dg-5844.jpg", alt: "Digital: from behind, reflected in a studio mirror", w: 1067, h: 1600 },
+      { src: "/assets/stills/hs-editorial-2.jpg", alt: "An editorial studio portrait looking upward, hands to her face", w: 1200, h: 1800 },
+      { src: "/assets/stills/hs-editorial-bw.jpg", alt: "A black and white editorial headshot with hands framing the face", w: 1200, h: 1800 },
+      { src: "/assets/stills/senior-20.jpg", alt: "A close portrait in glasses and a black top among evergreens", w: 1066, h: 1600 },
     ],
     strips: [
       [
-        { src: "/assets/stills/hs-digital-4.jpg", alt: "Styled frame in a denim jacket", w: 1067, h: 1600 },
-        { src: "/assets/stills/dg-5862.jpg", alt: "Styled frame seated on the studio floor in denim", w: 1067, h: 1600 },
-        { src: "/assets/stills/dg-5853.jpg", alt: "Styled frame on a velvet chaise", w: 1067, h: 1600 },
-        { src: "/assets/stills/dg-5860.jpg", alt: "Styled frame leaning on a white brick wall in denim", w: 1067, h: 1600 },
+        { src: "/assets/stills/hs-port-stairs.jpg", alt: "A close portrait with long curls against a mint stairwell", w: 1200, h: 1800 },
+        { src: "/assets/stills/hs-port-curls.jpg", alt: "A sunlit portrait with golden curls in a red lace dress", w: 1200, h: 1800 },
+        { src: "/assets/stills/hs-port-flowers.jpg", alt: "A soft portrait resting her chin on her hand behind pink flowers", w: 1200, h: 1800 },
+        { src: "/assets/stills/hs-port-window.jpg", alt: "Seated on a window ledge in a leather jacket", w: 1200, h: 1800 },
       ],
       [
+        { src: "/assets/stills/hs-mandy-2.jpg", alt: "Mandy in a green pinstripe top against an orange backdrop, hand at her neck", w: 953, h: 1072 },
+        { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop", w: 856, h: 1072 },
+        { src: "/assets/stills/hs-mandy-3.jpg", alt: "Mandy laughing, seated against an orange backdrop", w: 953, h: 1072 },
+      ],
+      [
+        { src: "/assets/stills/hs-digital-5.jpg", alt: "Digital: straight-on portrait against white brick", w: 1067, h: 1600 },
+        { src: "/assets/stills/hs-digital-2.jpg", alt: "Digital: profile against white brick", w: 1067, h: 1600 },
+        { src: "/assets/stills/dg-5841.jpg", alt: "Digital: full length against white brick", w: 1067, h: 1600 },
+        { src: "/assets/stills/dg-5844.jpg", alt: "Digital: from behind, reflected in a studio mirror", w: 1067, h: 1600 },
+      ],
+      [
+        { src: "/assets/stills/hs-digital-4.jpg", alt: "Styled frame in a denim jacket", w: 1067, h: 1600 },
+        { src: "/assets/stills/dg-5853.jpg", alt: "Styled frame on a velvet chaise", w: 1067, h: 1600 },
         { src: "/assets/stills/dg-5858.jpg", alt: "Styled frame reclining on a velvet chaise", w: 1280, h: 1600 },
-        { src: "/assets/stills/hs-digital-6.jpg", alt: "Styled frame seated on a velvet chaise", w: 1067, h: 1600 },
         { src: "/assets/stills/hs-digital-7.jpg", alt: "Styled frame seated on the studio floor", w: 1067, h: 1600 },
       ],
     ],
-    stripLabels: ["The digitals", "A little styled"],
-    stripNotes: ["", ""],
+    stripLabels: ["Acting + editorial headshots", "Model portfolio", "With Mandy", "Agency digitals", "Digitals, a little styled"],
+    stripNotes: ["", "", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves.", "The clean set agencies ask for: close-up, profile and full length."],
+    crossLink: {
+      eyebrow: "Need something for work?",
+      body: "For LinkedIn, your website or your whole team, our standard headshots are clean and classic, with a little softness.",
+      slug: "headshots",
+      label: "Headshots",
+    },
+    deckSlides: [
+      { kicker: "Model portfolio", title: "Editorial, *on location*.", body: "Natural light and real places, styled to show your range.", img: { src: "/assets/stills/hs-port-stairs.jpg", alt: "A close portrait with long curls against a mint stairwell" } },
+      { kicker: "With Mandy", title: "Just for *fun*.", body: "A longtime friend, a spur-of-the-moment shoot and a look we styled ourselves.", img: { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop" } },
+      { kicker: "Agency digitals", title: "Simple, honest, *you*.", body: "Clean light, close-ups, profiles and full-length looks for agencies and castings.", img: { src: "/assets/stills/hs-digital-5.jpg", alt: "Digital: straight-on portrait against white brick" } },
+    ],
     faqs: [
-      { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today — close-ups, profiles and full-length." },
-      { q: "What should I wear?", a: "Fitted basics in neutral tones: a plain tank or tee and well-fitting jeans or leggings. Bring one extra look if you'd like a few styled frames." },
-      { q: "Hair and makeup?", a: "Keep it natural — clean skin, hair down and off the face. Agencies want to see the real you." },
-      { q: "Can you shoot digitals for younger models?", a: "Yes. I used to teach at an elementary school with younger kids, so I know how to keep them relaxed and engaged through a full set, with a parent there the whole time." },
+      { q: "What's the difference from a regular headshot?", a: "Acting and modeling photos are planned around castings and agencies: more looks, more character, and digitals kept clean and true. Business headshots are about looking polished and approachable for work." },
+      { q: "What are modeling digitals?", a: "Simple, natural photographs agencies and casting directors ask for: clean light, minimal makeup and fitted clothes, showing your face and figure as you are today, with close-ups, profiles and full-length." },
+      { q: "What should I wear?", a: "For acting headshots, solid colors in a few looks that fit the roles you go out for. For digitals, fitted basics in neutral tones. Bring options and we'll help you choose." },
+      { q: "Hair and makeup?", a: "Keep it natural for digitals and acting headshots. For portfolio looks, we can plan styling together." },
+      { q: "Do you work with younger models and actors?", a: "Yes. I used to teach at an elementary school with younger kids, so I know how to keep them relaxed and engaged, with a parent there the whole time." },
     ],
     related: ["headshots", "creative-portraits", "senior-portraits"],
-    inquire: "digitals",
-    serviceType: "Modeling digitals photography",
+    inquire: "modeling",
+    serviceType: "Acting headshot and model portfolio photography",
   },
 ];
 
@@ -564,6 +577,7 @@ export const RETIRED_SERVICES: Record<string, string> = {
   "maternity-newborn-photography": "/services/family-photography",
   "event-photography": "/services/milestones-events",
   "quinceaneras-milestones": "/services/milestones-events",
+  "modeling-digitals": "/services/modeling-acting",
 };
 
 export function getService(slug: string): Service | undefined {

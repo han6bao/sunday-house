@@ -38,8 +38,8 @@ const SESSIONS = [
   { label: "Families + Maternity", slug: "family-photography", note: "Every season, kept — newborns and the bump included. Studio options available." },
   { label: "Milestones + Events", slug: "milestones-events", note: "Birthdays, quinceañeras, parties and the days worth keeping." },
   { label: "Creative Sessions", slug: "creative-portraits", note: "A still from your own film." },
-  { label: "Headshots", slug: "headshots", note: "Business, branding, acting and creative — studio or on location." },
-  { label: "Modeling Digitals", slug: "modeling-digitals", note: "Clean agency digitals, plus a few styled frames." },
+  { label: "Headshots", slug: "headshots", note: "Clean, classic headshots for work, branding and teams." },
+  { label: "Modeling + Acting", slug: "modeling-acting", note: "Acting headshots, model portfolios and agency digitals." },
 ];
 
 const PRICES = [
@@ -135,7 +135,7 @@ export default function Photography() {
           { label: "Families + maternity", to: "/services/family-photography" },
           { label: "Creative", to: "/services/creative-portraits" },
           { label: "Headshots", to: "/services/headshots" },
-          { label: "Modeling digitals", to: "/services/modeling-digitals" },
+          { label: "Modeling + acting", to: "/services/modeling-acting" },
           { label: "Weddings", to: "/weddings" },
           { label: "Home", to: "/" },
         ]}
