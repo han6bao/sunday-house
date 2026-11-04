@@ -113,14 +113,13 @@ export default function Weddings() {
             img: { src: "/assets/stills/wed-dance.jpg", alt: "Newlyweds dancing in a misty golden field" },
           },
           {
-            kicker: "Coverage",
+            kicker: "What's included",
             title: "The whole story",
             body: (
               <ul className="sh-deck__list">
                 {COVERAGE.map((c) => (
                   <li key={c.title}>
                     <b>{c.title}</b>
-                    <span>{c.body}</span>
                   </li>
                 ))}
               </ul>
