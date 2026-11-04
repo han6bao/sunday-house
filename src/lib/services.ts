@@ -526,8 +526,8 @@ export const SERVICES: Service[] = [
         { src: "/assets/stills/hs-mandy-3.jpg", alt: "Mandy laughing, seated against an orange backdrop", w: 953, h: 1072 },
       ],
       [
-        { src: "/assets/stills/dg-close.jpg", alt: "Digital: straight-on close-up against white brick", w: 800, h: 1000 },
-        { src: "/assets/stills/dg-profile.jpg", alt: "Digital: profile against white brick", w: 960, h: 1200 },
+        { src: "/assets/stills/dg-close2.jpg", alt: "Digital: straight-on close-up against white brick", w: 600, h: 750 },
+        { src: "/assets/stills/dg-profile2.jpg", alt: "Digital: profile against white brick", w: 960, h: 1200 },
         { src: "/assets/stills/dg-5841.jpg", alt: "Digital: full length against white brick", w: 1067, h: 1600 },
         { src: "/assets/stills/dg-5844.jpg", alt: "Digital: from behind, reflected in a studio mirror", w: 1067, h: 1600 },
       ],
