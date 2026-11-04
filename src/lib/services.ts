@@ -537,7 +537,7 @@ export const SERVICES: Service[] = [
       ],
     ],
     stripLabels: ["Acting + editorial headshots", "Model portfolio", "With Mandy", "Agency digitals", "Digitals, a little styled"],
-    stripNotes: ["", "", "Mandy's a longtime friend. These were spur of the moment and just for fun, and we styled the whole look ourselves.", "The clean set agencies ask for: close-up, profile and full length."],
+    stripNotes: ["", "", "Mandy has walked in fashion shows around Seattle and done brand and commercial work. We shot this set in the studio and styled the whole look, to add some color and a fun, bubbly side to her portfolio, the kind of shots that connect with commercial clients.", "The clean set agencies ask for: close-up, profile and full length."],
     crossLink: {
       eyebrow: "Need something for work?",
       body: "For LinkedIn, your website or your whole team, our standard headshots are clean and classic, with a little softness.",
@@ -546,7 +546,7 @@ export const SERVICES: Service[] = [
     },
     deckSlides: [
       { kicker: "Model portfolio", title: "Editorial, *on location*.", body: "Natural light and real places, styled to show your range.", img: { src: "/assets/stills/hs-port-stairs.jpg", alt: "A close portrait with long curls against a mint stairwell" } },
-      { kicker: "With Mandy", title: "Just for *fun*.", body: "A longtime friend, a spur-of-the-moment shoot and a look we styled ourselves.", img: { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop" } },
+      { kicker: "With Mandy", title: "Color for her *portfolio*.", body: "A studio shoot we styled, adding a fun, bubbly side for commercial clients.", img: { src: "/assets/stills/hs-mandy-1.jpg", alt: "Mandy smiling with a hand in her hair against an orange backdrop" } },
       { kicker: "Agency digitals", title: "Simple, honest, *you*.", body: "Clean light, close-ups, profiles and full-length looks for agencies and castings.", img: { src: "/assets/stills/hs-digital-5.jpg", alt: "Digital: straight-on portrait against white brick" } },
     ],
     faqs: [
