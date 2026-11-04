@@ -84,6 +84,15 @@ export function ServicePage({ service }: { service: Service }) {
                 {p}
               </p>
             ))}
+            {service.crossLink ? (
+              <Link to="/services/$slug" params={{ slug: service.crossLink.slug }} className="svc-xlink svc-xlink--compact group mt-10">
+                <div className="svc-xlink__text">
+                  <p className="svc-xlink__eyebrow">{service.crossLink.eyebrow}</p>
+                  <p className="svc-xlink__title">{service.crossLink.label}</p>
+                  <span className="svc-xlink__cta">See {service.crossLink.label} →</span>
+                </div>
+              </Link>
+            ) : null}
           </div>
           {rest.length === 1 ? (
             <div className={rest[0].ratio ? "lg:col-span-7 lg:col-start-6" : "lg:col-span-6 lg:col-start-7"}>
