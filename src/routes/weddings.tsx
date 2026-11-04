@@ -48,6 +48,24 @@ const COVERAGE = [
   { title: "A hardcover keepsake book", body: "Once your gallery is done, choose your favorites and we'll design a thick, hardcover book of the best shots and the feeling of the night. Made by a professional lab that only works with photographers, and included with every wedding collection." },
 ];
 
+const BRIDAL_ROWS = [
+  [
+    { src: "/assets/stills/bride-solo-1.jpg", alt: "A bride leaning on a tree branch in golden evening light", w: 1200, h: 1800 },
+    { src: "/assets/stills/bride-solo-6.jpg", alt: "A bride with her eyes closed, holding baby's breath", w: 1200, h: 1800 },
+    { src: "/assets/stills/bride-solo-10.jpg", alt: "A bride smiling down at her bouquet", w: 1200, h: 1800 },
+  ],
+  [
+    { src: "/assets/stills/bride-solo-4.jpg", alt: "A bride walking through the grass with her bouquet", w: 1200, h: 1800 },
+    { src: "/assets/stills/bride-solo-3.jpg", alt: "Detail of an eyelet floral dress and baby's breath", w: 1440, h: 1800 },
+    { src: "/assets/stills/bride-solo-5.jpg", alt: "A bride twirling her dress in the park", w: 1200, h: 1800 },
+  ],
+  [
+    { src: "/assets/stills/bride-solo-7.jpg", alt: "A bride with a daisy resting on her nose, eyes closed", w: 1200, h: 1800 },
+    { src: "/assets/stills/bride-solo-8.jpg", alt: "A bride holding a daisy to her face", w: 1200, h: 1800 },
+    { src: "/assets/stills/bride-solo-9.jpg", alt: "A bride looking down at baby's breath, eyes closed", w: 1200, h: 1800 },
+  ],
+];
+
 const GOOD_TO_KNOW = [
   { title: "No time on the day?", body: "If there isn't a set window for portraits, we can photograph them on a separate day. That's an additional fee, since it's outside your wedding timeline." },
   { title: "Book upgrades", body: "The classic hardcover is included. Linen or suede covers, thick textured paper and other custom touches can be added for an extra cost." },
@@ -238,6 +256,29 @@ export default function Weddings() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Bridal session: just the bride */}
+      <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-labelledby="wed-bridal">
+        <p className="eyebrow">Bridal session</p>
+        <h2 id="wed-bridal" className="sh-h2 mt-4 max-w-3xl">
+          Just the <em>bride</em>.
+        </h2>
+        <p className="sh-body mt-6 max-w-2xl">
+          A separate session we did with just her before the wedding: her
+          dress, a bundle of baby&rsquo;s breath and an unhurried evening in
+          the park. Time that&rsquo;s only about her, away from the rush of
+          the day.
+        </p>
+        {BRIDAL_ROWS.map((row, r) => (
+          <div key={r} className={`svc-strip ${r ? "mt-3 md:mt-5" : "mt-10"}`}>
+            {row.map((ph) => (
+              <figure key={ph.src} className="svc-strip__item" style={{ flexGrow: ph.w / ph.h, aspectRatio: `${ph.w} / ${ph.h}` }}>
+                <img src={ph.src} alt={ph.alt} loading="lazy" decoding="async" />
+              </figure>
+            ))}
+          </div>
+        ))}
       </section>
 
       {/* What's included */}
