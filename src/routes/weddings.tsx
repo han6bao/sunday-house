@@ -129,7 +129,7 @@ export default function Weddings() {
             ),
           },
           {
-            kicker: "Recent weddings",
+            kicker: "Real weddings",
             title: "The last dance, kept.",
             body: <p>Getting ready to the send-off, in photographs and film.</p>,
             img: { src: "/assets/stills/wed-hold-3.jpg", alt: "A groom leaning down to take his bride's hand" },
@@ -191,16 +191,19 @@ export default function Weddings() {
           className="sh-soundfilm--wide"
           src="/assets/motion/hero.mp4"
           poster="/assets/motion/hero.jpg"
-          label="A short reel of recent weddings: couples at golden hour, florals, first looks and quiet moments"
+          label="A short reel of real weddings: couples at golden hour, florals, first looks and quiet moments"
         />
       </section>
 
       {/* Gallery rail */}
       <section aria-labelledby="wed-gallery" className="pb-[clamp(4rem,8vw,7rem)]">
         <div className="sh-wrap mb-8 flex flex-wrap items-end justify-between gap-6">
-          <h2 id="wed-gallery" className="sh-h2">
-            Recent weddings
-          </h2>
+          <div>
+            <h2 id="wed-gallery" className="sh-h2">
+              Real weddings
+            </h2>
+            <p className="sh-script mt-2">Abdul + Layla</p>
+          </div>
         </div>
         <div className="sh-wrap">
           <div className="sh-rail">
