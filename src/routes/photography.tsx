@@ -43,7 +43,7 @@ const SESSIONS = [
 ];
 
 const PRICES = [
-  { slug: "engagement-photography", img: "/assets/stills/eng-water-2.jpg", name: "Couples", line: "An unhurried hour, just the two of you.", price: "$375", points: ["One hour, one location", "Gentle direction", "A private online gallery"] },
+  { slug: "engagement-photography", img: "/assets/stills/eng-water-2.jpg", name: "Couples", line: "An unhurried hour, just the two of you.", price: "$375", points: ["One hour, one location", "Outdoors or in the studio", "A private online gallery"] },
   { slug: "engagement-photography", img: "/assets/stills/eng-water-1.jpg", name: "Engagements", line: "Ninety minutes to celebrate the yes.", price: "$450", points: ["Two looks", "A location chosen together", "Included in most collections"] },
   { slug: "senior-portraits", img: "/assets/stills/senior-6.jpg", name: "Seniors", line: "Your year, in your own style.", price: "$375", points: ["One hour, two outfits", "Posing guidance throughout", "Extended session: $575"] },
   { slug: "family-photography", img: "/assets/stills/family-stand.jpg", name: "Families", line: "Easygoing, and paced around little ones.", price: "$375", points: ["One hour, up to six people", "Newborn + maternity too", "Studio options available"] },

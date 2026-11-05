@@ -61,7 +61,7 @@ export const SERVICES: Service[] = [
     h1: "Engagement and couples photos that feel *like the two of you*.",
     intro: [
       "Your engagement session is the first time we photograph you together — and usually the moment couples realize they're not awkward on camera after all. We keep it relaxed: a walk, a few prompts, a lot of laughing, and light that does most of the work.",
-      "We photograph engagements across Seattle, Tacoma and the whole Puget Sound — from Point Defiance and Ruston Way to Kerry Park, Alki Beach and the Eastside. Not sure where? We'll help you find a spot that feels like the two of you.",
+      "We photograph engagements across Seattle, Tacoma and the whole Puget Sound — from Point Defiance and Ruston Way to Kerry Park, Alki Beach and the Eastside. Prefer something more intimate? Studio sessions are an option for any couple shoot, any season, any weather. Not sure where? We'll help you find a spot that feels like the two of you.",
       "Not engaged? You don't need a ring to deserve beautiful photographs together. Anniversaries, a new home, or simply this season of your life — couples sessions are for keeping who you are right now.",
     ],
     highlights: [
@@ -81,6 +81,7 @@ export const SERVICES: Service[] = [
     ],
     stripLabels: ["Cinematic engagement, on the water"],
     faqs: [
+      { q: "Can we do our session in a studio?", a: "Yes. Any couples or engagement session can be in the studio instead of, or along with, an outdoor location. It's a great option for a cleaner, editorial look or when the weather won't cooperate." },
       { q: "How much is an engagement or couples session?", a: "Couples sessions begin at $375 for an hour at one location. Engagement sessions are $450 for ninety minutes and two looks, and one is included with The Story and The Full Day wedding collections." },
       { q: "When should we schedule engagement photos?", a: "Most couples shoot six to nine months before the wedding, which leaves time to use the photos for save-the-dates and a wedding website. Spring and early fall bring the softest light around Seattle and Tacoma." },
       { q: "Where are the best places for engagement photos near Tacoma?", a: "Point Defiance, Ruston Way and the Tacoma waterfront are favorites, along with gardens and quiet beaches around the South Sound." },
