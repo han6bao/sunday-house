@@ -68,7 +68,7 @@ const BRIDAL_ROWS = [
 ];
 
 const GOOD_TO_KNOW = [
-  { title: "No time on the day?", body: "If there isn't a set window for portraits, we can photograph them on a separate day. That's an additional fee, since it's outside your wedding timeline." },
+  { title: "Portraits on another day", body: "If your timeline is full, we can plan a relaxed portrait session before or after the wedding instead. It's booked as its own session, so it's priced separately." },
   { title: "Book upgrades", body: "The classic hardcover is included. Linen or suede covers, thick textured paper and other custom touches can be added for an extra cost." },
   { title: "Prints + framing", body: "Framed prints, wall pieces and larger albums are available as add-ons, whenever you're ready for them." },
 ];
