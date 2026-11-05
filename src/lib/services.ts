@@ -61,7 +61,7 @@ export const SERVICES: Service[] = [
     h1: "Engagement and couples photos that feel *like the two of you*.",
     intro: [
       "Your engagement session is the first time we photograph you together — and usually the moment couples realize they're not awkward on camera after all. We keep it relaxed: a walk, a few prompts, a lot of laughing, and light that does most of the work.",
-      "We photograph engagements across Seattle, Tacoma and the whole Puget Sound — from Point Defiance and Ruston Way to Kerry Park, Alki Beach and the Eastside. Not sure where? Our location archive has dozens of places sorted by city and feeling.",
+      "We photograph engagements across Seattle, Tacoma and the whole Puget Sound — from Point Defiance and Ruston Way to Kerry Park, Alki Beach and the Eastside. Not sure where? We'll help you find a spot that feels like the two of you.",
       "Not engaged? You don't need a ring to deserve beautiful photographs together. Anniversaries, a new home, or simply this season of your life — couples sessions are for keeping who you are right now.",
     ],
     highlights: [
@@ -142,7 +142,7 @@ export const SERVICES: Service[] = [
     ],
     highlights: [
       { title: "Know the light", body: "We time portraits around Seattle's sunsets and plan a rain-friendly backup for every outdoor moment." },
-      { title: "Know the places", body: "Our location archive covers dozens of Seattle spots — viewpoints, beaches, gardens and city interiors." },
+      { title: "Know the places", body: "We know Seattle well, from viewpoints and beaches to gardens and city interiors, and we'll help you choose." },
       { title: "One team, whole day", body: "Wedding photography and film together, from getting ready to the last dance." },
     ],
     photos: [
@@ -243,7 +243,7 @@ export const SERVICES: Service[] = [
     faqs: [
       { q: "How much are senior portraits?", a: "$375 for one hour and two outfits, or $575 for two hours with three to four outfits and two locations." },
       { q: "When should seniors book their photos?", a: "Many seniors book in spring or summer for fall sessions, when the light and leaves are beautiful and yearbook deadlines are ahead. Ask early for the most choice." },
-      { q: "Where are good senior photo spots in Tacoma and Seattle?", a: "Waterfronts, gardens, campuses and city streets all work, and our location archive lists dozens of spots around Tacoma and Seattle." },
+      { q: "Where are good senior photo spots in Tacoma and Seattle?", a: "Waterfronts, gardens, campuses and city streets all work. We'll suggest a few spots around Tacoma and Seattle that fit your style." },
       { q: "How many outfits can I bring?", a: "Bring a few you love — we'll plan the session so there's time for changes without rushing." },
       { q: "Can a friend or parent come along?", a: "Yes, and a friend often helps you relax and laugh on camera. We can also curate a package that includes your whole family or your best friends, and there's a complimentary package too. Ask us for more information." },
     ],

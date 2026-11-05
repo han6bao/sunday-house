@@ -69,7 +69,7 @@ const FAQ = [
   },
   {
     q: "Where should we be photographed?",
-    a: "Anywhere that feels like you. Our location archive covers parks, beaches, studios and city spots across Seattle, Tacoma and the Eastside, and we'll help you choose.",
+    a: "Anywhere that feels like you: parks, beaches, studios and city spots across Seattle, Tacoma and the Eastside. We'll help you choose.",
   },
 ];
 
