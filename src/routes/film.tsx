@@ -47,7 +47,7 @@ const INCLUDES = [
 ];
 
 /** The full Matt + Maddie film, hosted here. Set to its file once uploaded. */
-const FULL_FILM: string | undefined = undefined;
+const FULL_FILM: string | undefined = "https://vimeo.com/1244440675";
 
 /** What we film on the day. */
 const WE_FILM = [

@@ -23,12 +23,22 @@ export function FullFilm({
 }) {
   const [playing, setPlaying] = useState(false);
   const ref = useRef<HTMLVideoElement>(null);
+  const vimeo = film?.match(/vimeo\.com\/(?:video\/)?(\d+)/)?.[1];
   const youtube = film?.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/)?.[1];
 
   return (
     <figure className="sh-fullfilm">
       <div className="sh-fullfilm__frame">
-        {playing && film && youtube ? (
+        {playing && film && vimeo ? (
+          <iframe
+            src={`https://player.vimeo.com/video/${vimeo}?autoplay=1&title=0&byline=0&portrait=0&badge=0&dnt=1&color=f2c6d2`}
+            title={title}
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            className="sh-fullfilm__video"
+            style={{ border: 0 }}
+          />
+        ) : playing && film && youtube ? (
           <iframe
             src={`https://www.youtube-nocookie.com/embed/${youtube}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
             title={title}
