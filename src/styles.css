@@ -4173,3 +4173,4 @@ main h2.svc-feature-h:not(#a):not(#b):not(#c) { font-family: var(--font-display)
 .pt-menu__amt { font-family: var(--font-display); font-size: clamp(2rem, 3.4vw, 2.9rem); line-height: 1; color: var(--color-ink); }
 .pt-menu__view { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-rose-deep); margin-left: auto; }
 @media (min-width: 768px) { .pt-menu__view { margin-left: 0; margin-top: 0.6rem; } }
+@media (min-width: 768px) { .sh-prices.sh-prices--two { grid-template-columns: repeat(2, minmax(0, 24rem)); } }

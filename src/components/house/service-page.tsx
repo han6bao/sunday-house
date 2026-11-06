@@ -209,6 +209,36 @@ export function ServicePage({ service }: { service: Service }) {
         </div>
       </section>
 
+      {/* Pricing */}
+      {service.pricing?.length ? (
+        <section className="sh-wrap pb-[clamp(4rem,8vw,7rem)]" aria-labelledby="svc-pricing">
+          <p className="eyebrow">Investment</p>
+          <h2 id="svc-pricing" className="sh-h2 mt-4">
+            Session <em>prices</em>.
+          </h2>
+          <ul className={`sh-prices mt-10 ${service.pricing.length === 2 ? "sh-prices--two" : ""}`}>
+            {service.pricing.map((it) => (
+              <li key={it.name} className="sh-price">
+                <h3 className="sh-h3">{it.name}</h3>
+                {it.line ? <p className="sh-price__line">{it.line}</p> : null}
+                <p className="sh-price__amt">
+                  {it.from === false ? null : <span>from</span>} {it.price}
+                </p>
+                <ul className="sh-price__pts">
+                  {it.points.map((pt) => (
+                    <li key={pt}>{pt}</li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+          {service.pricingNote ? <p className="sh-body mt-6 max-w-2xl">{service.pricingNote}</p> : null}
+          <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="sh-btn-fill mt-8">
+            Inquire
+          </a>
+        </section>
+      ) : null}
+
       {/* Practical guide */}
       {service.guide?.length ? (
         <section className="sh-wrap sh-section" aria-labelledby="svc-guide">

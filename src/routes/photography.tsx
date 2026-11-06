@@ -47,6 +47,8 @@ const PRICES = [
   { slug: "engagement-photography", img: "/assets/stills/eng-water-1.jpg", name: "Engagements", line: "Ninety minutes to celebrate the yes.", price: "$450", points: ["Two looks", "A location chosen together", "Included in most collections"] },
   { slug: "senior-portraits", img: "/assets/stills/senior-6.jpg", name: "Seniors", line: "Your year, in your own style.", price: "$375", points: ["One hour, two outfits", "Posing guidance throughout", "Extended session: $575"] },
   { slug: "family-photography", img: "/assets/stills/family-stand.jpg", name: "Families", line: "Easygoing, and paced around little ones.", price: "$375", points: ["One hour, up to six people", "Newborn + maternity too", "Studio options available"] },
+  { slug: "headshots", img: "/assets/stills/hs-pro-2.jpg", name: "Headshots", line: "Clean and classic, for work.", price: "$225", points: ["1 look", "2–3 fully retouched photos", "Extra favorites anytime"] },
+  { slug: "modeling-acting", img: "/assets/stills/hs-editorial-1.jpg", name: "Acting + modeling", line: "Headshots and digitals for the work.", price: "$250", points: ["1 look, 3 retouched photos", "Full session: 2 looks, $375", "Ask about the digitals special"] },
   { slug: "creative-portraits", img: "/assets/stills/creative-angel-1.jpg", name: "Creative", line: "A still from your own film.", price: "$550", points: ["Concept + styling direction", "Two hours of shooting", "A cinematic, editorial finish"] },
 ];
 

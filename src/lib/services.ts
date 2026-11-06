@@ -34,6 +34,9 @@ export type Service = {
   strips?: (ServicePhoto & { w: number; h: number })[][];
   /** Optional pointer to a sister page, shown under the photo rows. */
   crossLink?: { eyebrow: string; body: string; slug: string; label: string; img?: ServicePhoto };
+  /** Optional price cards. */
+  pricing?: { name: string; line?: string; price: string; from?: boolean; points: string[] }[];
+  pricingNote?: string;
   /** Optional practical guide shown before the FAQs. */
   guideEyebrow?: string;
   guideTitle?: string;
@@ -488,6 +491,11 @@ export const SERVICES: Service[] = [
       { kicker: "Business + branding", title: "Classic, *never stiff*.", body: "Clean headshots for LinkedIn, your website and your whole team.", img: { src: "/assets/stills/hs-brand-black-2.jpg", alt: "A classic business headshot in black with a statement necklace among the trees" } },
       { kicker: "Actors, models + creatives", title: "A page of *its own*.", body: "Acting headshots, model portfolios and digitals live on our Modeling + Acting page.", img: { src: "/assets/stills/hs-editorial-1.jpg", alt: "An editorial headshot, hands framing her face against a warm studio backdrop" } },
     ],
+    pricing: [
+      { name: "Starter", line: "Great if you're just getting started.", price: "$250", from: false, points: ["1 look", "3 fully retouched photos", "A gallery of 20–30 lightly edited photos"] },
+      { name: "Full session", line: "More range for your book.", price: "$375", from: false, points: ["2 looks", "5–6 fully retouched photos", "A gallery of 20–30 lightly edited photos"] },
+    ],
+    pricingNote: "Pick extra favorites to have retouched anytime. Ask about our current special on actor digitals.",
     guideEyebrow: "Where you are now",
     guideTitle: "Starting out or *refreshing* your book",
     guide: [
@@ -512,7 +520,13 @@ export const SERVICES: Service[] = [
         ],
       },
     ],
+    pricing: [
+      { name: "Headshots", line: "LinkedIn-ready, clean and classic.", price: "$225", from: false, points: ["1 look", "2–3 fully retouched photos", "A private gallery to pick extra favorites"] },
+    ],
+    pricingNote: "Teams, extra looks and on-location sessions are quoted on request. Need acting headshots or digitals? Those have their own prices on our Modeling + Acting page.",
     faqs: [
+      { q: "How much are acting headshots?", a: "$250 for one look and 3 fully retouched photos, or $375 for two looks and 5–6 retouched photos. Both include a gallery of 20–30 lightly edited photos, and you can have extra favorites retouched anytime. Ask about our current special on actor digitals." },
+      { q: "How much are headshots?", a: "Headshots are $225 for one look with 2–3 fully retouched photos, plus a private gallery where you can pick extra favorites." },
       { q: "Studio or on location?", a: "Either. The studio gives a clean, consistent look; on location adds natural light and a sense of place for branding." },
       { q: "What should I wear?", a: "Solid colors and clothes you feel good in. Bring a couple of options and we'll help you choose." },
       { q: "Do you do acting headshots or modeling digitals?", a: "Yes. Those live on our Modeling + Acting page, since they're shot a little differently from business headshots." },
