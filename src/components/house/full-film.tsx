@@ -14,7 +14,7 @@ export function FullFilm({
   title,
   caption,
 }: {
-  /** The full film file. Until it's uploaded, the preview loop shows on its own. */
+  /** The full film: a video file or a YouTube link. Until it's set, the preview loop shows on its own. */
   film?: string;
   preview: string;
   poster: string;
@@ -23,11 +23,21 @@ export function FullFilm({
 }) {
   const [playing, setPlaying] = useState(false);
   const ref = useRef<HTMLVideoElement>(null);
+  const youtube = film?.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/)?.[1];
 
   return (
     <figure className="sh-fullfilm">
       <div className="sh-fullfilm__frame">
-        {playing && film ? (
+        {playing && film && youtube ? (
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${youtube}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+            title={title}
+            allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+            allowFullScreen
+            className="sh-fullfilm__video"
+            style={{ border: 0 }}
+          />
+        ) : playing && film ? (
           <video ref={ref} src={film} poster={poster} controls autoPlay playsInline className="sh-fullfilm__video" aria-label={title} />
         ) : (
           <>
