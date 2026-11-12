@@ -4174,3 +4174,5 @@ main h2.svc-feature-h:not(#a):not(#b):not(#c) { font-family: var(--font-display)
 .pt-menu__view { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-rose-deep); margin-left: auto; }
 @media (min-width: 768px) { .pt-menu__view { margin-left: 0; margin-top: 0.6rem; } }
 @media (min-width: 768px) { .sh-prices.sh-prices--two { grid-template-columns: repeat(2, minmax(0, 24rem)); } }
+.hz-footer .hz-footer__ig { display: block; width: fit-content; margin: 1.25rem auto 0; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: inherit; opacity: 0.8; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 0.2rem; }
+.hz-footer .hz-footer__ig:hover { opacity: 1; }

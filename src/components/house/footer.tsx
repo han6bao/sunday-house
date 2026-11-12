@@ -70,6 +70,9 @@ export function Footer() {
           <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className="hz-footer__cta">
             Inquire
           </a>
+          <a href="https://www.instagram.com/sundayhousepnw/" target="_blank" rel="noreferrer" className="hz-footer__ig">
+            @sundayhousepnw
+          </a>
 
           {/* Phones: one short row of the essentials */}
           <nav aria-label="Footer" className="md:hidden">

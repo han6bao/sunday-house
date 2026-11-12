@@ -97,6 +97,7 @@ export const BUSINESS_JSON_LD = JSON.stringify({
       description:
         "Wedding photography and film studio based in Tacoma, Washington, photographing weddings, engagements, elopements and portraits across Seattle, Tacoma and the Pacific Northwest.",
       url: SITE_URL,
+      sameAs: ["https://www.instagram.com/sundayhousepnw/"],
       image: absoluteUrl(DEFAULT_IMAGE),
       logo: absoluteUrl("/assets/brand/logo-ink.png"),
       address: {
