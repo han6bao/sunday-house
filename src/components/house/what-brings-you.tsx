@@ -1,66 +1,78 @@
-"use client";
-
 import { Link } from "@tanstack/react-router";
 
+/**
+ * "What are you booking?" Three simple doors near the top of the home page,
+ * each with quick links straight to the service pages.
+ */
 const DOORS = [
   {
-    key: "wedding",
-    head: "A Wedding",
-    line: "We're getting married.",
-    note: "Photography, film, websites, planning resources and content for the day.",
+    head: "Weddings",
+    line: "Photography and film for your day.",
     to: "/weddings",
-    photo: "/assets/gallery/sunset-couple.png",
-    alt: "A couple watching the sunset, photographed by Sunday House",
+    photo: "/assets/stills/couple-sunset.jpg",
+    alt: "A couple holding each other at sunset",
+    links: [
+      { label: "Photography", to: "/weddings" },
+      { label: "Film", to: "/film" },
+      { label: "Engagements", to: "/services/engagement-photography" },
+    ],
   },
   {
-    key: "season",
-    head: "A Season of Life",
-    line: "Portraits, families, graduates & more.",
-    note: "Seniors, families, maternity, newborns, couples and the years' big moments.",
+    head: "Portraits",
+    line: "Seniors, families, headshots and more.",
     to: "/photography",
-    photo: "/assets/gallery/daisy.png",
-    alt: "A delicate daisy, photographed by Sunday House",
+    photo: "/assets/stills/senior-6.jpg",
+    alt: "A senior in a white blouse in a sunlit meadow",
+    links: [
+      { label: "Seniors", to: "/services/senior-portraits" },
+      { label: "Families", to: "/services/family-photography" },
+      { label: "Headshots", to: "/services/headshots" },
+      { label: "Modeling", to: "/services/modeling-acting" },
+      { label: "Events", to: "/services/milestones-events" },
+    ],
   },
   {
-    key: "else",
-    head: "Something Else",
-    line: "Film, events, creative work & custom pieces.",
-    note: "Wedding websites, content creation, films, events and made-for-you pieces.",
-    to: "/film",
-    photo: "/assets/gallery/greenhouse.png",
-    alt: "A quiet greenhouse moment, photographed by Sunday House",
+    head: "Content",
+    line: "Photo and video content for your brand.",
+    to: "/content-creation",
+    photo: "/assets/content-work/Dc-FW05tqrF.jpg",
+    alt: "A still from content created by Sunday House",
+    links: [
+      { label: "Content creation", to: "/content-creation" },
+      { label: "Past work", to: "/content-portfolio" },
+    ],
   },
 ];
 
 export function WhatBringsYou() {
   return (
-    <div className="mx-auto max-w-[1400px] px-5 md:px-8">
-      <div className="grid gap-6 md:grid-cols-3">
+    <section className="sh-wrap sh-doors" aria-labelledby="doors-title">
+      <p className="eyebrow" id="doors-title">
+        What are you booking?
+      </p>
+      <div className="sh-doors__grid">
         {DOORS.map((d) => (
-          <Link
-            key={d.key}
-            to={d.to}
-            className="group relative block overflow-hidden border border-ink/15 bg-ivory transition-all hover:-translate-y-1 hover:shadow-[0_18px_40px_rgb(90_55_51/0.14)]"
-          >
-            <div className="overflow-hidden">
-              <img
-                src={d.photo}
-                alt={d.alt}
-                loading="lazy"
-                className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <p className="label-tiny--xs uppercase tracking-[0.16em] text-antique">{d.head}</p>
-              <p className="sh-script mt-2 ">{d.line}</p>
-              <p className="mt-3 font-serif leading-relaxed text-brown">{d.note}</p>
-              <span className="sh-textlink mt-4">
-                Enter this room →
+          <div key={d.head} className="sh-door">
+            <Link to={d.to as never} className="sh-door__main">
+              <img src={d.photo} alt={d.alt} loading="lazy" decoding="async" className="sh-door__img" />
+              <span className="sh-door__text">
+                <span className="sh-door__head">{d.head}</span>
+                <span className="sh-door__line">{d.line}</span>
               </span>
+              <span className="sh-door__arrow" aria-hidden="true">
+                →
+              </span>
+            </Link>
+            <div className="sh-door__links">
+              {d.links.map((l) => (
+                <Link key={l.label} to={l.to as never} className="sh-chip">
+                  {l.label}
+                </Link>
+              ))}
             </div>
-          </Link>
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

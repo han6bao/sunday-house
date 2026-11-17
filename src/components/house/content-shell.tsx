@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { StructuredData } from "@/components/StructuredData";
 import { breadcrumbJsonLd } from "@/lib/seo";
 
+import { FloatingCta } from "./floating-cta";
 import { Footer } from "./footer";
 import { HouseInquiry } from "./house-inquiry";
 import { SiteNav } from "./site-nav";
@@ -32,6 +33,7 @@ export function ContentShell({
         {inquiry ? <HouseInquiry /> : null}
       </main>
       <Footer />
+      <FloatingCta />
     </div>
   );
 }

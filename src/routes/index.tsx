@@ -1,3 +1,4 @@
+import { WhatBringsYou } from "@/components/house/what-brings-you";
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { ContentShell } from "@/components/house/content-shell";
@@ -69,6 +70,9 @@ function Home() {
           </a>
         </div>
       </HeroFilm>
+
+      {/* What are you booking? Three doors, straight to each service. */}
+      <WhatBringsYou />
 
       {/* 2 · The promise */}
       <section id="begin" className="sh-wrap sh-section">

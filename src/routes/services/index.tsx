@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { ContentShell } from "@/components/house/content-shell";
 import { Photo } from "@/components/house/photo";
-import { SERVICE_LINKS } from "@/components/house/site-nav";
 import { pageHead } from "@/lib/seo";
 import { OTHER_SERVICE_PAGES, SERVICES } from "@/lib/services";
 
@@ -38,8 +37,10 @@ function ServiceRow({ to, params, name, note, photo }: { to: string; params?: Re
 }
 
 function Services() {
-  const weddings = SERVICES.filter((s) => s.group === "weddings");
+  // Location pages (Seattle, Tacoma) stay live for search but stay out of this simple list.
+  const weddings = SERVICES.filter((s) => s.group === "weddings" && !s.slug.endsWith("wedding-photographer"));
   const portraits = SERVICES.filter((s) => s.group === "portraits");
+  const [wedPhoto, wedFilm, content] = OTHER_SERVICE_PAGES;
   return (
     <ContentShell breadcrumb={[{ name: "Services", path: "/services" }]}>
       <section className="sh-wrap pt-[clamp(3rem,7vw,6rem)]">
@@ -47,24 +48,19 @@ function Services() {
         <h1 className="sh-h1 mt-3 max-w-4xl">
           Photography <em>&amp; film</em> services in Seattle + Tacoma.
         </h1>
-        <p className="sh-lede mt-6 max-w-2xl">
-          Weddings come first here, with portraits and celebrations close
-          behind. Choose what you&rsquo;re planning to see how we approach it.
-        </p>
-        <nav aria-label="Jump to a service" className="mt-8 flex max-w-4xl flex-wrap gap-2">
-          {SERVICE_LINKS.filter((l) => l.href !== "/services").map((l) => (
-            <Link key={l.href} to={l.href as never} className="sh-chip">
-              {l.label}
-            </Link>
-          ))}
+        <p className="sh-lede mt-6 max-w-2xl">Pick what you&rsquo;re planning. Each one has its own page with photos, details and prices.</p>
+        <nav aria-label="Jump to a group" className="mt-8 flex flex-wrap gap-2">
+          <a href="#weddings" className="sh-chip">Weddings</a>
+          <a href="#portraits" className="sh-chip">Portraits</a>
+          <a href="#content" className="sh-chip">Content</a>
         </nav>
       </section>
 
-      <section className="sh-wrap sh-section grid gap-14 lg:grid-cols-2" aria-label="Services">
-        <div>
+      <section className="sh-wrap sh-section grid gap-14 lg:grid-cols-3" aria-label="Services">
+        <div id="weddings" className="scroll-mt-24">
           <h2 className="eyebrow">Weddings</h2>
           <ul className="mt-6">
-            {OTHER_SERVICE_PAGES.slice(0, 2).map((o) => (
+            {[wedPhoto, wedFilm].map((o) => (
               <ServiceRow key={o.to} to={o.to} name={o.name} note={o.note} photo={o.photo} />
             ))}
             {weddings.map((s) => (
@@ -72,19 +68,19 @@ function Services() {
             ))}
           </ul>
         </div>
-        <div>
-          <h2 className="eyebrow">Portraits + celebrations</h2>
+        <div id="portraits" className="scroll-mt-24">
+          <h2 className="eyebrow">Portraits</h2>
           <ul className="mt-6">
-            <ServiceRow to="/photography" name="Portrait Sessions" note="Every kind of portrait, with session prices." photo={{ src: "/assets/stills/senior-6.jpg", alt: "Senior in a white blouse in a sunlit meadow" }} />
             {portraits.map((s) => (
               <ServiceRow key={s.slug} to="/services/$slug" params={{ slug: s.slug }} name={s.name} note={s.script} photo={s.photos[0]} />
             ))}
+            <ServiceRow to="/photography" name="All portrait prices" note="Every session and its price, in one list." photo={{ src: "/assets/stills/senior-6.jpg", alt: "Senior in a white blouse in a sunlit meadow" }} />
           </ul>
-          <h2 className="eyebrow mt-14">For your day</h2>
+        </div>
+        <div id="content" className="scroll-mt-24">
+          <h2 className="eyebrow">Content</h2>
           <ul className="mt-6">
-            {OTHER_SERVICE_PAGES.slice(2).map((o) => (
-              <ServiceRow key={o.to} to={o.to} name={o.name} note={o.note} photo={o.photo} />
-            ))}
+            <ServiceRow to={content.to} name="Content Creation" note={content.note} photo={content.photo} />
           </ul>
         </div>
       </section>

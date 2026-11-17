@@ -37,7 +37,7 @@ export function FloatingCta() {
     };
   }, []);
   return (
-    <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className={`sh-float sh-noprint${show ? " is-on" : ""}>
+    <a href="mailto:hanabhong@gmail.com?subject=Sunday%20House%20inquiry" className={`sh-float sh-noprint${show ? " is-on" : ""}`}>
       Inquire
     </a>
   );
