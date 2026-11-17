@@ -46,7 +46,7 @@ function Home() {
       <WhatBringsYou />
 
       {/* 2 · The promise */}
-      <section id="begin" className="sh-wrap sh-section">
+      <section id="begin" className="sh-wrap sh-section sh-home-intro">
         <div className="sh-intro">
           <div className="sh-intro__text">
             <p className="eyebrow">Hello, we&rsquo;re Sunday House</p>
